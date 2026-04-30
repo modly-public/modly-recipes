@@ -3,10 +3,10 @@
 Drop-in configuration packs for [Modly](https://modly.net) — automod rules, embed templates, custom commands, and welcome messages. Import any file via the dashboard's "Import" button on the relevant page.
 
 ```
-automod-packs/      → import on /dashboard/server/<id>/automod
-embeds/             → import on /dashboard/server/<id>/embeds
-custom-commands/    → import on /dashboard/server/<id>/commands
-welcome-messages/   → paste into /dashboard/server/<id>/welcome
+automod-packs/      → /dashboard/server/<id>/automod  → "Import pack"
+embeds/             → /dashboard/server/<id>/embeds   → "Import"
+welcome-messages/   → paste manually into welcome.messages list (UI importer coming)
+custom-commands/    → manual paste into the custom-commands module (UI coming)
 ```
 
 ## Submitting a recipe
