@@ -1,10 +1,10 @@
 # Modly Recipes
 
-Drop-in configuration packs for [Modly](https://modly.net) — automod rules, embed templates, custom commands, and welcome messages. Import any file via the dashboard's "Import" button on the relevant page.
+Drop-in configuration packs for [Modly](https://modly.net) — automod rules, embed templates, custom commands, and welcome messages. Each dashboard page has matching **Import** + **Export** buttons so you can round-trip your config: tweak in the UI, export, share / commit / re-import on another guild.
 
 ```
-automod-packs/      → /dashboard/server/<id>/automod  → "Import pack"
-embeds/             → /dashboard/server/<id>/embeds   → "Import"
+automod-packs/      → /dashboard/server/<id>/automod  → "Import pack" / "Export pack"
+embeds/             → /dashboard/server/<id>/embeds   → "Import" / "Export"
 welcome-messages/   → paste manually into welcome.messages list (UI importer coming)
 custom-commands/    → manual paste into the custom-commands module (UI coming)
 ```
