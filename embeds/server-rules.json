@@ -1,0 +1,22 @@
+{
+  "name": "server-rules",
+  "description": "Generic server-rules embed with placeholder fields. Edit fields after import.",
+  "json": {
+    "embeds": [
+      {
+        "title": "📜 Server rules",
+        "color": 8128495,
+        "description": "By participating in this server you agree to follow the rules below. Violations may result in warnings, mutes, or bans depending on severity.",
+        "fields": [
+          { "name": "1. Be respectful", "value": "No harassment, slurs, hate speech, or personal attacks. Disagreement is fine; cruelty is not." },
+          { "name": "2. No spam", "value": "Don't flood channels, ping for no reason, or post the same thing in multiple channels." },
+          { "name": "3. Stay on topic", "value": "Use the right channel. Off-topic posts will be moved or removed." },
+          { "name": "4. Safe content only", "value": "No NSFW outside designated channels. No gore, no shock content, no doxxing." },
+          { "name": "5. English in main channels", "value": "Other languages are welcome in their dedicated channels." },
+          { "name": "6. Listen to staff", "value": "Mods have final say. If you disagree, DM a mod calmly — don't argue in public." }
+        ],
+        "footer": { "text": "Last updated: today" }
+      }
+    ]
+  }
+}

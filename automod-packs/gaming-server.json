@@ -1,0 +1,41 @@
+{
+  "name": "Gaming server",
+  "description": "Balanced moderation for a 1k–50k member gaming community: tolerant of memes + caps, strict on slurs + invite spam.",
+  "rules": [
+    {
+      "name": "Slurs (wildcard)",
+      "kind": "WORD_BLACKLIST",
+      "config": {
+        "wildcard": ["slur1placeholder", "slur2placeholder"],
+        "caseSensitive": false
+      },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 10 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Discord invite links",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 5 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "Mass mention spam",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 5, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 600 }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Repeated character spam",
+      "kind": "REPEATED_CHARS",
+      "config": { "runLength": 12 },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 40
+    }
+  ]
+}

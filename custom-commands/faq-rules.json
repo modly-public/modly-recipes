@@ -1,0 +1,9 @@
+{
+  "name": "rules",
+  "description": "Quick reply with a link to the rules channel.",
+  "trigger": { "type": "slash", "name": "rules" },
+  "response": {
+    "content": "Server rules → <#RULES_CHANNEL_ID>",
+    "ephemeral": true
+  }
+}

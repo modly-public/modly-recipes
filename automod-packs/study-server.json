@@ -1,0 +1,38 @@
+{
+  "name": "Study / focus server",
+  "description": "Strict pack for tutoring, homework help, or focus communities. Aggressive on off-topic + caps + mass-emoji.",
+  "rules": [
+    {
+      "name": "External links (study-only)",
+      "kind": "EXTERNAL_LINK",
+      "config": { "allowDomains": ["wikipedia.org", "khanacademy.org", "youtube.com", "github.com", "stackoverflow.com"] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 3 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Caps shouting",
+      "kind": "CAPS",
+      "config": { "thresholdPercent": 70, "minLength": 12 },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "Mass emoji",
+      "kind": "MASS_EMOJI",
+      "config": { "threshold": 8 },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Discord invites",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 5 }] },
+      "scope": {},
+      "priority": 40
+    }
+  ]
+}

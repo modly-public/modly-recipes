@@ -1,0 +1,21 @@
+{
+  "name": "welcome-card",
+  "description": "Friendly welcome embed referencing channels with placeholder mentions.",
+  "json": {
+    "content": "Welcome <@{user.id}> 👋",
+    "embeds": [
+      {
+        "title": "Welcome to {server}!",
+        "color": 8128495,
+        "description": "We're glad you're here. Take a second to get oriented:",
+        "fields": [
+          { "name": "📜 Read the rules", "value": "<#RULES_CHANNEL_ID>", "inline": true },
+          { "name": "🎭 Pick roles", "value": "<#ROLES_CHANNEL_ID>", "inline": true },
+          { "name": "💬 Say hi", "value": "<#GENERAL_CHANNEL_ID>", "inline": true }
+        ],
+        "thumbnail": { "url": "{user.avatarUrl}" },
+        "footer": { "text": "You're member #{count}" }
+      }
+    ]
+  }
+}

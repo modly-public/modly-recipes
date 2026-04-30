@@ -1,0 +1,10 @@
+# Casual welcome pool — paste into the welcome.messages list. Modly picks
+# one at random per join. Variables: {user} {username} {server} {count}.
+
+Welcome {user} 👋 — you're #{count} in {server}.
+Hey {user}, glad you're here! Take a look at the rules and pick some roles.
+{user} just joined — make some space, we've got a new face!
+Round of applause for {user} 👏 — welcome to {server}.
+{user} dropped in. We're up to {count} members now. 🎉
+Welcome aboard {user}! Hope you stick around.
+{user} entered the chat. 👀
