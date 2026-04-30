@@ -1,0 +1,11 @@
+# Hype welcome pool — for gaming / streamer / hype communities. Variables:
+# {user} {username} {server} {count}.
+
+🔥 {user} JUST DROPPED IN — let's gooo
+yo {user} welcome to the chaos 🌀
+{user} just landed in {server} 🛬 — say hi!
+🎉 NEW MEMBER ALERT 🎉 {user} just joined — we're {count} deep now
+{user} entered the chat 👀 watch out
+WELCOME WELCOME WELCOME {user} — get cozy
+yo {user} 👋 you found us. {server} is wild — buckle up
+{user} is here. {count} of us now. let's make some noise

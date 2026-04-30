@@ -1,0 +1,9 @@
+# Formal welcome pool — pasted into welcome.messages. For professional /
+# study / corporate communities. Variables: {user} {username} {server} {count}.
+
+Welcome to {server}, {user}. Please review the rules and introduce yourself in the appropriate channel.
+{user} has joined {server} — welcome.
+A new member has arrived: {user}. Please make them feel at home.
+{user}, welcome to {server}. We're now {count} members strong.
+Pleased to have you with us, {user}.
+Welcome aboard, {user}. We hope you'll find this community valuable.

@@ -1,0 +1,47 @@
+{
+  "description": "Generic 5-command FAQ pack. Edit the responses after import to match your server.",
+  "commands": [
+    {
+      "name": "rules",
+      "description": "Link to the server rules.",
+      "trigger": { "type": "slash", "name": "rules" },
+      "response": { "content": "Server rules → <#RULES_CHANNEL_ID>", "ephemeral": true }
+    },
+    {
+      "name": "support",
+      "description": "Link to the support channel.",
+      "trigger": { "type": "slash", "name": "support" },
+      "response": { "content": "Need help? Open a thread in <#SUPPORT_CHANNEL_ID> or DM a mod.", "ephemeral": true }
+    },
+    {
+      "name": "roles",
+      "description": "Link to the role picker.",
+      "trigger": { "type": "slash", "name": "roles" },
+      "response": { "content": "Pick your roles → <#ROLES_CHANNEL_ID>", "ephemeral": true }
+    },
+    {
+      "name": "links",
+      "description": "Useful external links.",
+      "trigger": { "type": "slash", "name": "links" },
+      "response": {
+        "embeds": [
+          {
+            "title": "🔗 Useful links",
+            "fields": [
+              { "name": "Website", "value": "https://example.com", "inline": true },
+              { "name": "Twitter", "value": "https://twitter.com/example", "inline": true },
+              { "name": "YouTube", "value": "https://youtube.com/@example", "inline": true }
+            ]
+          }
+        ],
+        "ephemeral": true
+      }
+    },
+    {
+      "name": "discord",
+      "description": "Server permanent invite.",
+      "trigger": { "type": "slash", "name": "discord" },
+      "response": { "content": "Permanent invite: https://discord.gg/your-invite" }
+    }
+  ]
+}

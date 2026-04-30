@@ -1,0 +1,57 @@
+{
+  "name": "Family-safe",
+  "description": "Strictest pack: aggressive on slurs, swearing, NSFW links, invites, and external links. For all-ages communities, kids' gaming servers, school clubs.",
+  "rules": [
+    {
+      "name": "Slurs + profanity (wildcard)",
+      "kind": "WORD_BLACKLIST",
+      "config": {
+        "wildcard": ["slur1placeholder", "slur2placeholder", "f***word", "s***word"],
+        "caseSensitive": false
+      },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 10 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "All Discord invites",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 5 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "External links (school-allowlist only)",
+      "kind": "EXTERNAL_LINK",
+      "config": { "allowDomains": ["wikipedia.org", "khanacademy.org", "duolingo.com", "youtube.com/edu"] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 3 }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Scam links",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "scam-link" }] },
+      "scope": {},
+      "priority": 40
+    },
+    {
+      "name": "NSFW image detection",
+      "kind": "NSFW_IMAGE",
+      "config": { "confidenceThreshold": 0.7 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 15 }] },
+      "scope": {},
+      "priority": 50
+    },
+    {
+      "name": "Caps shouting",
+      "kind": "CAPS",
+      "config": { "thresholdPercent": 60, "minLength": 10 },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 60
+    }
+  ]
+}

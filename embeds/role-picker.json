@@ -1,0 +1,22 @@
+{
+  "name": "role-picker",
+  "description": "Self-assign roles message. Pair with Modly's reaction-roles or button-roles module — this is just the prompt embed.",
+  "json": {
+    "embeds": [
+      {
+        "title": "🎭 Pick your roles",
+        "color": 8128495,
+        "description": "Click a button below (or react with the matching emoji) to give yourself a role. Click again to remove it.\n\nRoles control which channels you see, who pings you, and what events you hear about.",
+        "fields": [
+          { "name": "🎮 Gamer", "value": "Access game-night pings + the LFG channels.", "inline": true },
+          { "name": "🎵 DJ", "value": "Get pinged when someone starts a listen-along.", "inline": true },
+          { "name": "📚 Reader", "value": "Book club + study room access.", "inline": true },
+          { "name": "🌙 Night owl", "value": "Pinged for after-midnight events.", "inline": true },
+          { "name": "🔔 Announcements", "value": "Get pinged for server-wide news.", "inline": true },
+          { "name": "🆕 New here", "value": "Mark yourself so the community can welcome you.", "inline": true }
+        ],
+        "footer": { "text": "Roles can be changed any time." }
+      }
+    ]
+  }
+}

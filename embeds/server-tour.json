@@ -1,0 +1,33 @@
+{
+  "name": "server-tour",
+  "description": "Multi-embed onboarding tour. Pin in #welcome or post once new members can see it. Replace channel IDs after import.",
+  "json": {
+    "embeds": [
+      {
+        "title": "🎒 Where to start",
+        "color": 8128495,
+        "description": "Welcome — here's the 30-second tour."
+      },
+      {
+        "title": "1. Read the rules",
+        "color": 16766720,
+        "description": "Quick read in <#RULES_CHANNEL_ID>. Three minutes, saves you a ban."
+      },
+      {
+        "title": "2. Pick your roles",
+        "color": 4485112,
+        "description": "Self-assign in <#ROLES_CHANNEL_ID>. Roles unlock channels and ping you for stuff you care about."
+      },
+      {
+        "title": "3. Say hi",
+        "color": 15418782,
+        "description": "Drop in <#GENERAL_CHANNEL_ID> — we don't bite. Tell us where you're from."
+      },
+      {
+        "title": "4. Need help?",
+        "color": 5814783,
+        "description": "Open a ticket in <#SUPPORT_CHANNEL_ID> or @ a mod. We respond within a day."
+      }
+    ]
+  }
+}

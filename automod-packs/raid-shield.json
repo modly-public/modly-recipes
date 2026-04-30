@@ -1,0 +1,54 @@
+{
+  "name": "Raid shield",
+  "description": "Heavy anti-spam pack designed for servers facing active raids. Pair with the Modly raid module for join-burst protection — this covers the message-side.",
+  "rules": [
+    {
+      "name": "Mass mention (5+)",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 5, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 3600 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Duplicate message spam",
+      "kind": "DUPLICATE_MESSAGE",
+      "config": { "windowSec": 30, "maxRepeats": 3 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 600 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "Repeated character spam",
+      "kind": "REPEATED_CHARS",
+      "config": { "runLength": 8 },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Mass emoji (8+)",
+      "kind": "MASS_EMOJI",
+      "config": { "threshold": 8 },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 40
+    },
+    {
+      "name": "Discord invites",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "raid-invite-spam" }] },
+      "scope": {},
+      "priority": 50
+    },
+    {
+      "name": "Scam links → ban",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "scam-link" }] },
+      "scope": {},
+      "priority": 60
+    }
+  ]
+}
