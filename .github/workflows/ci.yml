@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate every recipe parses as JSON
+        run: |
+          set -e
+          fail=0
+          while IFS= read -r f; do
+            if ! python3 -m json.tool "$f" > /dev/null 2>&1; then
+              echo "::error file=$f::invalid JSON"
+              fail=1
+            fi
+          done < <(find . -path ./node_modules -prune -o -type f -name '*.json' -print)
+          exit $fail
+      - name: Regenerate manifest and verify it's in sync
+        run: |
+          npx -y tsx scripts/generate-folder-readmes.ts
+          if ! git diff --exit-code -- index.json; then
+            echo "::error::index.json is out of sync — run 'npx tsx scripts/generate-folder-readmes.ts' and commit"
+            exit 1
+          fi
