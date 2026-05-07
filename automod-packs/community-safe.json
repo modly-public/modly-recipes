@@ -1,0 +1,41 @@
+{
+  "name": "Community safe",
+  "description": "Balanced safety pack for general-purpose communities. Keeps spam, scam links, invites, and slurs under control without over-moderating normal chat.",
+  "rules": [
+    {
+      "name": "Slurs + hate speech",
+      "kind": "WORD_BLACKLIST",
+      "config": {
+        "wildcard": ["slur1placeholder", "slur2placeholder"],
+        "caseSensitive": false
+      },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 10 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Discord invite links",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 4 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "Mass mentions",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 5, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 600 }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Scam links",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "scam-link" }] },
+      "scope": {},
+      "priority": 40
+    }
+  ]
+}

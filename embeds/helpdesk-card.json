@@ -1,0 +1,18 @@
+{
+  "name": "helpdesk-card",
+  "description": "Support-oriented embed template for tickets, FAQs, and internal ops.",
+  "json": {
+    "embeds": [
+      {
+        "title": "Need help?",
+        "color": 3066993,
+        "description": "Use this card for support menus, ticket prompts, or internal escalation links.",
+        "fields": [
+          { "name": "Issue type", "value": "Bug report, billing question, access problem, or something else.", "inline": false },
+          { "name": "Best next step", "value": "Link the right channel, form, or ticket flow.", "inline": false }
+        ],
+        "footer": { "text": "We usually respond within one business day." }
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "commands": [
+    {
+      "name": "audit",
+      "description": "Link to the moderation audit surface.",
+      "aliases": [],
+      "triggerMode": "prefix",
+      "response": "Open the audit trail in the dashboard → https://modly.net/dashboard",
+      "responseMode": "reply",
+      "isEmbed": true,
+      "embedJson": {
+        "title": "Audit trail",
+        "description": "Use this to surface the dashboard audit page for staff.",
+        "color": 8128495
+      },
+      "attachmentUrls": [],
+      "reactEmojis": [],
+      "buttons": [],
+      "actions": [],
+      "allowedMentions": [],
+      "cooldownSec": 0,
+      "cooldownScope": "user",
+      "allowedRoleIds": [],
+      "deniedRoleIds": [],
+      "allowedChannelIds": [],
+      "deniedChannelIds": [],
+      "allowedUserIds": [],
+      "deniedUserIds": [],
+      "requireAllRoles": false,
+      "deleteTrigger": false,
+      "enabled": true,
+      "priority": 95
+    }
+  ]
+}

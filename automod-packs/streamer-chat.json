@@ -1,0 +1,33 @@
+{
+  "name": "Streamer chat",
+  "description": "Lighter-touch pack for creator communities. More tolerant of hype, but still clamps down on spam, slurs, and promotion.",
+  "rules": [
+    {
+      "name": "Slurs",
+      "kind": "WORD_BLACKLIST",
+      "config": {
+        "wildcard": ["slur1placeholder", "slur2placeholder"],
+        "caseSensitive": false
+      },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 10 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Promotional links",
+      "kind": "EXTERNAL_LINK",
+      "config": { "allowDomains": ["twitch.tv", "youtube.com", "discord.com", "x.com", "twitter.com"] },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "Repeated character spam",
+      "kind": "REPEATED_CHARS",
+      "config": { "runLength": 14 },
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 30
+    }
+  ]
+}

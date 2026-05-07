@@ -1,0 +1,36 @@
+{
+  "forms": [
+    {
+      "name": "staff-application",
+      "title": "Staff application",
+      "description": "Starter application form for moderation, helper, or community roles.",
+      "reviewChannelId": "RULES_CHANNEL_ID",
+      "approveRoleId": "APPROVE_ROLE_ID",
+      "denyRoleId": "DENY_ROLE_ID",
+      "buttonLabel": "Apply now",
+      "enabled": true,
+      "status": "OPEN",
+      "color": 8128495,
+      "tags": ["staff", "application", "support"],
+      "notifyRoleIds": ["STAFF_ROLE_ID"],
+      "approverRoleIds": ["STAFF_ROLE_ID"],
+      "openAt": null,
+      "closeAt": null,
+      "maxSubmissions": null,
+      "perUserLimit": 1,
+      "allowEdits": true,
+      "allowWithdraw": true,
+      "anonymousReview": false,
+      "requireReasonOnDeny": true,
+      "threadPerSubmission": true,
+      "autoDecisionRules": [],
+      "webhookPayloadMapping": {},
+      "questions": [
+        { "id": "experience", "label": "What relevant experience do you have?", "kind": "paragraph", "required": true, "maxLength": 1200, "weight": 10, "placeholder": "Tell us about moderation, support, community, or project experience." },
+        { "id": "timezone", "label": "What timezone are you in?", "kind": "short", "required": true, "maxLength": 100, "placeholder": "UTC-5, PST, etc." },
+        { "id": "availability", "label": "When are you usually active?", "kind": "paragraph", "required": true, "maxLength": 800, "placeholder": "Times of day and days of week." },
+        { "id": "strengths", "label": "What would you be good at in this role?", "kind": "paragraph", "required": true, "maxLength": 800, "placeholder": "Moderation, conflict resolution, support, moderation tooling, etc." }
+      ]
+    }
+  ]
+}

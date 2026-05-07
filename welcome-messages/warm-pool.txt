@@ -1,0 +1,7 @@
+# Warm welcome pool — good for general communities. Variables: {user} {username} {server} {count}.
+
+Welcome {user} to {server} — glad you're here.
+Hey {user}, welcome aboard. You're member #{count}.
+{user} just joined {server}. Say hi and grab your roles.
+Glad to have you here, {user}. Take a minute to read the rules.
+Welcome {user}! We just got a little bigger.

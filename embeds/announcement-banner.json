@@ -1,0 +1,21 @@
+{
+  "name": "announcement-banner",
+  "description": "Clean announcement template for changelogs, events, and launches.",
+  "json": {
+    "content": "📣 New update for {server}",
+    "embeds": [
+      {
+        "title": "What's new",
+        "color": 8128495,
+        "description": "Use this as a starter for launches, patch notes, or event announcements.",
+        "fields": [
+          { "name": "Feature", "value": "Write a short summary of the change here.", "inline": false },
+          { "name": "Impact", "value": "Explain what members should do next.", "inline": false },
+          { "name": "Timing", "value": "Add the rollout time or event date.", "inline": true },
+          { "name": "Links", "value": "Point to docs, threads, or a ticket channel.", "inline": true }
+        ],
+        "footer": { "text": "Powered by Modly" }
+      }
+    ]
+  }
+}
