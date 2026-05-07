@@ -31,6 +31,8 @@ Three paths — full walkthrough in [`docs/install.md`](./docs/install.md):
      -d '{"slug":"automod/full/community-safe"}'
    ```
 
+> No `npm install` required — recipes are static JSON files. Pull individual recipes via GitHub raw (`https://raw.githubusercontent.com/modly-public/modly-recipes/main/<module>/<shape>/<slug>.json`) or `git clone https://github.com/modly-public/modly-recipes.git` for the whole catalog.
+
 ## Placeholders
 
 Recipes never bake server-specific IDs. They use generic placeholders the dashboard / API will resolve to your server's roles, channels, and emoji on install:
