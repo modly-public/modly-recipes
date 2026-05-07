@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "module-recipe",
-  "module": "welcome-messages",
+  "module": "welcome",
   "name": "Welcome pool \u2014 gaming",
   "description": "Gaming-flavoured welcome lines (i18n keys).",
   "settings": {},

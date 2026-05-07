@@ -4,8 +4,8 @@ Recipes for the **webhook-broadcaster** category. Drop any of these into your Mo
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 1 recipe
+- [`partial/`](./partial) — 4 recipes
 
 ## Install
 

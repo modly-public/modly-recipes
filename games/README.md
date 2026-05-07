@@ -4,8 +4,8 @@ Recipes for the **games** category. Drop any of these into your Modly server via
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 3 recipes
+- [`partial/`](./partial) — 3 recipes
 
 ## Install
 

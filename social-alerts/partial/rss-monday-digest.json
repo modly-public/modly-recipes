@@ -2,14 +2,29 @@
   "name": "RSS digest every Monday",
   "kind": "integration-feed",
   "description": "Polls a list of RSS/Atom feeds throughout the week and posts a single combined digest every Monday morning. Items are deduplicated by canonical URL.",
-  "module": "integrations.rss",
-  "schedule": { "cron": "0 8 * * MON", "timezone": "server" },
+  "module": "social-alerts",
+  "schedule": {
+    "cron": "0 8 * * MON",
+    "timezone": "server"
+  },
   "config": {
     "channelId": "NEWSLETTER_CHANNEL_ID",
     "feeds": [
-      { "id": "company-blog",   "url": "https://example.com/blog/rss.xml",   "labelKey": "i18n:integrations.rss.label.company_blog" },
-      { "id": "industry-news",  "url": "https://news.example.com/feed",      "labelKey": "i18n:integrations.rss.label.industry_news" },
-      { "id": "release-notes",  "url": "https://example.com/releases.atom",  "labelKey": "i18n:integrations.rss.label.release_notes" }
+      {
+        "id": "company-blog",
+        "url": "https://example.com/blog/rss.xml",
+        "labelKey": "i18n:integrations.rss.label.company_blog"
+      },
+      {
+        "id": "industry-news",
+        "url": "https://news.example.com/feed",
+        "labelKey": "i18n:integrations.rss.label.industry_news"
+      },
+      {
+        "id": "release-notes",
+        "url": "https://example.com/releases.atom",
+        "labelKey": "i18n:integrations.rss.label.release_notes"
+      }
     ],
     "poll": {
       "intervalMin": 60,

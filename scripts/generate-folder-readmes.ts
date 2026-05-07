@@ -40,6 +40,17 @@ interface RecipeMeta {
 }
 
 async function readRecipe(filePath: string): Promise<RecipeMeta | null> {
+  const file = path.basename(filePath);
+  // Plain-text snippets (e.g. welcome/snippets/casual-pool.txt) get a
+  // synthetic meta — they don't carry an envelope, but still appear in
+  // folder tables so authors can discover them.
+  if (file.endsWith(".txt")) {
+    return {
+      file,
+      name: file.replace(/\.txt$/, "").replace(/[-_]/g, " "),
+      description: "Plain-text content snippet.",
+    };
+  }
   let raw: string;
   try {
     raw = await fs.readFile(filePath, "utf8");
@@ -54,7 +65,6 @@ async function readRecipe(filePath: string): Promise<RecipeMeta | null> {
   }
   if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return null;
   const obj = parsed as Record<string, unknown>;
-  const file = path.basename(filePath);
   const name =
     (typeof obj["name"] === "string" && obj["name"]) ||
     (typeof obj["title"] === "string" && (obj["title"] as string)) ||
@@ -74,7 +84,9 @@ async function listEntries(dir: string): Promise<{ files: string[]; subdirs: str
   for (const e of entries) {
     if (SKIP_DIRS.has(e.name)) continue;
     if (e.isDirectory()) subdirs.push(e.name);
-    else if (e.isFile() && e.name.endsWith(".json")) files.push(e.name);
+    else if (e.isFile() && (e.name.endsWith(".json") || e.name.endsWith(".txt"))) {
+      files.push(e.name);
+    }
   }
   files.sort();
   subdirs.sort();
@@ -177,7 +189,7 @@ interface IndexEntry {
   kind?: string;
   module?: string;
   category: string;     // top-level folder name
-  shape?: "full" | "partial" | "flat";
+  shape?: "full" | "partial" | "snippet" | "module-root";
 }
 
 async function collectAllRecipes(absDir: string, relDir: string, category: string): Promise<IndexEntry[]> {
@@ -185,7 +197,8 @@ async function collectAllRecipes(absDir: string, relDir: string, category: strin
   const { files, subdirs } = await listEntries(absDir);
   const shape: IndexEntry["shape"] =
     relDir.endsWith("/full") ? "full" :
-    relDir.endsWith("/partial") ? "partial" : "flat";
+    relDir.endsWith("/partial") ? "partial" :
+    relDir.endsWith("/snippets") ? "snippet" : "module-root";
   for (const f of files) {
     const meta = await readRecipe(path.join(absDir, f));
     if (meta) {

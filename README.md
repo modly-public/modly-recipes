@@ -7,14 +7,13 @@
 - MCP server: [`modly-public/modly-mcp`](https://github.com/modly-public/modly-mcp)
 - License: [CC0](./LICENSE) — public domain. Copy, fork, remix without attribution.
 
-## Two recipe shapes
+## Recipe shapes
 
-Every recipe is one of two shapes, declared by where it lives:
+Every recipe is one of three shapes, declared by where it lives:
 
 - **`<module>/full/`** — a complete module-export snapshot. Replaces the entire current config for the module on install. Use these when starting fresh on a new server.
 - **`<module>/partial/`** — a curated slice. Merges into the current config (deep-merge, with array semantics defined per recipe). Use these to layer a single behavior on top of an existing setup.
-
-Some legacy / use-case folders (`automod-packs/`, `welcome-flows/`, `engagement/`, etc.) are flat — older format, will migrate to the `full/partial` split over time.
+- **`<module>/snippets/`** — plain-text content assets (e.g. welcome message pools).
 
 > Full envelope schema, merge semantics, and placeholder syntax: [`docs/envelope.md`](./docs/envelope.md).
 
@@ -23,13 +22,13 @@ Some legacy / use-case folders (`automod-packs/`, `welcome-flows/`, `engagement/
 Three paths — full walkthrough in [`docs/install.md`](./docs/install.md):
 
 1. **Dashboard** — open the module's settings page, click **Import**, paste the recipe JSON.
-2. **MCP** — ask your agent: *"Install the `automod-packs/community-safe` recipe."* Wired via the [`install_recipe`](https://github.com/modly-public/modly-mcp/blob/main/docs/tools.md#install_recipe) tool.
+2. **MCP** — ask your agent: *"Install the `automod/full/community-safe` recipe."* Wired via the [`install_recipe`](https://github.com/modly-public/modly-mcp/blob/main/docs/tools.md#install_recipe) tool.
 3. **curl** —
    ```bash
    curl -X POST "https://modly.net/api/guilds/$GUILD_ID/recipes/install" \
      -H "Authorization: Bearer $MODLY_API_KEY" \
      -H "Content-Type: application/json" \
-     -d '{"slug":"automod-packs/community-safe"}'
+     -d '{"slug":"automod/full/community-safe"}'
    ```
 
 ## Placeholders
@@ -47,7 +46,7 @@ Recipes never bake server-specific IDs. They use generic placeholders the dashbo
 
 You can also override placeholders at install time. See [`docs/envelope.md`](./docs/envelope.md#placeholders).
 
-Older flat recipes use uppercase string literals (`MOD_LOG_CHANNEL_ID`, `MEMBER_ROLE_ID`) — both forms work.
+Some recipes use the uppercase string-literal form (`MOD_LOG_CHANNEL_ID`, `MEMBER_ROLE_ID`) — both forms work; bracket form is preferred.
 
 ## Browse by module
 
@@ -55,58 +54,46 @@ Each module folder contains its own `README.md` with a manifest table of recipes
 
 | Module | Folder | What it does |
 |---|---|---|
-| AI automations | [`ai-automation/`](./ai-automation) | LLM-driven flows: spam-link AI flag, daily report card, AI welcomes. |
+| AI | [`ai/`](./ai) | LLM-driven flows: spam-link AI flag, daily report card, AI welcomes, persona profiles. |
+| AI tools | [`ai-tools/`](./ai-tools) | Generic AI utility presets (translate, summarize, classify). |
 | Antinuke | [`antinuke/`](./antinuke) | Wick-parity antinuke profiles + per-trigger partials. |
 | Appeal portal | [`appeal-portal/`](./appeal-portal) | Public ban-appeal portal configs. |
 | Applications | [`applications/`](./applications) | Application/intake form profiles. |
-| Automod (full + partials) | [`automod/`](./automod) | Module-level automod profiles + targeted rule slices. |
-| Automod packs (legacy/flat) | [`automod-packs/`](./automod-packs) | Curated rule bundles by server type (gaming, study, family-safe …). |
-| Birthdays | [`birthdays/`](./birthdays) | Birthday tracker profiles. |
+| Automod | [`automod/`](./automod) | Module-level automod profiles + targeted rule slices. |
+| Birthdays | [`birthdays/`](./birthdays) | Birthday tracker profiles + announcement templates. |
 | Captcha | [`captcha/`](./captcha) | Verification challenge presets. |
 | Custom commands | [`custom-commands/`](./custom-commands) | Command packs (FAQ, staff utilities, server tour). |
-| Embeds | [`embeds/`](./embeds) | Reusable embed templates (rules, role picker, server tour). |
-| Engagement | [`engagement/`](./engagement) | Birthday shoutouts, starboard ramps, leveling spotlights. |
+| Embed builder | [`embed-builder/`](./embed-builder) | Reusable embed templates (rules, role picker, server tour). |
 | Evader detection | [`evader-detection/`](./evader-detection) | Ban-evasion detection thresholds + safe-list partials. |
 | Forms | [`forms/`](./forms) | Form definitions for staff applications, support intake. |
 | Giveaways | [`giveaways/`](./giveaways) | Giveaway starter packs. |
+| GitHub activity | [`github-activity/`](./github-activity) | GitHub PR / release / issue feed presets. |
 | Honeypot | [`honeypot/`](./honeypot) | Honeypot channel profiles for trap-based bot detection. |
-| Integrations | [`integrations/`](./integrations) | GitHub, Twitch, RSS, Slack relay, Notion. |
 | Leveling | [`leveling/`](./leveling) | XP curves, role rewards, decay schedules. |
 | Member notes | [`member-notes/`](./member-notes) | Mod note templates and quick-add packs. |
 | Mod coach | [`mod-coach/`](./mod-coach) | AI mod-coach prompts and review profiles. |
 | Moderation | [`moderation/`](./moderation) | Strike thresholds, escalation curves. |
 | Onboarding | [`onboarding/`](./onboarding) | Quizzes, role-pickers, age gates. |
+| Personas | [`personas/`](./personas) | AI-persona presets. |
 | Raid | [`raid/`](./raid) | Raid-shield profiles and join-burst rules. |
+| Relay | [`relay/`](./relay) | Cross-server / cross-platform relay configs. |
 | Reputation | [`rep/`](./rep) | Reputation scoring config. |
 | Safety | [`safety/`](./safety) | Doxx detection, suicide response, report channels. |
+| Social alerts | [`social-alerts/`](./social-alerts) | Twitch / YouTube / Twitter / RSS feed alerts. |
 | Starboard | [`starboard/`](./starboard) | Starboard thresholds + themed boards. |
-| Welcome flows (legacy/flat) | [`welcome-flows/`](./welcome-flows) | End-to-end onboarding flows. |
-| Welcome (full + partials) | [`welcome/`](./welcome) | Welcome message profiles + slice-level partials. |
+| Suggestions | [`suggestions/`](./suggestions) | Suggestion-channel presets. |
+| Translation | [`translation/`](./translation) | Auto-translate presets. |
+| TTS | [`tts/`](./tts) | Text-to-speech voice presets. |
+| Webhook broadcaster | [`webhook-broadcaster/`](./webhook-broadcaster) | Outbound webhook fan-out (Notion, Slack, Discord mirror). |
+| Welcome | [`welcome/`](./welcome) | Welcome message profiles, partial slices, and text snippet pools. |
 
-> Other module folders (`activity-roles/`, `ama/`, `anniversary/`, `automations/`, `autoresponders/`, `channel-games/`, `channel-utils/`, `color-of-the-day/`, `command-access/`, `confessions/`, `counters/`, `discovery/`, `economy/`, `embed-builder/`, `fun/`, `games/`, `github-activity/`, `highlights/`, `personas/`, `polls/`, `relay/`, `role-events/`, `roles/`, `scheduled-actions/`, `server-goals/`, `server-stats/`, `smart-channels/`, `social-alerts/`, `suggestions/`, `time-capsule/`, `translation/`, `tts/`, `voice-clipper/`, `voice-recording/`, `webhook-broadcaster/`) are scaffolded and being filled in. Empty folders contain a README placeholder.
-
-## Browse by use-case
-
-Some folders pre-date the `<module>/full/partial` split and group by use-case rather than module:
-
-| Use-case folder | Recipes for |
-|---|---|
-| [`automod-packs/`](./automod-packs) | Server-archetype rule bundles — pick one per community type. |
-| [`welcome-flows/`](./welcome-flows) | End-to-end onboarding flows (quiz, age gate, multi-language). |
-| [`engagement/`](./engagement) | Birthdays, leveling spotlights, starboard ramps. |
-| [`integrations/`](./integrations) | Outbound feeds: GitHub, Twitch, RSS, Slack relay. |
-| [`ai-automation/`](./ai-automation) | LLM-powered flows that span modules. |
-| [`embeds/`](./embeds) | Drop-in embed templates (rules, role picker, server tour). |
-| [`custom-commands/`](./custom-commands) | Command packs by purpose (FAQ, staff utility). |
-| [`forms/`](./forms) | Application + support intake forms. |
-| [`giveaways/`](./giveaways) | Giveaway starter packs. |
-| [`welcome-messages/`](./welcome-messages) | Message-pool text files for the welcome module. |
+> Other module folders (`activity-roles/`, `ama/`, `anniversary/`, `automations/`, `autoresponders/`, `channel-games/`, `channel-utils/`, `color-of-the-day/`, `command-access/`, `confessions/`, `counters/`, `discovery/`, `economy/`, `fun/`, `games/`, `highlights/`, `polls/`, `role-events/`, `roles/`, `scheduled-actions/`, `server-goals/`, `server-stats/`, `smart-channels/`, `time-capsule/`, `voice-clipper/`, `voice-recording/`) are scaffolded and being filled in. Empty folders contain a README placeholder.
 
 ## Contributing
 
 Want to add a recipe? See [`docs/contributing.md`](./docs/contributing.md). Quick version:
 
-1. Drop a JSON file under `<module>/full/<archetype>.json` or `<module>/partial/<slug>.json`.
+1. Drop a JSON file under `<module>/full/<slug>.json` or `<module>/partial/<slug>.json`.
 2. Top-level `name` and `description` fields are required.
 3. Use placeholders (`{role:mods}`, `{channel:logs}`) instead of literal IDs.
 4. Run `npx tsx scripts/generate-folder-readmes.ts` to regenerate folder READMEs and `index.json`.
@@ -119,17 +106,8 @@ modly-recipes/
 ├── <module>/
 │   ├── full/         # complete module-export snapshots
 │   ├── partial/      # curated slice partials
+│   ├── snippets/     # (optional) plain-text content assets
 │   └── README.md     # auto-generated
-├── automod-packs/    # legacy flat folder (to migrate)
-├── welcome-flows/    # legacy flat folder
-├── engagement/       # legacy flat folder
-├── integrations/     # legacy flat folder
-├── ai-automation/    # legacy flat folder
-├── embeds/           # embed-template folder
-├── custom-commands/  # command-pack folder
-├── forms/            # form-definition folder
-├── giveaways/        # giveaway-pack folder
-├── welcome-messages/ # message-pool text files
 ├── docs/
 │   ├── envelope.md       # recipe envelope schema
 │   ├── install.md        # three install paths
@@ -147,6 +125,6 @@ CC0 — see [`LICENSE`](./LICENSE). Public domain. No attribution required.
 
 ---
 
-Built with ❤ for [Modly](https://modly.net).
+Built with care for [Modly](https://modly.net).
 
 Last updated: 2026-04-30

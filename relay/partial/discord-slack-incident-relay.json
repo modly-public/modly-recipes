@@ -1,8 +1,8 @@
 {
-  "name": "Discord ↔ Slack incident relay",
+  "name": "Discord \u2194 Slack incident relay",
   "kind": "integration-feed",
   "description": "Bidirectional bridge between #incidents on Discord and #incidents on Slack. Threads on either side stay synced; @here / @channel mentions are translated. Designed for shared on-call between an open community (Discord) and a paid Slack workspace.",
-  "module": "integrations.relay",
+  "module": "relay",
   "config": {
     "discord": {
       "channelId": "INCIDENTS_CHANNEL_ID",

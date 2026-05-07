@@ -4,8 +4,8 @@ Recipes for the **ai-tools** category. Drop any of these into your Modly server 
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 1 recipe
+- [`partial/`](./partial) — 3 recipes
 
 ## Install
 

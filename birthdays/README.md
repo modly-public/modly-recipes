@@ -5,7 +5,7 @@ Recipes for the **birthdays** category. Drop any of these into your Modly server
 ## Subfolders
 
 - [`full/`](./full) — 2 recipes
-- [`partial/`](./partial) — 2 recipes
+- [`partial/`](./partial) — 3 recipes
 
 ## Install
 

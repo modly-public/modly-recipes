@@ -2,12 +2,16 @@
   "name": "GitHub PR digest in #engineering",
   "kind": "integration-feed",
   "description": "Webhook receiver that batches GitHub PR events (opened, ready-for-review, merged, closed) into a single digest message updated in place every 5 minutes. Cuts out the per-event spam from the official GitHub bot.",
-  "module": "integrations.github",
+  "module": "github-activity",
   "config": {
     "channelId": "ENGINEERING_CHANNEL_ID",
     "webhook": {
       "secretEnv": "MODLY_GITHUB_WEBHOOK_SECRET",
-      "events": ["pull_request", "pull_request_review", "pull_request_review_comment"]
+      "events": [
+        "pull_request",
+        "pull_request_review",
+        "pull_request_review_comment"
+      ]
     },
     "batch": {
       "windowSec": 300,
@@ -19,9 +23,15 @@
       "footerKey": "i18n:integrations.github.pr_digest_footer"
     },
     "filters": {
-      "repos": ["org/repo-1", "org/repo-2"],
+      "repos": [
+        "org/repo-1",
+        "org/repo-2"
+      ],
       "labelsAllowlist": [],
-      "labelsBlocklist": ["wip", "no-notify"],
+      "labelsBlocklist": [
+        "wip",
+        "no-notify"
+      ],
       "minDraftAgeHours": 0
     },
     "mentions": {

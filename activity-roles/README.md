@@ -4,8 +4,8 @@ Recipes for the **activity-roles** category. Drop any of these into your Modly s
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 2 recipes
+- [`partial/`](./partial) — 2 recipes
 
 ## Install
 

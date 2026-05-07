@@ -5,7 +5,7 @@ Recipes for the **starboard** category. Drop any of these into your Modly server
 ## Subfolders
 
 - [`full/`](./full) — 3 recipes
-- [`partial/`](./partial) — 5 recipes
+- [`partial/`](./partial) — 6 recipes
 
 ## Install
 

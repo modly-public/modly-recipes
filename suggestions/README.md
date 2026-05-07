@@ -4,8 +4,8 @@ Recipes for the **suggestions** category. Drop any of these into your Modly serv
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 3 recipes
+- [`partial/`](./partial) — 4 recipes
 
 ## Install
 

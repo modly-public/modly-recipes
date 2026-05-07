@@ -4,8 +4,8 @@ Recipes for the **highlights** category. Drop any of these into your Modly serve
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 1 recipe
+- [`partial/`](./partial) — 2 recipes
 
 ## Install
 

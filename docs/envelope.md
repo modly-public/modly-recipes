@@ -6,10 +6,9 @@ Every recipe is a JSON document with a small set of standardized top-level field
 
 | Shape | Path | Behavior on install |
 |---|---|---|
-| **Full** | `<module>/full/<archetype>.json` | Module-export snapshot. Replaces the entire current config for the module. |
+| **Full** | `<module>/full/<slug>.json` | Module-export snapshot. Replaces the entire current config for the module. |
 | **Partial** | `<module>/partial/<slug>.json` | Targeted slice. Merges into the current config. |
-
-Some legacy folders (`automod-packs/`, `welcome-flows/`, `engagement/`, `integrations/`, `ai-automation/`, `embeds/`, `custom-commands/`, `forms/`, `giveaways/`) are flat — they pre-date the split and follow each module's own bespoke shape (still valid, still installable).
+| **Snippet** | `<module>/snippets/<slug>.txt` | Plain-text content asset (e.g. welcome message pools). |
 
 ## TypeScript-style schema
 
@@ -28,13 +27,9 @@ interface RecipeEnvelope {
 
   /** Recipe family — used by the installer to pick a handler. */
   kind?:
-    | "automod-pack"
-    | "welcome-flow"
-    | "ai-automation"
-    | "integration-feed"
-    | "module-export"
-    | "module-partial"
-    | string;       // module-specific kinds welcome
+    | "module-export"   // full module config snapshot
+    | "module-recipe"   // additive partial slice
+    | string;           // module-specific kinds welcome
 
   /** Modly module this recipe targets. Matches the dashboard module key. */
   module?: string;
@@ -66,7 +61,7 @@ interface RecipeEnvelope {
 }
 ```
 
-> **Why `module` and `kind` are both optional but recommended:** legacy flat recipes (e.g. `embeds/server-rules.json`, `custom-commands/faq-pack.json`) pre-date both fields. Their import path is fixed by their containing folder, so the installer infers module + kind. New recipes should set both explicitly.
+> **Why `module` and `kind` are both optional but recommended:** the installer can infer both from the recipe's path (`<module>/full/...` → `module-export`, `<module>/partial/...` → `module-recipe`). New recipes should still set both explicitly so the dashboard can label them without resorting to filename heuristics.
 
 ## Merge semantics — `mode: "merge" | "replace"`
 
@@ -117,9 +112,9 @@ Recipes never bake server-specific Discord IDs. Three placeholder syntaxes:
 
 If a placeholder can't be resolved, the installer surfaces it in the dashboard's "review before install" step so the user can map it explicitly.
 
-### 2. Uppercase literal form (legacy)
+### 2. Uppercase literal form
 
-Older flat recipes use `MOD_LOG_CHANNEL_ID`, `MEMBER_ROLE_ID`, etc. The installer treats any value matching `/^[A-Z][A-Z0-9_]+_(?:CHANNEL_ID|ROLE_ID|EMOJI|GUILD_ID)$/` as a placeholder and prompts the user to map it. Both syntaxes are supported indefinitely.
+Some recipes use `MOD_LOG_CHANNEL_ID`, `MEMBER_ROLE_ID`, etc. The installer treats any value matching `/^[A-Z][A-Z0-9_]+_(?:CHANNEL_ID|ROLE_ID|EMOJI|GUILD_ID)$/` as a placeholder and prompts the user to map it. Both syntaxes are supported indefinitely; bracket form is preferred for new recipes.
 
 ### 3. i18n keys
 
@@ -137,7 +132,7 @@ Both the dashboard and the [`install_recipe`](https://github.com/modly-public/mo
 
 ```json
 {
-  "slug": "automod-packs/community-safe",
+  "slug": "automod/full/community-safe",
   "overrides": {
     "{channel:logs}": "1234567890",
     "{role:mods}": "9876543210"

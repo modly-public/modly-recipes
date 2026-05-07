@@ -4,8 +4,8 @@ Recipes for the **polls** category. Drop any of these into your Modly server via
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 2 recipes
+- [`partial/`](./partial) — 3 recipes
 
 ## Install
 

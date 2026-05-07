@@ -9,8 +9,10 @@
  * Two recipe shapes are recognised:
  *   - module-export   → full preset, replaces module config + content
  *   - module-recipe   → curated slice, additive merge
- * Legacy un-enveloped recipes (the older `automod-packs/*.json` shape)
- * are still indexed; their `kind` falls back to `legacy`.
+ * Recipes without an explicit envelope `kind` get their kind inferred
+ * from the folder archetype (`<module>/full/...` → module-export,
+ * `<module>/partial/...` → module-recipe). Pure text content lives in
+ * `<module>/snippets/<slug>.txt`.
  */
 import { readdir, readFile, stat, writeFile } from "node:fs/promises";
 import { dirname, join, relative, sep } from "node:path";
@@ -29,7 +31,7 @@ interface ManifestEntry {
   category: string;
   module?: string;
   kind?: string;
-  archetype?: "full" | "partial";
+  archetype?: "full" | "partial" | "snippet";
 }
 
 interface CategoryMeta {
@@ -67,10 +69,11 @@ function deriveCategory(rel: string): string {
   return rel.split(sep)[0] ?? "misc";
 }
 
-function deriveArchetype(rel: string): "full" | "partial" | undefined {
+function deriveArchetype(rel: string): "full" | "partial" | "snippet" | undefined {
   const parts = rel.split(sep);
   if (parts.includes("full")) return "full";
   if (parts.includes("partial")) return "partial";
+  if (parts.includes("snippets")) return "snippet";
   return undefined;
 }
 
@@ -106,10 +109,19 @@ async function buildEntry(absPath: string): Promise<ManifestEntry | null> {
       name = (body.name as string) ?? name;
       description = (body.description as string) ?? "";
       module = body.module as string | undefined;
-      kind = (body.kind as string | undefined) ?? "legacy";
+      // Prefer the envelope `kind`. Fall back to the folder archetype
+      // so every recipe ends up classified as one of the two canonical
+      // kinds (module-export / module-recipe).
+      kind =
+        (body.kind as string | undefined) ??
+        (archetype === "full"
+          ? "module-export"
+          : archetype === "partial"
+            ? "module-recipe"
+            : undefined);
     }
   } else {
-    description = `Text pool · ${slug}`;
+    description = `Text snippet · ${slug}`;
   }
 
   return {
@@ -127,16 +139,29 @@ async function buildEntry(absPath: string): Promise<ManifestEntry | null> {
 }
 
 const CATEGORY_TITLES: Record<string, string> = {
-  "automod-packs": "Automod packs",
-  "welcome-flows": "Welcome flows",
-  "welcome-messages": "Welcome messages",
-  "ai-automation": "AI automation",
+  "ai-tools": "AI tools",
+  "appeal-portal": "Appeal portal",
+  "channel-games": "Channel games",
+  "channel-utils": "Channel utilities",
+  "color-of-the-day": "Color of the day",
+  "command-access": "Command access",
   "custom-commands": "Custom commands",
-  "embeds": "Embeds",
-  "engagement": "Engagement",
-  "forms": "Forms",
-  "giveaways": "Giveaways",
-  "integrations": "Integrations",
+  "embed-builder": "Embed builder",
+  "evader-detection": "Evader detection",
+  "github-activity": "GitHub activity",
+  "member-notes": "Member notes",
+  "mod-coach": "Mod coach",
+  "role-events": "Role events",
+  "scheduled-actions": "Scheduled actions",
+  "server-goals": "Server goals",
+  "server-stats": "Server stats",
+  "smart-channels": "Smart channels",
+  "social-alerts": "Social alerts",
+  "time-capsule": "Time capsule",
+  "voice-clipper": "Voice clipper",
+  "voice-recording": "Voice recording",
+  "webhook-broadcaster": "Webhook broadcaster",
+  "activity-roles": "Activity roles",
 };
 
 function titleFor(cat: string): string {

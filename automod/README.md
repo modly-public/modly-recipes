@@ -4,8 +4,8 @@ Recipes for the **automod** category. Drop any of these into your Modly server v
 
 ## Subfolders
 
-- [`full/`](./full) — 3 recipes
-- [`partial/`](./partial) — 8 recipes
+- [`full/`](./full) — 8 recipes
+- [`partial/`](./partial) — 14 recipes
 
 ## Install
 

@@ -11,6 +11,7 @@ Recipes in **starboard/partial**. See the [parent folder](../README.md) for cont
 | [`mod-quote-board.json`](./mod-quote-board.json) | Mod-quote board | Dedicated board for star-pinned moderator messages. |
 | [`nsfw-board-split.json`](./nsfw-board-split.json) | NSFW board split | Routes NSFW posts to a separate starboard channel. |
 | [`self-star-allowed.json`](./self-star-allowed.json) | Allow self-stars | Authors can star their own posts. |
+| [`starboard-reaction-ramp.json`](./starboard-reaction-ramp.json) | Starboard with reaction-threshold ramp | Starboard with a self-tuning threshold: starts at 5 stars to be featured, raises by 1 each time the server crosses 1000 active members. Prevents the same handful of regulars from dominating once the community grows. |
 
 ---
 

@@ -2,8 +2,11 @@
   "name": "Birthday auto-shoutout",
   "kind": "engagement-flow",
   "description": "Daily check (09:00 server time) for any opted-in members whose birthday matches today; posts a shoutout in #general and assigns a 24h Birthday role with a custom color.",
-  "module": "engagement",
-  "schedule": { "cron": "0 9 * * *", "timezone": "server" },
+  "module": "birthdays",
+  "schedule": {
+    "cron": "0 9 * * *",
+    "timezone": "server"
+  },
   "config": {
     "optInCommand": "/birthday set",
     "optOutCommand": "/birthday clear",

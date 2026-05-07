@@ -4,8 +4,8 @@ Recipes for the **confessions** category. Drop any of these into your Modly serv
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 2 recipes
+- [`partial/`](./partial) — 2 recipes
 
 ## Install
 

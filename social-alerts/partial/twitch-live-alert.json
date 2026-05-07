@@ -2,14 +2,17 @@
   "name": "Twitch live alert with pinger role",
   "kind": "integration-feed",
   "description": "Subscribes to one or more Twitch channels via EventSub. When a stream goes live, posts an embed in #stream-alerts and pings the StreamPings role. Auto-edits the message to past-tense once the stream ends, so the alert doesn't stay 'live' all night.",
-  "module": "integrations.twitch",
+  "module": "social-alerts",
   "config": {
     "channelId": "STREAM_ALERTS_CHANNEL_ID",
     "pingRoleId": "STREAM_PINGS_ROLE_ID",
     "twitch": {
       "clientIdEnv": "MODLY_TWITCH_CLIENT_ID",
       "clientSecretEnv": "MODLY_TWITCH_CLIENT_SECRET",
-      "channels": ["yourtwitchhandle1", "yourtwitchhandle2"]
+      "channels": [
+        "yourtwitchhandle1",
+        "yourtwitchhandle2"
+      ]
     },
     "live": {
       "embed": {

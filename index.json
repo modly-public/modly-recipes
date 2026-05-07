@@ -1,25 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-07T05:48:16.400Z",
+  "generatedAt": "2026-05-07T06:00:38.016Z",
   "categories": [
     {
       "slug": "activity-roles",
-      "title": "Activity Roles",
+      "title": "Activity roles",
       "description": "4 recipes"
     },
     {
       "slug": "ai",
       "title": "Ai",
-      "description": "9 recipes"
-    },
-    {
-      "slug": "ai-automation",
-      "title": "AI automation",
-      "description": "5 recipes"
+      "description": "15 recipes"
     },
     {
       "slug": "ai-tools",
-      "title": "Ai Tools",
+      "title": "AI tools",
       "description": "4 recipes"
     },
     {
@@ -39,7 +34,7 @@
     },
     {
       "slug": "appeal-portal",
-      "title": "Appeal Portal",
+      "title": "Appeal portal",
       "description": "6 recipes"
     },
     {
@@ -55,12 +50,7 @@
     {
       "slug": "automod",
       "title": "Automod",
-      "description": "11 recipes"
-    },
-    {
-      "slug": "automod-packs",
-      "title": "Automod packs",
-      "description": "11 recipes"
+      "description": "22 recipes"
     },
     {
       "slug": "autoresponders",
@@ -70,7 +60,7 @@
     {
       "slug": "birthdays",
       "title": "Birthdays",
-      "description": "4 recipes"
+      "description": "5 recipes"
     },
     {
       "slug": "captcha",
@@ -79,22 +69,22 @@
     },
     {
       "slug": "channel-games",
-      "title": "Channel Games",
+      "title": "Channel games",
       "description": "2 recipes"
     },
     {
       "slug": "channel-utils",
-      "title": "Channel Utils",
+      "title": "Channel utilities",
       "description": "2 recipes"
     },
     {
       "slug": "color-of-the-day",
-      "title": "Color Of The Day",
+      "title": "Color of the day",
       "description": "4 recipes"
     },
     {
       "slug": "command-access",
-      "title": "Command Access",
+      "title": "Command access",
       "description": "2 recipes"
     },
     {
@@ -124,22 +114,12 @@
     },
     {
       "slug": "embed-builder",
-      "title": "Embed Builder",
-      "description": "2 recipes"
-    },
-    {
-      "slug": "embeds",
-      "title": "Embeds",
-      "description": "6 recipes"
-    },
-    {
-      "slug": "engagement",
-      "title": "Engagement",
-      "description": "5 recipes"
+      "title": "Embed builder",
+      "description": "8 recipes"
     },
     {
       "slug": "evader-detection",
-      "title": "Evader Detection",
+      "title": "Evader detection",
       "description": "6 recipes"
     },
     {
@@ -159,8 +139,8 @@
     },
     {
       "slug": "github-activity",
-      "title": "Github Activity",
-      "description": "4 recipes"
+      "title": "GitHub activity",
+      "description": "5 recipes"
     },
     {
       "slug": "giveaways",
@@ -178,23 +158,18 @@
       "description": "7 recipes"
     },
     {
-      "slug": "integrations",
-      "title": "Integrations",
-      "description": "5 recipes"
-    },
-    {
       "slug": "leveling",
       "title": "Leveling",
-      "description": "8 recipes"
+      "description": "9 recipes"
     },
     {
       "slug": "member-notes",
-      "title": "Member Notes",
+      "title": "Member notes",
       "description": "5 recipes"
     },
     {
       "slug": "mod-coach",
-      "title": "Mod Coach",
+      "title": "Mod coach",
       "description": "6 recipes"
     },
     {
@@ -225,7 +200,7 @@
     {
       "slug": "relay",
       "title": "Relay",
-      "description": "3 recipes"
+      "description": "4 recipes"
     },
     {
       "slug": "rep",
@@ -234,7 +209,7 @@
     },
     {
       "slug": "role-events",
-      "title": "Role Events",
+      "title": "Role events",
       "description": "3 recipes"
     },
     {
@@ -249,42 +224,42 @@
     },
     {
       "slug": "scheduled-actions",
-      "title": "Scheduled Actions",
+      "title": "Scheduled actions",
       "description": "4 recipes"
     },
     {
       "slug": "server-goals",
-      "title": "Server Goals",
+      "title": "Server goals",
       "description": "3 recipes"
     },
     {
       "slug": "server-stats",
-      "title": "Server Stats",
+      "title": "Server stats",
       "description": "2 recipes"
     },
     {
       "slug": "smart-channels",
-      "title": "Smart Channels",
+      "title": "Smart channels",
       "description": "3 recipes"
     },
     {
       "slug": "social-alerts",
-      "title": "Social Alerts",
-      "description": "7 recipes"
+      "title": "Social alerts",
+      "description": "9 recipes"
     },
     {
       "slug": "starboard",
       "title": "Starboard",
-      "description": "8 recipes"
+      "description": "9 recipes"
     },
     {
       "slug": "suggestions",
       "title": "Suggestions",
-      "description": "6 recipes"
+      "description": "7 recipes"
     },
     {
       "slug": "time-capsule",
-      "title": "Time Capsule",
+      "title": "Time capsule",
       "description": "2 recipes"
     },
     {
@@ -299,33 +274,23 @@
     },
     {
       "slug": "voice-clipper",
-      "title": "Voice Clipper",
+      "title": "Voice clipper",
       "description": "4 recipes"
     },
     {
       "slug": "voice-recording",
-      "title": "Voice Recording",
+      "title": "Voice recording",
       "description": "2 recipes"
     },
     {
       "slug": "webhook-broadcaster",
-      "title": "Webhook Broadcaster",
-      "description": "4 recipes"
+      "title": "Webhook broadcaster",
+      "description": "5 recipes"
     },
     {
       "slug": "welcome",
       "title": "Welcome",
-      "description": "8 recipes"
-    },
-    {
-      "slug": "welcome-flows",
-      "title": "Welcome flows",
-      "description": "5 recipes"
-    },
-    {
-      "slug": "welcome-messages",
-      "title": "Welcome messages",
-      "description": "11 recipes"
+      "description": "24 recipes"
     }
   ],
   "recipes": [
@@ -378,61 +343,6 @@
       "archetype": "partial"
     },
     {
-      "id": "ai-automation/ai-translate-non-english-support",
-      "slug": "ai-translate-non-english-support",
-      "path": "ai-automation/ai-translate-non-english-support.json",
-      "format": "json",
-      "name": "AI translate non-English to English in support",
-      "description": "Detects the language of every message in #support; if it isn't English, posts a threaded English translation as a bot reply so volunteer responders can help. Translation is cached per (hash, lang) for 24h to keep AI cost down.",
-      "category": "ai-automation",
-      "module": "ai",
-      "kind": "ai-automation"
-    },
-    {
-      "id": "ai-automation/auto-clean-spam-links-ai-flag",
-      "slug": "auto-clean-spam-links-ai-flag",
-      "path": "ai-automation/auto-clean-spam-links-ai-flag.json",
-      "format": "json",
-      "name": "Auto-clean spam links via AI flag",
-      "description": "Pre-classifies any link-bearing message with the AI module's safety classifier; on a high-confidence spam/scam verdict, deletes the message and DMs the user the reason. Mirrors what SCAM_LINK does for the known-scam list, but extends it to never-seen URLs.",
-      "category": "ai-automation",
-      "module": "ai",
-      "kind": "ai-automation"
-    },
-    {
-      "id": "ai-automation/auto-pin-mod-marked-answers",
-      "slug": "auto-pin-mod-marked-answers",
-      "path": "ai-automation/auto-pin-mod-marked-answers.json",
-      "format": "json",
-      "name": "Auto-pin mod-marked answers",
-      "description": "When a moderator reacts to any message with a configured emoji (default 📌✅), the bot pins it AND uses the AI module to summarize the parent thread/question into a one-line tag added to the pin.",
-      "category": "ai-automation",
-      "module": "ai",
-      "kind": "ai-automation"
-    },
-    {
-      "id": "ai-automation/daily-ai-mod-report-card",
-      "slug": "daily-ai-mod-report-card",
-      "path": "ai-automation/daily-ai-mod-report-card.json",
-      "format": "json",
-      "name": "Daily AI mod report card",
-      "description": "Once a day, asks the AI module to grade the previous 24h of moderator activity (response times, action distribution, appeal outcomes, escalations) and posts a private report card per moderator with constructive feedback.",
-      "category": "ai-automation",
-      "module": "ai",
-      "kind": "ai-automation"
-    },
-    {
-      "id": "ai-automation/personalized-welcome-ai-persona",
-      "slug": "personalized-welcome-ai-persona",
-      "path": "ai-automation/personalized-welcome-ai-persona.json",
-      "format": "json",
-      "name": "Personalized welcome via AI persona",
-      "description": "On join, the AI persona crafts a 1–2 sentence personalized welcome based on the new member's public profile (Discord About Me, mutual servers count, account age) and the server's loaded persona. Falls back to the standard welcome pool on AI error.",
-      "category": "ai-automation",
-      "module": "ai",
-      "kind": "ai-automation"
-    },
-    {
       "id": "ai-tools/ai-mod-summarize-pack",
       "slug": "ai-mod-summarize-pack",
       "path": "ai-tools/partial/ai-mod-summarize-pack.json",
@@ -481,6 +391,42 @@
       "archetype": "partial"
     },
     {
+      "id": "ai/ai-translate-non-english-support",
+      "slug": "ai-translate-non-english-support",
+      "path": "ai/partial/ai-translate-non-english-support.json",
+      "format": "json",
+      "name": "AI translate non-English to English in support",
+      "description": "Detects the language of every message in #support; if it isn't English, posts a threaded English translation as a bot reply so volunteer responders can help. Translation is cached per (hash, lang) for 24h to keep AI cost down.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "ai-automation",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/auto-clean-spam-links-ai-flag",
+      "slug": "auto-clean-spam-links-ai-flag",
+      "path": "ai/partial/auto-clean-spam-links-ai-flag.json",
+      "format": "json",
+      "name": "Auto-clean spam links via AI flag",
+      "description": "Pre-classifies any link-bearing message with the AI module's safety classifier; on a high-confidence spam/scam verdict, deletes the message and DMs the user the reason. Mirrors what SCAM_LINK does for the known-scam list, but extends it to never-seen URLs.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "ai-automation",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/auto-pin-mod-marked-answers",
+      "slug": "auto-pin-mod-marked-answers",
+      "path": "ai/partial/auto-pin-mod-marked-answers.json",
+      "format": "json",
+      "name": "Auto-pin mod-marked answers",
+      "description": "When a moderator reacts to any message with a configured emoji (default 📌✅), the bot pins it AND uses the AI module to summarize the parent thread/question into a one-line tag added to the pin.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "ai-automation",
+      "archetype": "partial"
+    },
+    {
       "id": "ai/community",
       "slug": "community",
       "path": "ai/full/community.json",
@@ -502,6 +448,30 @@
       "category": "ai",
       "module": "ai",
       "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/daily-ai-mod-report-card",
+      "slug": "daily-ai-mod-report-card",
+      "path": "ai/partial/daily-ai-mod-report-card.json",
+      "format": "json",
+      "name": "Daily AI mod report card",
+      "description": "Once a day, asks the AI module to grade the previous 24h of moderator activity (response times, action distribution, appeal outcomes, escalations) and posts a private report card per moderator with constructive feedback.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "ai-automation",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/daily-mod-digest-ai",
+      "slug": "daily-mod-digest-ai",
+      "path": "ai/partial/daily-mod-digest-ai.json",
+      "format": "json",
+      "name": "Daily mod digest with AI summary",
+      "description": "Posts a once-a-day staff-only digest summarizing yesterday's moderation activity (warns, mutes, bans, top offenders, automod hits) with an AI-written executive summary at the top.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "engagement-flow",
       "archetype": "partial"
     },
     {
@@ -550,6 +520,18 @@
       "category": "ai",
       "module": "ai",
       "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/personalized-welcome-ai-persona",
+      "slug": "personalized-welcome-ai-persona",
+      "path": "ai/partial/personalized-welcome-ai-persona.json",
+      "format": "json",
+      "name": "Personalized welcome via AI persona",
+      "description": "On join, the AI persona crafts a 1–2 sentence personalized welcome based on the new member's public profile (Discord About Me, mutual servers count, account age) and the server's loaded persona. Falls back to the standard welcome pool on AI error.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "ai-automation",
       "archetype": "partial"
     },
     {
@@ -985,114 +967,15 @@
       "archetype": "partial"
     },
     {
-      "id": "automod-packs/aggressive-raid-filter",
+      "id": "automod/aggressive-raid-filter",
       "slug": "aggressive-raid-filter",
-      "path": "automod-packs/aggressive-raid-filter.json",
+      "path": "automod/partial/aggressive-raid-filter.json",
       "format": "json",
       "name": "Aggressive raid filter",
       "description": "Hair-trigger pack for servers under active raid pressure. Designed to be enabled during a raid window (paired with the raid module's auto-enable hook), not as an everyday baseline. Expect some false positives.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/antinuke-locked-down",
-      "slug": "antinuke-locked-down",
-      "path": "automod-packs/antinuke-locked-down.json",
-      "format": "json",
-      "name": "Antinuke locked-down preset",
-      "description": "Maximum-paranoia preset for high-value or high-risk servers (large communities, brand servers, partnered servers). Pair with the antinuke module's full lockdown profile — this covers the message-side rules. Every customizable string is exposed as a placeholder.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/appeal-portal-3-strike",
-      "slug": "appeal-portal-3-strike",
-      "path": "automod-packs/appeal-portal-3-strike.json",
-      "format": "json",
-      "name": "Appeal portal with 3-strike escalation",
-      "description": "Three-strike escalation rules wired to the standard moderation point system. Each strike level escalates: 5pts = warn, 15pts = 6h timeout, 30pts = ban with appeal link. Pair with a forms-based appeal portal (see forms/appeal-portal.json).",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/community-safe",
-      "slug": "community-safe",
-      "path": "automod-packs/community-safe.json",
-      "format": "json",
-      "name": "Community safe",
-      "description": "Balanced safety pack for general-purpose communities. Keeps spam, scam links, invites, and slurs under control without over-moderating normal chat.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/family-safe",
-      "slug": "family-safe",
-      "path": "automod-packs/family-safe.json",
-      "format": "json",
-      "name": "Family-safe",
-      "description": "Strictest pack: aggressive on slurs, swearing, NSFW links, invites, and external links. For all-ages communities, kids' gaming servers, school clubs.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/gaming-server",
-      "slug": "gaming-server",
-      "path": "automod-packs/gaming-server.json",
-      "format": "json",
-      "name": "Gaming server",
-      "description": "Balanced moderation for a 1k–50k member gaming community: tolerant of memes + caps, strict on slurs + invite spam.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/raid-shield",
-      "slug": "raid-shield",
-      "path": "automod-packs/raid-shield.json",
-      "format": "json",
-      "name": "Raid shield",
-      "description": "Heavy anti-spam pack designed for servers facing active raids. Pair with the Modly raid module for join-burst protection — this covers the message-side.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/slow-build-trust-verification",
-      "slug": "slow-build-trust-verification",
-      "path": "automod-packs/slow-build-trust-verification.json",
-      "format": "json",
-      "name": "Slow-build trust verification",
-      "description": "Three-tier trust ramp: brand-new accounts get heavy filters, established members (24h+) get baseline, trusted role gets a relaxed pack. Each rule is scoped by role so you can layer them. Apply the role gates in your role-picker / verification flow.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/slur-leetspeak-baseline",
-      "slug": "slur-leetspeak-baseline",
-      "path": "automod-packs/slur-leetspeak-baseline.json",
-      "format": "json",
-      "name": "Slur + slur-leetspeak automod baseline",
-      "description": "Drop-in slur baseline that combines the third-tier WORD_BLACKLIST wildcard layer with a regex pattern catching common leetspeak / look-alike obfuscations. Add your own server-specific terms in the placeholders before importing — the defaults are intentionally tame, generic stand-ins.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/streamer-chat",
-      "slug": "streamer-chat",
-      "path": "automod-packs/streamer-chat.json",
-      "format": "json",
-      "name": "Streamer chat",
-      "description": "Lighter-touch pack for creator communities. More tolerant of hype, but still clamps down on spam, slurs, and promotion.",
-      "category": "automod-packs",
-      "kind": "legacy"
-    },
-    {
-      "id": "automod-packs/study-server",
-      "slug": "study-server",
-      "path": "automod-packs/study-server.json",
-      "format": "json",
-      "name": "Study / focus server",
-      "description": "Strict pack for tutoring, homework help, or focus communities. Aggressive on off-topic + caps + mass-emoji.",
-      "category": "automod-packs",
-      "kind": "legacy"
+      "category": "automod",
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "automod/anti-cap-pack",
@@ -1155,6 +1038,28 @@
       "archetype": "partial"
     },
     {
+      "id": "automod/antinuke-locked-down",
+      "slug": "antinuke-locked-down",
+      "path": "automod/partial/antinuke-locked-down.json",
+      "format": "json",
+      "name": "Antinuke locked-down preset",
+      "description": "Maximum-paranoia preset for high-value or high-risk servers (large communities, brand servers, partnered servers). Pair with the antinuke module's full lockdown profile — this covers the message-side rules. Every customizable string is exposed as a placeholder.",
+      "category": "automod",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automod/appeal-portal-3-strike",
+      "slug": "appeal-portal-3-strike",
+      "path": "automod/partial/appeal-portal-3-strike.json",
+      "format": "json",
+      "name": "Appeal portal with 3-strike escalation",
+      "description": "Three-strike escalation rules wired to the standard moderation point system. Each strike level escalates: 5pts = warn, 15pts = 6h timeout, 30pts = ban with appeal link. Pair with a forms-based appeal portal (see forms/appeal-portal.json).",
+      "category": "automod",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
       "id": "automod/community",
       "slug": "community",
       "path": "automod/full/community.json",
@@ -1163,6 +1068,17 @@
       "description": "Light-touch automod for friendly chat servers — only the worst offenders trigger removal.",
       "category": "automod",
       "module": "automod",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "automod/community-safe",
+      "slug": "community-safe",
+      "path": "automod/full/community-safe.json",
+      "format": "json",
+      "name": "Community safe",
+      "description": "Balanced safety pack for general-purpose communities. Keeps spam, scam links, invites, and slurs under control without over-moderating normal chat.",
+      "category": "automod",
       "kind": "module-export",
       "archetype": "full"
     },
@@ -1179,6 +1095,28 @@
       "archetype": "full"
     },
     {
+      "id": "automod/family-safe",
+      "slug": "family-safe",
+      "path": "automod/full/family-safe.json",
+      "format": "json",
+      "name": "Family-safe",
+      "description": "Strictest pack: aggressive on slurs, swearing, NSFW links, invites, and external links. For all-ages communities, kids' gaming servers, school clubs.",
+      "category": "automod",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "automod/gaming-server",
+      "slug": "gaming-server",
+      "path": "automod/full/gaming-server.json",
+      "format": "json",
+      "name": "Gaming server",
+      "description": "Balanced moderation for a 1k–50k member gaming community: tolerant of memes + caps, strict on slurs + invite spam.",
+      "category": "automod",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
       "id": "automod/leetspeak-slur-pack",
       "slug": "leetspeak-slur-pack",
       "path": "automod/partial/leetspeak-slur-pack.json",
@@ -1187,6 +1125,17 @@
       "description": "Wildcard slur detection that survives common leetspeak substitutions. Operator must fill in the blacklist.",
       "category": "automod",
       "module": "automod",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automod/raid-shield",
+      "slug": "raid-shield",
+      "path": "automod/partial/raid-shield.json",
+      "format": "json",
+      "name": "Raid shield",
+      "description": "Heavy anti-spam pack designed for servers facing active raids. Pair with the Modly raid module for join-burst protection — this covers the message-side.",
+      "category": "automod",
       "kind": "module-recipe",
       "archetype": "partial"
     },
@@ -1215,6 +1164,39 @@
       "archetype": "partial"
     },
     {
+      "id": "automod/slow-build-trust-verification",
+      "slug": "slow-build-trust-verification",
+      "path": "automod/partial/slow-build-trust-verification.json",
+      "format": "json",
+      "name": "Slow-build trust verification",
+      "description": "Three-tier trust ramp: brand-new accounts get heavy filters, established members (24h+) get baseline, trusted role gets a relaxed pack. Each rule is scoped by role so you can layer them. Apply the role gates in your role-picker / verification flow.",
+      "category": "automod",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automod/slur-leetspeak-baseline",
+      "slug": "slur-leetspeak-baseline",
+      "path": "automod/partial/slur-leetspeak-baseline.json",
+      "format": "json",
+      "name": "Slur + slur-leetspeak automod baseline",
+      "description": "Drop-in slur baseline that combines the third-tier WORD_BLACKLIST wildcard layer with a regex pattern catching common leetspeak / look-alike obfuscations. Add your own server-specific terms in the placeholders before importing — the defaults are intentionally tame, generic stand-ins.",
+      "category": "automod",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automod/streamer-chat",
+      "slug": "streamer-chat",
+      "path": "automod/full/streamer-chat.json",
+      "format": "json",
+      "name": "Streamer chat",
+      "description": "Lighter-touch pack for creator communities. More tolerant of hype, but still clamps down on spam, slurs, and promotion.",
+      "category": "automod",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
       "id": "automod/strict",
       "slug": "strict",
       "path": "automod/full/strict.json",
@@ -1223,6 +1205,17 @@
       "description": "Locked-down ruleset for raid-prone or NSFW-adjacent servers.",
       "category": "automod",
       "module": "automod",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "automod/study-server",
+      "slug": "study-server",
+      "path": "automod/full/study-server.json",
+      "format": "json",
+      "name": "Study / focus server",
+      "description": "Strict pack for tutoring, homework help, or focus communities. Aggressive on off-topic + caps + mass-emoji.",
+      "category": "automod",
       "kind": "module-export",
       "archetype": "full"
     },
@@ -1308,6 +1301,18 @@
       "category": "birthdays",
       "module": "birthdays",
       "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "birthdays/birthday-shoutout",
+      "slug": "birthday-shoutout",
+      "path": "birthdays/partial/birthday-shoutout.json",
+      "format": "json",
+      "name": "Birthday auto-shoutout",
+      "description": "Daily check (09:00 server time) for any opted-in members whose birthday matches today; posts a shoutout in #general and assigns a 24h Birthday role with a custom color.",
+      "category": "birthdays",
+      "module": "birthdays",
+      "kind": "engagement-flow",
       "archetype": "partial"
     },
     {
@@ -1661,22 +1666,24 @@
     {
       "id": "custom-commands/faq-pack",
       "slug": "faq-pack",
-      "path": "custom-commands/faq-pack.json",
+      "path": "custom-commands/partial/faq-pack.json",
       "format": "json",
       "name": "faq pack",
       "description": "Generic 5-command FAQ pack. Edit the responses after import to match your server.",
       "category": "custom-commands",
-      "kind": "legacy"
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "custom-commands/faq-rules",
       "slug": "faq-rules",
-      "path": "custom-commands/faq-rules.json",
+      "path": "custom-commands/partial/faq-rules.json",
       "format": "json",
       "name": "rules",
       "description": "Quick reply with a link to the rules channel.",
       "category": "custom-commands",
-      "kind": "legacy"
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "custom-commands/faq-set",
@@ -1729,22 +1736,24 @@
     {
       "id": "custom-commands/staff-pack",
       "slug": "staff-pack",
-      "path": "custom-commands/staff-pack.json",
+      "path": "custom-commands/partial/staff-pack.json",
       "format": "json",
       "name": "staff pack",
       "description": "",
       "category": "custom-commands",
-      "kind": "legacy"
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "custom-commands/utility-pack",
       "slug": "utility-pack",
-      "path": "custom-commands/utility-pack.json",
+      "path": "custom-commands/partial/utility-pack.json",
       "format": "json",
       "name": "utility pack",
       "description": "",
       "category": "custom-commands",
-      "kind": "legacy"
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "custom-commands/welcome-trigger-set",
@@ -1867,6 +1876,17 @@
       "archetype": "partial"
     },
     {
+      "id": "embed-builder/announcement-banner",
+      "slug": "announcement-banner",
+      "path": "embed-builder/partial/announcement-banner.json",
+      "format": "json",
+      "name": "announcement-banner",
+      "description": "Clean announcement template for changelogs, events, and launches.",
+      "category": "embed-builder",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
       "id": "embed-builder/default",
       "slug": "default",
       "path": "embed-builder/full/default.json",
@@ -1877,6 +1897,50 @@
       "module": "embed-builder",
       "kind": "module-export",
       "archetype": "full"
+    },
+    {
+      "id": "embed-builder/helpdesk-card",
+      "slug": "helpdesk-card",
+      "path": "embed-builder/partial/helpdesk-card.json",
+      "format": "json",
+      "name": "helpdesk-card",
+      "description": "Support-oriented embed template for tickets, FAQs, and internal ops.",
+      "category": "embed-builder",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "embed-builder/role-picker",
+      "slug": "role-picker",
+      "path": "embed-builder/partial/role-picker.json",
+      "format": "json",
+      "name": "role-picker",
+      "description": "Self-assign roles message. Pair with Modly's reaction-roles or button-roles module — this is just the prompt embed.",
+      "category": "embed-builder",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "embed-builder/server-rules",
+      "slug": "server-rules",
+      "path": "embed-builder/partial/server-rules.json",
+      "format": "json",
+      "name": "server-rules",
+      "description": "Generic server-rules embed with placeholder fields. Edit fields after import.",
+      "category": "embed-builder",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "embed-builder/server-tour",
+      "slug": "server-tour",
+      "path": "embed-builder/partial/server-tour.json",
+      "format": "json",
+      "name": "server-tour",
+      "description": "Multi-embed onboarding tour. Pin in #welcome or post once new members can see it. Replace channel IDs after import.",
+      "category": "embed-builder",
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "embed-builder/versioning-on",
@@ -1891,119 +1955,15 @@
       "archetype": "partial"
     },
     {
-      "id": "embeds/announcement-banner",
-      "slug": "announcement-banner",
-      "path": "embeds/announcement-banner.json",
-      "format": "json",
-      "name": "announcement-banner",
-      "description": "Clean announcement template for changelogs, events, and launches.",
-      "category": "embeds",
-      "kind": "legacy"
-    },
-    {
-      "id": "embeds/helpdesk-card",
-      "slug": "helpdesk-card",
-      "path": "embeds/helpdesk-card.json",
-      "format": "json",
-      "name": "helpdesk-card",
-      "description": "Support-oriented embed template for tickets, FAQs, and internal ops.",
-      "category": "embeds",
-      "kind": "legacy"
-    },
-    {
-      "id": "embeds/role-picker",
-      "slug": "role-picker",
-      "path": "embeds/role-picker.json",
-      "format": "json",
-      "name": "role-picker",
-      "description": "Self-assign roles message. Pair with Modly's reaction-roles or button-roles module — this is just the prompt embed.",
-      "category": "embeds",
-      "kind": "legacy"
-    },
-    {
-      "id": "embeds/server-rules",
-      "slug": "server-rules",
-      "path": "embeds/server-rules.json",
-      "format": "json",
-      "name": "server-rules",
-      "description": "Generic server-rules embed with placeholder fields. Edit fields after import.",
-      "category": "embeds",
-      "kind": "legacy"
-    },
-    {
-      "id": "embeds/server-tour",
-      "slug": "server-tour",
-      "path": "embeds/server-tour.json",
-      "format": "json",
-      "name": "server-tour",
-      "description": "Multi-embed onboarding tour. Pin in #welcome or post once new members can see it. Replace channel IDs after import.",
-      "category": "embeds",
-      "kind": "legacy"
-    },
-    {
-      "id": "embeds/welcome-card",
+      "id": "embed-builder/welcome-card",
       "slug": "welcome-card",
-      "path": "embeds/welcome-card.json",
+      "path": "embed-builder/partial/welcome-card.json",
       "format": "json",
       "name": "welcome-card",
       "description": "Friendly welcome embed referencing channels with placeholder mentions.",
-      "category": "embeds",
-      "kind": "legacy"
-    },
-    {
-      "id": "engagement/birthday-shoutout",
-      "slug": "birthday-shoutout",
-      "path": "engagement/birthday-shoutout.json",
-      "format": "json",
-      "name": "Birthday auto-shoutout",
-      "description": "Daily check (09:00 server time) for any opted-in members whose birthday matches today; posts a shoutout in #general and assigns a 24h Birthday role with a custom color.",
-      "category": "engagement",
-      "module": "engagement",
-      "kind": "engagement-flow"
-    },
-    {
-      "id": "engagement/daily-mod-digest-ai",
-      "slug": "daily-mod-digest-ai",
-      "path": "engagement/daily-mod-digest-ai.json",
-      "format": "json",
-      "name": "Daily mod digest with AI summary",
-      "description": "Posts a once-a-day staff-only digest summarizing yesterday's moderation activity (warns, mutes, bans, top offenders, automod hits) with an AI-written executive summary at the top.",
-      "category": "engagement",
-      "module": "ai",
-      "kind": "engagement-flow"
-    },
-    {
-      "id": "engagement/starboard-reaction-ramp",
-      "slug": "starboard-reaction-ramp",
-      "path": "engagement/starboard-reaction-ramp.json",
-      "format": "json",
-      "name": "Starboard with reaction-threshold ramp",
-      "description": "Starboard with a self-tuning threshold: starts at 5 stars to be featured, raises by 1 each time the server crosses 1000 active members. Prevents the same handful of regulars from dominating once the community grows.",
-      "category": "engagement",
-      "module": "engagement",
-      "kind": "engagement-flow"
-    },
-    {
-      "id": "engagement/suggestion-to-thread",
-      "slug": "suggestion-to-thread",
-      "path": "engagement/suggestion-to-thread.json",
-      "format": "json",
-      "name": "Suggestion-to-thread pipeline",
-      "description": "Turns every message in #suggestions into a discussion thread with up/down vote buttons, and re-posts top-voted suggestions of the week into a staff review channel.",
-      "category": "engagement",
-      "module": "engagement",
-      "kind": "engagement-flow"
-    },
-    {
-      "id": "engagement/weekly-leveling-spotlight",
-      "slug": "weekly-leveling-spotlight",
-      "path": "engagement/weekly-leveling-spotlight.json",
-      "format": "json",
-      "name": "Weekly leveling spotlight",
-      "description": "Every Monday, posts a recap of the top 5 climbers on the XP leaderboard from the past 7 days. Awards a temporary VIP role to #1 for a week and an emoji to top 3.",
-      "category": "engagement",
-      "module": "leveling",
-      "kind": "engagement-flow"
+      "category": "embed-builder",
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "evader-detection/auto-ban-high-score",
@@ -2140,12 +2100,13 @@
     {
       "id": "forms/staff-application",
       "slug": "staff-application",
-      "path": "forms/staff-application.json",
+      "path": "forms/partial/staff-application.json",
       "format": "json",
       "name": "staff application",
       "description": "",
       "category": "forms",
-      "kind": "legacy"
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "forms/staff-application-detail",
@@ -2292,6 +2253,18 @@
       "archetype": "full"
     },
     {
+      "id": "github-activity/github-pr-digest",
+      "slug": "github-pr-digest",
+      "path": "github-activity/partial/github-pr-digest.json",
+      "format": "json",
+      "name": "GitHub PR digest in #engineering",
+      "description": "Webhook receiver that batches GitHub PR events (opened, ready-for-review, merged, closed) into a single digest message updated in place every 5 minutes. Cuts out the per-event spam from the official GitHub bot.",
+      "category": "github-activity",
+      "module": "github-activity",
+      "kind": "integration-feed",
+      "archetype": "partial"
+    },
+    {
       "id": "github-activity/pr-firehose",
       "slug": "pr-firehose",
       "path": "github-activity/partial/pr-firehose.json",
@@ -2378,12 +2351,13 @@
     {
       "id": "giveaways/launch-giveaway",
       "slug": "launch-giveaway",
-      "path": "giveaways/launch-giveaway.json",
+      "path": "giveaways/partial/launch-giveaway.json",
       "format": "json",
       "name": "launch giveaway",
       "description": "Starter giveaway pack for launches or seasonal events.",
       "category": "giveaways",
-      "kind": "legacy"
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
       "id": "giveaways/min-account-30d",
@@ -2542,61 +2516,6 @@
       "archetype": "partial"
     },
     {
-      "id": "integrations/discord-slack-incident-relay",
-      "slug": "discord-slack-incident-relay",
-      "path": "integrations/discord-slack-incident-relay.json",
-      "format": "json",
-      "name": "Discord ↔ Slack incident relay",
-      "description": "Bidirectional bridge between #incidents on Discord and #incidents on Slack. Threads on either side stay synced; @here / @channel mentions are translated. Designed for shared on-call between an open community (Discord) and a paid Slack workspace.",
-      "category": "integrations",
-      "module": "integrations.relay",
-      "kind": "integration-feed"
-    },
-    {
-      "id": "integrations/form-to-notion-webhook",
-      "slug": "form-to-notion-webhook",
-      "path": "integrations/form-to-notion-webhook.json",
-      "format": "json",
-      "name": "Form ↔ Notion via webhook",
-      "description": "Pipes new form submissions (any Modly form) into a Notion database via outbound webhook. Maps each question to a Notion property and includes the submitter's Discord ID and a deep link back into the dashboard.",
-      "category": "integrations",
-      "module": "forms",
-      "kind": "integration-feed"
-    },
-    {
-      "id": "integrations/github-pr-digest",
-      "slug": "github-pr-digest",
-      "path": "integrations/github-pr-digest.json",
-      "format": "json",
-      "name": "GitHub PR digest in #engineering",
-      "description": "Webhook receiver that batches GitHub PR events (opened, ready-for-review, merged, closed) into a single digest message updated in place every 5 minutes. Cuts out the per-event spam from the official GitHub bot.",
-      "category": "integrations",
-      "module": "integrations.github",
-      "kind": "integration-feed"
-    },
-    {
-      "id": "integrations/rss-monday-digest",
-      "slug": "rss-monday-digest",
-      "path": "integrations/rss-monday-digest.json",
-      "format": "json",
-      "name": "RSS digest every Monday",
-      "description": "Polls a list of RSS/Atom feeds throughout the week and posts a single combined digest every Monday morning. Items are deduplicated by canonical URL.",
-      "category": "integrations",
-      "module": "integrations.rss",
-      "kind": "integration-feed"
-    },
-    {
-      "id": "integrations/twitch-live-alert",
-      "slug": "twitch-live-alert",
-      "path": "integrations/twitch-live-alert.json",
-      "format": "json",
-      "name": "Twitch live alert with pinger role",
-      "description": "Subscribes to one or more Twitch channels via EventSub. When a stream goes live, posts an embed in #stream-alerts and pings the StreamPings role. Auto-edits the message to past-tense once the stream ends, so the alert doesn't stay 'live' all night.",
-      "category": "integrations",
-      "module": "integrations.twitch",
-      "kind": "integration-feed"
-    },
-    {
       "id": "leveling/anti-farm-strict",
       "slug": "anti-farm-strict",
       "path": "leveling/partial/anti-farm-strict.json",
@@ -2678,6 +2597,18 @@
       "category": "leveling",
       "module": "leveling",
       "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "leveling/weekly-leveling-spotlight",
+      "slug": "weekly-leveling-spotlight",
+      "path": "leveling/partial/weekly-leveling-spotlight.json",
+      "format": "json",
+      "name": "Weekly leveling spotlight",
+      "description": "Every Monday, posts a recap of the top 5 climbers on the XP leaderboard from the past 7 days. Awards a temporary VIP role to #1 for a week and an emoji to top 3.",
+      "category": "leveling",
+      "module": "leveling",
+      "kind": "engagement-flow",
       "archetype": "partial"
     },
     {
@@ -3209,6 +3140,18 @@
       "archetype": "full"
     },
     {
+      "id": "relay/discord-slack-incident-relay",
+      "slug": "discord-slack-incident-relay",
+      "path": "relay/partial/discord-slack-incident-relay.json",
+      "format": "json",
+      "name": "Discord ↔ Slack incident relay",
+      "description": "Bidirectional bridge between #incidents on Discord and #incidents on Slack. Threads on either side stay synced; @here / @channel mentions are translated. Designed for shared on-call between an open community (Discord) and a paid Slack workspace.",
+      "category": "relay",
+      "module": "relay",
+      "kind": "integration-feed",
+      "archetype": "partial"
+    },
+    {
       "id": "relay/guild-pair-mirror",
       "slug": "guild-pair-mirror",
       "path": "relay/partial/guild-pair-mirror.json",
@@ -3605,6 +3548,18 @@
       "archetype": "full"
     },
     {
+      "id": "social-alerts/rss-monday-digest",
+      "slug": "rss-monday-digest",
+      "path": "social-alerts/partial/rss-monday-digest.json",
+      "format": "json",
+      "name": "RSS digest every Monday",
+      "description": "Polls a list of RSS/Atom feeds throughout the week and posts a single combined digest every Monday morning. Items are deduplicated by canonical URL.",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "integration-feed",
+      "archetype": "partial"
+    },
+    {
       "id": "social-alerts/rss-niche-gaming",
       "slug": "rss-niche-gaming",
       "path": "social-alerts/partial/rss-niche-gaming.json",
@@ -3626,6 +3581,18 @@
       "category": "social-alerts",
       "module": "social-alerts",
       "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "social-alerts/twitch-live-alert",
+      "slug": "twitch-live-alert",
+      "path": "social-alerts/partial/twitch-live-alert.json",
+      "format": "json",
+      "name": "Twitch live alert with pinger role",
+      "description": "Subscribes to one or more Twitch channels via EventSub. When a stream goes live, posts an embed in #stream-alerts and pings the StreamPings role. Auto-edits the message to past-tense once the stream ends, so the alert doesn't stay 'live' all night.",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "integration-feed",
       "archetype": "partial"
     },
     {
@@ -3761,6 +3728,18 @@
       "archetype": "partial"
     },
     {
+      "id": "starboard/starboard-reaction-ramp",
+      "slug": "starboard-reaction-ramp",
+      "path": "starboard/partial/starboard-reaction-ramp.json",
+      "format": "json",
+      "name": "Starboard with reaction-threshold ramp",
+      "description": "Starboard with a self-tuning threshold: starts at 5 stars to be featured, raises by 1 each time the server crosses 1000 active members. Prevents the same handful of regulars from dominating once the community grows.",
+      "category": "starboard",
+      "module": "starboard",
+      "kind": "engagement-flow",
+      "archetype": "partial"
+    },
+    {
       "id": "starboard/strict",
       "slug": "strict",
       "path": "starboard/full/strict.json",
@@ -3831,6 +3810,18 @@
       "module": "suggestions",
       "kind": "module-export",
       "archetype": "full"
+    },
+    {
+      "id": "suggestions/suggestion-to-thread",
+      "slug": "suggestion-to-thread",
+      "path": "suggestions/partial/suggestion-to-thread.json",
+      "format": "json",
+      "name": "Suggestion-to-thread pipeline",
+      "description": "Turns every message in #suggestions into a discussion thread with up/down vote buttons, and re-posts top-voted suggestions of the week into a staff review channel.",
+      "category": "suggestions",
+      "module": "suggestions",
+      "kind": "engagement-flow",
+      "archetype": "partial"
     },
     {
       "id": "suggestions/thread-per-suggestion",
@@ -4061,6 +4052,18 @@
       "archetype": "partial"
     },
     {
+      "id": "webhook-broadcaster/form-to-notion-webhook",
+      "slug": "form-to-notion-webhook",
+      "path": "webhook-broadcaster/partial/form-to-notion-webhook.json",
+      "format": "json",
+      "name": "Form ↔ Notion via webhook",
+      "description": "Pipes new form submissions (any Modly form) into a Notion database via outbound webhook. Maps each question to a Notion property and includes the submitter's Discord ID and a deep link back into the dashboard.",
+      "category": "webhook-broadcaster",
+      "module": "webhook-broadcaster",
+      "kind": "integration-feed",
+      "archetype": "partial"
+    },
+    {
       "id": "webhook-broadcaster/notion-relay",
       "slug": "notion-relay",
       "path": "webhook-broadcaster/partial/notion-relay.json",
@@ -4085,179 +4088,40 @@
       "archetype": "partial"
     },
     {
-      "id": "welcome-flows/anti-bot-age-gate",
-      "slug": "anti-bot-age-gate",
-      "path": "welcome-flows/anti-bot-age-gate.json",
-      "format": "json",
-      "name": "Anti-bot age-gate before access",
-      "description": "Holds new joins in an unverified state until their account is at least N days old AND they pass a one-click human check. Blocks classic drive-by bot raids without forcing real users through CAPTCHA.",
-      "category": "welcome-flows",
-      "module": "welcome",
-      "kind": "welcome-flow"
-    },
-    {
-      "id": "welcome-flows/multi-language-welcome-split",
-      "slug": "multi-language-welcome-split",
-      "path": "welcome-flows/multi-language-welcome-split.json",
-      "format": "json",
-      "name": "Multi-language welcome split",
-      "description": "Routes the welcome message to a per-language channel based on the user's Discord locale. Falls back to a shared channel if locale is unsupported. Each language pulls from its own locale-keyed pool.",
-      "category": "welcome-flows",
-      "module": "welcome",
-      "kind": "welcome-flow"
-    },
-    {
-      "id": "welcome-flows/onboarding-with-quiz",
-      "slug": "onboarding-with-quiz",
-      "path": "welcome-flows/onboarding-with-quiz.json",
-      "format": "json",
-      "name": "Onboarding recipe with quiz",
-      "description": "Three-question onboarding quiz that gates access on correct answers about server rules. Wrong answers loop the question with a hint; final pass grants the MEMBER role and posts a celebration in #general.",
-      "category": "welcome-flows",
-      "module": "welcome",
-      "kind": "welcome-flow"
-    },
-    {
-      "id": "welcome-flows/tiered-welcome-role-picker",
-      "slug": "tiered-welcome-role-picker",
-      "path": "welcome-flows/tiered-welcome-role-picker.json",
-      "format": "json",
-      "name": "Tiered welcome with role picker",
-      "description": "Two-step welcome: greet on join in #welcome with a button that posts a role-picker in a private thread. Once the user picks a role, they're moved to the MEMBER tier and the picker thread auto-archives.",
-      "category": "welcome-flows",
-      "module": "welcome",
-      "kind": "welcome-flow"
-    },
-    {
-      "id": "welcome-flows/welcome-with-24h-dm-nudge",
-      "slug": "welcome-with-24h-dm-nudge",
-      "path": "welcome-flows/welcome-with-24h-dm-nudge.json",
-      "format": "json",
-      "name": "Welcome with 24h DM nudge if inactive",
-      "description": "Standard public welcome plus a 24-hour follow-up DM if the new member hasn't posted in any channel by then. Big lift on activation rate without being naggy.",
-      "category": "welcome-flows",
-      "module": "welcome",
-      "kind": "welcome-flow"
-    },
-    {
-      "id": "welcome-messages/anime-pool",
+      "id": "welcome/anime-pool",
       "slug": "anime-pool",
-      "path": "welcome-messages/partial/anime-pool.json",
+      "path": "welcome/partial/anime-pool.json",
       "format": "json",
       "name": "Welcome pool — anime",
       "description": "Anime/weeb welcome lines (i18n keys).",
-      "category": "welcome-messages",
-      "module": "welcome-messages",
+      "category": "welcome",
+      "module": "welcome",
       "kind": "module-recipe",
       "archetype": "partial"
     },
     {
-      "id": "welcome-messages/art-pool",
+      "id": "welcome/anti-bot-age-gate",
+      "slug": "anti-bot-age-gate",
+      "path": "welcome/partial/anti-bot-age-gate.json",
+      "format": "json",
+      "name": "Anti-bot age-gate before access",
+      "description": "Holds new joins in an unverified state until their account is at least N days old AND they pass a one-click human check. Blocks classic drive-by bot raids without forcing real users through CAPTCHA.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "welcome-flow",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/art-pool",
       "slug": "art-pool",
-      "path": "welcome-messages/partial/art-pool.json",
+      "path": "welcome/partial/art-pool.json",
       "format": "json",
       "name": "Welcome pool — art",
       "description": "Art-server welcome lines (i18n keys).",
-      "category": "welcome-messages",
-      "module": "welcome-messages",
+      "category": "welcome",
+      "module": "welcome",
       "kind": "module-recipe",
       "archetype": "partial"
-    },
-    {
-      "id": "welcome-messages/casual-pool",
-      "slug": "casual-pool",
-      "path": "welcome-messages/casual-pool.txt",
-      "format": "text",
-      "name": "casual pool",
-      "description": "Text pool · casual-pool",
-      "category": "welcome-messages"
-    },
-    {
-      "id": "welcome-messages/cozy-pool",
-      "slug": "cozy-pool",
-      "path": "welcome-messages/partial/cozy-pool.json",
-      "format": "json",
-      "name": "Welcome pool — cozy",
-      "description": "Cozy-vibes welcome lines.",
-      "category": "welcome-messages",
-      "module": "welcome-messages",
-      "kind": "module-recipe",
-      "archetype": "partial"
-    },
-    {
-      "id": "welcome-messages/dev-pool",
-      "slug": "dev-pool",
-      "path": "welcome-messages/partial/dev-pool.json",
-      "format": "json",
-      "name": "Welcome pool — dev",
-      "description": "Developer-team-style welcome lines (i18n keys).",
-      "category": "welcome-messages",
-      "module": "welcome-messages",
-      "kind": "module-recipe",
-      "archetype": "partial"
-    },
-    {
-      "id": "welcome-messages/formal-pool",
-      "slug": "formal-pool",
-      "path": "welcome-messages/formal-pool.txt",
-      "format": "text",
-      "name": "formal pool",
-      "description": "Text pool · formal-pool",
-      "category": "welcome-messages"
-    },
-    {
-      "id": "welcome-messages/gaming-pool",
-      "slug": "gaming-pool",
-      "path": "welcome-messages/partial/gaming-pool.json",
-      "format": "json",
-      "name": "Welcome pool — gaming",
-      "description": "Gaming-flavoured welcome lines (i18n keys).",
-      "category": "welcome-messages",
-      "module": "welcome-messages",
-      "kind": "module-recipe",
-      "archetype": "partial"
-    },
-    {
-      "id": "welcome-messages/hype-pool",
-      "slug": "hype-pool",
-      "path": "welcome-messages/hype-pool.txt",
-      "format": "text",
-      "name": "hype pool",
-      "description": "Text pool · hype-pool",
-      "category": "welcome-messages"
-    },
-    {
-      "id": "welcome-messages/study-pool",
-      "slug": "study-pool",
-      "path": "welcome-messages/partial/study-pool.json",
-      "format": "json",
-      "name": "Welcome pool — study",
-      "description": "Study-server welcome lines (i18n keys).",
-      "category": "welcome-messages",
-      "module": "welcome-messages",
-      "kind": "module-recipe",
-      "archetype": "partial"
-    },
-    {
-      "id": "welcome-messages/tech-pool",
-      "slug": "tech-pool",
-      "path": "welcome-messages/partial/tech-pool.json",
-      "format": "json",
-      "name": "Welcome pool — tech",
-      "description": "Tech-server welcome lines (i18n keys).",
-      "category": "welcome-messages",
-      "module": "welcome-messages",
-      "kind": "module-recipe",
-      "archetype": "partial"
-    },
-    {
-      "id": "welcome-messages/warm-pool",
-      "slug": "warm-pool",
-      "path": "welcome-messages/warm-pool.txt",
-      "format": "text",
-      "name": "warm pool",
-      "description": "Text pool · warm-pool",
-      "category": "welcome-messages"
     },
     {
       "id": "welcome/boost-celebration",
@@ -4272,6 +4136,16 @@
       "archetype": "partial"
     },
     {
+      "id": "welcome/casual-pool",
+      "slug": "casual-pool",
+      "path": "welcome/snippets/casual-pool.txt",
+      "format": "text",
+      "name": "casual pool",
+      "description": "Text snippet · casual-pool",
+      "category": "welcome",
+      "archetype": "snippet"
+    },
+    {
       "id": "welcome/community",
       "slug": "community",
       "path": "welcome/full/community.json",
@@ -4284,6 +4158,18 @@
       "archetype": "full"
     },
     {
+      "id": "welcome/cozy-pool",
+      "slug": "cozy-pool",
+      "path": "welcome/partial/cozy-pool.json",
+      "format": "json",
+      "name": "Welcome pool — cozy",
+      "description": "Cozy-vibes welcome lines.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
       "id": "welcome/default",
       "slug": "default",
       "path": "welcome/full/default.json",
@@ -4294,6 +4180,50 @@
       "module": "welcome",
       "kind": "module-export",
       "archetype": "full"
+    },
+    {
+      "id": "welcome/dev-pool",
+      "slug": "dev-pool",
+      "path": "welcome/partial/dev-pool.json",
+      "format": "json",
+      "name": "Welcome pool — dev",
+      "description": "Developer-team-style welcome lines (i18n keys).",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/formal-pool",
+      "slug": "formal-pool",
+      "path": "welcome/snippets/formal-pool.txt",
+      "format": "text",
+      "name": "formal pool",
+      "description": "Text snippet · formal-pool",
+      "category": "welcome",
+      "archetype": "snippet"
+    },
+    {
+      "id": "welcome/gaming-pool",
+      "slug": "gaming-pool",
+      "path": "welcome/partial/gaming-pool.json",
+      "format": "json",
+      "name": "Welcome pool — gaming",
+      "description": "Gaming-flavoured welcome lines (i18n keys).",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/hype-pool",
+      "slug": "hype-pool",
+      "path": "welcome/snippets/hype-pool.txt",
+      "format": "text",
+      "name": "hype pool",
+      "description": "Text snippet · hype-pool",
+      "category": "welcome",
+      "archetype": "snippet"
     },
     {
       "id": "welcome/image-card-on",
@@ -4317,6 +4247,30 @@
       "category": "welcome",
       "module": "welcome",
       "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/multi-language-welcome-split",
+      "slug": "multi-language-welcome-split",
+      "path": "welcome/partial/multi-language-welcome-split.json",
+      "format": "json",
+      "name": "Multi-language welcome split",
+      "description": "Routes the welcome message to a per-language channel based on the user's Discord locale. Falls back to a shared channel if locale is unsupported. Each language pulls from its own locale-keyed pool.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "welcome-flow",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/onboarding-with-quiz",
+      "slug": "onboarding-with-quiz",
+      "path": "welcome/partial/onboarding-with-quiz.json",
+      "format": "json",
+      "name": "Onboarding recipe with quiz",
+      "description": "Three-question onboarding quiz that gates access on correct answers about server rules. Wrong answers loop the question with a hint; final pass grants the MEMBER role and posts a celebration in #general.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "welcome-flow",
       "archetype": "partial"
     },
     {
@@ -4344,6 +4298,30 @@
       "archetype": "full"
     },
     {
+      "id": "welcome/study-pool",
+      "slug": "study-pool",
+      "path": "welcome/partial/study-pool.json",
+      "format": "json",
+      "name": "Welcome pool — study",
+      "description": "Study-server welcome lines (i18n keys).",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/tech-pool",
+      "slug": "tech-pool",
+      "path": "welcome/partial/tech-pool.json",
+      "format": "json",
+      "name": "Welcome pool — tech",
+      "description": "Tech-server welcome lines (i18n keys).",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
       "id": "welcome/thread-on-join",
       "slug": "thread-on-join",
       "path": "welcome/partial/thread-on-join.json",
@@ -4353,6 +4331,40 @@
       "category": "welcome",
       "module": "welcome",
       "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/tiered-welcome-role-picker",
+      "slug": "tiered-welcome-role-picker",
+      "path": "welcome/partial/tiered-welcome-role-picker.json",
+      "format": "json",
+      "name": "Tiered welcome with role picker",
+      "description": "Two-step welcome: greet on join in #welcome with a button that posts a role-picker in a private thread. Once the user picks a role, they're moved to the MEMBER tier and the picker thread auto-archives.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "welcome-flow",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome/warm-pool",
+      "slug": "warm-pool",
+      "path": "welcome/snippets/warm-pool.txt",
+      "format": "text",
+      "name": "warm pool",
+      "description": "Text snippet · warm-pool",
+      "category": "welcome",
+      "archetype": "snippet"
+    },
+    {
+      "id": "welcome/welcome-with-24h-dm-nudge",
+      "slug": "welcome-with-24h-dm-nudge",
+      "path": "welcome/partial/welcome-with-24h-dm-nudge.json",
+      "format": "json",
+      "name": "Welcome with 24h DM nudge if inactive",
+      "description": "Standard public welcome plus a 24-hour follow-up DM if the new member hasn't posted in any channel by then. Big lift on activation rate without being naggy.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "welcome-flow",
       "archetype": "partial"
     }
   ]

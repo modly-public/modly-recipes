@@ -1,11 +1,13 @@
 {
-  "name": "Form ↔ Notion via webhook",
+  "name": "Form \u2194 Notion via webhook",
   "kind": "integration-feed",
   "description": "Pipes new form submissions (any Modly form) into a Notion database via outbound webhook. Maps each question to a Notion property and includes the submitter's Discord ID and a deep link back into the dashboard.",
-  "module": "forms",
+  "module": "webhook-broadcaster",
   "config": {
     "trigger": "form.submission.created",
-    "formIds": ["FORM_ID"],
+    "formIds": [
+      "FORM_ID"
+    ],
     "outboundWebhook": {
       "url": "https://api.notion.com/v1/pages",
       "headers": {
@@ -14,13 +16,41 @@
         "Content-Type": "application/json"
       },
       "bodyTemplate": {
-        "parent": { "database_id": "{env:MODLY_NOTION_DATABASE_ID}" },
+        "parent": {
+          "database_id": "{env:MODLY_NOTION_DATABASE_ID}"
+        },
         "properties": {
-          "Name":        { "title":     [{ "text": { "content": "{submission.summary}" } }] },
-          "Submitter":   { "rich_text": [{ "text": { "content": "{submission.user.tag} ({submission.user.id})" } }] },
-          "Status":      { "select":    { "name": "{submission.status}" } },
-          "SubmittedAt": { "date":      { "start": "{submission.createdAt}" } },
-          "Link":        { "url":       "{submission.dashboardUrl}" }
+          "Name": {
+            "title": [
+              {
+                "text": {
+                  "content": "{submission.summary}"
+                }
+              }
+            ]
+          },
+          "Submitter": {
+            "rich_text": [
+              {
+                "text": {
+                  "content": "{submission.user.tag} ({submission.user.id})"
+                }
+              }
+            ]
+          },
+          "Status": {
+            "select": {
+              "name": "{submission.status}"
+            }
+          },
+          "SubmittedAt": {
+            "date": {
+              "start": "{submission.createdAt}"
+            }
+          },
+          "Link": {
+            "url": "{submission.dashboardUrl}"
+          }
         }
       }
     },

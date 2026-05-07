@@ -2,7 +2,7 @@
   "name": "Suggestion-to-thread pipeline",
   "kind": "engagement-flow",
   "description": "Turns every message in #suggestions into a discussion thread with up/down vote buttons, and re-posts top-voted suggestions of the week into a staff review channel.",
-  "module": "engagement",
+  "module": "suggestions",
   "config": {
     "sourceChannelId": "SUGGESTIONS_CHANNEL_ID",
     "createThread": {
@@ -11,11 +11,24 @@
       "autoArchiveMin": 1440
     },
     "voteButtons": [
-      { "id": "up", "labelKey": "i18n:engagement.suggestion.vote_up", "emoji": "⬆️", "weight": 1 },
-      { "id": "down", "labelKey": "i18n:engagement.suggestion.vote_down", "emoji": "⬇️", "weight": -1 }
+      {
+        "id": "up",
+        "labelKey": "i18n:engagement.suggestion.vote_up",
+        "emoji": "\u2b06\ufe0f",
+        "weight": 1
+      },
+      {
+        "id": "down",
+        "labelKey": "i18n:engagement.suggestion.vote_down",
+        "emoji": "\u2b07\ufe0f",
+        "weight": -1
+      }
     ],
     "weeklyDigest": {
-      "schedule": { "cron": "0 16 * * FRI", "timezone": "server" },
+      "schedule": {
+        "cron": "0 16 * * FRI",
+        "timezone": "server"
+      },
       "channelId": "STAFF_DIGEST_CHANNEL_ID",
       "topN": 5,
       "embed": {

@@ -18,13 +18,13 @@ Installs are reversible: every install creates a snapshot in the module's versio
 
 If you've configured the [`@modly/mcp-server`](https://github.com/modly-public/modly-mcp) and you're chatting with Claude Desktop / Cursor / Cline / any MCP host:
 
-> **You:** "Install the `automod-packs/community-safe` recipe. Route the mod-log to <#1234567890>."
+> **You:** "Install the `automod/full/community-safe` recipe. Route the mod-log to <#1234567890>."
 
 The agent calls `install_recipe` with:
 
 ```json
 {
-  "recipeSlug": "automod-packs/community-safe",
+  "recipeSlug": "automod/full/community-safe",
   "overrides": { "{channel:mod-log}": "1234567890" }
 }
 ```
@@ -45,7 +45,7 @@ curl -X POST "https://modly.net/api/guilds/$GUILD_ID/recipes/install" \
   -H "Authorization: Bearer $MODLY_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "slug": "automod-packs/community-safe",
+    "slug": "automod/full/community-safe",
     "overrides": {
       "{channel:mod-log}": "1234567890"
     }

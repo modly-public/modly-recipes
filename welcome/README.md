@@ -5,7 +5,8 @@ Recipes for the **welcome** category. Drop any of these into your Modly server v
 ## Subfolders
 
 - [`full/`](./full) — 3 recipes
-- [`partial/`](./partial) — 5 recipes
+- [`partial/`](./partial) — 17 recipes
+- [`snippets/`](./snippets) — 4 recipes
 
 ## Install
 

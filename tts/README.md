@@ -4,8 +4,8 @@ Recipes for the **tts** category. Drop any of these into your Modly server via d
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 2 recipes
+- [`partial/`](./partial) — 2 recipes
 
 ## Install
 

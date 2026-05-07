@@ -4,8 +4,8 @@ Recipes for the **anniversary** category. Drop any of these into your Modly serv
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 1 recipe
+- [`partial/`](./partial) — 1 recipe
 
 ## Install
 

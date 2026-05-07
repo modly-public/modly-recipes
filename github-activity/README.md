@@ -4,8 +4,8 @@ Recipes for the **github-activity** category. Drop any of these into your Modly 
 
 ## Subfolders
 
-- [`full/`](./full) — empty (placeholder)
-- [`partial/`](./partial) — empty (placeholder)
+- [`full/`](./full) — 2 recipes
+- [`partial/`](./partial) — 3 recipes
 
 ## Install
 

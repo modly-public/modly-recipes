@@ -8,42 +8,28 @@ Search [`index.json`](../index.json) for similar recipes. If one already exists 
 
 ## Naming conventions
 
-Recipes live under one of two layouts:
-
-### Module-keyed (preferred for new recipes)
+Every recipe lives under its target module:
 
 ```
-<module>/full/<archetype>.json       # complete snapshot
-<module>/partial/<slug>.json         # targeted slice
+<module>/full/<slug>.json        # complete snapshot
+<module>/partial/<slug>.json     # targeted slice
+<module>/snippets/<slug>.txt     # plain-text content asset (optional)
 ```
 
 | Where | Filename | Example |
 |---|---|---|
 | `<module>/full/` | One of `default.json`, `strict.json`, `community.json` (or another well-known archetype). | `welcome/full/community.json` |
 | `<module>/partial/` | Action-or-feature kebab slug. | `welcome/partial/boost-celebration.json` |
+| `<module>/snippets/` | Free-form text pool name. | `welcome/snippets/casual-pool.txt` |
 
-### Use-case keyed (legacy / flat)
-
-```
-automod-packs/<server-archetype>.json
-welcome-flows/<flow-name>.json
-engagement/<feature>.json
-integrations/<source>-<sink>.json
-ai-automation/<feature>.json
-embeds/<purpose>.json
-custom-commands/<pack-name>.json
-forms/<form-purpose>.json
-giveaways/<starter-name>.json
-```
-
-Use these for cross-module flows or for content that doesn't map to a single module's config schema (e.g. an embed template, a command pack).
+Cross-module flows pick the module whose config they primarily mutate; secondary touches go in the recipe `notes` field.
 
 ## Envelope shape
 
 ```json
 {
   "name": "Boost celebration",
-  "kind": "module-partial",
+  "kind": "module-recipe",
   "module": "welcome",
   "mode": "merge",
   "description": "Drop-in boost message + celebration embed without disturbing existing welcome / leave config.",
@@ -59,7 +45,7 @@ Never paste real Discord IDs. Use:
 
 - `{role:mods}` not `<@&1234567890>` not `1234567890`
 - `{channel:logs}` not `<#1234567890>`
-- Legacy uppercase form (`MOD_LOG_CHANNEL_ID`) is also accepted — but prefer bracket form for new recipes.
+- Uppercase literal form (`MOD_LOG_CHANNEL_ID`) is also accepted — but prefer bracket form for new recipes.
 
 If a recipe references a feature that doesn't have a name (e.g. an integration secret), use a placeholder env-var name: `secretEnv: "MODLY_GITHUB_WEBHOOK_SECRET"` — the dashboard prompts the installer to set it.
 
