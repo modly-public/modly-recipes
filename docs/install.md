@@ -16,7 +16,7 @@ Installs are reversible: every install creates a snapshot in the module's versio
 
 ## 2. MCP — `install_recipe` tool
 
-If you've configured the [`@modly/mcp-server`](https://github.com/modly-public/modly-mcp) and you're chatting with Claude Desktop / Cursor / Cline / any MCP host:
+If you've configured the [`@modly_public/mcp-server`](https://github.com/modly-public/modly-mcp) and you're chatting with Claude Desktop / Cursor / Cline / any MCP host:
 
 > **You:** "Install the `automod/full/community-safe` recipe. Route the mod-log to <#1234567890>."
 
