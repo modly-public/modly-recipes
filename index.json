@@ -1,0 +1,1440 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-07T05:42:21.383Z",
+  "totals": {
+    "recipes": 164,
+    "categories": 27
+  },
+  "recipes": [
+    {
+      "path": "ai-automation/ai-translate-non-english-support.json",
+      "name": "AI translate non-English to English in support",
+      "description": "Detects the language of every message in #support; if it isn't English, posts a threaded English translation as a bot reply so volunteer responders can help. Translation is cached per (hash, lang) for 24h to keep AI cost down.",
+      "category": "ai-automation",
+      "shape": "flat",
+      "kind": "ai-automation",
+      "module": "ai"
+    },
+    {
+      "path": "ai-automation/auto-clean-spam-links-ai-flag.json",
+      "name": "Auto-clean spam links via AI flag",
+      "description": "Pre-classifies any link-bearing message with the AI module's safety classifier; on a high-confidence spam/scam verdict, deletes the message and DMs the user the reason. Mirrors what SCAM_LINK does for the known-scam list, but extends it to never-seen URLs.",
+      "category": "ai-automation",
+      "shape": "flat",
+      "kind": "ai-automation",
+      "module": "ai"
+    },
+    {
+      "path": "ai-automation/auto-pin-mod-marked-answers.json",
+      "name": "Auto-pin mod-marked answers",
+      "description": "When a moderator reacts to any message with a configured emoji (default 📌✅), the bot pins it AND uses the AI module to summarize the parent thread/question into a one-line tag added to the pin.",
+      "category": "ai-automation",
+      "shape": "flat",
+      "kind": "ai-automation",
+      "module": "ai"
+    },
+    {
+      "path": "ai-automation/daily-ai-mod-report-card.json",
+      "name": "Daily AI mod report card",
+      "description": "Once a day, asks the AI module to grade the previous 24h of moderator activity (response times, action distribution, appeal outcomes, escalations) and posts a private report card per moderator with constructive feedback.",
+      "category": "ai-automation",
+      "shape": "flat",
+      "kind": "ai-automation",
+      "module": "ai"
+    },
+    {
+      "path": "ai-automation/personalized-welcome-ai-persona.json",
+      "name": "Personalized welcome via AI persona",
+      "description": "On join, the AI persona crafts a 1–2 sentence personalized welcome based on the new member's public profile (Discord About Me, mutual servers count, account age) and the server's loaded persona. Falls back to the standard welcome pool on AI error.",
+      "category": "ai-automation",
+      "shape": "flat",
+      "kind": "ai-automation",
+      "module": "ai"
+    },
+    {
+      "path": "antinuke/full/community.json",
+      "name": "Antinuke — community",
+      "description": "Light antinuke for friendly community servers. Catches catastrophic actions but stays out of staff's way.",
+      "category": "antinuke",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/full/default.json",
+      "name": "Antinuke — default",
+      "description": "Sensible Wick-style antinuke baseline. Armed, alerts to log channel, moderate thresholds, panic mode primed but not aggressive.",
+      "category": "antinuke",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/full/strict.json",
+      "name": "Antinuke — strict",
+      "description": "Lockdown-grade antinuke for raid-prone or doxx-target servers. Aggressive thresholds, panic mode pre-armed, dual response required for dangerous actions.",
+      "category": "antinuke",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/partial/federation-enforce.json",
+      "name": "Federation enforcement on",
+      "description": "Trust antinuke federation lookups for cross-server bans.",
+      "category": "antinuke",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/partial/min-account-age-30d.json",
+      "name": "Minimum account age 30 days",
+      "description": "Bumps the join filter so new accounts can't trip antinuke from privileged actions.",
+      "category": "antinuke",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/partial/panic-mode-armed.json",
+      "name": "Panic mode — armed and ready",
+      "description": "Toggles panic mode triggers and aggressive lockdown without touching the rest of antinuke config.",
+      "category": "antinuke",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/partial/ping-flood-strict.json",
+      "name": "Ping flood — strict",
+      "description": "Tight thresholds for ping-flood detection.",
+      "category": "antinuke",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/partial/quarantine-soft.json",
+      "name": "Quarantine — soft",
+      "description": "Quarantined members keep read access but can't send/react/voice.",
+      "category": "antinuke",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "antinuke"
+    },
+    {
+      "path": "antinuke/partial/rollback-aggressive.json",
+      "name": "Aggressive rollback window",
+      "description": "Wider rollback window covering channel/role/webhook destructive actions.",
+      "category": "antinuke",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "antinuke"
+    },
+    {
+      "path": "appeal-portal/full/community.json",
+      "name": "Appeal portal — community",
+      "description": "Friendly portal, generous limits, auto-apply on approve.",
+      "category": "appeal-portal",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "appeal-portal"
+    },
+    {
+      "path": "appeal-portal/full/default.json",
+      "name": "Appeal portal — default",
+      "description": "Public appeal form, mods review, decisions logged.",
+      "category": "appeal-portal",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "appeal-portal"
+    },
+    {
+      "path": "appeal-portal/full/strict.json",
+      "name": "Appeal portal — strict",
+      "description": "One appeal per ban, captcha, 90-day cooldown, manual decision required.",
+      "category": "appeal-portal",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "appeal-portal"
+    },
+    {
+      "path": "appeal-portal/partial/auto-apply-decision.json",
+      "name": "Auto-apply approve/deny",
+      "description": "When a reviewer hits Approve, the ban is lifted server-side.",
+      "category": "appeal-portal",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "appeal-portal"
+    },
+    {
+      "path": "appeal-portal/partial/captcha-required.json",
+      "name": "Appeal captcha required",
+      "description": "Adds captcha to the public appeal form.",
+      "category": "appeal-portal",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "appeal-portal"
+    },
+    {
+      "path": "appeal-portal/partial/thread-per-appeal.json",
+      "name": "Thread per appeal",
+      "description": "Each appeal opens a private thread for staff discussion.",
+      "category": "appeal-portal",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "appeal-portal"
+    },
+    {
+      "path": "applications/full/default.json",
+      "name": "Applications — default",
+      "description": "Generic application module: review channel + mod role + 3-question template.",
+      "category": "applications",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "applications"
+    },
+    {
+      "path": "applications/full/strict.json",
+      "name": "Applications — strict",
+      "description": "One open application at a time, long cooldown, deny requires reason.",
+      "category": "applications",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "applications"
+    },
+    {
+      "path": "applications/partial/deny-reason-required.json",
+      "name": "Deny requires written reason",
+      "description": "Mods must enter a reason on deny — sent to applicant by DM.",
+      "category": "applications",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "applications"
+    },
+    {
+      "path": "applications/partial/edit-allowed.json",
+      "name": "Allow edits before review",
+      "description": "Applicants can edit answers until staff opens the review.",
+      "category": "applications",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "applications"
+    },
+    {
+      "path": "automod-packs/aggressive-raid-filter.json",
+      "name": "Aggressive raid filter",
+      "description": "Hair-trigger pack for servers under active raid pressure. Designed to be enabled during a raid window (paired with the raid module's auto-enable hook), not as an everyday baseline. Expect some false positives.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/antinuke-locked-down.json",
+      "name": "Antinuke locked-down preset",
+      "description": "Maximum-paranoia preset for high-value or high-risk servers (large communities, brand servers, partnered servers). Pair with the antinuke module's full lockdown profile — this covers the message-side rules. Every customizable string is exposed as a placeholder.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/appeal-portal-3-strike.json",
+      "name": "Appeal portal with 3-strike escalation",
+      "description": "Three-strike escalation rules wired to the standard moderation point system. Each strike level escalates: 5pts = warn, 15pts = 6h timeout, 30pts = ban with appeal link. Pair with a forms-based appeal portal (see forms/appeal-portal.json).",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/community-safe.json",
+      "name": "Community safe",
+      "description": "Balanced safety pack for general-purpose communities. Keeps spam, scam links, invites, and slurs under control without over-moderating normal chat.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/family-safe.json",
+      "name": "Family-safe",
+      "description": "Strictest pack: aggressive on slurs, swearing, NSFW links, invites, and external links. For all-ages communities, kids' gaming servers, school clubs.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/gaming-server.json",
+      "name": "Gaming server",
+      "description": "Balanced moderation for a 1k–50k member gaming community: tolerant of memes + caps, strict on slurs + invite spam.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/raid-shield.json",
+      "name": "Raid shield",
+      "description": "Heavy anti-spam pack designed for servers facing active raids. Pair with the Modly raid module for join-burst protection — this covers the message-side.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/slow-build-trust-verification.json",
+      "name": "Slow-build trust verification",
+      "description": "Three-tier trust ramp: brand-new accounts get heavy filters, established members (24h+) get baseline, trusted role gets a relaxed pack. Each rule is scoped by role so you can layer them. Apply the role gates in your role-picker / verification flow.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/slur-leetspeak-baseline.json",
+      "name": "Slur + slur-leetspeak automod baseline",
+      "description": "Drop-in slur baseline that combines the third-tier WORD_BLACKLIST wildcard layer with a regex pattern catching common leetspeak / look-alike obfuscations. Add your own server-specific terms in the placeholders before importing — the defaults are intentionally tame, generic stand-ins.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/streamer-chat.json",
+      "name": "Streamer chat",
+      "description": "Lighter-touch pack for creator communities. More tolerant of hype, but still clamps down on spam, slurs, and promotion.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod-packs/study-server.json",
+      "name": "Study / focus server",
+      "description": "Strict pack for tutoring, homework help, or focus communities. Aggressive on off-topic + caps + mass-emoji.",
+      "category": "automod-packs",
+      "shape": "flat"
+    },
+    {
+      "path": "automod/full/community.json",
+      "name": "Automod — community",
+      "description": "Light-touch automod for friendly chat servers — only the worst offenders trigger removal.",
+      "category": "automod",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "automod"
+    },
+    {
+      "path": "automod/full/default.json",
+      "name": "Automod — default",
+      "description": "Balanced ruleset for general communities — invite/scam/cap/mention guards.",
+      "category": "automod",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "automod"
+    },
+    {
+      "path": "automod/full/strict.json",
+      "name": "Automod — strict",
+      "description": "Locked-down ruleset for raid-prone or NSFW-adjacent servers.",
+      "category": "automod",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/anti-cap-pack.json",
+      "name": "Anti-caps pack",
+      "description": "Removes messages that are mostly uppercase past a length threshold.",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/anti-emoji-spam.json",
+      "name": "Anti-emoji-spam pack",
+      "description": "Trims emoji-only / emoji-flood messages.",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/anti-invite-pack.json",
+      "name": "Anti-invite pack",
+      "description": "Blocks Discord invite URLs in any channel.",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/anti-link-pack.json",
+      "name": "Anti-link pack",
+      "description": "Blocks all external links except a small allowlist (YouTube, Twitch, Twitter, GitHub).",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/anti-mention-pack.json",
+      "name": "Anti-mention pack",
+      "description": "Stops mention storms — bans members who mention 4+ unique users at once.",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/leetspeak-slur-pack.json",
+      "name": "Leetspeak slur pack",
+      "description": "Wildcard slur detection that survives common leetspeak substitutions. Operator must fill in the blacklist.",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/repeat-spam-pack.json",
+      "name": "Repeat-spam pack",
+      "description": "Catches users sending the same message in a tight window.",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "automod/partial/scam-link-pack.json",
+      "name": "Scam-link pack",
+      "description": "Auto-bans on detected scam URLs (Discord/Steam/Crypto phishing patterns).",
+      "category": "automod",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "automod"
+    },
+    {
+      "path": "birthdays/full/community.json",
+      "name": "Birthdays — community",
+      "description": "Warm style with reminder + embed + multi-day window.",
+      "category": "birthdays",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "birthdays"
+    },
+    {
+      "path": "birthdays/full/default.json",
+      "name": "Birthdays — default",
+      "description": "Daily birthday announce in #general, role for the day.",
+      "category": "birthdays",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "birthdays"
+    },
+    {
+      "path": "birthdays/partial/48h-role.json",
+      "name": "Birthday role 48h",
+      "description": "Birthday role lingers for 48h instead of 24h.",
+      "category": "birthdays",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "birthdays"
+    },
+    {
+      "path": "birthdays/partial/lead-day-reminder.json",
+      "name": "1-day-ahead reminder",
+      "description": "Pings staff/community 1 day before each birthday.",
+      "category": "birthdays",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "birthdays"
+    },
+    {
+      "path": "captcha/full/community.json",
+      "name": "Captcha — community",
+      "description": "Friendly button-press captcha, generous timeout, no kicks.",
+      "category": "captcha",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "captcha"
+    },
+    {
+      "path": "captcha/full/default.json",
+      "name": "Captcha — default",
+      "description": "Standard image+button captcha on join, 5-minute deadline.",
+      "category": "captcha",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "captcha"
+    },
+    {
+      "path": "captcha/full/strict.json",
+      "name": "Captcha — strict",
+      "description": "Hardened captcha for raid-prone servers: kick on timeout, ban on fail, hCaptcha + risk score.",
+      "category": "captcha",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "captcha"
+    },
+    {
+      "path": "captcha/partial/dm-fallback.json",
+      "name": "DM fallback on locked channels",
+      "description": "If verify channel is unavailable, captcha is delivered via DM.",
+      "category": "captcha",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "captcha"
+    },
+    {
+      "path": "captcha/partial/hcaptcha-mode.json",
+      "name": "Switch to hCaptcha",
+      "description": "Upgrades from image to hCaptcha challenge.",
+      "category": "captcha",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "captcha"
+    },
+    {
+      "path": "captcha/partial/kick-on-timeout.json",
+      "name": "Kick on captcha timeout",
+      "description": "Members who don't solve within the deadline are kicked.",
+      "category": "captcha",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "captcha"
+    },
+    {
+      "path": "captcha/partial/min-account-14d.json",
+      "name": "Captcha + min account age 14d",
+      "description": "Adds a 14-day account age floor on top of captcha.",
+      "category": "captcha",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "captcha"
+    },
+    {
+      "path": "captcha/partial/rejoin-reverify.json",
+      "name": "Force reverify on rejoin",
+      "description": "Returning members re-run captcha (good after a raid).",
+      "category": "captcha",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "captcha"
+    },
+    {
+      "path": "custom-commands/faq-pack.json",
+      "name": "faq-pack",
+      "description": "Generic 5-command FAQ pack. Edit the responses after import to match your server.",
+      "category": "custom-commands",
+      "shape": "flat"
+    },
+    {
+      "path": "custom-commands/faq-rules.json",
+      "name": "rules",
+      "description": "Quick reply with a link to the rules channel.",
+      "category": "custom-commands",
+      "shape": "flat"
+    },
+    {
+      "path": "custom-commands/staff-pack.json",
+      "name": "staff-pack",
+      "description": "(no description)",
+      "category": "custom-commands",
+      "shape": "flat"
+    },
+    {
+      "path": "custom-commands/utility-pack.json",
+      "name": "utility-pack",
+      "description": "(no description)",
+      "category": "custom-commands",
+      "shape": "flat"
+    },
+    {
+      "path": "embeds/announcement-banner.json",
+      "name": "announcement-banner",
+      "description": "Clean announcement template for changelogs, events, and launches.",
+      "category": "embeds",
+      "shape": "flat"
+    },
+    {
+      "path": "embeds/helpdesk-card.json",
+      "name": "helpdesk-card",
+      "description": "Support-oriented embed template for tickets, FAQs, and internal ops.",
+      "category": "embeds",
+      "shape": "flat"
+    },
+    {
+      "path": "embeds/role-picker.json",
+      "name": "role-picker",
+      "description": "Self-assign roles message. Pair with Modly's reaction-roles or button-roles module — this is just the prompt embed.",
+      "category": "embeds",
+      "shape": "flat"
+    },
+    {
+      "path": "embeds/server-rules.json",
+      "name": "server-rules",
+      "description": "Generic server-rules embed with placeholder fields. Edit fields after import.",
+      "category": "embeds",
+      "shape": "flat"
+    },
+    {
+      "path": "embeds/server-tour.json",
+      "name": "server-tour",
+      "description": "Multi-embed onboarding tour. Pin in #welcome or post once new members can see it. Replace channel IDs after import.",
+      "category": "embeds",
+      "shape": "flat"
+    },
+    {
+      "path": "embeds/welcome-card.json",
+      "name": "welcome-card",
+      "description": "Friendly welcome embed referencing channels with placeholder mentions.",
+      "category": "embeds",
+      "shape": "flat"
+    },
+    {
+      "path": "engagement/birthday-shoutout.json",
+      "name": "Birthday auto-shoutout",
+      "description": "Daily check (09:00 server time) for any opted-in members whose birthday matches today; posts a shoutout in #general and assigns a 24h Birthday role with a custom color.",
+      "category": "engagement",
+      "shape": "flat",
+      "kind": "engagement-flow",
+      "module": "engagement"
+    },
+    {
+      "path": "engagement/daily-mod-digest-ai.json",
+      "name": "Daily mod digest with AI summary",
+      "description": "Posts a once-a-day staff-only digest summarizing yesterday's moderation activity (warns, mutes, bans, top offenders, automod hits) with an AI-written executive summary at the top.",
+      "category": "engagement",
+      "shape": "flat",
+      "kind": "engagement-flow",
+      "module": "ai"
+    },
+    {
+      "path": "engagement/starboard-reaction-ramp.json",
+      "name": "Starboard with reaction-threshold ramp",
+      "description": "Starboard with a self-tuning threshold: starts at 5 stars to be featured, raises by 1 each time the server crosses 1000 active members. Prevents the same handful of regulars from dominating once the community grows.",
+      "category": "engagement",
+      "shape": "flat",
+      "kind": "engagement-flow",
+      "module": "engagement"
+    },
+    {
+      "path": "engagement/suggestion-to-thread.json",
+      "name": "Suggestion-to-thread pipeline",
+      "description": "Turns every message in #suggestions into a discussion thread with up/down vote buttons, and re-posts top-voted suggestions of the week into a staff review channel.",
+      "category": "engagement",
+      "shape": "flat",
+      "kind": "engagement-flow",
+      "module": "engagement"
+    },
+    {
+      "path": "engagement/weekly-leveling-spotlight.json",
+      "name": "Weekly leveling spotlight",
+      "description": "Every Monday, posts a recap of the top 5 climbers on the XP leaderboard from the past 7 days. Awards a temporary VIP role to #1 for a week and an emoji to top 3.",
+      "category": "engagement",
+      "shape": "flat",
+      "kind": "engagement-flow",
+      "module": "leveling"
+    },
+    {
+      "path": "evader-detection/full/community.json",
+      "name": "Evader detection — community",
+      "description": "Quiet alerts only, no auto-bans, longer lookback for chronic raiders.",
+      "category": "evader-detection",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "evader-detection"
+    },
+    {
+      "path": "evader-detection/full/default.json",
+      "name": "Evader detection — default",
+      "description": "Watches for ban-evasion signals (alts, fingerprints, IP-like patterns).",
+      "category": "evader-detection",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "evader-detection"
+    },
+    {
+      "path": "evader-detection/full/strict.json",
+      "name": "Evader detection — strict",
+      "description": "Auto-bans suspected ban-evaders above score threshold.",
+      "category": "evader-detection",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "evader-detection"
+    },
+    {
+      "path": "evader-detection/partial/auto-ban-high-score.json",
+      "name": "Auto-ban high-score evaders",
+      "description": "When fingerprint score >= 0.8, ban immediately.",
+      "category": "evader-detection",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "evader-detection"
+    },
+    {
+      "path": "evader-detection/partial/federation-sync.json",
+      "name": "Federation sync on",
+      "description": "Share evader signals with federated antinuke peers.",
+      "category": "evader-detection",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "evader-detection"
+    },
+    {
+      "path": "evader-detection/partial/username-similarity-tight.json",
+      "name": "Tight username similarity",
+      "description": "Catch alts using slight username variants (e.g. 'mike' vs 'mike1').",
+      "category": "evader-detection",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "evader-detection"
+    },
+    {
+      "path": "forms/staff-application.json",
+      "name": "staff-application",
+      "description": "(no description)",
+      "category": "forms",
+      "shape": "flat"
+    },
+    {
+      "path": "giveaways/launch-giveaway.json",
+      "name": "launch-giveaway",
+      "description": "Starter giveaway pack for launches or seasonal events.",
+      "category": "giveaways",
+      "shape": "flat"
+    },
+    {
+      "path": "honeypot/full/default.json",
+      "name": "Honeypot — default",
+      "description": "Standard honeypot channel: any message earns a ban.",
+      "category": "honeypot",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "honeypot"
+    },
+    {
+      "path": "honeypot/full/strict.json",
+      "name": "Honeypot — strict",
+      "description": "Honeypot + 7-day deletion window + DM owner.",
+      "category": "honeypot",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "honeypot"
+    },
+    {
+      "path": "honeypot/partial/delete-7d.json",
+      "name": "Delete 7 days of messages on hit",
+      "description": "Cleans up past spam from the offender.",
+      "category": "honeypot",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "honeypot"
+    },
+    {
+      "path": "honeypot/partial/dry-run.json",
+      "name": "Honeypot dry-run",
+      "description": "Detect-only — log hits but take no action.",
+      "category": "honeypot",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "honeypot"
+    },
+    {
+      "path": "honeypot/partial/exempt-mods.json",
+      "name": "Honeypot exempt mods",
+      "description": "Whitelists the mod role so test messages don't trigger.",
+      "category": "honeypot",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "honeypot"
+    },
+    {
+      "path": "honeypot/partial/kick-mode.json",
+      "name": "Honeypot kick mode",
+      "description": "Honeypot kicks instead of banning.",
+      "category": "honeypot",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "honeypot"
+    },
+    {
+      "path": "honeypot/partial/warn-only.json",
+      "name": "Honeypot warn-only",
+      "description": "Honeypot triggers a warn instead of a ban — good while tuning.",
+      "category": "honeypot",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "honeypot"
+    },
+    {
+      "path": "integrations/discord-slack-incident-relay.json",
+      "name": "Discord ↔ Slack incident relay",
+      "description": "Bidirectional bridge between #incidents on Discord and #incidents on Slack. Threads on either side stay synced; @here / @channel mentions are translated. Designed for shared on-call between an open community (Discord) and a paid Slack workspace.",
+      "category": "integrations",
+      "shape": "flat",
+      "kind": "integration-feed",
+      "module": "integrations.relay"
+    },
+    {
+      "path": "integrations/form-to-notion-webhook.json",
+      "name": "Form ↔ Notion via webhook",
+      "description": "Pipes new form submissions (any Modly form) into a Notion database via outbound webhook. Maps each question to a Notion property and includes the submitter's Discord ID and a deep link back into the dashboard.",
+      "category": "integrations",
+      "shape": "flat",
+      "kind": "integration-feed",
+      "module": "forms"
+    },
+    {
+      "path": "integrations/github-pr-digest.json",
+      "name": "GitHub PR digest in #engineering",
+      "description": "Webhook receiver that batches GitHub PR events (opened, ready-for-review, merged, closed) into a single digest message updated in place every 5 minutes. Cuts out the per-event spam from the official GitHub bot.",
+      "category": "integrations",
+      "shape": "flat",
+      "kind": "integration-feed",
+      "module": "integrations.github"
+    },
+    {
+      "path": "integrations/rss-monday-digest.json",
+      "name": "RSS digest every Monday",
+      "description": "Polls a list of RSS/Atom feeds throughout the week and posts a single combined digest every Monday morning. Items are deduplicated by canonical URL.",
+      "category": "integrations",
+      "shape": "flat",
+      "kind": "integration-feed",
+      "module": "integrations.rss"
+    },
+    {
+      "path": "integrations/twitch-live-alert.json",
+      "name": "Twitch live alert with pinger role",
+      "description": "Subscribes to one or more Twitch channels via EventSub. When a stream goes live, posts an embed in #stream-alerts and pings the StreamPings role. Auto-edits the message to past-tense once the stream ends, so the alert doesn't stay 'live' all night.",
+      "category": "integrations",
+      "shape": "flat",
+      "kind": "integration-feed",
+      "module": "integrations.twitch"
+    },
+    {
+      "path": "leveling/full/default.json",
+      "name": "Leveling — default",
+      "description": "Standard XP rates with text + voice XP, level-up announce in-channel.",
+      "category": "leveling",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "leveling"
+    },
+    {
+      "path": "leveling/full/strict.json",
+      "name": "Leveling — strict",
+      "description": "Slow XP, anti-farm aggressive, no reaction XP, decay on.",
+      "category": "leveling",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "leveling"
+    },
+    {
+      "path": "leveling/full/xp-grind.json",
+      "name": "Leveling — XP grind",
+      "description": "Fast XP with weekend boost and reaction XP for hype servers.",
+      "category": "leveling",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "leveling"
+    },
+    {
+      "path": "leveling/partial/anti-farm-strict.json",
+      "name": "Anti-farm strict",
+      "description": "Tightens duplicate detection + burst freeze.",
+      "category": "leveling",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "leveling"
+    },
+    {
+      "path": "leveling/partial/channel-multipliers.json",
+      "name": "Channel multipliers preset",
+      "description": "Doubles XP in event channel, halves it in spam channel.",
+      "category": "leveling",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "leveling"
+    },
+    {
+      "path": "leveling/partial/decay-on.json",
+      "name": "Inactive XP decay",
+      "description": "Decays XP 5%/week after 14 inactive days.",
+      "category": "leveling",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "leveling"
+    },
+    {
+      "path": "leveling/partial/no-reaction-xp.json",
+      "name": "Disable reaction XP",
+      "description": "Reactions don't grant XP — useful in raidy servers.",
+      "category": "leveling",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "leveling"
+    },
+    {
+      "path": "leveling/partial/weekend-boost.json",
+      "name": "Weekend XP boost x2",
+      "description": "Doubles XP on Saturday/Sunday.",
+      "category": "leveling",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "leveling"
+    },
+    {
+      "path": "member-notes/full/default.json",
+      "name": "Member notes — default",
+      "description": "Mod-only notes attached to members; private, exportable.",
+      "category": "member-notes",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "member-notes"
+    },
+    {
+      "path": "member-notes/full/strict.json",
+      "name": "Member notes — audit",
+      "description": "Tighter retention, federation share on, audit log on every read.",
+      "category": "member-notes",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "member-notes"
+    },
+    {
+      "path": "member-notes/partial/no-export.json",
+      "name": "Private — no export",
+      "description": "Locks notes to in-app viewing only.",
+      "category": "member-notes",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "member-notes"
+    },
+    {
+      "path": "member-notes/partial/praise-pack.json",
+      "name": "Praise notes pack",
+      "description": "Adds 'praise' / 'great-help' / 'helpful' tags + DM on praise.",
+      "category": "member-notes",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "member-notes"
+    },
+    {
+      "path": "member-notes/partial/watch-list.json",
+      "name": "Watch-list pack",
+      "description": "Adds a sticky 'watch' tag that surfaces on every mod-coach review.",
+      "category": "member-notes",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "member-notes"
+    },
+    {
+      "path": "mod-coach/full/community.json",
+      "name": "Mod-Coach — community",
+      "description": "Friendly coaching tone, weekly digest only, no auto-apply.",
+      "category": "mod-coach",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "mod-coach"
+    },
+    {
+      "path": "mod-coach/full/default.json",
+      "name": "Mod-Coach — default",
+      "description": "AI mod-coach gives staff suggested actions on edge-case incidents.",
+      "category": "mod-coach",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "mod-coach"
+    },
+    {
+      "path": "mod-coach/full/strict.json",
+      "name": "Mod-Coach — strict",
+      "description": "Stricter rubric, lower auto-apply threshold disabled, all suggestions logged.",
+      "category": "mod-coach",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "mod-coach"
+    },
+    {
+      "path": "mod-coach/partial/auto-apply-high-conf.json",
+      "name": "Auto-apply on >0.95 confidence",
+      "description": "Lets the coach quietly action obvious cases without staff approval.",
+      "category": "mod-coach",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "mod-coach"
+    },
+    {
+      "path": "mod-coach/partial/tone-feedback.json",
+      "name": "Tone feedback for staff",
+      "description": "Highlights overly harsh or sarcastic mod replies in DM.",
+      "category": "mod-coach",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "mod-coach"
+    },
+    {
+      "path": "mod-coach/partial/weekly-review.json",
+      "name": "Weekly mod review digest",
+      "description": "Ships a weekly recap of mod actions + suggestions for retro.",
+      "category": "mod-coach",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "mod-coach"
+    },
+    {
+      "path": "moderation/full/community.json",
+      "name": "Moderation — community",
+      "description": "Friendly mod stance: short timeouts, fast warn decay, no auto-escalation.",
+      "category": "moderation",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "moderation"
+    },
+    {
+      "path": "moderation/full/default.json",
+      "name": "Moderation — default",
+      "description": "Standard mod-action defaults: warn-points expire, auto-escalate, mod-log on.",
+      "category": "moderation",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "moderation"
+    },
+    {
+      "path": "moderation/full/strict.json",
+      "name": "Moderation — strict",
+      "description": "Faster escalation, longer timeouts, harder ban deletes.",
+      "category": "moderation",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "moderation"
+    },
+    {
+      "path": "moderation/partial/auto-escalate-on.json",
+      "name": "Auto-escalate at 10 points",
+      "description": "Auto-timeout members who hit 10 warn-points within decay window.",
+      "category": "moderation",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "moderation"
+    },
+    {
+      "path": "moderation/partial/ban-delete-7d.json",
+      "name": "Ban delete 7 days",
+      "description": "Default `/ban` deletes 7 days of past messages.",
+      "category": "moderation",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "moderation"
+    },
+    {
+      "path": "moderation/partial/silent-mode.json",
+      "name": "Silent moderation mode",
+      "description": "Don't DM offenders — quietly action them.",
+      "category": "moderation",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "moderation"
+    },
+    {
+      "path": "moderation/partial/transcripts-on.json",
+      "name": "Save mod transcripts",
+      "description": "Saves a transcript of each mod-action thread for future appeal.",
+      "category": "moderation",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "moderation"
+    },
+    {
+      "path": "onboarding/full/default.json",
+      "name": "Onboarding — default",
+      "description": "Multi-step onboarding flow: rules ack, role-picker, intro post.",
+      "category": "onboarding",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "onboarding"
+    },
+    {
+      "path": "onboarding/full/strict.json",
+      "name": "Onboarding — strict",
+      "description": "Hard-gate everything until onboarding completed, kick on timeout.",
+      "category": "onboarding",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "onboarding"
+    },
+    {
+      "path": "onboarding/partial/intro-channel.json",
+      "name": "Intro post requirement",
+      "description": "Add an introduction post to onboarding flow.",
+      "category": "onboarding",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "onboarding"
+    },
+    {
+      "path": "onboarding/partial/kick-on-timeout-72h.json",
+      "name": "Kick after 72h incomplete",
+      "description": "Kicks members who don't finish onboarding within 72h.",
+      "category": "onboarding",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "onboarding"
+    },
+    {
+      "path": "onboarding/partial/rules-ack-required.json",
+      "name": "Rules-ack step",
+      "description": "Adds a rules-acknowledgement step to onboarding.",
+      "category": "onboarding",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "onboarding"
+    },
+    {
+      "path": "raid/full/community.json",
+      "name": "Raid shield — community",
+      "description": "Light raid filter that won't false-positive on event drops.",
+      "category": "raid",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "raid"
+    },
+    {
+      "path": "raid/full/default.json",
+      "name": "Raid shield — default",
+      "description": "Reasonable raid-detection thresholds with quarantine on trip.",
+      "category": "raid",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "raid"
+    },
+    {
+      "path": "raid/full/strict.json",
+      "name": "Raid shield — strict",
+      "description": "Aggressive thresholds for servers being actively attacked.",
+      "category": "raid",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "raid"
+    },
+    {
+      "path": "raid/partial/captcha-on-trip.json",
+      "name": "Captcha on raid trip",
+      "description": "When a raid trips, force every joiner through captcha until cleared.",
+      "category": "raid",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "raid"
+    },
+    {
+      "path": "raid/partial/dry-run-mode.json",
+      "name": "Raid dry-run mode",
+      "description": "Detect but never act — useful while tuning thresholds.",
+      "category": "raid",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "raid"
+    },
+    {
+      "path": "raid/partial/fingerprint-ban.json",
+      "name": "Fingerprint + avatar-hash ban",
+      "description": "Enables avatar/device-fingerprint matching when banning raiders.",
+      "category": "raid",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "raid"
+    },
+    {
+      "path": "raid/partial/lockdown-on-trip.json",
+      "name": "Lock channels on raid trip",
+      "description": "When a raid trips, lock @everyone send permission across all configured channels.",
+      "category": "raid",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "raid"
+    },
+    {
+      "path": "raid/partial/min-account-age-90d.json",
+      "name": "Block accounts <90 days old",
+      "description": "Hard block on very new accounts during active raid.",
+      "category": "raid",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "raid"
+    },
+    {
+      "path": "raid/partial/username-regex-pack.json",
+      "name": "Username pattern bans",
+      "description": "Auto-bans joiners whose username matches a known raid signature.",
+      "category": "raid",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "raid"
+    },
+    {
+      "path": "rep/full/default.json",
+      "name": "Rep — default",
+      "description": "Reputation system on with daily cap, no negative rep.",
+      "category": "rep",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "rep"
+    },
+    {
+      "path": "rep/full/strict.json",
+      "name": "Rep — strict",
+      "description": "Tight cooldowns, mutual-thread requirement, farm-freeze.",
+      "category": "rep",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "rep"
+    },
+    {
+      "path": "rep/partial/anti-farm.json",
+      "name": "Anti-rep-farm",
+      "description": "Adds reciprocal-rep + farm freeze detection.",
+      "category": "rep",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "rep"
+    },
+    {
+      "path": "rep/partial/negative-rep-on.json",
+      "name": "Allow negative rep",
+      "description": "Members can `-rep` annoying people.",
+      "category": "rep",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "rep"
+    },
+    {
+      "path": "safety/full/community.json",
+      "name": "Safety — community",
+      "description": "Light safety: keep PII detection on, NSFW soft-warn only.",
+      "category": "safety",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "safety"
+    },
+    {
+      "path": "safety/full/default.json",
+      "name": "Safety — default",
+      "description": "Member safety baseline: doxx detection, NSFW image scan, link blacklists.",
+      "category": "safety",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "safety"
+    },
+    {
+      "path": "safety/full/strict.json",
+      "name": "Safety — strict",
+      "description": "Strict NSFW and PII enforcement for SFW-only servers and minor-friendly communities.",
+      "category": "safety",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "safety"
+    },
+    {
+      "path": "safety/partial/doxx-detection-on.json",
+      "name": "Doxx detection on",
+      "description": "Auto-detect home-address / phone / email leaks and remove.",
+      "category": "safety",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "safety"
+    },
+    {
+      "path": "safety/partial/report-channel.json",
+      "name": "Member report channel",
+      "description": "Adds a /report command targeting a private safety channel.",
+      "category": "safety",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "safety"
+    },
+    {
+      "path": "safety/partial/suicide-response.json",
+      "name": "Suicide-prevention response",
+      "description": "Detects crisis-language and DMs the user a localized hotline link.",
+      "category": "safety",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "safety"
+    },
+    {
+      "path": "starboard/full/community.json",
+      "name": "Starboard — community",
+      "description": "Low threshold, generous, NSFW board allowed.",
+      "category": "starboard",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "starboard"
+    },
+    {
+      "path": "starboard/full/default.json",
+      "name": "Starboard — default",
+      "description": "Standard 5-star threshold board in #starboard.",
+      "category": "starboard",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "starboard"
+    },
+    {
+      "path": "starboard/full/strict.json",
+      "name": "Starboard — strict",
+      "description": "Higher threshold, NSFW blocked, only specific channels feed in.",
+      "category": "starboard",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "starboard"
+    },
+    {
+      "path": "starboard/partial/dev-soundbite-board.json",
+      "name": "Dev soundbite board",
+      "description": "Dev-channel only, 3-star threshold for funny dev quotes.",
+      "category": "starboard",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "starboard"
+    },
+    {
+      "path": "starboard/partial/high-threshold-10.json",
+      "name": "High threshold (10 stars)",
+      "description": "Bumps threshold to 10 — only the rarest gems get pinned.",
+      "category": "starboard",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "starboard"
+    },
+    {
+      "path": "starboard/partial/mod-quote-board.json",
+      "name": "Mod-quote board",
+      "description": "Dedicated board for star-pinned moderator messages.",
+      "category": "starboard",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "starboard"
+    },
+    {
+      "path": "starboard/partial/nsfw-board-split.json",
+      "name": "NSFW board split",
+      "description": "Routes NSFW posts to a separate starboard channel.",
+      "category": "starboard",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "starboard"
+    },
+    {
+      "path": "starboard/partial/self-star-allowed.json",
+      "name": "Allow self-stars",
+      "description": "Authors can star their own posts.",
+      "category": "starboard",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "starboard"
+    },
+    {
+      "path": "welcome-flows/anti-bot-age-gate.json",
+      "name": "Anti-bot age-gate before access",
+      "description": "Holds new joins in an unverified state until their account is at least N days old AND they pass a one-click human check. Blocks classic drive-by bot raids without forcing real users through CAPTCHA.",
+      "category": "welcome-flows",
+      "shape": "flat",
+      "kind": "welcome-flow",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome-flows/multi-language-welcome-split.json",
+      "name": "Multi-language welcome split",
+      "description": "Routes the welcome message to a per-language channel based on the user's Discord locale. Falls back to a shared channel if locale is unsupported. Each language pulls from its own locale-keyed pool.",
+      "category": "welcome-flows",
+      "shape": "flat",
+      "kind": "welcome-flow",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome-flows/onboarding-with-quiz.json",
+      "name": "Onboarding recipe with quiz",
+      "description": "Three-question onboarding quiz that gates access on correct answers about server rules. Wrong answers loop the question with a hint; final pass grants the MEMBER role and posts a celebration in #general.",
+      "category": "welcome-flows",
+      "shape": "flat",
+      "kind": "welcome-flow",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome-flows/tiered-welcome-role-picker.json",
+      "name": "Tiered welcome with role picker",
+      "description": "Two-step welcome: greet on join in #welcome with a button that posts a role-picker in a private thread. Once the user picks a role, they're moved to the MEMBER tier and the picker thread auto-archives.",
+      "category": "welcome-flows",
+      "shape": "flat",
+      "kind": "welcome-flow",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome-flows/welcome-with-24h-dm-nudge.json",
+      "name": "Welcome with 24h DM nudge if inactive",
+      "description": "Standard public welcome plus a 24-hour follow-up DM if the new member hasn't posted in any channel by then. Big lift on activation rate without being naggy.",
+      "category": "welcome-flows",
+      "shape": "flat",
+      "kind": "welcome-flow",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/full/community.json",
+      "name": "Welcome — community",
+      "description": "Warm community welcome with image card, member count, mention.",
+      "category": "welcome",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/full/default.json",
+      "name": "Welcome — default",
+      "description": "Embed welcome message in #welcome with auto-role and 1-day reminder DM.",
+      "category": "welcome",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/full/strict.json",
+      "name": "Welcome — strict",
+      "description": "No auto-role until verified; channel mention + reminder + DM included.",
+      "category": "welcome",
+      "shape": "full",
+      "kind": "module-export",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/partial/boost-celebration.json",
+      "name": "Boost celebration message",
+      "description": "Posts a special embed in #announcements when someone boosts.",
+      "category": "welcome",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/partial/image-card-on.json",
+      "name": "Welcome image card",
+      "description": "Switch from plain embed to a generated welcome image card.",
+      "category": "welcome",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/partial/leave-on.json",
+      "name": "Leave message",
+      "description": "Posts a brief leave embed when a member leaves.",
+      "category": "welcome",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/partial/reminder-24h.json",
+      "name": "24-hour onboarding reminder",
+      "description": "DM members 24h after join if they haven't sent a message yet.",
+      "category": "welcome",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "welcome"
+    },
+    {
+      "path": "welcome/partial/thread-on-join.json",
+      "name": "Welcome thread per join",
+      "description": "Open a private welcome thread for each new member.",
+      "category": "welcome",
+      "shape": "partial",
+      "kind": "module-recipe",
+      "module": "welcome"
+    }
+  ]
+}
