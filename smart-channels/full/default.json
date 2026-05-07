@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "smart-channels",
+  "name": "Smart channels \u2014 default",
+  "description": "Auto-create temp voice/text channels on demand.",
+  "settings": {
+    "smart_channels.enabled": true,
+    "smart_channels.tempVoice": true,
+    "smart_channels.tempVoiceCategoryId": "{channel:tempvoice-cat}",
+    "smart_channels.tempVoiceTriggerId": "{channel:tempvoice-trigger}",
+    "smart_channels.tempTextChannels": false,
+    "smart_channels.maxConcurrent": 50,
+    "smart_channels.archiveAfterIdleMin": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:tempvoice-cat}",
+      "{channel:tempvoice-trigger}"
+    ]
+  }
+}

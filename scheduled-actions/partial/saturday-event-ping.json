@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "scheduled-actions",
+  "name": "Saturday event ping",
+  "description": "Pings event role every Saturday afternoon.",
+  "settings": {},
+  "content": [
+    {
+      "type": "scheduled_action",
+      "name": "sat-event-ping",
+      "cron": "0 18 * * SAT",
+      "action": {
+        "kind": "ping_role",
+        "roleId": "{role:ping-events}",
+        "channelId": "{channel:events}",
+        "messageKey": "i18n:scheduled.sat_event"
+      }
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

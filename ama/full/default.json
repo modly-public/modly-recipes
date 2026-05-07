@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "ama",
+  "name": "AMA \u2014 default",
+  "description": "Standard AMA: panelists, queue moderation, scheduled start.",
+  "settings": {
+    "ama.enabled": true,
+    "ama.queueChannelId": "{channel:ama-queue}",
+    "ama.panelistRoleId": "{role:panelists}",
+    "ama.requireApproval": true,
+    "ama.maxQuestionsPerUser": 3,
+    "ama.allowAnonymous": false,
+    "ama.notifyOnAnswer": true,
+    "ama.archiveAfterHours": 72,
+    "ama.threadPerQuestion": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:panelists}"
+    ],
+    "channels": [
+      "{channel:ama-queue}"
+    ]
+  }
+}

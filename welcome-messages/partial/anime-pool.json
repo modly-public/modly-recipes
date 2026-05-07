@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome-messages",
+  "name": "Welcome pool \u2014 anime",
+  "description": "Anime/weeb welcome lines (i18n keys).",
+  "settings": {},
+  "content": [
+    {
+      "type": "welcome_messages.pool",
+      "theme": "anime",
+      "lines": [
+        "i18n:welcome_messages.anime.line1",
+        "i18n:welcome_messages.anime.line2",
+        "i18n:welcome_messages.anime.line3",
+        "i18n:welcome_messages.anime.line4",
+        "i18n:welcome_messages.anime.line5"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

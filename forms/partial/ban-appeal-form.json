@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "forms",
+  "name": "Ban appeal form (extended)",
+  "description": "Long-form ban appeal \u2014 separate from appeal-portal for one-off custom flows.",
+  "settings": {},
+  "content": [
+    {
+      "type": "form",
+      "name": "ban-appeal-form",
+      "title": "i18n:forms.ban_appeal.title",
+      "buttonLabel": "i18n:forms.ban_appeal.button",
+      "reviewChannelId": "{channel:appeals}",
+      "approverRoleIds": [
+        "{role:senior-mods}"
+      ],
+      "perUserLimit": 1,
+      "requireReasonOnDeny": true,
+      "questions": [
+        {
+          "id": "name",
+          "label": "i18n:forms.ban_appeal.q.name",
+          "kind": "short",
+          "required": true,
+          "maxLength": 50
+        },
+        {
+          "id": "reason",
+          "label": "i18n:forms.ban_appeal.q.reason",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 1500
+        },
+        {
+          "id": "remorse",
+          "label": "i18n:forms.ban_appeal.q.remorse",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 1500
+        },
+        {
+          "id": "promise",
+          "label": "i18n:forms.ban_appeal.q.promise",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 800
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

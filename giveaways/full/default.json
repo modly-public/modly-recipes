@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "giveaways",
+  "name": "Giveaways \u2014 default",
+  "description": "Standard 24h giveaways, role gating, reroll allowed.",
+  "settings": {
+    "giveaways.enabled": true,
+    "giveaways.defaultDurationHours": 24,
+    "giveaways.allowReroll": true,
+    "giveaways.requireBoosterRoleId": "",
+    "giveaways.bonusEntriesByRole": {},
+    "giveaways.minAccountDays": 7,
+    "giveaways.minServerDays": 1,
+    "giveaways.allowMultipleWinners": true,
+    "giveaways.notifyChannelId": "{channel:giveaways}",
+    "giveaways.embedColor": 16766720,
+    "giveaways.dmWinner": true,
+    "giveaways.requireRoleId": "",
+    "giveaways.banListEnabled": true,
+    "giveaways.archiveAfterDays": 30,
+    "giveaways.allowEntries": true,
+    "giveaways.threadOnStart": false,
+    "giveaways.maxConcurrent": 5
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:giveaways}"
+    ]
+  }
+}

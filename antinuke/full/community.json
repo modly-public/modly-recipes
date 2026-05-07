@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "antinuke",
+  "name": "Antinuke \u2014 community",
+  "description": "Light antinuke for friendly community servers. Catches catastrophic actions but stays out of staff's way.",
+  "settings": {
+    "antinuke.armed": true,
+    "antinuke.action": "alert",
+    "antinuke.alertChannelId": "{channel:mod-log}",
+    "antinuke.alertRoleId": "{role:mods}",
+    "antinuke.dmOffender": false,
+    "antinuke.dmOwner": true,
+    "antinuke.dualResponse": false,
+    "antinuke.cooldownMin": 60,
+    "antinuke.minAccountDays": 0,
+    "antinuke.minServerDays": 0,
+    "antinuke.protectSelf": true,
+    "antinuke.dehoist.enabled": false,
+    "antinuke.escalate.enabled": false,
+    "antinuke.escalate.windowHours": 24,
+    "antinuke.lockdown.autoEndMinutes": 30,
+    "antinuke.lockdown.tripDetections": 5,
+    "antinuke.lockdown.channels": [],
+    "antinuke.panicMode.enabled": false,
+    "antinuke.panicMode.level": "soft",
+    "antinuke.panicMode.minutes": 15,
+    "antinuke.panicMode.disableDms": false,
+    "antinuke.panicMode.lockChannels": false,
+    "antinuke.panicMode.lockInvites": true,
+    "antinuke.panicMode.triggers": [],
+    "antinuke.pingFlood.threshold": 10,
+    "antinuke.pingFlood.windowMs": 10000,
+    "antinuke.quarantine.autoCreate": true,
+    "antinuke.quarantine.allowChannelEnabled": true,
+    "antinuke.quarantine.allowChannelIds": [],
+    "antinuke.quarantine.deniedPerms": [
+      "SendMessages",
+      "AddReactions"
+    ],
+    "antinuke.raid.scoreThreshold": 80,
+    "antinuke.recovery.autoRotate": false,
+    "antinuke.recovery.requireGeoMatch": false,
+    "antinuke.recovery.trustees": [],
+    "antinuke.recovery.ttlMinutes": 60,
+    "antinuke.rollback.enabled": true,
+    "antinuke.rollback.actions": [
+      "channel.delete",
+      "role.delete"
+    ],
+    "antinuke.rollback.windowMinutes": 10,
+    "antinuke.snapshot.autoRevert": false,
+    "antinuke.snapshot.preRotateVanity": false,
+    "antinuke.staffRoleIds": [
+      "{role:mods}"
+    ],
+    "antinuke.whitelist": [],
+    "antinuke.whitelistBots": true,
+    "antinuke.whitelistRoles": [
+      "{role:mods}",
+      "{role:trusted-bots}"
+    ],
+    "antinuke.federation.enforce": false,
+    "antinuke.federation.action": "alert",
+    "antinuke.federation.publish": false,
+    "antinuke.exemptCategoryIds": [],
+    "antinuke.alertChannelsExtra": []
+  },
+  "dependencies": {
+    "roles": [
+      "{role:mods}",
+      "{role:trusted-bots}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  },
+  "content": []
+}

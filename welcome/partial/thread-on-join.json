@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome",
+  "name": "Welcome thread per join",
+  "description": "Open a private welcome thread for each new member.",
+  "settings": {
+    "welcome.threadOnJoin": true,
+    "welcome.threadName": "i18n:welcome.threadName"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

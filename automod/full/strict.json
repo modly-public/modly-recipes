@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "automod",
+  "name": "Automod \u2014 strict",
+  "description": "Locked-down ruleset for raid-prone or NSFW-adjacent servers.",
+  "settings": {
+    "automod.escalation.enabled": true,
+    "automod.lockdown.sweep": true,
+    "automod.notify.channelId": "{channel:mod-log}",
+    "automod.exempt.roles": [
+      "{role:mods}"
+    ]
+  },
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Invite links",
+      "kind": "INVITE_LINK",
+      "config": {
+        "allowGuildIds": []
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "ban",
+            "reason": "ad-spam"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "type": "automod.rule",
+      "name": "Scam links",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "ban",
+            "reason": "scam-link"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 5
+    },
+    {
+      "type": "automod.rule",
+      "name": "Any external links",
+      "kind": "LINK_DOMAIN",
+      "config": {
+        "allowDomains": [
+          "youtube.com",
+          "discord.com"
+        ]
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 15
+    },
+    {
+      "type": "automod.rule",
+      "name": "Mass mentions",
+      "kind": "MASS_MENTION",
+      "config": {
+        "threshold": 3,
+        "includeRoles": true,
+        "includeEveryone": true
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "timeout",
+            "durationSec": 3600
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "type": "automod.rule",
+      "name": "All caps",
+      "kind": "CAP_RATIO",
+      "config": {
+        "ratio": 0.55,
+        "minLen": 8
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 40
+    },
+    {
+      "type": "automod.rule",
+      "name": "Emoji spam",
+      "kind": "EMOJI_SPAM",
+      "config": {
+        "max": 6
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 45
+    },
+    {
+      "type": "automod.rule",
+      "name": "Slurs",
+      "kind": "WORD_BLACKLIST",
+      "config": {
+        "wildcard": [
+          "slur1placeholder",
+          "slur2placeholder"
+        ],
+        "caseSensitive": false
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "ban",
+            "reason": "hate-speech"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 5
+    }
+  ],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

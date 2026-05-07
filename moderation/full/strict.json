@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "moderation",
+  "name": "Moderation \u2014 strict",
+  "description": "Faster escalation, longer timeouts, harder ban deletes.",
+  "settings": {
+    "moderation.modLogChannelId": "{channel:mod-log}",
+    "moderation.warnPointDecayDays": 60,
+    "moderation.autoEscalateAtPoints": 6,
+    "moderation.escalationAction": "ban",
+    "moderation.dmOnAction": true,
+    "moderation.requireReason": true,
+    "moderation.banDeleteDays": 7,
+    "moderation.timeoutMaxHours": 168,
+    "moderation.purgeMaxMessages": 500,
+    "moderation.modCallRoleId": "{role:mods}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

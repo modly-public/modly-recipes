@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "starboard",
+  "name": "High threshold (10 stars)",
+  "description": "Bumps threshold to 10 \u2014 only the rarest gems get pinned.",
+  "settings": {
+    "starboard.threshold": 10
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Scam-link pack",
+  "description": "Auto-bans on detected scam URLs (Discord/Steam/Crypto phishing patterns).",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Scam links",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "ban",
+            "reason": "scam-link"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 5
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

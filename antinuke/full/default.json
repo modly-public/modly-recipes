@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "antinuke",
+  "name": "Antinuke \u2014 default",
+  "description": "Sensible Wick-style antinuke baseline. Armed, alerts to log channel, moderate thresholds, panic mode primed but not aggressive.",
+  "settings": {
+    "antinuke.armed": true,
+    "antinuke.action": "quarantine",
+    "antinuke.alertChannelId": "{channel:antinuke-alerts}",
+    "antinuke.alertRoleId": "{role:mods}",
+    "antinuke.dmOffender": true,
+    "antinuke.dmOwner": true,
+    "antinuke.dualResponse": false,
+    "antinuke.cooldownMin": 30,
+    "antinuke.minAccountDays": 7,
+    "antinuke.minServerDays": 0,
+    "antinuke.protectSelf": true,
+    "antinuke.dehoist.enabled": true,
+    "antinuke.escalate.enabled": true,
+    "antinuke.escalate.windowHours": 24,
+    "antinuke.lockdown.autoEndMinutes": 60,
+    "antinuke.lockdown.tripDetections": 3,
+    "antinuke.lockdown.channels": [],
+    "antinuke.panicMode.enabled": false,
+    "antinuke.panicMode.level": "soft",
+    "antinuke.panicMode.minutes": 30,
+    "antinuke.panicMode.disableDms": false,
+    "antinuke.panicMode.lockChannels": true,
+    "antinuke.panicMode.lockInvites": true,
+    "antinuke.panicMode.triggers": [],
+    "antinuke.pingFlood.threshold": 6,
+    "antinuke.pingFlood.windowMs": 10000,
+    "antinuke.quarantine.autoCreate": true,
+    "antinuke.quarantine.allowChannelEnabled": true,
+    "antinuke.quarantine.allowChannelIds": [],
+    "antinuke.quarantine.deniedPerms": [
+      "SendMessages",
+      "AddReactions",
+      "Speak"
+    ],
+    "antinuke.raid.scoreThreshold": 70,
+    "antinuke.recovery.autoRotate": true,
+    "antinuke.recovery.requireGeoMatch": false,
+    "antinuke.recovery.trustees": [],
+    "antinuke.recovery.ttlMinutes": 60,
+    "antinuke.rollback.enabled": true,
+    "antinuke.rollback.actions": [
+      "channel.delete",
+      "role.delete",
+      "webhook.create"
+    ],
+    "antinuke.rollback.windowMinutes": 15,
+    "antinuke.snapshot.autoRevert": true,
+    "antinuke.snapshot.preRotateVanity": true,
+    "antinuke.staffRoleIds": [
+      "{role:mods}"
+    ],
+    "antinuke.whitelist": [],
+    "antinuke.whitelistBots": true,
+    "antinuke.whitelistRoles": [
+      "{role:mods}"
+    ],
+    "antinuke.federation.enforce": false,
+    "antinuke.federation.action": "alert",
+    "antinuke.federation.publish": false,
+    "antinuke.exemptCategoryIds": [],
+    "antinuke.alertChannelsExtra": []
+  },
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:antinuke-alerts}"
+    ]
+  },
+  "content": []
+}

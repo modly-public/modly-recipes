@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "starboard",
+  "name": "Starboard \u2014 community",
+  "description": "Low threshold, generous, NSFW board allowed.",
+  "settings": {
+    "starboard.enabled": true,
+    "starboard.channelId": "{channel:starboard}",
+    "starboard.threshold": 3,
+    "starboard.emoji": "\u2b50",
+    "starboard.allowNsfw": true,
+    "starboard.allowSelfStar": false,
+    "starboard.maxMessageAgeDays": 90
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:starboard}"
+    ]
+  }
+}

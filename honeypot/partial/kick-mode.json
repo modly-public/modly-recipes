@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "honeypot",
+  "name": "Honeypot kick mode",
+  "description": "Honeypot kicks instead of banning.",
+  "settings": {
+    "honeypot.action": "kick"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

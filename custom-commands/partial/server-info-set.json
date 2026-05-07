@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "custom-commands",
+  "name": "Server-info command set",
+  "description": "Adds /serverinfo /partners /donate /links commands.",
+  "settings": {},
+  "content": [
+    {
+      "type": "custom-command",
+      "name": "serverinfo",
+      "kind": "embed",
+      "embedKey": "i18n:custom_commands.serverinfo.body"
+    },
+    {
+      "type": "custom-command",
+      "name": "partners",
+      "kind": "embed",
+      "embedKey": "i18n:custom_commands.partners.body"
+    },
+    {
+      "type": "custom-command",
+      "name": "donate",
+      "kind": "embed",
+      "embedKey": "i18n:custom_commands.donate.body"
+    },
+    {
+      "type": "custom-command",
+      "name": "links",
+      "kind": "embed",
+      "embedKey": "i18n:custom_commands.links.body"
+    },
+    {
+      "type": "custom-command",
+      "name": "support",
+      "kind": "embed",
+      "embedKey": "i18n:custom_commands.support.body"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

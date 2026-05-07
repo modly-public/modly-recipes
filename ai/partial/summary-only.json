@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai",
+  "name": "Summary-only mode",
+  "description": "Disables /chat \u2014 only thread/channel summaries allowed.",
+  "settings": {
+    "ai.allowChat": false,
+    "ai.allowSummary": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

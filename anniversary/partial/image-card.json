@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "anniversary",
+  "name": "Anniversary image card",
+  "description": "Generate an anniversary card (default off).",
+  "settings": {
+    "anniversary.useImageCard": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

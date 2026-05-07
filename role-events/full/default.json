@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "role-events",
+  "name": "Role events \u2014 default",
+  "description": "Triggers when staff/booster roles are added/removed.",
+  "settings": {
+    "role_events.enabled": true,
+    "role_events.editorRoleId": "{role:mods}",
+    "role_events.logChannelId": "{channel:mod-log}",
+    "role_events.events": [
+      {
+        "name": "staff-added",
+        "trigger": "role.added",
+        "roleId": "{role:mods}",
+        "actions": [
+          {
+            "kind": "post",
+            "channelId": "{channel:mod-log}",
+            "messageKey": "i18n:role_events.staff_added"
+          }
+        ]
+      },
+      {
+        "name": "booster-removed",
+        "trigger": "role.removed",
+        "roleId": "{role:booster}",
+        "actions": [
+          {
+            "kind": "remove_role",
+            "roleId": "{role:perks-booster}"
+          }
+        ]
+      }
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}",
+      "{role:booster}",
+      "{role:perks-booster}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

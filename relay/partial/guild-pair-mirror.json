@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "relay",
+  "name": "Guild-pair mirror",
+  "description": "Two-way mirror between a sister-guild's channel and ours.",
+  "settings": {},
+  "content": [
+    {
+      "type": "relay",
+      "name": "sister-guild",
+      "from": "SISTER_GUILD_CHANNEL_ID",
+      "to": "{channel:sister-relay}",
+      "mode": "two_way"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "roles",
+  "name": "Pronoun roles pack",
+  "description": "Adds he/she/they/ask roles via dropdown.",
+  "settings": {},
+  "content": [
+    {
+      "type": "roles.menu",
+      "name": "pronouns",
+      "title": "i18n:roles.pronounsTitle",
+      "channelId": "{channel:role-picker}",
+      "options": [
+        {
+          "label": "he/him",
+          "roleId": "{role:pronoun-he}"
+        },
+        {
+          "label": "she/her",
+          "roleId": "{role:pronoun-she}"
+        },
+        {
+          "label": "they/them",
+          "roleId": "{role:pronoun-they}"
+        },
+        {
+          "label": "ask me",
+          "roleId": "{role:pronoun-ask}"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

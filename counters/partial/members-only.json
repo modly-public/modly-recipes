@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "counters",
+  "name": "Member-count counter",
+  "description": "Only the member-count voice channel.",
+  "settings": {
+    "counters.counters": [
+      {
+        "key": "members",
+        "channelId": "{channel:counter-members}"
+      }
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

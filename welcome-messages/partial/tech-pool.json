@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome-messages",
+  "name": "Welcome pool \u2014 tech",
+  "description": "Tech-server welcome lines (i18n keys).",
+  "settings": {},
+  "content": [
+    {
+      "type": "welcome_messages.pool",
+      "theme": "tech",
+      "lines": [
+        "i18n:welcome_messages.tech.line1",
+        "i18n:welcome_messages.tech.line2",
+        "i18n:welcome_messages.tech.line3",
+        "i18n:welcome_messages.tech.line4",
+        "i18n:welcome_messages.tech.line5"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

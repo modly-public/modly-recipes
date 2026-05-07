@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "mod-coach",
+  "name": "Mod-Coach \u2014 strict",
+  "description": "Stricter rubric, lower auto-apply threshold disabled, all suggestions logged.",
+  "settings": {
+    "mod_coach.enabled": true,
+    "mod_coach.suggestActions": true,
+    "mod_coach.coachLevel": "strict",
+    "mod_coach.suggestionConfidenceMin": 0.85,
+    "mod_coach.allowAutoApply": false,
+    "mod_coach.toneFeedback": true,
+    "mod_coach.consistencyCheck": true,
+    "mod_coach.escalateUnresolved": true,
+    "mod_coach.escalateAfterHours": 6,
+    "mod_coach.staffRoleId": "{role:mods}",
+    "mod_coach.digestChannelId": "{channel:staff-coach}",
+    "mod_coach.scoringRubric": "strict",
+    "mod_coach.privateNotes": true,
+    "mod_coach.includeUserHistory": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:staff-coach}"
+    ]
+  }
+}

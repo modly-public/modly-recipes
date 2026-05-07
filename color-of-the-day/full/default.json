@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "color-of-the-day",
+  "name": "Color of the day \u2014 default",
+  "description": "Rotates a colour role daily through a 7-colour palette.",
+  "settings": {
+    "color_of_the_day.enabled": true,
+    "color_of_the_day.roleId": "{role:color-of-the-day}",
+    "color_of_the_day.palette": [
+      "#ff595e",
+      "#ffca3a",
+      "#8ac926",
+      "#1982c4",
+      "#6a4c93",
+      "#ff924c",
+      "#52b788"
+    ],
+    "color_of_the_day.rotateAt": "00:00",
+    "color_of_the_day.timezone": "UTC",
+    "color_of_the_day.announceChannelId": "{channel:general}",
+    "color_of_the_day.announceMessage": "i18n:color_of_the_day.message"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:color-of-the-day}"
+    ],
+    "channels": [
+      "{channel:general}"
+    ]
+  }
+}

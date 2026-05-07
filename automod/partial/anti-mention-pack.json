@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Anti-mention pack",
+  "description": "Stops mention storms \u2014 bans members who mention 4+ unique users at once.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Mass mentions strict",
+      "kind": "MASS_MENTION",
+      "config": {
+        "threshold": 4,
+        "includeRoles": true,
+        "includeEveryone": true
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "timeout",
+            "durationSec": 1800
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 30
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "safety",
+  "name": "Safety \u2014 default",
+  "description": "Member safety baseline: doxx detection, NSFW image scan, link blacklists.",
+  "settings": {
+    "safety.enabled": true,
+    "safety.doxxDetection": true,
+    "safety.nsfwScan": true,
+    "safety.nsfwAction": "delete",
+    "safety.linkBlacklistEnabled": true,
+    "safety.privatePiiDetection": true,
+    "safety.alertChannelId": "{channel:mod-log}",
+    "safety.alertRoleId": "{role:mods}",
+    "safety.dmOffender": true,
+    "safety.exemptChannels": [
+      "{channel:nsfw}"
+    ],
+    "safety.exemptRoles": [
+      "{role:mods}"
+    ],
+    "safety.cooldownMin": 10,
+    "safety.scanAttachments": true,
+    "safety.scanLinkPreviews": true,
+    "safety.warnPoints": 5,
+    "safety.dryRun": false,
+    "safety.suicideKeywords": true,
+    "safety.suicideResponse": "i18n:safety.suicideResponse",
+    "safety.recordViolations": true,
+    "safety.viewableInDashboard": true,
+    "safety.allowReport": true,
+    "safety.allowSelfReport": true,
+    "safety.reportChannelId": "{channel:safety-reports}",
+    "safety.tts.scanRecordings": false,
+    "safety.imageHashCache": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}",
+      "{channel:nsfw}",
+      "{channel:safety-reports}"
+    ]
+  }
+}

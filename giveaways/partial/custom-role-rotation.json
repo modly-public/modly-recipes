@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "giveaways",
+  "name": "Custom-role rotation",
+  "description": "Monthly custom-role giveaway \u2014 winner gets a personal vanity role.",
+  "settings": {},
+  "content": [
+    {
+      "type": "giveaways.template",
+      "name": "monthly-custom-role",
+      "title": "i18n:giveaways.customRoleTitle",
+      "prize": "i18n:giveaways.customRolePrize",
+      "durationHours": 720,
+      "winners": 1,
+      "grantRoleTemplate": true
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

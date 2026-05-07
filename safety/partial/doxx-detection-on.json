@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "safety",
+  "name": "Doxx detection on",
+  "description": "Auto-detect home-address / phone / email leaks and remove.",
+  "settings": {
+    "safety.doxxDetection": true,
+    "safety.privatePiiDetection": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

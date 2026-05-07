@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "custom-commands",
+  "name": "Mod toolkit set",
+  "description": "Mod-only quick-actions: /modping /modnote /escalate.",
+  "settings": {},
+  "content": [
+    {
+      "type": "custom-command",
+      "name": "modping",
+      "kind": "ping",
+      "roleId": "{role:mods}",
+      "messageKey": "i18n:custom_commands.modping"
+    },
+    {
+      "type": "custom-command",
+      "name": "modnote",
+      "kind": "log",
+      "channelId": "{channel:mod-log}",
+      "messageKey": "i18n:custom_commands.modnote"
+    },
+    {
+      "type": "custom-command",
+      "name": "escalate",
+      "kind": "ping",
+      "roleId": "{role:senior-mods}",
+      "messageKey": "i18n:custom_commands.escalate"
+    },
+    {
+      "type": "custom-command",
+      "name": "alert-owner",
+      "kind": "ping",
+      "roleId": "{role:owners}",
+      "messageKey": "i18n:custom_commands.alert_owner"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "raid",
+  "name": "Fingerprint + avatar-hash ban",
+  "description": "Enables avatar/device-fingerprint matching when banning raiders.",
+  "settings": {
+    "raid.avatarHashBan": true,
+    "raid.fingerprintBan": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

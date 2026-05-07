@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "custom-commands",
+  "name": "Rules command set",
+  "description": "Adds /rules /rule-1 ... /rule-10 commands referencing the rules channel.",
+  "settings": {},
+  "content": [
+    {
+      "type": "custom-command",
+      "name": "rules",
+      "kind": "embed",
+      "embedKey": "i18n:custom_commands.rules.body",
+      "title": "i18n:custom_commands.rules.title"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-1",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.1"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-2",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.2"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-3",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.3"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-4",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.4"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-5",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.5"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-6",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.6"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-7",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.7"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-8",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.8"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-9",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.9"
+    },
+    {
+      "type": "custom-command",
+      "name": "rule-10",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.rule.10"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

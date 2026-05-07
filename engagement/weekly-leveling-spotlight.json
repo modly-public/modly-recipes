@@ -1,0 +1,27 @@
+{
+  "name": "Weekly leveling spotlight",
+  "kind": "engagement-flow",
+  "description": "Every Monday, posts a recap of the top 5 climbers on the XP leaderboard from the past 7 days. Awards a temporary VIP role to #1 for a week and an emoji to top 3.",
+  "module": "leveling",
+  "schedule": { "cron": "0 12 * * MON", "timezone": "server" },
+  "config": {
+    "channelId": "ANNOUNCEMENTS_CHANNEL_ID",
+    "windowDays": 7,
+    "topN": 5,
+    "embed": {
+      "titleKey": "i18n:engagement.weekly_spotlight.title",
+      "descriptionKey": "i18n:engagement.weekly_spotlight.description",
+      "color": 16776960,
+      "footerKey": "i18n:engagement.weekly_spotlight.footer"
+    },
+    "rewards": {
+      "first": {
+        "tempRoleId": "WEEK_VIP_ROLE_ID",
+        "tempRoleDurationHours": 168,
+        "announcementKey": "i18n:engagement.weekly_spotlight.first_announce"
+      },
+      "topThreeEmoji": "⭐"
+    }
+  },
+  "i18nNotes": "All copy keyed. Replace WEEK_VIP_ROLE_ID with a low-permission cosmetic role."
+}

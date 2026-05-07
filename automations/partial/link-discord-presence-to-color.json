@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automations",
+  "name": "Link presence to colour",
+  "description": "Switches a member's color role based on their online/idle/dnd presence.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automation",
+      "name": "presence-color",
+      "trigger": "presence.update",
+      "actions": [
+        {
+          "kind": "switch_color_role",
+          "online": "{role:color-online}",
+          "idle": "{role:color-idle}",
+          "dnd": "{role:color-dnd}"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

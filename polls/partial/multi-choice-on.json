@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "polls",
+  "name": "Multiple-choice polls",
+  "description": "Voters can pick more than one option.",
+  "settings": {
+    "polls.allowMultipleChoice": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

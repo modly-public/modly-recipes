@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "autoresponders",
+  "name": "Support FAQ autoresponders",
+  "description": "Auto-pings the support FAQ when common questions are asked.",
+  "settings": {},
+  "content": [
+    {
+      "type": "autoresponder",
+      "name": "how-to-verify",
+      "match": [
+        "how do i verify",
+        "how to verify"
+      ],
+      "kind": "reply",
+      "responseKey": "i18n:autoresponders.how_to_verify"
+    },
+    {
+      "type": "autoresponder",
+      "name": "how-to-get-roles",
+      "match": [
+        "how do i get roles",
+        "where roles",
+        "where are roles"
+      ],
+      "kind": "reply",
+      "responseKey": "i18n:autoresponders.how_to_get_roles"
+    },
+    {
+      "type": "autoresponder",
+      "name": "how-to-appeal",
+      "match": [
+        "how to appeal",
+        "how do i appeal"
+      ],
+      "kind": "reply",
+      "responseKey": "i18n:autoresponders.how_to_appeal"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

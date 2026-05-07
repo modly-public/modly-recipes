@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "safety",
+  "name": "Safety \u2014 community",
+  "description": "Light safety: keep PII detection on, NSFW soft-warn only.",
+  "settings": {
+    "safety.enabled": true,
+    "safety.doxxDetection": true,
+    "safety.nsfwScan": true,
+    "safety.nsfwAction": "warn",
+    "safety.privatePiiDetection": true,
+    "safety.alertChannelId": "{channel:mod-log}",
+    "safety.alertRoleId": "{role:mods}",
+    "safety.dmOffender": false,
+    "safety.exemptRoles": [
+      "{role:mods}"
+    ],
+    "safety.suicideKeywords": true,
+    "safety.allowReport": true,
+    "safety.reportChannelId": "{channel:safety-reports}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}",
+      "{channel:safety-reports}"
+    ]
+  }
+}

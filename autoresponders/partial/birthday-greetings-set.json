@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "autoresponders",
+  "name": "Birthday greetings",
+  "description": "Reacts to messages mentioning birthdays.",
+  "settings": {},
+  "content": [
+    {
+      "type": "autoresponder",
+      "name": "birthday-greet",
+      "match": [
+        "happy birthday",
+        "hbd",
+        "happy bday"
+      ],
+      "kind": "react",
+      "emoji": "\ud83c\udf82"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

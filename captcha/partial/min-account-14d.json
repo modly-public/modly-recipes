@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "captcha",
+  "name": "Captcha + min account age 14d",
+  "description": "Adds a 14-day account age floor on top of captcha.",
+  "settings": {
+    "captcha.minAccountDays": 14
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

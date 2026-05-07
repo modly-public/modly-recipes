@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "raid",
+  "name": "Raid shield \u2014 default",
+  "description": "Reasonable raid-detection thresholds with quarantine on trip.",
+  "settings": {
+    "raid.enabled": true,
+    "raid.joinWindowSec": 30,
+    "raid.joinThreshold": 10,
+    "raid.action": "quarantine",
+    "raid.quarantineRoleId": "{role:quarantine}",
+    "raid.alertChannelId": "{channel:mod-log}",
+    "raid.alertRoleId": "{role:mods}",
+    "raid.minAccountDays": 7,
+    "raid.scoreThreshold": 50,
+    "raid.captchaOnTrip": true,
+    "raid.lockChannelsOnTrip": false,
+    "raid.lockoutMinutes": 30,
+    "raid.dmJoiners": false,
+    "raid.usernameRegex": [],
+    "raid.avatarHashBan": true,
+    "raid.fingerprintBan": true,
+    "raid.scriptedJoinBlock": true,
+    "raid.recoveryWindowMin": 120,
+    "raid.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:quarantine}",
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

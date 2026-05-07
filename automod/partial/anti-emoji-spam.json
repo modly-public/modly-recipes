@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Anti-emoji-spam pack",
+  "description": "Trims emoji-only / emoji-flood messages.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Emoji flood",
+      "kind": "EMOJI_SPAM",
+      "config": {
+        "max": 8
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 45
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

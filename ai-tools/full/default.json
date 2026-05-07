@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "ai-tools",
+  "name": "AI tools \u2014 default",
+  "description": "AI mod-tools enabled (categorize, summarize-thread, suggest-action).",
+  "settings": {
+    "ai_tools.enabled": true,
+    "ai_tools.allowedRoleId": "{role:mods}",
+    "ai_tools.tools": [
+      "categorize_message",
+      "summarize_thread",
+      "suggest_action",
+      "translate_message",
+      "fact_check"
+    ],
+    "ai_tools.cooldownSec": 10,
+    "ai_tools.maxCallsPerDay": 200,
+    "ai_tools.privateAuditOnUse": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

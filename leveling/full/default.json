@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "leveling",
+  "name": "Leveling \u2014 default",
+  "description": "Standard XP rates with text + voice XP, level-up announce in-channel.",
+  "settings": {
+    "leveling.enabled": true,
+    "leveling.announceMode": "channel",
+    "leveling.announceChannelId": "{channel:level-ups}",
+    "leveling.messageXpEnabled": true,
+    "leveling.voiceXpEnabled": true,
+    "leveling.reactionXpEnabled": false,
+    "leveling.publicLeaderboard": true,
+    "leveling.exemptRoles": [
+      "{role:bots}"
+    ],
+    "leveling.excludedChannels": [],
+    "leveling.textCooldownSec": 60,
+    "leveling.textXpMin": 10,
+    "leveling.textXpMax": 20,
+    "leveling.voiceXpPerMin": 5,
+    "leveling.voiceRequireUnmuted": true,
+    "leveling.voiceMinUsersInChannel": 2,
+    "leveling.reactionXp": 1,
+    "leveling.reactionCooldownSec": 300,
+    "leveling.maxLevel": 0,
+    "leveling.minMessageLength": 4,
+    "leveling.burstThreshold": 0,
+    "leveling.burstWindowSec": 300,
+    "leveling.farmFreezeMin": 30,
+    "leveling.uniqueWordsMin": 0,
+    "leveling.duplicateWindowSec": 0,
+    "leveling.duplicateMax": 0,
+    "leveling.decayPercentPerWeek": 0,
+    "leveling.decayInactiveDays": 14,
+    "leveling.channelMultipliers": {},
+    "leveling.roleMultipliers": {},
+    "leveling.weekendBoost": 1,
+    "leveling.stackRewards": true,
+    "leveling.removeOnLevelDown": false,
+    "leveling.card.backgroundUrl": "",
+    "leveling.card.accentHex": "#7e62ff"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:bots}"
+    ],
+    "channels": [
+      "{channel:level-ups}"
+    ]
+  }
+}

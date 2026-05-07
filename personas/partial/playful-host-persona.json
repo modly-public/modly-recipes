@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "personas",
+  "name": "Playful host persona",
+  "description": "Adds an upbeat playful-host persona for hangout channels.",
+  "settings": {},
+  "content": [
+    {
+      "type": "persona",
+      "name": "playful-host",
+      "promptKey": "i18n:personas.playful_host",
+      "channels": [
+        "{channel:hangout}",
+        "{channel:games}"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

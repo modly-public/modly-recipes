@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "honeypot",
+  "name": "Honeypot \u2014 default",
+  "description": "Standard honeypot channel: any message earns a ban.",
+  "settings": {
+    "honeypot.enabled": true,
+    "honeypot.channelId": "{channel:honeypot}",
+    "honeypot.action": "ban",
+    "honeypot.reason": "i18n:honeypot.reason",
+    "honeypot.alertChannelId": "{channel:mod-log}",
+    "honeypot.notifyOwner": false,
+    "honeypot.deleteMessage": true,
+    "honeypot.banDeleteDays": 1,
+    "honeypot.exemptRoles": [
+      "{role:mods}"
+    ],
+    "honeypot.dryRun": false,
+    "honeypot.coolingHours": 0
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:honeypot}",
+      "{channel:mod-log}"
+    ]
+  }
+}

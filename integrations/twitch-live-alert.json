@@ -1,0 +1,36 @@
+{
+  "name": "Twitch live alert with pinger role",
+  "kind": "integration-feed",
+  "description": "Subscribes to one or more Twitch channels via EventSub. When a stream goes live, posts an embed in #stream-alerts and pings the StreamPings role. Auto-edits the message to past-tense once the stream ends, so the alert doesn't stay 'live' all night.",
+  "module": "integrations.twitch",
+  "config": {
+    "channelId": "STREAM_ALERTS_CHANNEL_ID",
+    "pingRoleId": "STREAM_PINGS_ROLE_ID",
+    "twitch": {
+      "clientIdEnv": "MODLY_TWITCH_CLIENT_ID",
+      "clientSecretEnv": "MODLY_TWITCH_CLIENT_SECRET",
+      "channels": ["yourtwitchhandle1", "yourtwitchhandle2"]
+    },
+    "live": {
+      "embed": {
+        "titleKey": "i18n:integrations.twitch.live_title",
+        "color": 9520895,
+        "thumbnailUrlPlaceholder": "{stream.thumbnailUrl}",
+        "footerKey": "i18n:integrations.twitch.live_footer"
+      },
+      "ctaButton": {
+        "labelKey": "i18n:integrations.twitch.cta_watch",
+        "urlPlaceholder": "{stream.url}"
+      }
+    },
+    "offline": {
+      "editToPastTense": true,
+      "titleKey": "i18n:integrations.twitch.offline_title",
+      "color": 5197647
+    },
+    "rateLimit": {
+      "minSecBetweenAlertsPerChannel": 1800
+    }
+  },
+  "i18nNotes": "All embed labels keyed; stream title/URL come from Twitch API. Ping spam suppressed via per-channel cooldown."
+}

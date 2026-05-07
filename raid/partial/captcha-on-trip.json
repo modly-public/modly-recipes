@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "raid",
+  "name": "Captcha on raid trip",
+  "description": "When a raid trips, force every joiner through captcha until cleared.",
+  "settings": {
+    "raid.captchaOnTrip": true,
+    "raid.lockoutMinutes": 60
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

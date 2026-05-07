@@ -1,0 +1,27 @@
+{
+  "name": "Multi-language welcome split",
+  "kind": "welcome-flow",
+  "description": "Routes the welcome message to a per-language channel based on the user's Discord locale. Falls back to a shared channel if locale is unsupported. Each language pulls from its own locale-keyed pool.",
+  "module": "welcome",
+  "config": {
+    "languageRouting": {
+      "default": {
+        "channelId": "WELCOME_EN_CHANNEL_ID",
+        "messagePool": "i18n:welcome.warm_pool"
+      },
+      "byLocale": {
+        "en-US": { "channelId": "WELCOME_EN_CHANNEL_ID", "messagePool": "i18n:welcome.warm_pool" },
+        "en-GB": { "channelId": "WELCOME_EN_CHANNEL_ID", "messagePool": "i18n:welcome.warm_pool" },
+        "es-ES": { "channelId": "WELCOME_ES_CHANNEL_ID", "messagePool": "i18n:welcome.warm_pool" },
+        "fr":    { "channelId": "WELCOME_FR_CHANNEL_ID", "messagePool": "i18n:welcome.warm_pool" },
+        "de":    { "channelId": "WELCOME_DE_CHANNEL_ID", "messagePool": "i18n:welcome.warm_pool" },
+        "pt-BR": { "channelId": "WELCOME_PT_CHANNEL_ID", "messagePool": "i18n:welcome.warm_pool" },
+        "ja":    { "channelId": "WELCOME_JA_CHANNEL_ID", "messagePool": "i18n:welcome.warm_pool" }
+      }
+    },
+    "card": {
+      "embedRecipe": "embeds/welcome-card.json"
+    }
+  },
+  "i18nNotes": "messagePool refers to a locale key; the bot resolves it in the user's locale automatically. To add languages, drop locale files into bot/src/i18n/locales and they'll be picked up."
+}

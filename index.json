@@ -1,1440 +1,4359 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-07T05:42:21.383Z",
-  "totals": {
-    "recipes": 164,
-    "categories": 27
-  },
+  "generatedAt": "2026-05-07T05:48:16.400Z",
+  "categories": [
+    {
+      "slug": "activity-roles",
+      "title": "Activity Roles",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "ai",
+      "title": "Ai",
+      "description": "9 recipes"
+    },
+    {
+      "slug": "ai-automation",
+      "title": "AI automation",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "ai-tools",
+      "title": "Ai Tools",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "ama",
+      "title": "Ama",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "anniversary",
+      "title": "Anniversary",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "antinuke",
+      "title": "Antinuke",
+      "description": "9 recipes"
+    },
+    {
+      "slug": "appeal-portal",
+      "title": "Appeal Portal",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "applications",
+      "title": "Applications",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "automations",
+      "title": "Automations",
+      "description": "8 recipes"
+    },
+    {
+      "slug": "automod",
+      "title": "Automod",
+      "description": "11 recipes"
+    },
+    {
+      "slug": "automod-packs",
+      "title": "Automod packs",
+      "description": "11 recipes"
+    },
+    {
+      "slug": "autoresponders",
+      "title": "Autoresponders",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "birthdays",
+      "title": "Birthdays",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "captcha",
+      "title": "Captcha",
+      "description": "8 recipes"
+    },
+    {
+      "slug": "channel-games",
+      "title": "Channel Games",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "channel-utils",
+      "title": "Channel Utils",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "color-of-the-day",
+      "title": "Color Of The Day",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "command-access",
+      "title": "Command Access",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "confessions",
+      "title": "Confessions",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "counters",
+      "title": "Counters",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "custom-commands",
+      "title": "Custom commands",
+      "description": "11 recipes"
+    },
+    {
+      "slug": "discovery",
+      "title": "Discovery",
+      "description": "3 recipes"
+    },
+    {
+      "slug": "economy",
+      "title": "Economy",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "embed-builder",
+      "title": "Embed Builder",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "embeds",
+      "title": "Embeds",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "engagement",
+      "title": "Engagement",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "evader-detection",
+      "title": "Evader Detection",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "forms",
+      "title": "Forms",
+      "description": "7 recipes"
+    },
+    {
+      "slug": "fun",
+      "title": "Fun",
+      "description": "3 recipes"
+    },
+    {
+      "slug": "games",
+      "title": "Games",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "github-activity",
+      "title": "Github Activity",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "giveaways",
+      "title": "Giveaways",
+      "description": "9 recipes"
+    },
+    {
+      "slug": "highlights",
+      "title": "Highlights",
+      "description": "3 recipes"
+    },
+    {
+      "slug": "honeypot",
+      "title": "Honeypot",
+      "description": "7 recipes"
+    },
+    {
+      "slug": "integrations",
+      "title": "Integrations",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "leveling",
+      "title": "Leveling",
+      "description": "8 recipes"
+    },
+    {
+      "slug": "member-notes",
+      "title": "Member Notes",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "mod-coach",
+      "title": "Mod Coach",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "moderation",
+      "title": "Moderation",
+      "description": "7 recipes"
+    },
+    {
+      "slug": "onboarding",
+      "title": "Onboarding",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "personas",
+      "title": "Personas",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "polls",
+      "title": "Polls",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "raid",
+      "title": "Raid",
+      "description": "9 recipes"
+    },
+    {
+      "slug": "relay",
+      "title": "Relay",
+      "description": "3 recipes"
+    },
+    {
+      "slug": "rep",
+      "title": "Rep",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "role-events",
+      "title": "Role Events",
+      "description": "3 recipes"
+    },
+    {
+      "slug": "roles",
+      "title": "Roles",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "safety",
+      "title": "Safety",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "scheduled-actions",
+      "title": "Scheduled Actions",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "server-goals",
+      "title": "Server Goals",
+      "description": "3 recipes"
+    },
+    {
+      "slug": "server-stats",
+      "title": "Server Stats",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "smart-channels",
+      "title": "Smart Channels",
+      "description": "3 recipes"
+    },
+    {
+      "slug": "social-alerts",
+      "title": "Social Alerts",
+      "description": "7 recipes"
+    },
+    {
+      "slug": "starboard",
+      "title": "Starboard",
+      "description": "8 recipes"
+    },
+    {
+      "slug": "suggestions",
+      "title": "Suggestions",
+      "description": "6 recipes"
+    },
+    {
+      "slug": "time-capsule",
+      "title": "Time Capsule",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "translation",
+      "title": "Translation",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "tts",
+      "title": "Tts",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "voice-clipper",
+      "title": "Voice Clipper",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "voice-recording",
+      "title": "Voice Recording",
+      "description": "2 recipes"
+    },
+    {
+      "slug": "webhook-broadcaster",
+      "title": "Webhook Broadcaster",
+      "description": "4 recipes"
+    },
+    {
+      "slug": "welcome",
+      "title": "Welcome",
+      "description": "8 recipes"
+    },
+    {
+      "slug": "welcome-flows",
+      "title": "Welcome flows",
+      "description": "5 recipes"
+    },
+    {
+      "slug": "welcome-messages",
+      "title": "Welcome messages",
+      "description": "11 recipes"
+    }
+  ],
   "recipes": [
     {
+      "id": "activity-roles/default",
+      "slug": "default",
+      "path": "activity-roles/full/default.json",
+      "format": "json",
+      "name": "Activity roles — default",
+      "description": "Auto-grant role for active members; remove after 14 days inactive.",
+      "category": "activity-roles",
+      "module": "activity-roles",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "activity-roles/dry-run-mode",
+      "slug": "dry-run-mode",
+      "path": "activity-roles/partial/dry-run-mode.json",
+      "format": "json",
+      "name": "Activity-roles dry-run",
+      "description": "Detect-only — no roles granted/stripped while tuning.",
+      "category": "activity-roles",
+      "module": "activity-roles",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "activity-roles/strict",
+      "slug": "strict",
+      "path": "activity-roles/full/strict.json",
+      "format": "json",
+      "name": "Activity roles — strict",
+      "description": "Tighter activity bar, shorter grace.",
+      "category": "activity-roles",
+      "module": "activity-roles",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "activity-roles/tiered-active",
+      "slug": "tiered-active",
+      "path": "activity-roles/partial/tiered-active.json",
+      "format": "json",
+      "name": "Tiered active/regular/legend",
+      "description": "Adds 3-tier activity ladder.",
+      "category": "activity-roles",
+      "module": "activity-roles",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai-automation/ai-translate-non-english-support",
+      "slug": "ai-translate-non-english-support",
       "path": "ai-automation/ai-translate-non-english-support.json",
+      "format": "json",
       "name": "AI translate non-English to English in support",
       "description": "Detects the language of every message in #support; if it isn't English, posts a threaded English translation as a bot reply so volunteer responders can help. Translation is cached per (hash, lang) for 24h to keep AI cost down.",
       "category": "ai-automation",
-      "shape": "flat",
-      "kind": "ai-automation",
-      "module": "ai"
+      "module": "ai",
+      "kind": "ai-automation"
     },
     {
+      "id": "ai-automation/auto-clean-spam-links-ai-flag",
+      "slug": "auto-clean-spam-links-ai-flag",
       "path": "ai-automation/auto-clean-spam-links-ai-flag.json",
+      "format": "json",
       "name": "Auto-clean spam links via AI flag",
       "description": "Pre-classifies any link-bearing message with the AI module's safety classifier; on a high-confidence spam/scam verdict, deletes the message and DMs the user the reason. Mirrors what SCAM_LINK does for the known-scam list, but extends it to never-seen URLs.",
       "category": "ai-automation",
-      "shape": "flat",
-      "kind": "ai-automation",
-      "module": "ai"
+      "module": "ai",
+      "kind": "ai-automation"
     },
     {
+      "id": "ai-automation/auto-pin-mod-marked-answers",
+      "slug": "auto-pin-mod-marked-answers",
       "path": "ai-automation/auto-pin-mod-marked-answers.json",
+      "format": "json",
       "name": "Auto-pin mod-marked answers",
       "description": "When a moderator reacts to any message with a configured emoji (default 📌✅), the bot pins it AND uses the AI module to summarize the parent thread/question into a one-line tag added to the pin.",
       "category": "ai-automation",
-      "shape": "flat",
-      "kind": "ai-automation",
-      "module": "ai"
+      "module": "ai",
+      "kind": "ai-automation"
     },
     {
+      "id": "ai-automation/daily-ai-mod-report-card",
+      "slug": "daily-ai-mod-report-card",
       "path": "ai-automation/daily-ai-mod-report-card.json",
+      "format": "json",
       "name": "Daily AI mod report card",
       "description": "Once a day, asks the AI module to grade the previous 24h of moderator activity (response times, action distribution, appeal outcomes, escalations) and posts a private report card per moderator with constructive feedback.",
       "category": "ai-automation",
-      "shape": "flat",
-      "kind": "ai-automation",
-      "module": "ai"
+      "module": "ai",
+      "kind": "ai-automation"
     },
     {
+      "id": "ai-automation/personalized-welcome-ai-persona",
+      "slug": "personalized-welcome-ai-persona",
       "path": "ai-automation/personalized-welcome-ai-persona.json",
+      "format": "json",
       "name": "Personalized welcome via AI persona",
       "description": "On join, the AI persona crafts a 1–2 sentence personalized welcome based on the new member's public profile (Discord About Me, mutual servers count, account age) and the server's loaded persona. Falls back to the standard welcome pool on AI error.",
       "category": "ai-automation",
-      "shape": "flat",
-      "kind": "ai-automation",
-      "module": "ai"
+      "module": "ai",
+      "kind": "ai-automation"
     },
     {
+      "id": "ai-tools/ai-mod-summarize-pack",
+      "slug": "ai-mod-summarize-pack",
+      "path": "ai-tools/partial/ai-mod-summarize-pack.json",
+      "format": "json",
+      "name": "AI-mod summarize pack",
+      "description": "Wires summarize-thread + suggest-action together for fast triage.",
+      "category": "ai-tools",
+      "module": "ai-tools",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai-tools/default",
+      "slug": "default",
+      "path": "ai-tools/full/default.json",
+      "format": "json",
+      "name": "AI tools — default",
+      "description": "AI mod-tools enabled (categorize, summarize-thread, suggest-action).",
+      "category": "ai-tools",
+      "module": "ai-tools",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "ai-tools/fact-check-on",
+      "slug": "fact-check-on",
+      "path": "ai-tools/partial/fact-check-on.json",
+      "format": "json",
+      "name": "Fact-check tool on",
+      "description": "Enables the /factcheck mod tool.",
+      "category": "ai-tools",
+      "module": "ai-tools",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai-tools/translate-only",
+      "slug": "translate-only",
+      "path": "ai-tools/partial/translate-only.json",
+      "format": "json",
+      "name": "Translate-only mode",
+      "description": "Only the translate-message tool is enabled.",
+      "category": "ai-tools",
+      "module": "ai-tools",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/community",
+      "slug": "community",
+      "path": "ai/full/community.json",
+      "format": "json",
+      "name": "AI — community",
+      "description": "Generous limits, image gen on, friendly tone.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "ai/creative-persona",
+      "slug": "creative-persona",
+      "path": "ai/partial/creative-persona.json",
+      "format": "json",
+      "name": "AI-creative system prompt",
+      "description": "Switches the bot to a brainstorm/creative tone.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/default",
+      "slug": "default",
+      "path": "ai/full/default.json",
+      "format": "json",
+      "name": "AI — default",
+      "description": "AI assistant with safe defaults, rate limits, premium gating.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "ai/image-gen-on",
+      "slug": "image-gen-on",
+      "path": "ai/partial/image-gen-on.json",
+      "format": "json",
+      "name": "Image-gen on",
+      "description": "Allow /imagine command (premium only by default).",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/lower-rate-limit",
+      "slug": "lower-rate-limit",
+      "path": "ai/partial/lower-rate-limit.json",
+      "format": "json",
+      "name": "Lower rate-limit",
+      "description": "Tighter per-user calls/hour.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/moderator-persona",
+      "slug": "moderator-persona",
+      "path": "ai/partial/moderator-persona.json",
+      "format": "json",
+      "name": "AI-mod system prompt",
+      "description": "Adds an AI-moderator system prompt focused on consistency + warmth.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/strict",
+      "slug": "strict",
+      "path": "ai/full/strict.json",
+      "format": "json",
+      "name": "AI — strict",
+      "description": "Mods only, very low rate-limit, no images, hard PII redaction.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "ai/summary-only",
+      "slug": "summary-only",
+      "path": "ai/partial/summary-only.json",
+      "format": "json",
+      "name": "Summary-only mode",
+      "description": "Disables /chat — only thread/channel summaries allowed.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ai/support-persona",
+      "slug": "support-persona",
+      "path": "ai/partial/support-persona.json",
+      "format": "json",
+      "name": "AI-support system prompt",
+      "description": "Adds an AI-support system prompt for help channels.",
+      "category": "ai",
+      "module": "ai",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ama/anonymous-on",
+      "slug": "anonymous-on",
+      "path": "ama/partial/anonymous-on.json",
+      "format": "json",
+      "name": "Anonymous AMA questions",
+      "description": "Allow questions submitted without revealing the asker.",
+      "category": "ama",
+      "module": "ama",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "ama/default",
+      "slug": "default",
+      "path": "ama/full/default.json",
+      "format": "json",
+      "name": "AMA — default",
+      "description": "Standard AMA: panelists, queue moderation, scheduled start.",
+      "category": "ama",
+      "module": "ama",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "ama/strict",
+      "slug": "strict",
+      "path": "ama/full/strict.json",
+      "format": "json",
+      "name": "AMA — strict",
+      "description": "All questions reviewed, anonymous off, panelist-only answers.",
+      "category": "ama",
+      "module": "ama",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "ama/thread-per-question",
+      "slug": "thread-per-question",
+      "path": "ama/partial/thread-per-question.json",
+      "format": "json",
+      "name": "Thread per question",
+      "description": "Each approved question becomes its own discussion thread.",
+      "category": "ama",
+      "module": "ama",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "anniversary/default",
+      "slug": "default",
+      "path": "anniversary/full/default.json",
+      "format": "json",
+      "name": "Anniversary — default",
+      "description": "Member-anniversary celebrations on join-date matches.",
+      "category": "anniversary",
+      "module": "anniversary",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "anniversary/image-card",
+      "slug": "image-card",
+      "path": "anniversary/partial/image-card.json",
+      "format": "json",
+      "name": "Anniversary image card",
+      "description": "Generate an anniversary card (default off).",
+      "category": "anniversary",
+      "module": "anniversary",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "antinuke/community",
+      "slug": "community",
       "path": "antinuke/full/community.json",
+      "format": "json",
       "name": "Antinuke — community",
       "description": "Light antinuke for friendly community servers. Catches catastrophic actions but stays out of staff's way.",
       "category": "antinuke",
-      "shape": "full",
+      "module": "antinuke",
       "kind": "module-export",
-      "module": "antinuke"
+      "archetype": "full"
     },
     {
+      "id": "antinuke/default",
+      "slug": "default",
       "path": "antinuke/full/default.json",
+      "format": "json",
       "name": "Antinuke — default",
       "description": "Sensible Wick-style antinuke baseline. Armed, alerts to log channel, moderate thresholds, panic mode primed but not aggressive.",
       "category": "antinuke",
-      "shape": "full",
+      "module": "antinuke",
       "kind": "module-export",
-      "module": "antinuke"
+      "archetype": "full"
     },
     {
-      "path": "antinuke/full/strict.json",
-      "name": "Antinuke — strict",
-      "description": "Lockdown-grade antinuke for raid-prone or doxx-target servers. Aggressive thresholds, panic mode pre-armed, dual response required for dangerous actions.",
-      "category": "antinuke",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "antinuke"
-    },
-    {
+      "id": "antinuke/federation-enforce",
+      "slug": "federation-enforce",
       "path": "antinuke/partial/federation-enforce.json",
+      "format": "json",
       "name": "Federation enforcement on",
       "description": "Trust antinuke federation lookups for cross-server bans.",
       "category": "antinuke",
-      "shape": "partial",
+      "module": "antinuke",
       "kind": "module-recipe",
-      "module": "antinuke"
+      "archetype": "partial"
     },
     {
+      "id": "antinuke/min-account-age-30d",
+      "slug": "min-account-age-30d",
       "path": "antinuke/partial/min-account-age-30d.json",
+      "format": "json",
       "name": "Minimum account age 30 days",
       "description": "Bumps the join filter so new accounts can't trip antinuke from privileged actions.",
       "category": "antinuke",
-      "shape": "partial",
+      "module": "antinuke",
       "kind": "module-recipe",
-      "module": "antinuke"
+      "archetype": "partial"
     },
     {
+      "id": "antinuke/panic-mode-armed",
+      "slug": "panic-mode-armed",
       "path": "antinuke/partial/panic-mode-armed.json",
+      "format": "json",
       "name": "Panic mode — armed and ready",
       "description": "Toggles panic mode triggers and aggressive lockdown without touching the rest of antinuke config.",
       "category": "antinuke",
-      "shape": "partial",
+      "module": "antinuke",
       "kind": "module-recipe",
-      "module": "antinuke"
+      "archetype": "partial"
     },
     {
+      "id": "antinuke/ping-flood-strict",
+      "slug": "ping-flood-strict",
       "path": "antinuke/partial/ping-flood-strict.json",
+      "format": "json",
       "name": "Ping flood — strict",
       "description": "Tight thresholds for ping-flood detection.",
       "category": "antinuke",
-      "shape": "partial",
+      "module": "antinuke",
       "kind": "module-recipe",
-      "module": "antinuke"
+      "archetype": "partial"
     },
     {
+      "id": "antinuke/quarantine-soft",
+      "slug": "quarantine-soft",
       "path": "antinuke/partial/quarantine-soft.json",
+      "format": "json",
       "name": "Quarantine — soft",
       "description": "Quarantined members keep read access but can't send/react/voice.",
       "category": "antinuke",
-      "shape": "partial",
+      "module": "antinuke",
       "kind": "module-recipe",
-      "module": "antinuke"
+      "archetype": "partial"
     },
     {
+      "id": "antinuke/rollback-aggressive",
+      "slug": "rollback-aggressive",
       "path": "antinuke/partial/rollback-aggressive.json",
+      "format": "json",
       "name": "Aggressive rollback window",
       "description": "Wider rollback window covering channel/role/webhook destructive actions.",
       "category": "antinuke",
-      "shape": "partial",
+      "module": "antinuke",
       "kind": "module-recipe",
-      "module": "antinuke"
+      "archetype": "partial"
     },
     {
-      "path": "appeal-portal/full/community.json",
-      "name": "Appeal portal — community",
-      "description": "Friendly portal, generous limits, auto-apply on approve.",
-      "category": "appeal-portal",
-      "shape": "full",
+      "id": "antinuke/strict",
+      "slug": "strict",
+      "path": "antinuke/full/strict.json",
+      "format": "json",
+      "name": "Antinuke — strict",
+      "description": "Lockdown-grade antinuke for raid-prone or doxx-target servers. Aggressive thresholds, panic mode pre-armed, dual response required for dangerous actions.",
+      "category": "antinuke",
+      "module": "antinuke",
       "kind": "module-export",
-      "module": "appeal-portal"
+      "archetype": "full"
     },
     {
-      "path": "appeal-portal/full/default.json",
-      "name": "Appeal portal — default",
-      "description": "Public appeal form, mods review, decisions logged.",
-      "category": "appeal-portal",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "appeal-portal"
-    },
-    {
-      "path": "appeal-portal/full/strict.json",
-      "name": "Appeal portal — strict",
-      "description": "One appeal per ban, captcha, 90-day cooldown, manual decision required.",
-      "category": "appeal-portal",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "appeal-portal"
-    },
-    {
+      "id": "appeal-portal/auto-apply-decision",
+      "slug": "auto-apply-decision",
       "path": "appeal-portal/partial/auto-apply-decision.json",
+      "format": "json",
       "name": "Auto-apply approve/deny",
       "description": "When a reviewer hits Approve, the ban is lifted server-side.",
       "category": "appeal-portal",
-      "shape": "partial",
+      "module": "appeal-portal",
       "kind": "module-recipe",
-      "module": "appeal-portal"
+      "archetype": "partial"
     },
     {
+      "id": "appeal-portal/captcha-required",
+      "slug": "captcha-required",
       "path": "appeal-portal/partial/captcha-required.json",
+      "format": "json",
       "name": "Appeal captcha required",
       "description": "Adds captcha to the public appeal form.",
       "category": "appeal-portal",
-      "shape": "partial",
+      "module": "appeal-portal",
       "kind": "module-recipe",
-      "module": "appeal-portal"
+      "archetype": "partial"
     },
     {
+      "id": "appeal-portal/community",
+      "slug": "community",
+      "path": "appeal-portal/full/community.json",
+      "format": "json",
+      "name": "Appeal portal — community",
+      "description": "Friendly portal, generous limits, auto-apply on approve.",
+      "category": "appeal-portal",
+      "module": "appeal-portal",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "appeal-portal/default",
+      "slug": "default",
+      "path": "appeal-portal/full/default.json",
+      "format": "json",
+      "name": "Appeal portal — default",
+      "description": "Public appeal form, mods review, decisions logged.",
+      "category": "appeal-portal",
+      "module": "appeal-portal",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "appeal-portal/strict",
+      "slug": "strict",
+      "path": "appeal-portal/full/strict.json",
+      "format": "json",
+      "name": "Appeal portal — strict",
+      "description": "One appeal per ban, captcha, 90-day cooldown, manual decision required.",
+      "category": "appeal-portal",
+      "module": "appeal-portal",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "appeal-portal/thread-per-appeal",
+      "slug": "thread-per-appeal",
       "path": "appeal-portal/partial/thread-per-appeal.json",
+      "format": "json",
       "name": "Thread per appeal",
       "description": "Each appeal opens a private thread for staff discussion.",
       "category": "appeal-portal",
-      "shape": "partial",
+      "module": "appeal-portal",
       "kind": "module-recipe",
-      "module": "appeal-portal"
+      "archetype": "partial"
     },
     {
+      "id": "applications/default",
+      "slug": "default",
       "path": "applications/full/default.json",
+      "format": "json",
       "name": "Applications — default",
       "description": "Generic application module: review channel + mod role + 3-question template.",
       "category": "applications",
-      "shape": "full",
+      "module": "applications",
       "kind": "module-export",
-      "module": "applications"
+      "archetype": "full"
     },
     {
-      "path": "applications/full/strict.json",
-      "name": "Applications — strict",
-      "description": "One open application at a time, long cooldown, deny requires reason.",
-      "category": "applications",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "applications"
-    },
-    {
+      "id": "applications/deny-reason-required",
+      "slug": "deny-reason-required",
       "path": "applications/partial/deny-reason-required.json",
+      "format": "json",
       "name": "Deny requires written reason",
       "description": "Mods must enter a reason on deny — sent to applicant by DM.",
       "category": "applications",
-      "shape": "partial",
+      "module": "applications",
       "kind": "module-recipe",
-      "module": "applications"
+      "archetype": "partial"
     },
     {
+      "id": "applications/edit-allowed",
+      "slug": "edit-allowed",
       "path": "applications/partial/edit-allowed.json",
+      "format": "json",
       "name": "Allow edits before review",
       "description": "Applicants can edit answers until staff opens the review.",
       "category": "applications",
-      "shape": "partial",
+      "module": "applications",
       "kind": "module-recipe",
-      "module": "applications"
+      "archetype": "partial"
     },
     {
+      "id": "applications/strict",
+      "slug": "strict",
+      "path": "applications/full/strict.json",
+      "format": "json",
+      "name": "Applications — strict",
+      "description": "One open application at a time, long cooldown, deny requires reason.",
+      "category": "applications",
+      "module": "applications",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "automations/archive-old-threads",
+      "slug": "archive-old-threads",
+      "path": "automations/partial/archive-old-threads.json",
+      "format": "json",
+      "name": "Archive old threads",
+      "description": "Daily sweep that archives threads with no activity in 30d.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automations/default",
+      "slug": "default",
+      "path": "automations/full/default.json",
+      "format": "json",
+      "name": "Automations — default",
+      "description": "Module on, per-automation rate limit, audit log integration.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "automations/link-discord-presence-to-color",
+      "slug": "link-discord-presence-to-color",
+      "path": "automations/partial/link-discord-presence-to-color.json",
+      "format": "json",
+      "name": "Link presence to colour",
+      "description": "Switches a member's color role based on their online/idle/dnd presence.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automations/log-bans-to-channel",
+      "slug": "log-bans-to-channel",
+      "path": "automations/partial/log-bans-to-channel.json",
+      "format": "json",
+      "name": "Log bans to channel",
+      "description": "Mirrors every ban to a logging channel.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automations/mute-evader-detection",
+      "slug": "mute-evader-detection",
+      "path": "automations/partial/mute-evader-detection.json",
+      "format": "json",
+      "name": "Mute on evader-detect",
+      "description": "Auto-quarantines members flagged by evader-detection.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automations/role-on-boost",
+      "slug": "role-on-boost",
+      "path": "automations/partial/role-on-boost.json",
+      "format": "json",
+      "name": "Role on boost",
+      "description": "Grants a thank-you role when a member starts boosting.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automations/weekly-mod-rotation",
+      "slug": "weekly-mod-rotation",
+      "path": "automations/partial/weekly-mod-rotation.json",
+      "format": "json",
+      "name": "Weekly mod rotation",
+      "description": "Rotates an 'on-call' mod role each Monday.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automations/welcome-dm-after-24h",
+      "slug": "welcome-dm-after-24h",
+      "path": "automations/partial/welcome-dm-after-24h.json",
+      "format": "json",
+      "name": "Welcome DM after 24h",
+      "description": "DMs the new member 24h after they join if they haven't sent a message.",
+      "category": "automations",
+      "module": "automations",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "automod-packs/aggressive-raid-filter",
+      "slug": "aggressive-raid-filter",
       "path": "automod-packs/aggressive-raid-filter.json",
+      "format": "json",
       "name": "Aggressive raid filter",
       "description": "Hair-trigger pack for servers under active raid pressure. Designed to be enabled during a raid window (paired with the raid module's auto-enable hook), not as an everyday baseline. Expect some false positives.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/antinuke-locked-down",
+      "slug": "antinuke-locked-down",
       "path": "automod-packs/antinuke-locked-down.json",
+      "format": "json",
       "name": "Antinuke locked-down preset",
       "description": "Maximum-paranoia preset for high-value or high-risk servers (large communities, brand servers, partnered servers). Pair with the antinuke module's full lockdown profile — this covers the message-side rules. Every customizable string is exposed as a placeholder.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/appeal-portal-3-strike",
+      "slug": "appeal-portal-3-strike",
       "path": "automod-packs/appeal-portal-3-strike.json",
+      "format": "json",
       "name": "Appeal portal with 3-strike escalation",
       "description": "Three-strike escalation rules wired to the standard moderation point system. Each strike level escalates: 5pts = warn, 15pts = 6h timeout, 30pts = ban with appeal link. Pair with a forms-based appeal portal (see forms/appeal-portal.json).",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/community-safe",
+      "slug": "community-safe",
       "path": "automod-packs/community-safe.json",
+      "format": "json",
       "name": "Community safe",
       "description": "Balanced safety pack for general-purpose communities. Keeps spam, scam links, invites, and slurs under control without over-moderating normal chat.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/family-safe",
+      "slug": "family-safe",
       "path": "automod-packs/family-safe.json",
+      "format": "json",
       "name": "Family-safe",
       "description": "Strictest pack: aggressive on slurs, swearing, NSFW links, invites, and external links. For all-ages communities, kids' gaming servers, school clubs.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/gaming-server",
+      "slug": "gaming-server",
       "path": "automod-packs/gaming-server.json",
+      "format": "json",
       "name": "Gaming server",
       "description": "Balanced moderation for a 1k–50k member gaming community: tolerant of memes + caps, strict on slurs + invite spam.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/raid-shield",
+      "slug": "raid-shield",
       "path": "automod-packs/raid-shield.json",
+      "format": "json",
       "name": "Raid shield",
       "description": "Heavy anti-spam pack designed for servers facing active raids. Pair with the Modly raid module for join-burst protection — this covers the message-side.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/slow-build-trust-verification",
+      "slug": "slow-build-trust-verification",
       "path": "automod-packs/slow-build-trust-verification.json",
+      "format": "json",
       "name": "Slow-build trust verification",
       "description": "Three-tier trust ramp: brand-new accounts get heavy filters, established members (24h+) get baseline, trusted role gets a relaxed pack. Each rule is scoped by role so you can layer them. Apply the role gates in your role-picker / verification flow.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/slur-leetspeak-baseline",
+      "slug": "slur-leetspeak-baseline",
       "path": "automod-packs/slur-leetspeak-baseline.json",
+      "format": "json",
       "name": "Slur + slur-leetspeak automod baseline",
       "description": "Drop-in slur baseline that combines the third-tier WORD_BLACKLIST wildcard layer with a regex pattern catching common leetspeak / look-alike obfuscations. Add your own server-specific terms in the placeholders before importing — the defaults are intentionally tame, generic stand-ins.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/streamer-chat",
+      "slug": "streamer-chat",
       "path": "automod-packs/streamer-chat.json",
+      "format": "json",
       "name": "Streamer chat",
       "description": "Lighter-touch pack for creator communities. More tolerant of hype, but still clamps down on spam, slurs, and promotion.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "automod-packs/study-server",
+      "slug": "study-server",
       "path": "automod-packs/study-server.json",
+      "format": "json",
       "name": "Study / focus server",
       "description": "Strict pack for tutoring, homework help, or focus communities. Aggressive on off-topic + caps + mass-emoji.",
       "category": "automod-packs",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
-      "path": "automod/full/community.json",
-      "name": "Automod — community",
-      "description": "Light-touch automod for friendly chat servers — only the worst offenders trigger removal.",
-      "category": "automod",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "automod"
-    },
-    {
-      "path": "automod/full/default.json",
-      "name": "Automod — default",
-      "description": "Balanced ruleset for general communities — invite/scam/cap/mention guards.",
-      "category": "automod",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "automod"
-    },
-    {
-      "path": "automod/full/strict.json",
-      "name": "Automod — strict",
-      "description": "Locked-down ruleset for raid-prone or NSFW-adjacent servers.",
-      "category": "automod",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "automod"
-    },
-    {
+      "id": "automod/anti-cap-pack",
+      "slug": "anti-cap-pack",
       "path": "automod/partial/anti-cap-pack.json",
+      "format": "json",
       "name": "Anti-caps pack",
       "description": "Removes messages that are mostly uppercase past a length threshold.",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
+      "id": "automod/anti-emoji-spam",
+      "slug": "anti-emoji-spam",
       "path": "automod/partial/anti-emoji-spam.json",
+      "format": "json",
       "name": "Anti-emoji-spam pack",
       "description": "Trims emoji-only / emoji-flood messages.",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
+      "id": "automod/anti-invite-pack",
+      "slug": "anti-invite-pack",
       "path": "automod/partial/anti-invite-pack.json",
+      "format": "json",
       "name": "Anti-invite pack",
       "description": "Blocks Discord invite URLs in any channel.",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
+      "id": "automod/anti-link-pack",
+      "slug": "anti-link-pack",
       "path": "automod/partial/anti-link-pack.json",
+      "format": "json",
       "name": "Anti-link pack",
       "description": "Blocks all external links except a small allowlist (YouTube, Twitch, Twitter, GitHub).",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
+      "id": "automod/anti-mention-pack",
+      "slug": "anti-mention-pack",
       "path": "automod/partial/anti-mention-pack.json",
+      "format": "json",
       "name": "Anti-mention pack",
       "description": "Stops mention storms — bans members who mention 4+ unique users at once.",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
+      "id": "automod/community",
+      "slug": "community",
+      "path": "automod/full/community.json",
+      "format": "json",
+      "name": "Automod — community",
+      "description": "Light-touch automod for friendly chat servers — only the worst offenders trigger removal.",
+      "category": "automod",
+      "module": "automod",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "automod/default",
+      "slug": "default",
+      "path": "automod/full/default.json",
+      "format": "json",
+      "name": "Automod — default",
+      "description": "Balanced ruleset for general communities — invite/scam/cap/mention guards.",
+      "category": "automod",
+      "module": "automod",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "automod/leetspeak-slur-pack",
+      "slug": "leetspeak-slur-pack",
       "path": "automod/partial/leetspeak-slur-pack.json",
+      "format": "json",
       "name": "Leetspeak slur pack",
       "description": "Wildcard slur detection that survives common leetspeak substitutions. Operator must fill in the blacklist.",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
+      "id": "automod/repeat-spam-pack",
+      "slug": "repeat-spam-pack",
       "path": "automod/partial/repeat-spam-pack.json",
+      "format": "json",
       "name": "Repeat-spam pack",
       "description": "Catches users sending the same message in a tight window.",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
+      "id": "automod/scam-link-pack",
+      "slug": "scam-link-pack",
       "path": "automod/partial/scam-link-pack.json",
+      "format": "json",
       "name": "Scam-link pack",
       "description": "Auto-bans on detected scam URLs (Discord/Steam/Crypto phishing patterns).",
       "category": "automod",
-      "shape": "partial",
+      "module": "automod",
       "kind": "module-recipe",
-      "module": "automod"
+      "archetype": "partial"
     },
     {
-      "path": "birthdays/full/community.json",
-      "name": "Birthdays — community",
-      "description": "Warm style with reminder + embed + multi-day window.",
-      "category": "birthdays",
-      "shape": "full",
+      "id": "automod/strict",
+      "slug": "strict",
+      "path": "automod/full/strict.json",
+      "format": "json",
+      "name": "Automod — strict",
+      "description": "Locked-down ruleset for raid-prone or NSFW-adjacent servers.",
+      "category": "automod",
+      "module": "automod",
       "kind": "module-export",
-      "module": "birthdays"
+      "archetype": "full"
     },
     {
-      "path": "birthdays/full/default.json",
-      "name": "Birthdays — default",
-      "description": "Daily birthday announce in #general, role for the day.",
-      "category": "birthdays",
-      "shape": "full",
+      "id": "autoresponders/birthday-greetings-set",
+      "slug": "birthday-greetings-set",
+      "path": "autoresponders/partial/birthday-greetings-set.json",
+      "format": "json",
+      "name": "Birthday greetings",
+      "description": "Reacts to messages mentioning birthdays.",
+      "category": "autoresponders",
+      "module": "autoresponders",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "autoresponders/default",
+      "slug": "default",
+      "path": "autoresponders/full/default.json",
+      "format": "json",
+      "name": "Autoresponders — default",
+      "description": "Module on; per-trigger cooldown; reply-mode default.",
+      "category": "autoresponders",
+      "module": "autoresponders",
       "kind": "module-export",
-      "module": "birthdays"
+      "archetype": "full"
     },
     {
+      "id": "autoresponders/rules-acknowledgement-set",
+      "slug": "rules-acknowledgement-set",
+      "path": "autoresponders/partial/rules-acknowledgement-set.json",
+      "format": "json",
+      "name": "Rules acknowledgement",
+      "description": "Reacts when members say they read the rules.",
+      "category": "autoresponders",
+      "module": "autoresponders",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "autoresponders/support-faq-set",
+      "slug": "support-faq-set",
+      "path": "autoresponders/partial/support-faq-set.json",
+      "format": "json",
+      "name": "Support FAQ autoresponders",
+      "description": "Auto-pings the support FAQ when common questions are asked.",
+      "category": "autoresponders",
+      "module": "autoresponders",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "autoresponders/thanks-set",
+      "slug": "thanks-set",
+      "path": "autoresponders/partial/thanks-set.json",
+      "format": "json",
+      "name": "Thanks autoresponders",
+      "description": "Friendly auto-replies on 'thanks/ty/thx' patterns.",
+      "category": "autoresponders",
+      "module": "autoresponders",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "autoresponders/welcome-back-set",
+      "slug": "welcome-back-set",
+      "path": "autoresponders/partial/welcome-back-set.json",
+      "format": "json",
+      "name": "Welcome-back set",
+      "description": "Greets returning members.",
+      "category": "autoresponders",
+      "module": "autoresponders",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "birthdays/48h-role",
+      "slug": "48h-role",
       "path": "birthdays/partial/48h-role.json",
+      "format": "json",
       "name": "Birthday role 48h",
       "description": "Birthday role lingers for 48h instead of 24h.",
       "category": "birthdays",
-      "shape": "partial",
+      "module": "birthdays",
       "kind": "module-recipe",
-      "module": "birthdays"
+      "archetype": "partial"
     },
     {
+      "id": "birthdays/community",
+      "slug": "community",
+      "path": "birthdays/full/community.json",
+      "format": "json",
+      "name": "Birthdays — community",
+      "description": "Warm style with reminder + embed + multi-day window.",
+      "category": "birthdays",
+      "module": "birthdays",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "birthdays/default",
+      "slug": "default",
+      "path": "birthdays/full/default.json",
+      "format": "json",
+      "name": "Birthdays — default",
+      "description": "Daily birthday announce in #general, role for the day.",
+      "category": "birthdays",
+      "module": "birthdays",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "birthdays/lead-day-reminder",
+      "slug": "lead-day-reminder",
       "path": "birthdays/partial/lead-day-reminder.json",
+      "format": "json",
       "name": "1-day-ahead reminder",
       "description": "Pings staff/community 1 day before each birthday.",
       "category": "birthdays",
-      "shape": "partial",
+      "module": "birthdays",
       "kind": "module-recipe",
-      "module": "birthdays"
+      "archetype": "partial"
     },
     {
+      "id": "captcha/community",
+      "slug": "community",
       "path": "captcha/full/community.json",
+      "format": "json",
       "name": "Captcha — community",
       "description": "Friendly button-press captcha, generous timeout, no kicks.",
       "category": "captcha",
-      "shape": "full",
+      "module": "captcha",
       "kind": "module-export",
-      "module": "captcha"
+      "archetype": "full"
     },
     {
+      "id": "captcha/default",
+      "slug": "default",
       "path": "captcha/full/default.json",
+      "format": "json",
       "name": "Captcha — default",
       "description": "Standard image+button captcha on join, 5-minute deadline.",
       "category": "captcha",
-      "shape": "full",
+      "module": "captcha",
       "kind": "module-export",
-      "module": "captcha"
+      "archetype": "full"
     },
     {
-      "path": "captcha/full/strict.json",
-      "name": "Captcha — strict",
-      "description": "Hardened captcha for raid-prone servers: kick on timeout, ban on fail, hCaptcha + risk score.",
-      "category": "captcha",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "captcha"
-    },
-    {
+      "id": "captcha/dm-fallback",
+      "slug": "dm-fallback",
       "path": "captcha/partial/dm-fallback.json",
+      "format": "json",
       "name": "DM fallback on locked channels",
       "description": "If verify channel is unavailable, captcha is delivered via DM.",
       "category": "captcha",
-      "shape": "partial",
+      "module": "captcha",
       "kind": "module-recipe",
-      "module": "captcha"
+      "archetype": "partial"
     },
     {
+      "id": "captcha/hcaptcha-mode",
+      "slug": "hcaptcha-mode",
       "path": "captcha/partial/hcaptcha-mode.json",
+      "format": "json",
       "name": "Switch to hCaptcha",
       "description": "Upgrades from image to hCaptcha challenge.",
       "category": "captcha",
-      "shape": "partial",
+      "module": "captcha",
       "kind": "module-recipe",
-      "module": "captcha"
+      "archetype": "partial"
     },
     {
+      "id": "captcha/kick-on-timeout",
+      "slug": "kick-on-timeout",
       "path": "captcha/partial/kick-on-timeout.json",
+      "format": "json",
       "name": "Kick on captcha timeout",
       "description": "Members who don't solve within the deadline are kicked.",
       "category": "captcha",
-      "shape": "partial",
+      "module": "captcha",
       "kind": "module-recipe",
-      "module": "captcha"
+      "archetype": "partial"
     },
     {
+      "id": "captcha/min-account-14d",
+      "slug": "min-account-14d",
       "path": "captcha/partial/min-account-14d.json",
+      "format": "json",
       "name": "Captcha + min account age 14d",
       "description": "Adds a 14-day account age floor on top of captcha.",
       "category": "captcha",
-      "shape": "partial",
+      "module": "captcha",
       "kind": "module-recipe",
-      "module": "captcha"
+      "archetype": "partial"
     },
     {
+      "id": "captcha/rejoin-reverify",
+      "slug": "rejoin-reverify",
       "path": "captcha/partial/rejoin-reverify.json",
+      "format": "json",
       "name": "Force reverify on rejoin",
       "description": "Returning members re-run captcha (good after a raid).",
       "category": "captcha",
-      "shape": "partial",
+      "module": "captcha",
       "kind": "module-recipe",
-      "module": "captcha"
+      "archetype": "partial"
     },
     {
+      "id": "captcha/strict",
+      "slug": "strict",
+      "path": "captcha/full/strict.json",
+      "format": "json",
+      "name": "Captcha — strict",
+      "description": "Hardened captcha for raid-prone servers: kick on timeout, ban on fail, hCaptcha + risk score.",
+      "category": "captcha",
+      "module": "captcha",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "channel-games/count-only",
+      "slug": "count-only",
+      "path": "channel-games/partial/count-only.json",
+      "format": "json",
+      "name": "Count-channel only",
+      "description": "Only the count-to-X channel game is active.",
+      "category": "channel-games",
+      "module": "channel-games",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "channel-games/default",
+      "slug": "default",
+      "path": "channel-games/full/default.json",
+      "format": "json",
+      "name": "Channel games — default",
+      "description": "Long-running channel games (count-to-100, word-chain, etc).",
+      "category": "channel-games",
+      "module": "channel-games",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "channel-utils/default",
+      "slug": "default",
+      "path": "channel-utils/full/default.json",
+      "format": "json",
+      "name": "Channel utils — default",
+      "description": "Slowmode helpers + auto-purge windows.",
+      "category": "channel-utils",
+      "module": "channel-utils",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "channel-utils/spam-purge",
+      "slug": "spam-purge",
+      "path": "channel-utils/partial/spam-purge.json",
+      "format": "json",
+      "name": "Auto-purge #spam weekly",
+      "description": "Cleans the spam channel weekly.",
+      "category": "channel-utils",
+      "module": "channel-utils",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "color-of-the-day/default",
+      "slug": "default",
+      "path": "color-of-the-day/full/default.json",
+      "format": "json",
+      "name": "Color of the day — default",
+      "description": "Rotates a colour role daily through a 7-colour palette.",
+      "category": "color-of-the-day",
+      "module": "color-of-the-day",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "color-of-the-day/link-presence-color",
+      "slug": "link-presence-color",
+      "path": "color-of-the-day/partial/link-presence-color.json",
+      "format": "json",
+      "name": "Link presence to color",
+      "description": "Links member's Discord presence (online/idle/dnd) to a colour role tier.",
+      "category": "color-of-the-day",
+      "module": "color-of-the-day",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "color-of-the-day/neon-palette",
+      "slug": "neon-palette",
+      "path": "color-of-the-day/partial/neon-palette.json",
+      "format": "json",
+      "name": "Neon palette",
+      "description": "Switches to high-contrast neon colours.",
+      "category": "color-of-the-day",
+      "module": "color-of-the-day",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "color-of-the-day/pastel-palette",
+      "slug": "pastel-palette",
+      "path": "color-of-the-day/partial/pastel-palette.json",
+      "format": "json",
+      "name": "Pastel palette",
+      "description": "Switches to a soft pastel palette.",
+      "category": "color-of-the-day",
+      "module": "color-of-the-day",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "command-access/default",
+      "slug": "default",
+      "path": "command-access/full/default.json",
+      "format": "json",
+      "name": "Command access — default",
+      "description": "Standard role-gated commands map.",
+      "category": "command-access",
+      "module": "command-access",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "command-access/trial-mod-pack",
+      "slug": "trial-mod-pack",
+      "path": "command-access/partial/trial-mod-pack.json",
+      "format": "json",
+      "name": "Trial mod pack",
+      "description": "Restricts heavy commands to senior mods only.",
+      "category": "command-access",
+      "module": "command-access",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "confessions/default",
+      "slug": "default",
+      "path": "confessions/full/default.json",
+      "format": "json",
+      "name": "Confessions — default",
+      "description": "Anonymous confessions with mod review queue.",
+      "category": "confessions",
+      "module": "confessions",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "confessions/min-account-30d",
+      "slug": "min-account-30d",
+      "path": "confessions/partial/min-account-30d.json",
+      "format": "json",
+      "name": "Min account 30 days",
+      "description": "Block confessions from accounts <30 days old.",
+      "category": "confessions",
+      "module": "confessions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "confessions/review-queue-on",
+      "slug": "review-queue-on",
+      "path": "confessions/partial/review-queue-on.json",
+      "format": "json",
+      "name": "Mod review queue",
+      "description": "Sends each confession to staff for approve/deny first.",
+      "category": "confessions",
+      "module": "confessions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "confessions/strict",
+      "slug": "strict",
+      "path": "confessions/full/strict.json",
+      "format": "json",
+      "name": "Confessions — strict",
+      "description": "All confessions queue, banned-words list active, image attachments off.",
+      "category": "confessions",
+      "module": "confessions",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "counters/default",
+      "slug": "default",
+      "path": "counters/full/default.json",
+      "format": "json",
+      "name": "Counters — default",
+      "description": "Voice-channel counters: total members, online, boosters.",
+      "category": "counters",
+      "module": "counters",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "counters/members-only",
+      "slug": "members-only",
+      "path": "counters/partial/members-only.json",
+      "format": "json",
+      "name": "Member-count counter",
+      "description": "Only the member-count voice channel.",
+      "category": "counters",
+      "module": "counters",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "custom-commands/appeal-help-set",
+      "slug": "appeal-help-set",
+      "path": "custom-commands/partial/appeal-help-set.json",
+      "format": "json",
+      "name": "Appeal-help command set",
+      "description": "Adds /appeal /appeal-status /appeal-rules.",
+      "category": "custom-commands",
+      "module": "custom-commands",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "custom-commands/default",
+      "slug": "default",
+      "path": "custom-commands/full/default.json",
+      "format": "json",
+      "name": "Custom commands — default",
+      "description": "Module enabled, mods can author, slash + chat triggers on, cooldown 5s.",
+      "category": "custom-commands",
+      "module": "custom-commands",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "custom-commands/faq-pack",
+      "slug": "faq-pack",
       "path": "custom-commands/faq-pack.json",
-      "name": "faq-pack",
+      "format": "json",
+      "name": "faq pack",
       "description": "Generic 5-command FAQ pack. Edit the responses after import to match your server.",
       "category": "custom-commands",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "custom-commands/faq-rules",
+      "slug": "faq-rules",
       "path": "custom-commands/faq-rules.json",
+      "format": "json",
       "name": "rules",
       "description": "Quick reply with a link to the rules channel.",
       "category": "custom-commands",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "custom-commands/faq-set",
+      "slug": "faq-set",
+      "path": "custom-commands/partial/faq-set.json",
+      "format": "json",
+      "name": "FAQ command set",
+      "description": "Adds /faq /faq-perms /faq-roles /faq-staff and similar.",
+      "category": "custom-commands",
+      "module": "custom-commands",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "custom-commands/mod-toolkit-set",
+      "slug": "mod-toolkit-set",
+      "path": "custom-commands/partial/mod-toolkit-set.json",
+      "format": "json",
+      "name": "Mod toolkit set",
+      "description": "Mod-only quick-actions: /modping /modnote /escalate.",
+      "category": "custom-commands",
+      "module": "custom-commands",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "custom-commands/rules-set",
+      "slug": "rules-set",
+      "path": "custom-commands/partial/rules-set.json",
+      "format": "json",
+      "name": "Rules command set",
+      "description": "Adds /rules /rule-1 ... /rule-10 commands referencing the rules channel.",
+      "category": "custom-commands",
+      "module": "custom-commands",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "custom-commands/server-info-set",
+      "slug": "server-info-set",
+      "path": "custom-commands/partial/server-info-set.json",
+      "format": "json",
+      "name": "Server-info command set",
+      "description": "Adds /serverinfo /partners /donate /links commands.",
+      "category": "custom-commands",
+      "module": "custom-commands",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "custom-commands/staff-pack",
+      "slug": "staff-pack",
       "path": "custom-commands/staff-pack.json",
-      "name": "staff-pack",
-      "description": "(no description)",
+      "format": "json",
+      "name": "staff pack",
+      "description": "",
       "category": "custom-commands",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "custom-commands/utility-pack",
+      "slug": "utility-pack",
       "path": "custom-commands/utility-pack.json",
-      "name": "utility-pack",
-      "description": "(no description)",
+      "format": "json",
+      "name": "utility pack",
+      "description": "",
       "category": "custom-commands",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "custom-commands/welcome-trigger-set",
+      "slug": "welcome-trigger-set",
+      "path": "custom-commands/partial/welcome-trigger-set.json",
+      "format": "json",
+      "name": "Welcome trigger set",
+      "description": "Custom commands wired to welcome events: /howdy /greet /intro etc.",
+      "category": "custom-commands",
+      "module": "custom-commands",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "discovery/default",
+      "slug": "default",
+      "path": "discovery/full/default.json",
+      "format": "json",
+      "name": "Discovery — default",
+      "description": "Public discovery card with default tags.",
+      "category": "discovery",
+      "module": "discovery",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "discovery/tags-gaming",
+      "slug": "tags-gaming",
+      "path": "discovery/partial/tags-gaming.json",
+      "format": "json",
+      "name": "Discovery tags — gaming",
+      "description": "Tags the server as gaming/casual.",
+      "category": "discovery",
+      "module": "discovery",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "discovery/tags-tech",
+      "slug": "tags-tech",
+      "path": "discovery/partial/tags-tech.json",
+      "format": "json",
+      "name": "Discovery tags — tech",
+      "description": "Tags the server as tech/dev/programming.",
+      "category": "discovery",
+      "module": "discovery",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "economy/casino",
+      "slug": "casino",
+      "path": "economy/full/casino.json",
+      "format": "json",
+      "name": "Economy — casino",
+      "description": "Gambling on, big amounts, transfer tax to the house.",
+      "category": "economy",
+      "module": "economy",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "economy/community",
+      "slug": "community",
+      "path": "economy/full/community.json",
+      "format": "json",
+      "name": "Economy — community",
+      "description": "No gambling, light economy, big leaderboard.",
+      "category": "economy",
+      "module": "economy",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "economy/default",
+      "slug": "default",
+      "path": "economy/full/default.json",
+      "format": "json",
+      "name": "Economy — default",
+      "description": "Standard economy: daily, work, gambling off, leaderboard on.",
+      "category": "economy",
+      "module": "economy",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "economy/gambling-on",
+      "slug": "gambling-on",
+      "path": "economy/partial/gambling-on.json",
+      "format": "json",
+      "name": "Gambling on",
+      "description": "Enables blackjack/slots/roulette betting.",
+      "category": "economy",
+      "module": "economy",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "economy/shop-on",
+      "slug": "shop-on",
+      "path": "economy/partial/shop-on.json",
+      "format": "json",
+      "name": "Shop on",
+      "description": "Enables the /shop command.",
+      "category": "economy",
+      "module": "economy",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "economy/steal-on",
+      "slug": "steal-on",
+      "path": "economy/partial/steal-on.json",
+      "format": "json",
+      "name": "Steal on",
+      "description": "Enables /steal — players can grief each other for funds.",
+      "category": "economy",
+      "module": "economy",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "embed-builder/default",
+      "slug": "default",
+      "path": "embed-builder/full/default.json",
+      "format": "json",
+      "name": "Embed builder — default",
+      "description": "Embed builder enabled for mods + version history.",
+      "category": "embed-builder",
+      "module": "embed-builder",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "embed-builder/versioning-on",
+      "slug": "versioning-on",
+      "path": "embed-builder/partial/versioning-on.json",
+      "format": "json",
+      "name": "Versioning on",
+      "description": "Stores edit history for each embed.",
+      "category": "embed-builder",
+      "module": "embed-builder",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "embeds/announcement-banner",
+      "slug": "announcement-banner",
       "path": "embeds/announcement-banner.json",
+      "format": "json",
       "name": "announcement-banner",
       "description": "Clean announcement template for changelogs, events, and launches.",
       "category": "embeds",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "embeds/helpdesk-card",
+      "slug": "helpdesk-card",
       "path": "embeds/helpdesk-card.json",
+      "format": "json",
       "name": "helpdesk-card",
       "description": "Support-oriented embed template for tickets, FAQs, and internal ops.",
       "category": "embeds",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "embeds/role-picker",
+      "slug": "role-picker",
       "path": "embeds/role-picker.json",
+      "format": "json",
       "name": "role-picker",
       "description": "Self-assign roles message. Pair with Modly's reaction-roles or button-roles module — this is just the prompt embed.",
       "category": "embeds",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "embeds/server-rules",
+      "slug": "server-rules",
       "path": "embeds/server-rules.json",
+      "format": "json",
       "name": "server-rules",
       "description": "Generic server-rules embed with placeholder fields. Edit fields after import.",
       "category": "embeds",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "embeds/server-tour",
+      "slug": "server-tour",
       "path": "embeds/server-tour.json",
+      "format": "json",
       "name": "server-tour",
       "description": "Multi-embed onboarding tour. Pin in #welcome or post once new members can see it. Replace channel IDs after import.",
       "category": "embeds",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "embeds/welcome-card",
+      "slug": "welcome-card",
       "path": "embeds/welcome-card.json",
+      "format": "json",
       "name": "welcome-card",
       "description": "Friendly welcome embed referencing channels with placeholder mentions.",
       "category": "embeds",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "engagement/birthday-shoutout",
+      "slug": "birthday-shoutout",
       "path": "engagement/birthday-shoutout.json",
+      "format": "json",
       "name": "Birthday auto-shoutout",
       "description": "Daily check (09:00 server time) for any opted-in members whose birthday matches today; posts a shoutout in #general and assigns a 24h Birthday role with a custom color.",
       "category": "engagement",
-      "shape": "flat",
-      "kind": "engagement-flow",
-      "module": "engagement"
+      "module": "engagement",
+      "kind": "engagement-flow"
     },
     {
+      "id": "engagement/daily-mod-digest-ai",
+      "slug": "daily-mod-digest-ai",
       "path": "engagement/daily-mod-digest-ai.json",
+      "format": "json",
       "name": "Daily mod digest with AI summary",
       "description": "Posts a once-a-day staff-only digest summarizing yesterday's moderation activity (warns, mutes, bans, top offenders, automod hits) with an AI-written executive summary at the top.",
       "category": "engagement",
-      "shape": "flat",
-      "kind": "engagement-flow",
-      "module": "ai"
+      "module": "ai",
+      "kind": "engagement-flow"
     },
     {
+      "id": "engagement/starboard-reaction-ramp",
+      "slug": "starboard-reaction-ramp",
       "path": "engagement/starboard-reaction-ramp.json",
+      "format": "json",
       "name": "Starboard with reaction-threshold ramp",
       "description": "Starboard with a self-tuning threshold: starts at 5 stars to be featured, raises by 1 each time the server crosses 1000 active members. Prevents the same handful of regulars from dominating once the community grows.",
       "category": "engagement",
-      "shape": "flat",
-      "kind": "engagement-flow",
-      "module": "engagement"
+      "module": "engagement",
+      "kind": "engagement-flow"
     },
     {
+      "id": "engagement/suggestion-to-thread",
+      "slug": "suggestion-to-thread",
       "path": "engagement/suggestion-to-thread.json",
+      "format": "json",
       "name": "Suggestion-to-thread pipeline",
       "description": "Turns every message in #suggestions into a discussion thread with up/down vote buttons, and re-posts top-voted suggestions of the week into a staff review channel.",
       "category": "engagement",
-      "shape": "flat",
-      "kind": "engagement-flow",
-      "module": "engagement"
+      "module": "engagement",
+      "kind": "engagement-flow"
     },
     {
+      "id": "engagement/weekly-leveling-spotlight",
+      "slug": "weekly-leveling-spotlight",
       "path": "engagement/weekly-leveling-spotlight.json",
+      "format": "json",
       "name": "Weekly leveling spotlight",
       "description": "Every Monday, posts a recap of the top 5 climbers on the XP leaderboard from the past 7 days. Awards a temporary VIP role to #1 for a week and an emoji to top 3.",
       "category": "engagement",
-      "shape": "flat",
-      "kind": "engagement-flow",
-      "module": "leveling"
+      "module": "leveling",
+      "kind": "engagement-flow"
     },
     {
-      "path": "evader-detection/full/community.json",
-      "name": "Evader detection — community",
-      "description": "Quiet alerts only, no auto-bans, longer lookback for chronic raiders.",
-      "category": "evader-detection",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "evader-detection"
-    },
-    {
-      "path": "evader-detection/full/default.json",
-      "name": "Evader detection — default",
-      "description": "Watches for ban-evasion signals (alts, fingerprints, IP-like patterns).",
-      "category": "evader-detection",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "evader-detection"
-    },
-    {
-      "path": "evader-detection/full/strict.json",
-      "name": "Evader detection — strict",
-      "description": "Auto-bans suspected ban-evaders above score threshold.",
-      "category": "evader-detection",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "evader-detection"
-    },
-    {
+      "id": "evader-detection/auto-ban-high-score",
+      "slug": "auto-ban-high-score",
       "path": "evader-detection/partial/auto-ban-high-score.json",
+      "format": "json",
       "name": "Auto-ban high-score evaders",
       "description": "When fingerprint score >= 0.8, ban immediately.",
       "category": "evader-detection",
-      "shape": "partial",
+      "module": "evader-detection",
       "kind": "module-recipe",
-      "module": "evader-detection"
+      "archetype": "partial"
     },
     {
+      "id": "evader-detection/community",
+      "slug": "community",
+      "path": "evader-detection/full/community.json",
+      "format": "json",
+      "name": "Evader detection — community",
+      "description": "Quiet alerts only, no auto-bans, longer lookback for chronic raiders.",
+      "category": "evader-detection",
+      "module": "evader-detection",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "evader-detection/default",
+      "slug": "default",
+      "path": "evader-detection/full/default.json",
+      "format": "json",
+      "name": "Evader detection — default",
+      "description": "Watches for ban-evasion signals (alts, fingerprints, IP-like patterns).",
+      "category": "evader-detection",
+      "module": "evader-detection",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "evader-detection/federation-sync",
+      "slug": "federation-sync",
       "path": "evader-detection/partial/federation-sync.json",
+      "format": "json",
       "name": "Federation sync on",
       "description": "Share evader signals with federated antinuke peers.",
       "category": "evader-detection",
-      "shape": "partial",
+      "module": "evader-detection",
       "kind": "module-recipe",
-      "module": "evader-detection"
+      "archetype": "partial"
     },
     {
+      "id": "evader-detection/strict",
+      "slug": "strict",
+      "path": "evader-detection/full/strict.json",
+      "format": "json",
+      "name": "Evader detection — strict",
+      "description": "Auto-bans suspected ban-evaders above score threshold.",
+      "category": "evader-detection",
+      "module": "evader-detection",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "evader-detection/username-similarity-tight",
+      "slug": "username-similarity-tight",
       "path": "evader-detection/partial/username-similarity-tight.json",
+      "format": "json",
       "name": "Tight username similarity",
       "description": "Catch alts using slight username variants (e.g. 'mike' vs 'mike1').",
       "category": "evader-detection",
-      "shape": "partial",
+      "module": "evader-detection",
       "kind": "module-recipe",
-      "module": "evader-detection"
+      "archetype": "partial"
     },
     {
-      "path": "forms/staff-application.json",
-      "name": "staff-application",
-      "description": "(no description)",
+      "id": "forms/ban-appeal-form",
+      "slug": "ban-appeal-form",
+      "path": "forms/partial/ban-appeal-form.json",
+      "format": "json",
+      "name": "Ban appeal form (extended)",
+      "description": "Long-form ban appeal — separate from appeal-portal for one-off custom flows.",
       "category": "forms",
-      "shape": "flat"
+      "module": "forms",
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
+      "id": "forms/bug-report-form",
+      "slug": "bug-report-form",
+      "path": "forms/partial/bug-report-form.json",
+      "format": "json",
+      "name": "Bug report form",
+      "description": "Players-vs-product style bug report; routes to dev channel.",
+      "category": "forms",
+      "module": "forms",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "forms/default",
+      "slug": "default",
+      "path": "forms/full/default.json",
+      "format": "json",
+      "name": "Forms — default",
+      "description": "Forms module enabled with sensible defaults.",
+      "category": "forms",
+      "module": "forms",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "forms/partner-application",
+      "slug": "partner-application",
+      "path": "forms/partial/partner-application.json",
+      "format": "json",
+      "name": "Partner application",
+      "description": "Brief form for partner-server outreach.",
+      "category": "forms",
+      "module": "forms",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "forms/server-feedback-form",
+      "slug": "server-feedback-form",
+      "path": "forms/partial/server-feedback-form.json",
+      "format": "json",
+      "name": "Server feedback form",
+      "description": "Anonymous-friendly community feedback for owners.",
+      "category": "forms",
+      "module": "forms",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "forms/staff-application",
+      "slug": "staff-application",
+      "path": "forms/staff-application.json",
+      "format": "json",
+      "name": "staff application",
+      "description": "",
+      "category": "forms",
+      "kind": "legacy"
+    },
+    {
+      "id": "forms/staff-application-detail",
+      "slug": "staff-application-detail",
+      "path": "forms/partial/staff-application-detail.json",
+      "format": "json",
+      "name": "Staff application — detailed",
+      "description": "5-question staff app: experience, timezone, references, conflict scenario, why-us.",
+      "category": "forms",
+      "module": "forms",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "fun/default",
+      "slug": "default",
+      "path": "fun/full/default.json",
+      "format": "json",
+      "name": "Fun — default",
+      "description": "Standard fun module: 8ball, dice, coin, ascii art.",
+      "category": "fun",
+      "module": "fun",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "fun/minimal",
+      "slug": "minimal",
+      "path": "fun/full/minimal.json",
+      "format": "json",
+      "name": "Fun — minimal",
+      "description": "Only 8ball + coin + dice. Quiet servers.",
+      "category": "fun",
+      "module": "fun",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "fun/tighter-cooldown",
+      "slug": "tighter-cooldown",
+      "path": "fun/partial/tighter-cooldown.json",
+      "format": "json",
+      "name": "30-second cooldown",
+      "description": "Bumps fun cooldown.",
+      "category": "fun",
+      "module": "fun",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "games/casino",
+      "slug": "casino",
+      "path": "games/full/casino.json",
+      "format": "json",
+      "name": "Games — casino",
+      "description": "Betting + economy hooks active. Large pots.",
+      "category": "games",
+      "module": "games",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "games/channel-restrict",
+      "slug": "channel-restrict",
+      "path": "games/partial/channel-restrict.json",
+      "format": "json",
+      "name": "Restrict to #games",
+      "description": "Only allow game commands in the dedicated games channel.",
+      "category": "games",
+      "module": "games",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "games/community",
+      "slug": "community",
+      "path": "games/full/community.json",
+      "format": "json",
+      "name": "Games — community",
+      "description": "All non-betting games, no cooldown stress, daily mini-game on.",
+      "category": "games",
+      "module": "games",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "games/daily-game-on",
+      "slug": "daily-game-on",
+      "path": "games/partial/daily-game-on.json",
+      "format": "json",
+      "name": "Daily mini-game",
+      "description": "Posts a daily auto-trivia in #daily-game.",
+      "category": "games",
+      "module": "games",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "games/default",
+      "slug": "default",
+      "path": "games/full/default.json",
+      "format": "json",
+      "name": "Games — default",
+      "description": "Standard games loadout: trivia, hangman, blackjack, slots, tic-tac-toe.",
+      "category": "games",
+      "module": "games",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "games/trivia-only",
+      "slug": "trivia-only",
+      "path": "games/partial/trivia-only.json",
+      "format": "json",
+      "name": "Trivia-only loadout",
+      "description": "Restrict games module to trivia only.",
+      "category": "games",
+      "module": "games",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "github-activity/compact",
+      "slug": "compact",
+      "path": "github-activity/full/compact.json",
+      "format": "json",
+      "name": "GitHub activity — compact",
+      "description": "Single-line summaries instead of full embeds. Less noise.",
+      "category": "github-activity",
+      "module": "github-activity",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "github-activity/default",
+      "slug": "default",
+      "path": "github-activity/full/default.json",
+      "format": "json",
+      "name": "GitHub activity — default",
+      "description": "Posts repo events (push, PR, issue, release) into a dev channel.",
+      "category": "github-activity",
+      "module": "github-activity",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "github-activity/pr-firehose",
+      "slug": "pr-firehose",
+      "path": "github-activity/partial/pr-firehose.json",
+      "format": "json",
+      "name": "PR firehose",
+      "description": "All PR events including comments + review.",
+      "category": "github-activity",
+      "module": "github-activity",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "github-activity/release-only",
+      "slug": "release-only",
+      "path": "github-activity/partial/release-only.json",
+      "format": "json",
+      "name": "Releases only",
+      "description": "Quiet mode — only release events.",
+      "category": "github-activity",
+      "module": "github-activity",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "giveaways/booster-bonus",
+      "slug": "booster-bonus",
+      "path": "giveaways/partial/booster-bonus.json",
+      "format": "json",
+      "name": "Booster bonus entries x3",
+      "description": "Boosters automatically get 3 entries.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "giveaways/community",
+      "slug": "community",
+      "path": "giveaways/full/community.json",
+      "format": "json",
+      "name": "Giveaways — community",
+      "description": "Generous: bonus entries for boosters/regulars, multi-winner.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "giveaways/custom-role-rotation",
+      "slug": "custom-role-rotation",
+      "path": "giveaways/partial/custom-role-rotation.json",
+      "format": "json",
+      "name": "Custom-role rotation",
+      "description": "Monthly custom-role giveaway — winner gets a personal vanity role.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "giveaways/default",
+      "slug": "default",
+      "path": "giveaways/full/default.json",
+      "format": "json",
+      "name": "Giveaways — default",
+      "description": "Standard 24h giveaways, role gating, reroll allowed.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "giveaways/item-grant-template",
+      "slug": "item-grant-template",
+      "path": "giveaways/partial/item-grant-template.json",
+      "format": "json",
+      "name": "Item-grant template",
+      "description": "Generic 'enter to win' card — operator fills prize text.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "giveaways/launch-giveaway",
+      "slug": "launch-giveaway",
       "path": "giveaways/launch-giveaway.json",
-      "name": "launch-giveaway",
+      "format": "json",
+      "name": "launch giveaway",
       "description": "Starter giveaway pack for launches or seasonal events.",
       "category": "giveaways",
-      "shape": "flat"
+      "kind": "legacy"
     },
     {
+      "id": "giveaways/min-account-30d",
+      "slug": "min-account-30d",
+      "path": "giveaways/partial/min-account-30d.json",
+      "format": "json",
+      "name": "Min account age 30d",
+      "description": "Brand-new accounts blocked from giveaways.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "giveaways/nitro-rotation",
+      "slug": "nitro-rotation",
+      "path": "giveaways/partial/nitro-rotation.json",
+      "format": "json",
+      "name": "Nitro giveaway rotation",
+      "description": "Weekly Nitro giveaway template — 168h duration, single winner.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "giveaways/strict",
+      "slug": "strict",
+      "path": "giveaways/full/strict.json",
+      "format": "json",
+      "name": "Giveaways — strict",
+      "description": "Booster-only entry, account-age floor, single winner only.",
+      "category": "giveaways",
+      "module": "giveaways",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "highlights/default",
+      "slug": "default",
+      "path": "highlights/full/default.json",
+      "format": "json",
+      "name": "Highlights — default",
+      "description": "Personal-keyword DM highlights with cooldown.",
+      "category": "highlights",
+      "module": "highlights",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "highlights/more-keywords",
+      "slug": "more-keywords",
+      "path": "highlights/partial/more-keywords.json",
+      "format": "json",
+      "name": "Allow 25 keywords",
+      "description": "Bumps per-user keyword cap to 25.",
+      "category": "highlights",
+      "module": "highlights",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "highlights/tighter-cooldown",
+      "slug": "tighter-cooldown",
+      "path": "highlights/partial/tighter-cooldown.json",
+      "format": "json",
+      "name": "30-min cooldown",
+      "description": "Tighter cooldown to reduce notification spam.",
+      "category": "highlights",
+      "module": "highlights",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "honeypot/default",
+      "slug": "default",
       "path": "honeypot/full/default.json",
+      "format": "json",
       "name": "Honeypot — default",
       "description": "Standard honeypot channel: any message earns a ban.",
       "category": "honeypot",
-      "shape": "full",
+      "module": "honeypot",
       "kind": "module-export",
-      "module": "honeypot"
+      "archetype": "full"
     },
     {
-      "path": "honeypot/full/strict.json",
-      "name": "Honeypot — strict",
-      "description": "Honeypot + 7-day deletion window + DM owner.",
-      "category": "honeypot",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "honeypot"
-    },
-    {
+      "id": "honeypot/delete-7d",
+      "slug": "delete-7d",
       "path": "honeypot/partial/delete-7d.json",
+      "format": "json",
       "name": "Delete 7 days of messages on hit",
       "description": "Cleans up past spam from the offender.",
       "category": "honeypot",
-      "shape": "partial",
+      "module": "honeypot",
       "kind": "module-recipe",
-      "module": "honeypot"
+      "archetype": "partial"
     },
     {
+      "id": "honeypot/dry-run",
+      "slug": "dry-run",
       "path": "honeypot/partial/dry-run.json",
+      "format": "json",
       "name": "Honeypot dry-run",
       "description": "Detect-only — log hits but take no action.",
       "category": "honeypot",
-      "shape": "partial",
+      "module": "honeypot",
       "kind": "module-recipe",
-      "module": "honeypot"
+      "archetype": "partial"
     },
     {
+      "id": "honeypot/exempt-mods",
+      "slug": "exempt-mods",
       "path": "honeypot/partial/exempt-mods.json",
+      "format": "json",
       "name": "Honeypot exempt mods",
       "description": "Whitelists the mod role so test messages don't trigger.",
       "category": "honeypot",
-      "shape": "partial",
+      "module": "honeypot",
       "kind": "module-recipe",
-      "module": "honeypot"
+      "archetype": "partial"
     },
     {
+      "id": "honeypot/kick-mode",
+      "slug": "kick-mode",
       "path": "honeypot/partial/kick-mode.json",
+      "format": "json",
       "name": "Honeypot kick mode",
       "description": "Honeypot kicks instead of banning.",
       "category": "honeypot",
-      "shape": "partial",
+      "module": "honeypot",
       "kind": "module-recipe",
-      "module": "honeypot"
+      "archetype": "partial"
     },
     {
+      "id": "honeypot/strict",
+      "slug": "strict",
+      "path": "honeypot/full/strict.json",
+      "format": "json",
+      "name": "Honeypot — strict",
+      "description": "Honeypot + 7-day deletion window + DM owner.",
+      "category": "honeypot",
+      "module": "honeypot",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "honeypot/warn-only",
+      "slug": "warn-only",
       "path": "honeypot/partial/warn-only.json",
+      "format": "json",
       "name": "Honeypot warn-only",
       "description": "Honeypot triggers a warn instead of a ban — good while tuning.",
       "category": "honeypot",
-      "shape": "partial",
+      "module": "honeypot",
       "kind": "module-recipe",
-      "module": "honeypot"
+      "archetype": "partial"
     },
     {
+      "id": "integrations/discord-slack-incident-relay",
+      "slug": "discord-slack-incident-relay",
       "path": "integrations/discord-slack-incident-relay.json",
+      "format": "json",
       "name": "Discord ↔ Slack incident relay",
       "description": "Bidirectional bridge between #incidents on Discord and #incidents on Slack. Threads on either side stay synced; @here / @channel mentions are translated. Designed for shared on-call between an open community (Discord) and a paid Slack workspace.",
       "category": "integrations",
-      "shape": "flat",
-      "kind": "integration-feed",
-      "module": "integrations.relay"
+      "module": "integrations.relay",
+      "kind": "integration-feed"
     },
     {
+      "id": "integrations/form-to-notion-webhook",
+      "slug": "form-to-notion-webhook",
       "path": "integrations/form-to-notion-webhook.json",
+      "format": "json",
       "name": "Form ↔ Notion via webhook",
       "description": "Pipes new form submissions (any Modly form) into a Notion database via outbound webhook. Maps each question to a Notion property and includes the submitter's Discord ID and a deep link back into the dashboard.",
       "category": "integrations",
-      "shape": "flat",
-      "kind": "integration-feed",
-      "module": "forms"
+      "module": "forms",
+      "kind": "integration-feed"
     },
     {
+      "id": "integrations/github-pr-digest",
+      "slug": "github-pr-digest",
       "path": "integrations/github-pr-digest.json",
+      "format": "json",
       "name": "GitHub PR digest in #engineering",
       "description": "Webhook receiver that batches GitHub PR events (opened, ready-for-review, merged, closed) into a single digest message updated in place every 5 minutes. Cuts out the per-event spam from the official GitHub bot.",
       "category": "integrations",
-      "shape": "flat",
-      "kind": "integration-feed",
-      "module": "integrations.github"
+      "module": "integrations.github",
+      "kind": "integration-feed"
     },
     {
+      "id": "integrations/rss-monday-digest",
+      "slug": "rss-monday-digest",
       "path": "integrations/rss-monday-digest.json",
+      "format": "json",
       "name": "RSS digest every Monday",
       "description": "Polls a list of RSS/Atom feeds throughout the week and posts a single combined digest every Monday morning. Items are deduplicated by canonical URL.",
       "category": "integrations",
-      "shape": "flat",
-      "kind": "integration-feed",
-      "module": "integrations.rss"
+      "module": "integrations.rss",
+      "kind": "integration-feed"
     },
     {
+      "id": "integrations/twitch-live-alert",
+      "slug": "twitch-live-alert",
       "path": "integrations/twitch-live-alert.json",
+      "format": "json",
       "name": "Twitch live alert with pinger role",
       "description": "Subscribes to one or more Twitch channels via EventSub. When a stream goes live, posts an embed in #stream-alerts and pings the StreamPings role. Auto-edits the message to past-tense once the stream ends, so the alert doesn't stay 'live' all night.",
       "category": "integrations",
-      "shape": "flat",
-      "kind": "integration-feed",
-      "module": "integrations.twitch"
+      "module": "integrations.twitch",
+      "kind": "integration-feed"
     },
     {
-      "path": "leveling/full/default.json",
-      "name": "Leveling — default",
-      "description": "Standard XP rates with text + voice XP, level-up announce in-channel.",
-      "category": "leveling",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "leveling"
-    },
-    {
-      "path": "leveling/full/strict.json",
-      "name": "Leveling — strict",
-      "description": "Slow XP, anti-farm aggressive, no reaction XP, decay on.",
-      "category": "leveling",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "leveling"
-    },
-    {
-      "path": "leveling/full/xp-grind.json",
-      "name": "Leveling — XP grind",
-      "description": "Fast XP with weekend boost and reaction XP for hype servers.",
-      "category": "leveling",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "leveling"
-    },
-    {
+      "id": "leveling/anti-farm-strict",
+      "slug": "anti-farm-strict",
       "path": "leveling/partial/anti-farm-strict.json",
+      "format": "json",
       "name": "Anti-farm strict",
       "description": "Tightens duplicate detection + burst freeze.",
       "category": "leveling",
-      "shape": "partial",
+      "module": "leveling",
       "kind": "module-recipe",
-      "module": "leveling"
+      "archetype": "partial"
     },
     {
+      "id": "leveling/channel-multipliers",
+      "slug": "channel-multipliers",
       "path": "leveling/partial/channel-multipliers.json",
+      "format": "json",
       "name": "Channel multipliers preset",
       "description": "Doubles XP in event channel, halves it in spam channel.",
       "category": "leveling",
-      "shape": "partial",
+      "module": "leveling",
       "kind": "module-recipe",
-      "module": "leveling"
+      "archetype": "partial"
     },
     {
+      "id": "leveling/decay-on",
+      "slug": "decay-on",
       "path": "leveling/partial/decay-on.json",
+      "format": "json",
       "name": "Inactive XP decay",
       "description": "Decays XP 5%/week after 14 inactive days.",
       "category": "leveling",
-      "shape": "partial",
+      "module": "leveling",
       "kind": "module-recipe",
-      "module": "leveling"
+      "archetype": "partial"
     },
     {
+      "id": "leveling/default",
+      "slug": "default",
+      "path": "leveling/full/default.json",
+      "format": "json",
+      "name": "Leveling — default",
+      "description": "Standard XP rates with text + voice XP, level-up announce in-channel.",
+      "category": "leveling",
+      "module": "leveling",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "leveling/no-reaction-xp",
+      "slug": "no-reaction-xp",
       "path": "leveling/partial/no-reaction-xp.json",
+      "format": "json",
       "name": "Disable reaction XP",
       "description": "Reactions don't grant XP — useful in raidy servers.",
       "category": "leveling",
-      "shape": "partial",
+      "module": "leveling",
       "kind": "module-recipe",
-      "module": "leveling"
+      "archetype": "partial"
     },
     {
+      "id": "leveling/strict",
+      "slug": "strict",
+      "path": "leveling/full/strict.json",
+      "format": "json",
+      "name": "Leveling — strict",
+      "description": "Slow XP, anti-farm aggressive, no reaction XP, decay on.",
+      "category": "leveling",
+      "module": "leveling",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "leveling/weekend-boost",
+      "slug": "weekend-boost",
       "path": "leveling/partial/weekend-boost.json",
+      "format": "json",
       "name": "Weekend XP boost x2",
       "description": "Doubles XP on Saturday/Sunday.",
       "category": "leveling",
-      "shape": "partial",
+      "module": "leveling",
       "kind": "module-recipe",
-      "module": "leveling"
+      "archetype": "partial"
     },
     {
+      "id": "leveling/xp-grind",
+      "slug": "xp-grind",
+      "path": "leveling/full/xp-grind.json",
+      "format": "json",
+      "name": "Leveling — XP grind",
+      "description": "Fast XP with weekend boost and reaction XP for hype servers.",
+      "category": "leveling",
+      "module": "leveling",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "member-notes/default",
+      "slug": "default",
       "path": "member-notes/full/default.json",
+      "format": "json",
       "name": "Member notes — default",
       "description": "Mod-only notes attached to members; private, exportable.",
       "category": "member-notes",
-      "shape": "full",
+      "module": "member-notes",
       "kind": "module-export",
-      "module": "member-notes"
+      "archetype": "full"
     },
     {
-      "path": "member-notes/full/strict.json",
-      "name": "Member notes — audit",
-      "description": "Tighter retention, federation share on, audit log on every read.",
-      "category": "member-notes",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "member-notes"
-    },
-    {
+      "id": "member-notes/no-export",
+      "slug": "no-export",
       "path": "member-notes/partial/no-export.json",
+      "format": "json",
       "name": "Private — no export",
       "description": "Locks notes to in-app viewing only.",
       "category": "member-notes",
-      "shape": "partial",
+      "module": "member-notes",
       "kind": "module-recipe",
-      "module": "member-notes"
+      "archetype": "partial"
     },
     {
+      "id": "member-notes/praise-pack",
+      "slug": "praise-pack",
       "path": "member-notes/partial/praise-pack.json",
+      "format": "json",
       "name": "Praise notes pack",
       "description": "Adds 'praise' / 'great-help' / 'helpful' tags + DM on praise.",
       "category": "member-notes",
-      "shape": "partial",
+      "module": "member-notes",
       "kind": "module-recipe",
-      "module": "member-notes"
+      "archetype": "partial"
     },
     {
+      "id": "member-notes/strict",
+      "slug": "strict",
+      "path": "member-notes/full/strict.json",
+      "format": "json",
+      "name": "Member notes — audit",
+      "description": "Tighter retention, federation share on, audit log on every read.",
+      "category": "member-notes",
+      "module": "member-notes",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "member-notes/watch-list",
+      "slug": "watch-list",
       "path": "member-notes/partial/watch-list.json",
+      "format": "json",
       "name": "Watch-list pack",
       "description": "Adds a sticky 'watch' tag that surfaces on every mod-coach review.",
       "category": "member-notes",
-      "shape": "partial",
+      "module": "member-notes",
       "kind": "module-recipe",
-      "module": "member-notes"
+      "archetype": "partial"
     },
     {
-      "path": "mod-coach/full/community.json",
-      "name": "Mod-Coach — community",
-      "description": "Friendly coaching tone, weekly digest only, no auto-apply.",
-      "category": "mod-coach",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "mod-coach"
-    },
-    {
-      "path": "mod-coach/full/default.json",
-      "name": "Mod-Coach — default",
-      "description": "AI mod-coach gives staff suggested actions on edge-case incidents.",
-      "category": "mod-coach",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "mod-coach"
-    },
-    {
-      "path": "mod-coach/full/strict.json",
-      "name": "Mod-Coach — strict",
-      "description": "Stricter rubric, lower auto-apply threshold disabled, all suggestions logged.",
-      "category": "mod-coach",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "mod-coach"
-    },
-    {
+      "id": "mod-coach/auto-apply-high-conf",
+      "slug": "auto-apply-high-conf",
       "path": "mod-coach/partial/auto-apply-high-conf.json",
+      "format": "json",
       "name": "Auto-apply on >0.95 confidence",
       "description": "Lets the coach quietly action obvious cases without staff approval.",
       "category": "mod-coach",
-      "shape": "partial",
+      "module": "mod-coach",
       "kind": "module-recipe",
-      "module": "mod-coach"
+      "archetype": "partial"
     },
     {
+      "id": "mod-coach/community",
+      "slug": "community",
+      "path": "mod-coach/full/community.json",
+      "format": "json",
+      "name": "Mod-Coach — community",
+      "description": "Friendly coaching tone, weekly digest only, no auto-apply.",
+      "category": "mod-coach",
+      "module": "mod-coach",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "mod-coach/default",
+      "slug": "default",
+      "path": "mod-coach/full/default.json",
+      "format": "json",
+      "name": "Mod-Coach — default",
+      "description": "AI mod-coach gives staff suggested actions on edge-case incidents.",
+      "category": "mod-coach",
+      "module": "mod-coach",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "mod-coach/strict",
+      "slug": "strict",
+      "path": "mod-coach/full/strict.json",
+      "format": "json",
+      "name": "Mod-Coach — strict",
+      "description": "Stricter rubric, lower auto-apply threshold disabled, all suggestions logged.",
+      "category": "mod-coach",
+      "module": "mod-coach",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "mod-coach/tone-feedback",
+      "slug": "tone-feedback",
       "path": "mod-coach/partial/tone-feedback.json",
+      "format": "json",
       "name": "Tone feedback for staff",
       "description": "Highlights overly harsh or sarcastic mod replies in DM.",
       "category": "mod-coach",
-      "shape": "partial",
+      "module": "mod-coach",
       "kind": "module-recipe",
-      "module": "mod-coach"
+      "archetype": "partial"
     },
     {
+      "id": "mod-coach/weekly-review",
+      "slug": "weekly-review",
       "path": "mod-coach/partial/weekly-review.json",
+      "format": "json",
       "name": "Weekly mod review digest",
       "description": "Ships a weekly recap of mod actions + suggestions for retro.",
       "category": "mod-coach",
-      "shape": "partial",
+      "module": "mod-coach",
       "kind": "module-recipe",
-      "module": "mod-coach"
+      "archetype": "partial"
     },
     {
-      "path": "moderation/full/community.json",
-      "name": "Moderation — community",
-      "description": "Friendly mod stance: short timeouts, fast warn decay, no auto-escalation.",
-      "category": "moderation",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "moderation"
-    },
-    {
-      "path": "moderation/full/default.json",
-      "name": "Moderation — default",
-      "description": "Standard mod-action defaults: warn-points expire, auto-escalate, mod-log on.",
-      "category": "moderation",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "moderation"
-    },
-    {
-      "path": "moderation/full/strict.json",
-      "name": "Moderation — strict",
-      "description": "Faster escalation, longer timeouts, harder ban deletes.",
-      "category": "moderation",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "moderation"
-    },
-    {
+      "id": "moderation/auto-escalate-on",
+      "slug": "auto-escalate-on",
       "path": "moderation/partial/auto-escalate-on.json",
+      "format": "json",
       "name": "Auto-escalate at 10 points",
       "description": "Auto-timeout members who hit 10 warn-points within decay window.",
       "category": "moderation",
-      "shape": "partial",
+      "module": "moderation",
       "kind": "module-recipe",
-      "module": "moderation"
+      "archetype": "partial"
     },
     {
+      "id": "moderation/ban-delete-7d",
+      "slug": "ban-delete-7d",
       "path": "moderation/partial/ban-delete-7d.json",
+      "format": "json",
       "name": "Ban delete 7 days",
       "description": "Default `/ban` deletes 7 days of past messages.",
       "category": "moderation",
-      "shape": "partial",
+      "module": "moderation",
       "kind": "module-recipe",
-      "module": "moderation"
+      "archetype": "partial"
     },
     {
+      "id": "moderation/community",
+      "slug": "community",
+      "path": "moderation/full/community.json",
+      "format": "json",
+      "name": "Moderation — community",
+      "description": "Friendly mod stance: short timeouts, fast warn decay, no auto-escalation.",
+      "category": "moderation",
+      "module": "moderation",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "moderation/default",
+      "slug": "default",
+      "path": "moderation/full/default.json",
+      "format": "json",
+      "name": "Moderation — default",
+      "description": "Standard mod-action defaults: warn-points expire, auto-escalate, mod-log on.",
+      "category": "moderation",
+      "module": "moderation",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "moderation/silent-mode",
+      "slug": "silent-mode",
       "path": "moderation/partial/silent-mode.json",
+      "format": "json",
       "name": "Silent moderation mode",
       "description": "Don't DM offenders — quietly action them.",
       "category": "moderation",
-      "shape": "partial",
+      "module": "moderation",
       "kind": "module-recipe",
-      "module": "moderation"
+      "archetype": "partial"
     },
     {
+      "id": "moderation/strict",
+      "slug": "strict",
+      "path": "moderation/full/strict.json",
+      "format": "json",
+      "name": "Moderation — strict",
+      "description": "Faster escalation, longer timeouts, harder ban deletes.",
+      "category": "moderation",
+      "module": "moderation",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "moderation/transcripts-on",
+      "slug": "transcripts-on",
       "path": "moderation/partial/transcripts-on.json",
+      "format": "json",
       "name": "Save mod transcripts",
       "description": "Saves a transcript of each mod-action thread for future appeal.",
       "category": "moderation",
-      "shape": "partial",
+      "module": "moderation",
       "kind": "module-recipe",
-      "module": "moderation"
+      "archetype": "partial"
     },
     {
+      "id": "onboarding/default",
+      "slug": "default",
       "path": "onboarding/full/default.json",
+      "format": "json",
       "name": "Onboarding — default",
       "description": "Multi-step onboarding flow: rules ack, role-picker, intro post.",
       "category": "onboarding",
-      "shape": "full",
+      "module": "onboarding",
       "kind": "module-export",
-      "module": "onboarding"
+      "archetype": "full"
     },
     {
-      "path": "onboarding/full/strict.json",
-      "name": "Onboarding — strict",
-      "description": "Hard-gate everything until onboarding completed, kick on timeout.",
-      "category": "onboarding",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "onboarding"
-    },
-    {
+      "id": "onboarding/intro-channel",
+      "slug": "intro-channel",
       "path": "onboarding/partial/intro-channel.json",
+      "format": "json",
       "name": "Intro post requirement",
       "description": "Add an introduction post to onboarding flow.",
       "category": "onboarding",
-      "shape": "partial",
+      "module": "onboarding",
       "kind": "module-recipe",
-      "module": "onboarding"
+      "archetype": "partial"
     },
     {
+      "id": "onboarding/kick-on-timeout-72h",
+      "slug": "kick-on-timeout-72h",
       "path": "onboarding/partial/kick-on-timeout-72h.json",
+      "format": "json",
       "name": "Kick after 72h incomplete",
       "description": "Kicks members who don't finish onboarding within 72h.",
       "category": "onboarding",
-      "shape": "partial",
+      "module": "onboarding",
       "kind": "module-recipe",
-      "module": "onboarding"
+      "archetype": "partial"
     },
     {
+      "id": "onboarding/rules-ack-required",
+      "slug": "rules-ack-required",
       "path": "onboarding/partial/rules-ack-required.json",
+      "format": "json",
       "name": "Rules-ack step",
       "description": "Adds a rules-acknowledgement step to onboarding.",
       "category": "onboarding",
-      "shape": "partial",
+      "module": "onboarding",
       "kind": "module-recipe",
-      "module": "onboarding"
+      "archetype": "partial"
     },
     {
-      "path": "raid/full/community.json",
-      "name": "Raid shield — community",
-      "description": "Light raid filter that won't false-positive on event drops.",
-      "category": "raid",
-      "shape": "full",
+      "id": "onboarding/strict",
+      "slug": "strict",
+      "path": "onboarding/full/strict.json",
+      "format": "json",
+      "name": "Onboarding — strict",
+      "description": "Hard-gate everything until onboarding completed, kick on timeout.",
+      "category": "onboarding",
+      "module": "onboarding",
       "kind": "module-export",
-      "module": "raid"
+      "archetype": "full"
     },
     {
-      "path": "raid/full/default.json",
-      "name": "Raid shield — default",
-      "description": "Reasonable raid-detection thresholds with quarantine on trip.",
-      "category": "raid",
-      "shape": "full",
+      "id": "personas/default",
+      "slug": "default",
+      "path": "personas/full/default.json",
+      "format": "json",
+      "name": "Personas — default",
+      "description": "Bot personas: switchable per-channel tone (formal/casual/hype).",
+      "category": "personas",
+      "module": "personas",
       "kind": "module-export",
-      "module": "raid"
+      "archetype": "full"
     },
     {
-      "path": "raid/full/strict.json",
-      "name": "Raid shield — strict",
-      "description": "Aggressive thresholds for servers being actively attacked.",
-      "category": "raid",
-      "shape": "full",
+      "id": "personas/playful-host-persona",
+      "slug": "playful-host-persona",
+      "path": "personas/partial/playful-host-persona.json",
+      "format": "json",
+      "name": "Playful host persona",
+      "description": "Adds an upbeat playful-host persona for hangout channels.",
+      "category": "personas",
+      "module": "personas",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "personas/study-coach-persona",
+      "slug": "study-coach-persona",
+      "path": "personas/partial/study-coach-persona.json",
+      "format": "json",
+      "name": "Study-coach persona",
+      "description": "Adds a calm, structured study-coach persona for #study channels.",
+      "category": "personas",
+      "module": "personas",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "personas/tech-mentor-persona",
+      "slug": "tech-mentor-persona",
+      "path": "personas/partial/tech-mentor-persona.json",
+      "format": "json",
+      "name": "Tech-mentor persona",
+      "description": "Adds a senior-engineer-mentor persona for #help / #dev.",
+      "category": "personas",
+      "module": "personas",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "personas/warm-host-persona",
+      "slug": "warm-host-persona",
+      "path": "personas/partial/warm-host-persona.json",
+      "format": "json",
+      "name": "Warm host persona",
+      "description": "Adds a warm community-host persona prompt.",
+      "category": "personas",
+      "module": "personas",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "polls/anonymous-on",
+      "slug": "anonymous-on",
+      "path": "polls/partial/anonymous-on.json",
+      "format": "json",
+      "name": "Anonymous polls",
+      "description": "Voter identity hidden from poll author.",
+      "category": "polls",
+      "module": "polls",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "polls/community",
+      "slug": "community",
+      "path": "polls/full/community.json",
+      "format": "json",
+      "name": "Polls — community",
+      "description": "Anonymous + multi-choice + thread discussion enabled.",
+      "category": "polls",
+      "module": "polls",
       "kind": "module-export",
-      "module": "raid"
+      "archetype": "full"
     },
     {
+      "id": "polls/default",
+      "slug": "default",
+      "path": "polls/full/default.json",
+      "format": "json",
+      "name": "Polls — default",
+      "description": "Slash-command polls, default 24h, anonymous off.",
+      "category": "polls",
+      "module": "polls",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "polls/multi-choice-on",
+      "slug": "multi-choice-on",
+      "path": "polls/partial/multi-choice-on.json",
+      "format": "json",
+      "name": "Multiple-choice polls",
+      "description": "Voters can pick more than one option.",
+      "category": "polls",
+      "module": "polls",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "polls/thread-discussion-on",
+      "slug": "thread-discussion-on",
+      "path": "polls/partial/thread-discussion-on.json",
+      "format": "json",
+      "name": "Thread discussion per poll",
+      "description": "Each poll spawns a discussion thread.",
+      "category": "polls",
+      "module": "polls",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "raid/captcha-on-trip",
+      "slug": "captcha-on-trip",
       "path": "raid/partial/captcha-on-trip.json",
+      "format": "json",
       "name": "Captcha on raid trip",
       "description": "When a raid trips, force every joiner through captcha until cleared.",
       "category": "raid",
-      "shape": "partial",
+      "module": "raid",
       "kind": "module-recipe",
-      "module": "raid"
+      "archetype": "partial"
     },
     {
+      "id": "raid/community",
+      "slug": "community",
+      "path": "raid/full/community.json",
+      "format": "json",
+      "name": "Raid shield — community",
+      "description": "Light raid filter that won't false-positive on event drops.",
+      "category": "raid",
+      "module": "raid",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "raid/default",
+      "slug": "default",
+      "path": "raid/full/default.json",
+      "format": "json",
+      "name": "Raid shield — default",
+      "description": "Reasonable raid-detection thresholds with quarantine on trip.",
+      "category": "raid",
+      "module": "raid",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "raid/dry-run-mode",
+      "slug": "dry-run-mode",
       "path": "raid/partial/dry-run-mode.json",
+      "format": "json",
       "name": "Raid dry-run mode",
       "description": "Detect but never act — useful while tuning thresholds.",
       "category": "raid",
-      "shape": "partial",
+      "module": "raid",
       "kind": "module-recipe",
-      "module": "raid"
+      "archetype": "partial"
     },
     {
+      "id": "raid/fingerprint-ban",
+      "slug": "fingerprint-ban",
       "path": "raid/partial/fingerprint-ban.json",
+      "format": "json",
       "name": "Fingerprint + avatar-hash ban",
       "description": "Enables avatar/device-fingerprint matching when banning raiders.",
       "category": "raid",
-      "shape": "partial",
+      "module": "raid",
       "kind": "module-recipe",
-      "module": "raid"
+      "archetype": "partial"
     },
     {
+      "id": "raid/lockdown-on-trip",
+      "slug": "lockdown-on-trip",
       "path": "raid/partial/lockdown-on-trip.json",
+      "format": "json",
       "name": "Lock channels on raid trip",
       "description": "When a raid trips, lock @everyone send permission across all configured channels.",
       "category": "raid",
-      "shape": "partial",
+      "module": "raid",
       "kind": "module-recipe",
-      "module": "raid"
+      "archetype": "partial"
     },
     {
+      "id": "raid/min-account-age-90d",
+      "slug": "min-account-age-90d",
       "path": "raid/partial/min-account-age-90d.json",
+      "format": "json",
       "name": "Block accounts <90 days old",
       "description": "Hard block on very new accounts during active raid.",
       "category": "raid",
-      "shape": "partial",
+      "module": "raid",
       "kind": "module-recipe",
-      "module": "raid"
+      "archetype": "partial"
     },
     {
+      "id": "raid/strict",
+      "slug": "strict",
+      "path": "raid/full/strict.json",
+      "format": "json",
+      "name": "Raid shield — strict",
+      "description": "Aggressive thresholds for servers being actively attacked.",
+      "category": "raid",
+      "module": "raid",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "raid/username-regex-pack",
+      "slug": "username-regex-pack",
       "path": "raid/partial/username-regex-pack.json",
+      "format": "json",
       "name": "Username pattern bans",
       "description": "Auto-bans joiners whose username matches a known raid signature.",
       "category": "raid",
-      "shape": "partial",
+      "module": "raid",
       "kind": "module-recipe",
-      "module": "raid"
+      "archetype": "partial"
     },
     {
-      "path": "rep/full/default.json",
-      "name": "Rep — default",
-      "description": "Reputation system on with daily cap, no negative rep.",
-      "category": "rep",
-      "shape": "full",
+      "id": "relay/default",
+      "slug": "default",
+      "path": "relay/full/default.json",
+      "format": "json",
+      "name": "Relay — default",
+      "description": "Cross-channel relay setup with thread-per-source.",
+      "category": "relay",
+      "module": "relay",
       "kind": "module-export",
-      "module": "rep"
+      "archetype": "full"
     },
     {
-      "path": "rep/full/strict.json",
-      "name": "Rep — strict",
-      "description": "Tight cooldowns, mutual-thread requirement, farm-freeze.",
-      "category": "rep",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "rep"
+      "id": "relay/guild-pair-mirror",
+      "slug": "guild-pair-mirror",
+      "path": "relay/partial/guild-pair-mirror.json",
+      "format": "json",
+      "name": "Guild-pair mirror",
+      "description": "Two-way mirror between a sister-guild's channel and ours.",
+      "category": "relay",
+      "module": "relay",
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
+      "id": "relay/incident-relay",
+      "slug": "incident-relay",
+      "path": "relay/partial/incident-relay.json",
+      "format": "json",
+      "name": "Incident relay",
+      "description": "Relay between #incidents and a private staff thread.",
+      "category": "relay",
+      "module": "relay",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "rep/anti-farm",
+      "slug": "anti-farm",
       "path": "rep/partial/anti-farm.json",
+      "format": "json",
       "name": "Anti-rep-farm",
       "description": "Adds reciprocal-rep + farm freeze detection.",
       "category": "rep",
-      "shape": "partial",
+      "module": "rep",
       "kind": "module-recipe",
-      "module": "rep"
+      "archetype": "partial"
     },
     {
+      "id": "rep/default",
+      "slug": "default",
+      "path": "rep/full/default.json",
+      "format": "json",
+      "name": "Rep — default",
+      "description": "Reputation system on with daily cap, no negative rep.",
+      "category": "rep",
+      "module": "rep",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "rep/negative-rep-on",
+      "slug": "negative-rep-on",
       "path": "rep/partial/negative-rep-on.json",
+      "format": "json",
       "name": "Allow negative rep",
       "description": "Members can `-rep` annoying people.",
       "category": "rep",
-      "shape": "partial",
+      "module": "rep",
       "kind": "module-recipe",
-      "module": "rep"
+      "archetype": "partial"
     },
     {
+      "id": "rep/strict",
+      "slug": "strict",
+      "path": "rep/full/strict.json",
+      "format": "json",
+      "name": "Rep — strict",
+      "description": "Tight cooldowns, mutual-thread requirement, farm-freeze.",
+      "category": "rep",
+      "module": "rep",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "role-events/booster-perks-cascade",
+      "slug": "booster-perks-cascade",
+      "path": "role-events/partial/booster-perks-cascade.json",
+      "format": "json",
+      "name": "Booster perks cascade",
+      "description": "When booster role is granted/removed, cascade booster-only perks roles.",
+      "category": "role-events",
+      "module": "role-events",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "role-events/default",
+      "slug": "default",
+      "path": "role-events/full/default.json",
+      "format": "json",
+      "name": "Role events — default",
+      "description": "Triggers when staff/booster roles are added/removed.",
+      "category": "role-events",
+      "module": "role-events",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "role-events/staff-promotion-log",
+      "slug": "staff-promotion-log",
+      "path": "role-events/partial/staff-promotion-log.json",
+      "format": "json",
+      "name": "Staff promotion log",
+      "description": "Logs role-grant events for any staff role.",
+      "category": "role-events",
+      "module": "role-events",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "roles/color-roles-pack",
+      "slug": "color-roles-pack",
+      "path": "roles/partial/color-roles-pack.json",
+      "format": "json",
+      "name": "Colour roles pack",
+      "description": "Adds a color-of-the-day-style picker for cosmetic colour roles.",
+      "category": "roles",
+      "module": "roles",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "roles/default",
+      "slug": "default",
+      "path": "roles/full/default.json",
+      "format": "json",
+      "name": "Roles — default",
+      "description": "Role-picker module: button menus, max 1 colour role, mod can edit.",
+      "category": "roles",
+      "module": "roles",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "roles/interest-roles-pack",
+      "slug": "interest-roles-pack",
+      "path": "roles/partial/interest-roles-pack.json",
+      "format": "json",
+      "name": "Interest roles pack",
+      "description": "Adds a 'pick your interests' menu.",
+      "category": "roles",
+      "module": "roles",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "roles/ping-roles-pack",
+      "slug": "ping-roles-pack",
+      "path": "roles/partial/ping-roles-pack.json",
+      "format": "json",
+      "name": "Ping roles pack",
+      "description": "Adds opt-in event/announcement ping roles.",
+      "category": "roles",
+      "module": "roles",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "roles/pronoun-roles-pack",
+      "slug": "pronoun-roles-pack",
+      "path": "roles/partial/pronoun-roles-pack.json",
+      "format": "json",
+      "name": "Pronoun roles pack",
+      "description": "Adds he/she/they/ask roles via dropdown.",
+      "category": "roles",
+      "module": "roles",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "safety/community",
+      "slug": "community",
       "path": "safety/full/community.json",
+      "format": "json",
       "name": "Safety — community",
       "description": "Light safety: keep PII detection on, NSFW soft-warn only.",
       "category": "safety",
-      "shape": "full",
+      "module": "safety",
       "kind": "module-export",
-      "module": "safety"
+      "archetype": "full"
     },
     {
+      "id": "safety/default",
+      "slug": "default",
       "path": "safety/full/default.json",
+      "format": "json",
       "name": "Safety — default",
       "description": "Member safety baseline: doxx detection, NSFW image scan, link blacklists.",
       "category": "safety",
-      "shape": "full",
+      "module": "safety",
       "kind": "module-export",
-      "module": "safety"
+      "archetype": "full"
     },
     {
-      "path": "safety/full/strict.json",
-      "name": "Safety — strict",
-      "description": "Strict NSFW and PII enforcement for SFW-only servers and minor-friendly communities.",
-      "category": "safety",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "safety"
-    },
-    {
+      "id": "safety/doxx-detection-on",
+      "slug": "doxx-detection-on",
       "path": "safety/partial/doxx-detection-on.json",
+      "format": "json",
       "name": "Doxx detection on",
       "description": "Auto-detect home-address / phone / email leaks and remove.",
       "category": "safety",
-      "shape": "partial",
+      "module": "safety",
       "kind": "module-recipe",
-      "module": "safety"
+      "archetype": "partial"
     },
     {
+      "id": "safety/report-channel",
+      "slug": "report-channel",
       "path": "safety/partial/report-channel.json",
+      "format": "json",
       "name": "Member report channel",
       "description": "Adds a /report command targeting a private safety channel.",
       "category": "safety",
-      "shape": "partial",
+      "module": "safety",
       "kind": "module-recipe",
-      "module": "safety"
+      "archetype": "partial"
     },
     {
+      "id": "safety/strict",
+      "slug": "strict",
+      "path": "safety/full/strict.json",
+      "format": "json",
+      "name": "Safety — strict",
+      "description": "Strict NSFW and PII enforcement for SFW-only servers and minor-friendly communities.",
+      "category": "safety",
+      "module": "safety",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "safety/suicide-response",
+      "slug": "suicide-response",
       "path": "safety/partial/suicide-response.json",
+      "format": "json",
       "name": "Suicide-prevention response",
       "description": "Detects crisis-language and DMs the user a localized hotline link.",
       "category": "safety",
-      "shape": "partial",
+      "module": "safety",
       "kind": "module-recipe",
-      "module": "safety"
+      "archetype": "partial"
     },
     {
+      "id": "scheduled-actions/default",
+      "slug": "default",
+      "path": "scheduled-actions/full/default.json",
+      "format": "json",
+      "name": "Scheduled actions — default",
+      "description": "Cron + one-shot scheduled actions, mod-editable, audit on.",
+      "category": "scheduled-actions",
+      "module": "scheduled-actions",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "scheduled-actions/midnight-purge",
+      "slug": "midnight-purge",
+      "path": "scheduled-actions/partial/midnight-purge.json",
+      "format": "json",
+      "name": "Midnight purge of #spam",
+      "description": "Auto-purges the #spam channel every midnight.",
+      "category": "scheduled-actions",
+      "module": "scheduled-actions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "scheduled-actions/monday-recap",
+      "slug": "monday-recap",
+      "path": "scheduled-actions/partial/monday-recap.json",
+      "format": "json",
+      "name": "Monday recap pack",
+      "description": "Posts a weekly recap every Monday morning.",
+      "category": "scheduled-actions",
+      "module": "scheduled-actions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "scheduled-actions/saturday-event-ping",
+      "slug": "saturday-event-ping",
+      "path": "scheduled-actions/partial/saturday-event-ping.json",
+      "format": "json",
+      "name": "Saturday event ping",
+      "description": "Pings event role every Saturday afternoon.",
+      "category": "scheduled-actions",
+      "module": "scheduled-actions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "server-goals/anniversary-on",
+      "slug": "anniversary-on",
+      "path": "server-goals/partial/anniversary-on.json",
+      "format": "json",
+      "name": "Server anniversary",
+      "description": "Auto-celebrate the server's creation date each year.",
+      "category": "server-goals",
+      "module": "server-goals",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "server-goals/default",
+      "slug": "default",
+      "path": "server-goals/full/default.json",
+      "format": "json",
+      "name": "Server goals — default",
+      "description": "Member-count milestones with announcements.",
+      "category": "server-goals",
+      "module": "server-goals",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "server-goals/milestone-card",
+      "slug": "milestone-card",
+      "path": "server-goals/partial/milestone-card.json",
+      "format": "json",
+      "name": "Milestone image card",
+      "description": "Generate an image card on every milestone hit.",
+      "category": "server-goals",
+      "module": "server-goals",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "server-stats/default",
+      "slug": "default",
+      "path": "server-stats/full/default.json",
+      "format": "json",
+      "name": "Server stats — default",
+      "description": "Daily/weekly server stats digest in a private channel.",
+      "category": "server-stats",
+      "module": "server-stats",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "server-stats/weekly-only",
+      "slug": "weekly-only",
+      "path": "server-stats/partial/weekly-only.json",
+      "format": "json",
+      "name": "Weekly digest only",
+      "description": "Disables daily, keeps weekly.",
+      "category": "server-stats",
+      "module": "server-stats",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "smart-channels/default",
+      "slug": "default",
+      "path": "smart-channels/full/default.json",
+      "format": "json",
+      "name": "Smart channels — default",
+      "description": "Auto-create temp voice/text channels on demand.",
+      "category": "smart-channels",
+      "module": "smart-channels",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "smart-channels/temptext-on",
+      "slug": "temptext-on",
+      "path": "smart-channels/partial/temptext-on.json",
+      "format": "json",
+      "name": "Temp text channels",
+      "description": "Per-feature temp text channels.",
+      "category": "smart-channels",
+      "module": "smart-channels",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "smart-channels/tempvoice-on",
+      "slug": "tempvoice-on",
+      "path": "smart-channels/partial/tempvoice-on.json",
+      "format": "json",
+      "name": "Temp voice channels",
+      "description": "Click join-to-create voice channel.",
+      "category": "smart-channels",
+      "module": "smart-channels",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "social-alerts/default",
+      "slug": "default",
+      "path": "social-alerts/full/default.json",
+      "format": "json",
+      "name": "Social alerts — default",
+      "description": "Twitch/YouTube/Twitter live-and-post relays into a single announce channel.",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "social-alerts/rss-niche-gaming",
+      "slug": "rss-niche-gaming",
+      "path": "social-alerts/partial/rss-niche-gaming.json",
+      "format": "json",
+      "name": "RSS — gaming niche pack",
+      "description": "RSS feeds for gaming sites (PC Gamer, Polygon).",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "social-alerts/rss-niche-tech",
+      "slug": "rss-niche-tech",
+      "path": "social-alerts/partial/rss-niche-tech.json",
+      "format": "json",
+      "name": "RSS — tech niche pack",
+      "description": "RSS feeds for tech blogs (HN, Verge, ArsTechnica).",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "social-alerts/twitch-livestream-pack",
+      "slug": "twitch-livestream-pack",
+      "path": "social-alerts/partial/twitch-livestream-pack.json",
+      "format": "json",
+      "name": "Twitch livestream pack",
+      "description": "Auto-announces Twitch streams from the configured channels.",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "social-alerts/twitch-multistream-pack",
+      "slug": "twitch-multistream-pack",
+      "path": "social-alerts/partial/twitch-multistream-pack.json",
+      "format": "json",
+      "name": "Twitch multistream pack",
+      "description": "Watch multiple Twitch handles at once (gaming server style).",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "social-alerts/twitter-x-pack",
+      "slug": "twitter-x-pack",
+      "path": "social-alerts/partial/twitter-x-pack.json",
+      "format": "json",
+      "name": "Twitter/X pack",
+      "description": "Posts new tweets from the configured handle (rate-limited).",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "social-alerts/youtube-uploads-pack",
+      "slug": "youtube-uploads-pack",
+      "path": "social-alerts/partial/youtube-uploads-pack.json",
+      "format": "json",
+      "name": "YouTube uploads pack",
+      "description": "Posts new YouTube uploads.",
+      "category": "social-alerts",
+      "module": "social-alerts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "starboard/community",
+      "slug": "community",
       "path": "starboard/full/community.json",
+      "format": "json",
       "name": "Starboard — community",
       "description": "Low threshold, generous, NSFW board allowed.",
       "category": "starboard",
-      "shape": "full",
+      "module": "starboard",
       "kind": "module-export",
-      "module": "starboard"
+      "archetype": "full"
     },
     {
+      "id": "starboard/default",
+      "slug": "default",
       "path": "starboard/full/default.json",
+      "format": "json",
       "name": "Starboard — default",
       "description": "Standard 5-star threshold board in #starboard.",
       "category": "starboard",
-      "shape": "full",
+      "module": "starboard",
       "kind": "module-export",
-      "module": "starboard"
+      "archetype": "full"
     },
     {
-      "path": "starboard/full/strict.json",
-      "name": "Starboard — strict",
-      "description": "Higher threshold, NSFW blocked, only specific channels feed in.",
-      "category": "starboard",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "starboard"
-    },
-    {
+      "id": "starboard/dev-soundbite-board",
+      "slug": "dev-soundbite-board",
       "path": "starboard/partial/dev-soundbite-board.json",
+      "format": "json",
       "name": "Dev soundbite board",
       "description": "Dev-channel only, 3-star threshold for funny dev quotes.",
       "category": "starboard",
-      "shape": "partial",
+      "module": "starboard",
       "kind": "module-recipe",
-      "module": "starboard"
+      "archetype": "partial"
     },
     {
+      "id": "starboard/high-threshold-10",
+      "slug": "high-threshold-10",
       "path": "starboard/partial/high-threshold-10.json",
+      "format": "json",
       "name": "High threshold (10 stars)",
       "description": "Bumps threshold to 10 — only the rarest gems get pinned.",
       "category": "starboard",
-      "shape": "partial",
+      "module": "starboard",
       "kind": "module-recipe",
-      "module": "starboard"
+      "archetype": "partial"
     },
     {
+      "id": "starboard/mod-quote-board",
+      "slug": "mod-quote-board",
       "path": "starboard/partial/mod-quote-board.json",
+      "format": "json",
       "name": "Mod-quote board",
       "description": "Dedicated board for star-pinned moderator messages.",
       "category": "starboard",
-      "shape": "partial",
+      "module": "starboard",
       "kind": "module-recipe",
-      "module": "starboard"
+      "archetype": "partial"
     },
     {
+      "id": "starboard/nsfw-board-split",
+      "slug": "nsfw-board-split",
       "path": "starboard/partial/nsfw-board-split.json",
+      "format": "json",
       "name": "NSFW board split",
       "description": "Routes NSFW posts to a separate starboard channel.",
       "category": "starboard",
-      "shape": "partial",
+      "module": "starboard",
       "kind": "module-recipe",
-      "module": "starboard"
+      "archetype": "partial"
     },
     {
+      "id": "starboard/self-star-allowed",
+      "slug": "self-star-allowed",
       "path": "starboard/partial/self-star-allowed.json",
+      "format": "json",
       "name": "Allow self-stars",
       "description": "Authors can star their own posts.",
       "category": "starboard",
-      "shape": "partial",
+      "module": "starboard",
       "kind": "module-recipe",
-      "module": "starboard"
+      "archetype": "partial"
     },
     {
+      "id": "starboard/strict",
+      "slug": "strict",
+      "path": "starboard/full/strict.json",
+      "format": "json",
+      "name": "Starboard — strict",
+      "description": "Higher threshold, NSFW blocked, only specific channels feed in.",
+      "category": "starboard",
+      "module": "starboard",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "suggestions/community",
+      "slug": "community",
+      "path": "suggestions/full/community.json",
+      "format": "json",
+      "name": "Suggestions — community",
+      "description": "Frictionless: instant post, free voting, generous limits.",
+      "category": "suggestions",
+      "module": "suggestions",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "suggestions/default",
+      "slug": "default",
+      "path": "suggestions/full/default.json",
+      "format": "json",
+      "name": "Suggestions — default",
+      "description": "Voting buttons, thread-per-suggestion, mod review.",
+      "category": "suggestions",
+      "module": "suggestions",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "suggestions/mod-review-required",
+      "slug": "mod-review-required",
+      "path": "suggestions/partial/mod-review-required.json",
+      "format": "json",
+      "name": "Mod review required",
+      "description": "Suggestions queue in a mod channel before going public.",
+      "category": "suggestions",
+      "module": "suggestions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "suggestions/status-tags",
+      "slug": "status-tags",
+      "path": "suggestions/partial/status-tags.json",
+      "format": "json",
+      "name": "Status tags pack",
+      "description": "Adds standard pending/approved/denied/implemented tags.",
+      "category": "suggestions",
+      "module": "suggestions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "suggestions/strict",
+      "slug": "strict",
+      "path": "suggestions/full/strict.json",
+      "format": "json",
+      "name": "Suggestions — strict",
+      "description": "Mod review required before posting; cooldown 24h; cap 1 open.",
+      "category": "suggestions",
+      "module": "suggestions",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "suggestions/thread-per-suggestion",
+      "slug": "thread-per-suggestion",
+      "path": "suggestions/partial/thread-per-suggestion.json",
+      "format": "json",
+      "name": "Thread per suggestion",
+      "description": "Each suggestion gets a discussion thread.",
+      "category": "suggestions",
+      "module": "suggestions",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "time-capsule/default",
+      "slug": "default",
+      "path": "time-capsule/full/default.json",
+      "format": "json",
+      "name": "Time capsule — default",
+      "description": "Sealed-message time capsules, mod-only seal, default 1y.",
+      "category": "time-capsule",
+      "module": "time-capsule",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "time-capsule/longer-window",
+      "slug": "longer-window",
+      "path": "time-capsule/partial/longer-window.json",
+      "format": "json",
+      "name": "5-year capsule window",
+      "description": "Allows capsules up to 5 years out.",
+      "category": "time-capsule",
+      "module": "time-capsule",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "translation/auto-translate-general",
+      "slug": "auto-translate-general",
+      "path": "translation/partial/auto-translate-general.json",
+      "format": "json",
+      "name": "Auto-translate #general",
+      "description": "Live auto-translation in #general for multilingual servers.",
+      "category": "translation",
+      "module": "translation",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "translation/default",
+      "slug": "default",
+      "path": "translation/full/default.json",
+      "format": "json",
+      "name": "Translation — default",
+      "description": "Per-channel auto-translate plus on-demand /translate.",
+      "category": "translation",
+      "module": "translation",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "translation/extra-languages-pack",
+      "slug": "extra-languages-pack",
+      "path": "translation/partial/extra-languages-pack.json",
+      "format": "json",
+      "name": "Extra languages pack",
+      "description": "Adds RU/ZH/KO/AR to the supported set.",
+      "category": "translation",
+      "module": "translation",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "translation/multilingual",
+      "slug": "multilingual",
+      "path": "translation/full/multilingual.json",
+      "format": "json",
+      "name": "Translation — multilingual server",
+      "description": "Auto-translate active in main public channels; languages broadened.",
+      "category": "translation",
+      "module": "translation",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "tts/default",
+      "slug": "default",
+      "path": "tts/full/default.json",
+      "format": "json",
+      "name": "TTS — default",
+      "description": "On-demand text-to-speech in voice channels, member-triggerable, throttled.",
+      "category": "tts",
+      "module": "tts",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "tts/profanity-filter-on",
+      "slug": "profanity-filter-on",
+      "path": "tts/partial/profanity-filter-on.json",
+      "format": "json",
+      "name": "Profanity filter on",
+      "description": "Blocks slurs/hate words from being read aloud.",
+      "category": "tts",
+      "module": "tts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "tts/strict",
+      "slug": "strict",
+      "path": "tts/full/strict.json",
+      "format": "json",
+      "name": "TTS — strict",
+      "description": "Mods only, profanity filter on, short messages.",
+      "category": "tts",
+      "module": "tts",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "tts/voice-friendly",
+      "slug": "voice-friendly",
+      "path": "tts/partial/voice-friendly.json",
+      "format": "json",
+      "name": "Friendly voice preset",
+      "description": "Switches to the warm voice preset.",
+      "category": "tts",
+      "module": "tts",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "voice-clipper/consent-required",
+      "slug": "consent-required",
+      "path": "voice-clipper/partial/consent-required.json",
+      "format": "json",
+      "name": "Consent-required clipping",
+      "description": "Members must opt in via the consent role before they can be clipped.",
+      "category": "voice-clipper",
+      "module": "voice-clipper",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "voice-clipper/default",
+      "slug": "default",
+      "path": "voice-clipper/full/default.json",
+      "format": "json",
+      "name": "Voice clipper — default",
+      "description": "On-demand voice clip recorder.",
+      "category": "voice-clipper",
+      "module": "voice-clipper",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "voice-clipper/strict",
+      "slug": "strict",
+      "path": "voice-clipper/full/strict.json",
+      "format": "json",
+      "name": "Voice clipper — strict",
+      "description": "Consent-required, mods only, transcript on.",
+      "category": "voice-clipper",
+      "module": "voice-clipper",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "voice-clipper/transcript-on",
+      "slug": "transcript-on",
+      "path": "voice-clipper/partial/transcript-on.json",
+      "format": "json",
+      "name": "Auto-transcript clips",
+      "description": "Generates a text transcript alongside each clip.",
+      "category": "voice-clipper",
+      "module": "voice-clipper",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "voice-recording/default",
+      "slug": "default",
+      "path": "voice-recording/full/default.json",
+      "format": "json",
+      "name": "Voice recording — default",
+      "description": "Long-form VC recording, mod-trigger, consent-gated.",
+      "category": "voice-recording",
+      "module": "voice-recording",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "voice-recording/podcast-format",
+      "slug": "podcast-format",
+      "path": "voice-recording/partial/podcast-format.json",
+      "format": "json",
+      "name": "Podcast format",
+      "description": "MP3 + speaker labels for podcast/recap recordings.",
+      "category": "voice-recording",
+      "module": "voice-recording",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "webhook-broadcaster/default",
+      "slug": "default",
+      "path": "webhook-broadcaster/full/default.json",
+      "format": "json",
+      "name": "Webhook broadcaster — default",
+      "description": "Outbound webhook broadcaster wired to mod-log.",
+      "category": "webhook-broadcaster",
+      "module": "webhook-broadcaster",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "webhook-broadcaster/discord-mirror",
+      "slug": "discord-mirror",
+      "path": "webhook-broadcaster/partial/discord-mirror.json",
+      "format": "json",
+      "name": "Discord mirror",
+      "description": "Mirrors selected events to another Discord server's webhook.",
+      "category": "webhook-broadcaster",
+      "module": "webhook-broadcaster",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "webhook-broadcaster/notion-relay",
+      "slug": "notion-relay",
+      "path": "webhook-broadcaster/partial/notion-relay.json",
+      "format": "json",
+      "name": "Notion relay",
+      "description": "Posts form submissions to a Notion webhook.",
+      "category": "webhook-broadcaster",
+      "module": "webhook-broadcaster",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "webhook-broadcaster/slack-mirror",
+      "slug": "slack-mirror",
+      "path": "webhook-broadcaster/partial/slack-mirror.json",
+      "format": "json",
+      "name": "Slack mirror",
+      "description": "Mirrors mod actions to a Slack incoming webhook.",
+      "category": "webhook-broadcaster",
+      "module": "webhook-broadcaster",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome-flows/anti-bot-age-gate",
+      "slug": "anti-bot-age-gate",
       "path": "welcome-flows/anti-bot-age-gate.json",
+      "format": "json",
       "name": "Anti-bot age-gate before access",
       "description": "Holds new joins in an unverified state until their account is at least N days old AND they pass a one-click human check. Blocks classic drive-by bot raids without forcing real users through CAPTCHA.",
       "category": "welcome-flows",
-      "shape": "flat",
-      "kind": "welcome-flow",
-      "module": "welcome"
+      "module": "welcome",
+      "kind": "welcome-flow"
     },
     {
+      "id": "welcome-flows/multi-language-welcome-split",
+      "slug": "multi-language-welcome-split",
       "path": "welcome-flows/multi-language-welcome-split.json",
+      "format": "json",
       "name": "Multi-language welcome split",
       "description": "Routes the welcome message to a per-language channel based on the user's Discord locale. Falls back to a shared channel if locale is unsupported. Each language pulls from its own locale-keyed pool.",
       "category": "welcome-flows",
-      "shape": "flat",
-      "kind": "welcome-flow",
-      "module": "welcome"
+      "module": "welcome",
+      "kind": "welcome-flow"
     },
     {
+      "id": "welcome-flows/onboarding-with-quiz",
+      "slug": "onboarding-with-quiz",
       "path": "welcome-flows/onboarding-with-quiz.json",
+      "format": "json",
       "name": "Onboarding recipe with quiz",
       "description": "Three-question onboarding quiz that gates access on correct answers about server rules. Wrong answers loop the question with a hint; final pass grants the MEMBER role and posts a celebration in #general.",
       "category": "welcome-flows",
-      "shape": "flat",
-      "kind": "welcome-flow",
-      "module": "welcome"
+      "module": "welcome",
+      "kind": "welcome-flow"
     },
     {
+      "id": "welcome-flows/tiered-welcome-role-picker",
+      "slug": "tiered-welcome-role-picker",
       "path": "welcome-flows/tiered-welcome-role-picker.json",
+      "format": "json",
       "name": "Tiered welcome with role picker",
       "description": "Two-step welcome: greet on join in #welcome with a button that posts a role-picker in a private thread. Once the user picks a role, they're moved to the MEMBER tier and the picker thread auto-archives.",
       "category": "welcome-flows",
-      "shape": "flat",
-      "kind": "welcome-flow",
-      "module": "welcome"
+      "module": "welcome",
+      "kind": "welcome-flow"
     },
     {
+      "id": "welcome-flows/welcome-with-24h-dm-nudge",
+      "slug": "welcome-with-24h-dm-nudge",
       "path": "welcome-flows/welcome-with-24h-dm-nudge.json",
+      "format": "json",
       "name": "Welcome with 24h DM nudge if inactive",
       "description": "Standard public welcome plus a 24-hour follow-up DM if the new member hasn't posted in any channel by then. Big lift on activation rate without being naggy.",
       "category": "welcome-flows",
-      "shape": "flat",
-      "kind": "welcome-flow",
-      "module": "welcome"
+      "module": "welcome",
+      "kind": "welcome-flow"
     },
     {
-      "path": "welcome/full/community.json",
-      "name": "Welcome — community",
-      "description": "Warm community welcome with image card, member count, mention.",
-      "category": "welcome",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "welcome"
+      "id": "welcome-messages/anime-pool",
+      "slug": "anime-pool",
+      "path": "welcome-messages/partial/anime-pool.json",
+      "format": "json",
+      "name": "Welcome pool — anime",
+      "description": "Anime/weeb welcome lines (i18n keys).",
+      "category": "welcome-messages",
+      "module": "welcome-messages",
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
-      "path": "welcome/full/default.json",
-      "name": "Welcome — default",
-      "description": "Embed welcome message in #welcome with auto-role and 1-day reminder DM.",
-      "category": "welcome",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "welcome"
+      "id": "welcome-messages/art-pool",
+      "slug": "art-pool",
+      "path": "welcome-messages/partial/art-pool.json",
+      "format": "json",
+      "name": "Welcome pool — art",
+      "description": "Art-server welcome lines (i18n keys).",
+      "category": "welcome-messages",
+      "module": "welcome-messages",
+      "kind": "module-recipe",
+      "archetype": "partial"
     },
     {
-      "path": "welcome/full/strict.json",
-      "name": "Welcome — strict",
-      "description": "No auto-role until verified; channel mention + reminder + DM included.",
-      "category": "welcome",
-      "shape": "full",
-      "kind": "module-export",
-      "module": "welcome"
+      "id": "welcome-messages/casual-pool",
+      "slug": "casual-pool",
+      "path": "welcome-messages/casual-pool.txt",
+      "format": "text",
+      "name": "casual pool",
+      "description": "Text pool · casual-pool",
+      "category": "welcome-messages"
     },
     {
+      "id": "welcome-messages/cozy-pool",
+      "slug": "cozy-pool",
+      "path": "welcome-messages/partial/cozy-pool.json",
+      "format": "json",
+      "name": "Welcome pool — cozy",
+      "description": "Cozy-vibes welcome lines.",
+      "category": "welcome-messages",
+      "module": "welcome-messages",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome-messages/dev-pool",
+      "slug": "dev-pool",
+      "path": "welcome-messages/partial/dev-pool.json",
+      "format": "json",
+      "name": "Welcome pool — dev",
+      "description": "Developer-team-style welcome lines (i18n keys).",
+      "category": "welcome-messages",
+      "module": "welcome-messages",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome-messages/formal-pool",
+      "slug": "formal-pool",
+      "path": "welcome-messages/formal-pool.txt",
+      "format": "text",
+      "name": "formal pool",
+      "description": "Text pool · formal-pool",
+      "category": "welcome-messages"
+    },
+    {
+      "id": "welcome-messages/gaming-pool",
+      "slug": "gaming-pool",
+      "path": "welcome-messages/partial/gaming-pool.json",
+      "format": "json",
+      "name": "Welcome pool — gaming",
+      "description": "Gaming-flavoured welcome lines (i18n keys).",
+      "category": "welcome-messages",
+      "module": "welcome-messages",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome-messages/hype-pool",
+      "slug": "hype-pool",
+      "path": "welcome-messages/hype-pool.txt",
+      "format": "text",
+      "name": "hype pool",
+      "description": "Text pool · hype-pool",
+      "category": "welcome-messages"
+    },
+    {
+      "id": "welcome-messages/study-pool",
+      "slug": "study-pool",
+      "path": "welcome-messages/partial/study-pool.json",
+      "format": "json",
+      "name": "Welcome pool — study",
+      "description": "Study-server welcome lines (i18n keys).",
+      "category": "welcome-messages",
+      "module": "welcome-messages",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome-messages/tech-pool",
+      "slug": "tech-pool",
+      "path": "welcome-messages/partial/tech-pool.json",
+      "format": "json",
+      "name": "Welcome pool — tech",
+      "description": "Tech-server welcome lines (i18n keys).",
+      "category": "welcome-messages",
+      "module": "welcome-messages",
+      "kind": "module-recipe",
+      "archetype": "partial"
+    },
+    {
+      "id": "welcome-messages/warm-pool",
+      "slug": "warm-pool",
+      "path": "welcome-messages/warm-pool.txt",
+      "format": "text",
+      "name": "warm pool",
+      "description": "Text pool · warm-pool",
+      "category": "welcome-messages"
+    },
+    {
+      "id": "welcome/boost-celebration",
+      "slug": "boost-celebration",
       "path": "welcome/partial/boost-celebration.json",
+      "format": "json",
       "name": "Boost celebration message",
       "description": "Posts a special embed in #announcements when someone boosts.",
       "category": "welcome",
-      "shape": "partial",
+      "module": "welcome",
       "kind": "module-recipe",
-      "module": "welcome"
+      "archetype": "partial"
     },
     {
+      "id": "welcome/community",
+      "slug": "community",
+      "path": "welcome/full/community.json",
+      "format": "json",
+      "name": "Welcome — community",
+      "description": "Warm community welcome with image card, member count, mention.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "welcome/default",
+      "slug": "default",
+      "path": "welcome/full/default.json",
+      "format": "json",
+      "name": "Welcome — default",
+      "description": "Embed welcome message in #welcome with auto-role and 1-day reminder DM.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "welcome/image-card-on",
+      "slug": "image-card-on",
       "path": "welcome/partial/image-card-on.json",
+      "format": "json",
       "name": "Welcome image card",
       "description": "Switch from plain embed to a generated welcome image card.",
       "category": "welcome",
-      "shape": "partial",
+      "module": "welcome",
       "kind": "module-recipe",
-      "module": "welcome"
+      "archetype": "partial"
     },
     {
+      "id": "welcome/leave-on",
+      "slug": "leave-on",
       "path": "welcome/partial/leave-on.json",
+      "format": "json",
       "name": "Leave message",
       "description": "Posts a brief leave embed when a member leaves.",
       "category": "welcome",
-      "shape": "partial",
+      "module": "welcome",
       "kind": "module-recipe",
-      "module": "welcome"
+      "archetype": "partial"
     },
     {
+      "id": "welcome/reminder-24h",
+      "slug": "reminder-24h",
       "path": "welcome/partial/reminder-24h.json",
+      "format": "json",
       "name": "24-hour onboarding reminder",
       "description": "DM members 24h after join if they haven't sent a message yet.",
       "category": "welcome",
-      "shape": "partial",
+      "module": "welcome",
       "kind": "module-recipe",
-      "module": "welcome"
+      "archetype": "partial"
     },
     {
+      "id": "welcome/strict",
+      "slug": "strict",
+      "path": "welcome/full/strict.json",
+      "format": "json",
+      "name": "Welcome — strict",
+      "description": "No auto-role until verified; channel mention + reminder + DM included.",
+      "category": "welcome",
+      "module": "welcome",
+      "kind": "module-export",
+      "archetype": "full"
+    },
+    {
+      "id": "welcome/thread-on-join",
+      "slug": "thread-on-join",
       "path": "welcome/partial/thread-on-join.json",
+      "format": "json",
       "name": "Welcome thread per join",
       "description": "Open a private welcome thread for each new member.",
       "category": "welcome",
-      "shape": "partial",
+      "module": "welcome",
       "kind": "module-recipe",
-      "module": "welcome"
+      "archetype": "partial"
     }
   ]
 }

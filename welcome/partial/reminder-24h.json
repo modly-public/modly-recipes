@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome",
+  "name": "24-hour onboarding reminder",
+  "description": "DM members 24h after join if they haven't sent a message yet.",
+  "settings": {
+    "welcome.reminderEnabled": true,
+    "welcome.reminderHours": 24,
+    "welcome.reminderMessage": "i18n:welcome.reminderMessage"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

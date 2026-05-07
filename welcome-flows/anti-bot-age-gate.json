@@ -1,0 +1,32 @@
+{
+  "name": "Anti-bot age-gate before access",
+  "kind": "welcome-flow",
+  "description": "Holds new joins in an unverified state until their account is at least N days old AND they pass a one-click human check. Blocks classic drive-by bot raids without forcing real users through CAPTCHA.",
+  "module": "welcome",
+  "config": {
+    "channelId": "WELCOME_CHANNEL_ID",
+    "joinAction": {
+      "addRoleId": "UNVERIFIED_ROLE_ID"
+    },
+    "ageGate": {
+      "minAccountAgeDays": 7,
+      "onTooYoung": {
+        "kickAfterSec": 30,
+        "dmKey": "i18n:welcome.age_gate.too_young_dm"
+      }
+    },
+    "humanCheck": {
+      "promptKey": "i18n:welcome.human_check.prompt",
+      "buttonLabelKey": "i18n:welcome.human_check.button",
+      "ephemeral": true,
+      "onPass": {
+        "removeRoleId": "UNVERIFIED_ROLE_ID",
+        "addRoleId": "MEMBER_ROLE_ID",
+        "ackKey": "i18n:welcome.human_check.passed"
+      },
+      "onFailAttemptsBeforeKick": 3,
+      "onFailKey": "i18n:welcome.human_check.failed"
+    }
+  },
+  "i18nNotes": "All gate copy lives in the en locale under welcome.age_gate.* and welcome.human_check.*. Account-age value is configurable in the dashboard."
+}

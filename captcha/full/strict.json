@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "captcha",
+  "name": "Captcha \u2014 strict",
+  "description": "Hardened captcha for raid-prone servers: kick on timeout, ban on fail, hCaptcha + risk score.",
+  "settings": {
+    "captcha.enabled": true,
+    "captcha.kind": "hcaptcha",
+    "captcha.timeoutMinutes": 3,
+    "captcha.unverifiedRoleId": "{role:unverified}",
+    "captcha.verifiedRoleId": "{role:verified}",
+    "captcha.channelId": "{channel:verify}",
+    "captcha.kickOnTimeout": true,
+    "captcha.banOnFail": true,
+    "captcha.maxAttempts": 2,
+    "captcha.requireOnRejoin": true,
+    "captcha.minAccountDays": 14,
+    "captcha.dmFallback": false,
+    "captcha.riskScoreThreshold": 0.6,
+    "captcha.notifyChannelId": "{channel:mod-log}",
+    "captcha.exemptRoles": [
+      "{role:mods}"
+    ],
+    "captcha.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:unverified}",
+      "{role:verified}",
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:verify}",
+      "{channel:mod-log}"
+    ]
+  }
+}

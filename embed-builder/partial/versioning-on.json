@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "embed-builder",
+  "name": "Versioning on",
+  "description": "Stores edit history for each embed.",
+  "settings": {
+    "embed_builder.versioning": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

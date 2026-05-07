@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "social-alerts",
+  "name": "RSS \u2014 gaming niche pack",
+  "description": "RSS feeds for gaming sites (PC Gamer, Polygon).",
+  "settings": {},
+  "content": [
+    {
+      "type": "social_alert",
+      "platform": "rss",
+      "feedUrl": "https://www.pcgamer.com/rss/",
+      "postChannelId": "{channel:gaming-news}"
+    },
+    {
+      "type": "social_alert",
+      "platform": "rss",
+      "feedUrl": "https://www.polygon.com/rss/index.xml",
+      "postChannelId": "{channel:gaming-news}"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "suggestions",
+  "name": "Status tags pack",
+  "description": "Adds standard pending/approved/denied/implemented tags.",
+  "settings": {
+    "suggestions.statusTags": [
+      "pending",
+      "approved",
+      "denied",
+      "implemented"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

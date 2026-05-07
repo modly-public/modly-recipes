@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "economy",
+  "name": "Economy \u2014 casino",
+  "description": "Gambling on, big amounts, transfer tax to the house.",
+  "settings": {
+    "economy.enabled": true,
+    "economy.dailyAmount": 250,
+    "economy.workCooldownSec": 1800,
+    "economy.allowGambling": true,
+    "economy.allowSteal": true,
+    "economy.maxBalance": 100000000,
+    "economy.transferTax": 0.05
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

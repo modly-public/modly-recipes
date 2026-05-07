@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ama",
+  "name": "Thread per question",
+  "description": "Each approved question becomes its own discussion thread.",
+  "settings": {
+    "ama.threadPerQuestion": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

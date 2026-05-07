@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "forms",
+  "name": "Staff application \u2014 detailed",
+  "description": "5-question staff app: experience, timezone, references, conflict scenario, why-us.",
+  "settings": {},
+  "content": [
+    {
+      "type": "form",
+      "name": "staff-application-detail",
+      "title": "i18n:forms.staff_detail.title",
+      "buttonLabel": "i18n:forms.staff_detail.button",
+      "reviewChannelId": "{channel:applications}",
+      "approveRoleId": "{role:mod-trial}",
+      "denyRoleId": "",
+      "approverRoleIds": [
+        "{role:senior-mods}"
+      ],
+      "perUserLimit": 1,
+      "questions": [
+        {
+          "id": "experience",
+          "label": "i18n:forms.staff_detail.q.experience",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 1500
+        },
+        {
+          "id": "timezone",
+          "label": "i18n:forms.staff_detail.q.timezone",
+          "kind": "short",
+          "required": true,
+          "maxLength": 80
+        },
+        {
+          "id": "refs",
+          "label": "i18n:forms.staff_detail.q.refs",
+          "kind": "paragraph",
+          "required": false,
+          "maxLength": 800
+        },
+        {
+          "id": "scenario",
+          "label": "i18n:forms.staff_detail.q.scenario",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 1200
+        },
+        {
+          "id": "why",
+          "label": "i18n:forms.staff_detail.q.why",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 1000
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

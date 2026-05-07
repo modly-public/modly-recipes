@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automations",
+  "name": "Weekly mod rotation",
+  "description": "Rotates an 'on-call' mod role each Monday.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automation",
+      "name": "mod-rotation",
+      "trigger": "schedule.weekly",
+      "cron": "0 9 * * MON",
+      "actions": [
+        {
+          "kind": "rotate_role",
+          "roleId": "{role:on-call}",
+          "fromRoleId": "{role:mods}"
+        },
+        {
+          "kind": "post",
+          "channelId": "{channel:mod-private}",
+          "messageKey": "i18n:automations.on_call"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

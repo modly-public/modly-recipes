@@ -1,0 +1,33 @@
+{
+  "name": "Auto-pin mod-marked answers",
+  "kind": "ai-automation",
+  "description": "When a moderator reacts to any message with a configured emoji (default 📌✅), the bot pins it AND uses the AI module to summarize the parent thread/question into a one-line tag added to the pin.",
+  "module": "ai",
+  "config": {
+    "trigger": {
+      "type": "reaction",
+      "emoji": ["📌", "✅"],
+      "byRoleIds": ["MOD_ROLE_ID", "STAFF_ROLE_ID"]
+    },
+    "actions": [
+      { "type": "pin_message" },
+      {
+        "type": "ai_summarize",
+        "persona": "default",
+        "promptKey": "i18n:ai.auto_pin.summary_prompt",
+        "maxTokens": 60,
+        "postAs": "thread_reply",
+        "headerKey": "i18n:ai.auto_pin.tag_header"
+      },
+      {
+        "type": "log",
+        "channelId": "STAFF_DIGEST_CHANNEL_ID",
+        "messageKey": "i18n:ai.auto_pin.log"
+      }
+    ],
+    "rateLimit": {
+      "perChannelPerMin": 5
+    }
+  },
+  "i18nNotes": "AI prompt and bot-authored copy keyed. AI-generated summary is generated content."
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Antinuke locked-down preset",
+  "description": "Maximum-paranoia preset for high-value or high-risk servers (large communities, brand servers, partnered servers). Pair with the antinuke module's full lockdown profile — this covers the message-side rules. Every customizable string is exposed as a placeholder.",
+  "rules": [
+    {
+      "name": "All Discord invites blocked",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "antinuke-invite" }] },
+      "scope": {},
+      "priority": 5
+    },
+    {
+      "name": "Scam links → instant ban",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "antinuke-scam" }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Mass mention (3+)",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 3, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 86400 }] },
+      "scope": {},
+      "priority": 15
+    },
+    {
+      "name": "Duplicate flood (2 in 60s)",
+      "kind": "DUPLICATE_MESSAGE",
+      "config": { "windowSec": 60, "maxRepeats": 2 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 21600 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "External links restricted",
+      "kind": "EXTERNAL_LINK",
+      "config": { "allowDomains": ["discord.com", "tenor.com", "youtube.com"] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 5 }] },
+      "scope": {},
+      "priority": 25
+    },
+    {
+      "name": "Attachment filter (no executables)",
+      "kind": "ATTACHMENT_FILTER",
+      "config": { "blockExtensions": ["exe", "bat", "cmd", "scr", "msi", "ps1", "sh", "jar", "vbs"] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 8 }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Zalgo abuse",
+      "kind": "ZALGO_ABUSE",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": {},
+      "priority": 35
+    }
+  ],
+  "i18nNotes": "Action reasons are slug-style identifiers and not user-facing strings. All other surfaced text comes from the bot's own locale files."
+}

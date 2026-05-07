@@ -1,0 +1,54 @@
+{
+  "name": "Onboarding recipe with quiz",
+  "kind": "welcome-flow",
+  "description": "Three-question onboarding quiz that gates access on correct answers about server rules. Wrong answers loop the question with a hint; final pass grants the MEMBER role and posts a celebration in #general.",
+  "module": "welcome",
+  "config": {
+    "joinAction": {
+      "addRoleId": "UNVERIFIED_ROLE_ID"
+    },
+    "quiz": {
+      "channelOrThread": "private-thread",
+      "introKey": "i18n:onboarding.quiz.intro",
+      "passKey": "i18n:onboarding.quiz.pass",
+      "celebrateChannelId": "GENERAL_CHANNEL_ID",
+      "celebrateKey": "i18n:onboarding.quiz.celebrate",
+      "questions": [
+        {
+          "id": "rules-link",
+          "promptKey": "i18n:onboarding.quiz.q1_prompt",
+          "kind": "single-choice",
+          "options": [
+            { "id": "a", "labelKey": "i18n:onboarding.quiz.q1_a" },
+            { "id": "b", "labelKey": "i18n:onboarding.quiz.q1_b", "correct": true },
+            { "id": "c", "labelKey": "i18n:onboarding.quiz.q1_c" }
+          ],
+          "onWrongHintKey": "i18n:onboarding.quiz.q1_hint"
+        },
+        {
+          "id": "report-flow",
+          "promptKey": "i18n:onboarding.quiz.q2_prompt",
+          "kind": "single-choice",
+          "options": [
+            { "id": "a", "labelKey": "i18n:onboarding.quiz.q2_a", "correct": true },
+            { "id": "b", "labelKey": "i18n:onboarding.quiz.q2_b" },
+            { "id": "c", "labelKey": "i18n:onboarding.quiz.q2_c" }
+          ],
+          "onWrongHintKey": "i18n:onboarding.quiz.q2_hint"
+        },
+        {
+          "id": "code-of-conduct",
+          "promptKey": "i18n:onboarding.quiz.q3_prompt",
+          "kind": "agree",
+          "agreeLabelKey": "i18n:onboarding.quiz.q3_agree"
+        }
+      ],
+      "onComplete": {
+        "removeRoleId": "UNVERIFIED_ROLE_ID",
+        "addRoleId": "MEMBER_ROLE_ID",
+        "archiveThread": true
+      }
+    }
+  },
+  "i18nNotes": "Every prompt and option is keyed; ship a server-specific override locale to localize the quiz without editing this recipe."
+}

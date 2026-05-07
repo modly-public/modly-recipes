@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "command-access",
+  "name": "Command access \u2014 default",
+  "description": "Standard role-gated commands map.",
+  "settings": {
+    "command_access.enabled": true,
+    "command_access.editorRoleId": "{role:owners}",
+    "command_access.defaults": {
+      "ban": "mods",
+      "kick": "mods",
+      "mute": "mods",
+      "warn": "mods",
+      "slowmode": "mods"
+    }
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:owners}",
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

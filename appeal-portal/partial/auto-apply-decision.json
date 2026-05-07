@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "appeal-portal",
+  "name": "Auto-apply approve/deny",
+  "description": "When a reviewer hits Approve, the ban is lifted server-side.",
+  "settings": {
+    "appeal_portal.applyDecisionAutomatically": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

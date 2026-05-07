@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "giveaways",
+  "name": "Min account age 30d",
+  "description": "Brand-new accounts blocked from giveaways.",
+  "settings": {
+    "giveaways.minAccountDays": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

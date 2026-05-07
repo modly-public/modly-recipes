@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "mod-coach",
+  "name": "Auto-apply on >0.95 confidence",
+  "description": "Lets the coach quietly action obvious cases without staff approval.",
+  "settings": {
+    "mod_coach.allowAutoApply": true,
+    "mod_coach.autoApplyMinConfidence": 0.95
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automations",
+  "name": "Welcome DM after 24h",
+  "description": "DMs the new member 24h after they join if they haven't sent a message.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automation",
+      "name": "delayed-welcome-dm",
+      "trigger": "member.join_silent_24h",
+      "actions": [
+        {
+          "kind": "dm",
+          "messageKey": "i18n:automations.silent_24h_dm"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

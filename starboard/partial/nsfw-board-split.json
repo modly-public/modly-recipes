@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "starboard",
+  "name": "NSFW board split",
+  "description": "Routes NSFW posts to a separate starboard channel.",
+  "settings": {},
+  "content": [
+    {
+      "type": "starboard.board",
+      "name": "nsfw",
+      "channelId": "{channel:starboard-nsfw}",
+      "emoji": "\u2b50",
+      "threshold": 5,
+      "allowNsfw": true,
+      "scopeChannels": [
+        "{channel:nsfw}"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "activity-roles",
+  "name": "Activity-roles dry-run",
+  "description": "Detect-only \u2014 no roles granted/stripped while tuning.",
+  "settings": {
+    "activity_roles.dryRun": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

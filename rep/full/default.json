@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "rep",
+  "name": "Rep \u2014 default",
+  "description": "Reputation system on with daily cap, no negative rep.",
+  "settings": {
+    "rep.enabled": true,
+    "rep.dailyCap": 5,
+    "rep.cooldownSec": 3600,
+    "rep.allowNegative": false,
+    "rep.minAccountDays": 7,
+    "rep.minServerDays": 1,
+    "rep.requireMutualMessages": true,
+    "rep.publicLeaderboard": true,
+    "rep.announceChannelId": "{channel:rep-board}",
+    "rep.targetCooldownSec": 86400,
+    "rep.exemptRoles": [
+      "{role:bots}"
+    ],
+    "rep.farmDetection": true,
+    "rep.farmFreezeMin": 60,
+    "rep.weeklyResetDay": "monday"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:bots}"
+    ],
+    "channels": [
+      "{channel:rep-board}"
+    ]
+  }
+}

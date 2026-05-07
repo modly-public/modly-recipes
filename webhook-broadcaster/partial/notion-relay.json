@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "webhook-broadcaster",
+  "name": "Notion relay",
+  "description": "Posts form submissions to a Notion webhook.",
+  "settings": {},
+  "content": [
+    {
+      "type": "webhook_broadcaster",
+      "name": "notion-relay",
+      "destination": "notion",
+      "events": [
+        "form.submit"
+      ],
+      "url": "NOTION_WEBHOOK_URL_PLACEHOLDER"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

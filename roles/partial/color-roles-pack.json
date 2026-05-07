@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "roles",
+  "name": "Colour roles pack",
+  "description": "Adds a color-of-the-day-style picker for cosmetic colour roles.",
+  "settings": {},
+  "content": [
+    {
+      "type": "roles.menu",
+      "name": "colors",
+      "title": "i18n:roles.colorMenuTitle",
+      "kind": "color",
+      "channelId": "{channel:role-picker}",
+      "options": [
+        {
+          "label": "i18n:roles.color.red",
+          "roleId": "{role:color-red}"
+        },
+        {
+          "label": "i18n:roles.color.blue",
+          "roleId": "{role:color-blue}"
+        },
+        {
+          "label": "i18n:roles.color.green",
+          "roleId": "{role:color-green}"
+        },
+        {
+          "label": "i18n:roles.color.purple",
+          "roleId": "{role:color-purple}"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

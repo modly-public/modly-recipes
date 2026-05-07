@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome",
+  "name": "Leave message",
+  "description": "Posts a brief leave embed when a member leaves.",
+  "settings": {
+    "welcome.leaveEnabled": true,
+    "welcome.leaveChannelId": "{channel:mod-log}",
+    "welcome.leaveMessage": "i18n:welcome.leaveMessage"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

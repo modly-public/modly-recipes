@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "embed-builder",
+  "name": "Embed builder \u2014 default",
+  "description": "Embed builder enabled for mods + version history.",
+  "settings": {
+    "embed_builder.enabled": true,
+    "embed_builder.editorRoleId": "{role:mods}",
+    "embed_builder.maxEmbeds": 100,
+    "embed_builder.versioning": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

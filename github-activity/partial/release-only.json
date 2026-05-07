@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "github-activity",
+  "name": "Releases only",
+  "description": "Quiet mode \u2014 only release events.",
+  "settings": {
+    "github_activity.events": [
+      "release"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

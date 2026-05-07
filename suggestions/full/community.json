@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "suggestions",
+  "name": "Suggestions \u2014 community",
+  "description": "Frictionless: instant post, free voting, generous limits.",
+  "settings": {
+    "suggestions.enabled": true,
+    "suggestions.channelId": "{channel:suggestions}",
+    "suggestions.requireApproval": false,
+    "suggestions.cooldownMin": 5,
+    "suggestions.maxOpenPerUser": 10,
+    "suggestions.allowSelfVote": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:suggestions}"
+    ]
+  }
+}

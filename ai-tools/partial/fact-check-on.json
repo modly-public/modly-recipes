@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai-tools",
+  "name": "Fact-check tool on",
+  "description": "Enables the /factcheck mod tool.",
+  "settings": {
+    "ai_tools.tools": [
+      "fact_check",
+      "categorize_message",
+      "summarize_thread",
+      "suggest_action"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

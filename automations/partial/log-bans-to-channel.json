@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automations",
+  "name": "Log bans to channel",
+  "description": "Mirrors every ban to a logging channel.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automation",
+      "name": "ban-log",
+      "trigger": "guild.ban_added",
+      "actions": [
+        {
+          "kind": "post",
+          "channelId": "{channel:mod-log}",
+          "messageKey": "i18n:automations.ban_log"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

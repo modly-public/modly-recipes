@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "anniversary",
+  "name": "Anniversary \u2014 default",
+  "description": "Member-anniversary celebrations on join-date matches.",
+  "settings": {
+    "anniversary.enabled": true,
+    "anniversary.announceChannelId": "{channel:general}",
+    "anniversary.embedColor": 16766720,
+    "anniversary.useImageCard": true,
+    "anniversary.message": "i18n:anniversary.message",
+    "anniversary.cooldownDays": 1,
+    "anniversary.includeYears": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:general}"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai",
+  "name": "Lower rate-limit",
+  "description": "Tighter per-user calls/hour.",
+  "settings": {
+    "ai.maxCallsPerHourPerUser": 5
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "raid",
+  "name": "Raid dry-run mode",
+  "description": "Detect but never act \u2014 useful while tuning thresholds.",
+  "settings": {
+    "raid.dryRun": true,
+    "raid.action": "alert"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

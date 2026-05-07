@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "leveling",
+  "name": "Leveling \u2014 XP grind",
+  "description": "Fast XP with weekend boost and reaction XP for hype servers.",
+  "settings": {
+    "leveling.enabled": true,
+    "leveling.announceMode": "channel",
+    "leveling.announceChannelId": "{channel:level-ups}",
+    "leveling.messageXpEnabled": true,
+    "leveling.voiceXpEnabled": true,
+    "leveling.reactionXpEnabled": true,
+    "leveling.textCooldownSec": 30,
+    "leveling.textXpMin": 20,
+    "leveling.textXpMax": 40,
+    "leveling.voiceXpPerMin": 10,
+    "leveling.reactionXp": 2,
+    "leveling.reactionCooldownSec": 60,
+    "leveling.weekendBoost": 2,
+    "leveling.publicLeaderboard": true,
+    "leveling.stackRewards": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:level-ups}"
+    ]
+  }
+}

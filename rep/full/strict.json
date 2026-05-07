@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "rep",
+  "name": "Rep \u2014 strict",
+  "description": "Tight cooldowns, mutual-thread requirement, farm-freeze.",
+  "settings": {
+    "rep.enabled": true,
+    "rep.dailyCap": 3,
+    "rep.cooldownSec": 7200,
+    "rep.allowNegative": false,
+    "rep.minAccountDays": 30,
+    "rep.minServerDays": 7,
+    "rep.requireMutualMessages": true,
+    "rep.farmDetection": true,
+    "rep.farmFreezeMin": 240
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

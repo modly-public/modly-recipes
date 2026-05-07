@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai",
+  "name": "Image-gen on",
+  "description": "Allow /imagine command (premium only by default).",
+  "settings": {
+    "ai.allowImage": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

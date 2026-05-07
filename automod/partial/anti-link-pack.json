@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Anti-link pack",
+  "description": "Blocks all external links except a small allowlist (YouTube, Twitch, Twitter, GitHub).",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "External links",
+      "kind": "LINK_DOMAIN",
+      "config": {
+        "allowDomains": [
+          "youtube.com",
+          "twitch.tv",
+          "twitter.com",
+          "x.com",
+          "github.com",
+          "discord.com"
+        ]
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 25
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

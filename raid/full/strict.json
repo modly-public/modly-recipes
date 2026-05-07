@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "raid",
+  "name": "Raid shield \u2014 strict",
+  "description": "Aggressive thresholds for servers being actively attacked.",
+  "settings": {
+    "raid.enabled": true,
+    "raid.joinWindowSec": 60,
+    "raid.joinThreshold": 5,
+    "raid.action": "ban",
+    "raid.quarantineRoleId": "{role:quarantine}",
+    "raid.alertChannelId": "{channel:mod-log}",
+    "raid.alertRoleId": "{role:mods}",
+    "raid.minAccountDays": 30,
+    "raid.scoreThreshold": 30,
+    "raid.captchaOnTrip": true,
+    "raid.lockChannelsOnTrip": true,
+    "raid.lockoutMinutes": 120,
+    "raid.dmJoiners": false,
+    "raid.usernameRegex": [
+      "^[a-z]+\\d{4,}$",
+      "discord\\.gg"
+    ],
+    "raid.avatarHashBan": true,
+    "raid.fingerprintBan": true,
+    "raid.scriptedJoinBlock": true,
+    "raid.recoveryWindowMin": 60,
+    "raid.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:quarantine}",
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

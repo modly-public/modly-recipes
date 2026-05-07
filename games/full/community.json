@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "games",
+  "name": "Games \u2014 community",
+  "description": "All non-betting games, no cooldown stress, daily mini-game on.",
+  "settings": {
+    "games.enabled": true,
+    "games.allowedGames": [
+      "trivia",
+      "hangman",
+      "tictactoe",
+      "rps",
+      "wordchain",
+      "fishing",
+      "wouldyourather",
+      "anagram",
+      "musicquiz",
+      "emojiguess",
+      "scramble",
+      "akinator"
+    ],
+    "games.cooldownSec": 5,
+    "games.dailyDailyGameEnabled": true,
+    "games.dailyChannelId": "{channel:daily-game}",
+    "games.leaderboardEnabled": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:daily-game}"
+    ]
+  }
+}

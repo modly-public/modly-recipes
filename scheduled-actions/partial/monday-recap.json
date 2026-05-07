@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "scheduled-actions",
+  "name": "Monday recap pack",
+  "description": "Posts a weekly recap every Monday morning.",
+  "settings": {},
+  "content": [
+    {
+      "type": "scheduled_action",
+      "name": "weekly-recap",
+      "cron": "0 9 * * MON",
+      "action": {
+        "kind": "post_recap",
+        "channelId": "{channel:announcements}"
+      }
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

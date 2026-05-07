@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "member-notes",
+  "name": "Watch-list pack",
+  "description": "Adds a sticky 'watch' tag that surfaces on every mod-coach review.",
+  "settings": {
+    "member_notes.tagAllowList": [
+      "watch",
+      "verified-alt",
+      "history-of-issues"
+    ],
+    "member_notes.requireTag": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

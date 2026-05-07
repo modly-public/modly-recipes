@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "appeal-portal",
+  "name": "Appeal portal \u2014 community",
+  "description": "Friendly portal, generous limits, auto-apply on approve.",
+  "settings": {
+    "appeal_portal.enabled": true,
+    "appeal_portal.publicUrl": true,
+    "appeal_portal.maxAppealsPerUser": 3,
+    "appeal_portal.cooldownDays": 7,
+    "appeal_portal.reviewChannelId": "{channel:appeals}",
+    "appeal_portal.reviewerRoleId": "{role:mods}",
+    "appeal_portal.minExplanationLength": 50,
+    "appeal_portal.questionCount": 2,
+    "appeal_portal.applyDecisionAutomatically": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:appeals}"
+    ]
+  }
+}

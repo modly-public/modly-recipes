@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "channel-games",
+  "name": "Channel games \u2014 default",
+  "description": "Long-running channel games (count-to-100, word-chain, etc).",
+  "settings": {
+    "channel_games.enabled": true,
+    "channel_games.activeGames": [
+      "count",
+      "word_chain",
+      "story_chain"
+    ],
+    "channel_games.dedicatedChannels": {
+      "count": "{channel:count}",
+      "word_chain": "{channel:word-chain}",
+      "story_chain": "{channel:story-chain}"
+    },
+    "channel_games.minMessageGap": 1,
+    "channel_games.cooldownPerUserSec": 5
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:count}",
+      "{channel:word-chain}",
+      "{channel:story-chain}"
+    ]
+  }
+}

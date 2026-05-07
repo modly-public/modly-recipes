@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "rep",
+  "name": "Allow negative rep",
+  "description": "Members can `-rep` annoying people.",
+  "settings": {
+    "rep.allowNegative": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

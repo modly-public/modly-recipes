@@ -1,0 +1,34 @@
+{
+  "name": "Personalized welcome via AI persona",
+  "kind": "ai-automation",
+  "description": "On join, the AI persona crafts a 1–2 sentence personalized welcome based on the new member's public profile (Discord About Me, mutual servers count, account age) and the server's loaded persona. Falls back to the standard welcome pool on AI error.",
+  "module": "ai",
+  "config": {
+    "trigger": "guild_member_add",
+    "channelId": "WELCOME_CHANNEL_ID",
+    "ai": {
+      "persona": "host",
+      "promptKey": "i18n:ai.personalized_welcome.prompt",
+      "maxTokens": 120,
+      "tempOverride": 0.7,
+      "input": {
+        "include": ["user.displayName", "user.aboutMe", "user.accountAgeDays", "guild.name", "guild.shortDescription"]
+      }
+    },
+    "fallback": {
+      "messagePool": "i18n:welcome.warm_pool"
+    },
+    "card": {
+      "embedRecipe": "embeds/welcome-card.json"
+    },
+    "rateLimit": {
+      "perUserPerJoin": 1,
+      "globalPerMin": 30
+    },
+    "privacy": {
+      "skipIfUserOptedOut": true,
+      "neverIncludeIp": true
+    }
+  },
+  "i18nNotes": "Prompt and fallback pool are locale-keyed. AI output is generated content; persona file (loaded separately) controls language."
+}

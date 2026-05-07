@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "social-alerts",
+  "name": "Social alerts \u2014 default",
+  "description": "Twitch/YouTube/Twitter live-and-post relays into a single announce channel.",
+  "settings": {
+    "social_alerts.enabled": true,
+    "social_alerts.announceChannelId": "{channel:announcements}",
+    "social_alerts.embedColor": 6570405,
+    "social_alerts.includeThumbnail": true,
+    "social_alerts.mentionRoleId": "{role:ping-streams}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:ping-streams}"
+    ],
+    "channels": [
+      "{channel:announcements}"
+    ]
+  }
+}

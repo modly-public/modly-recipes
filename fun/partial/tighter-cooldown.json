@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "fun",
+  "name": "30-second cooldown",
+  "description": "Bumps fun cooldown.",
+  "settings": {
+    "fun.cooldownSec": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

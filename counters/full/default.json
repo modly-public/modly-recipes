@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "counters",
+  "name": "Counters \u2014 default",
+  "description": "Voice-channel counters: total members, online, boosters.",
+  "settings": {
+    "counters.enabled": true,
+    "counters.counters": [
+      {
+        "key": "members",
+        "channelId": "{channel:counter-members}"
+      },
+      {
+        "key": "online",
+        "channelId": "{channel:counter-online}"
+      },
+      {
+        "key": "boosters",
+        "channelId": "{channel:counter-boosters}"
+      }
+    ],
+    "counters.updateIntervalMin": 10,
+    "counters.maskFormat": "i18n:counters.format"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:counter-members}",
+      "{channel:counter-online}",
+      "{channel:counter-boosters}"
+    ]
+  }
+}

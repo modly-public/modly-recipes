@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "member-notes",
+  "name": "Member notes \u2014 default",
+  "description": "Mod-only notes attached to members; private, exportable.",
+  "settings": {
+    "member_notes.enabled": true,
+    "member_notes.viewableBy": "mods",
+    "member_notes.maxNotesPerMember": 100,
+    "member_notes.includeOnProfile": true,
+    "member_notes.notifyOnNewNote": false,
+    "member_notes.tagAllowList": [
+      "warn",
+      "info",
+      "praise",
+      "watch"
+    ],
+    "member_notes.requireTag": false,
+    "member_notes.exportable": true,
+    "member_notes.dmMemberOnPraise": false,
+    "member_notes.viewerRoleId": "{role:mods}",
+    "member_notes.archiveAfterDays": 365,
+    "member_notes.searchEnabled": true,
+    "member_notes.shareWithFederation": false,
+    "member_notes.maxNoteLength": 2000
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

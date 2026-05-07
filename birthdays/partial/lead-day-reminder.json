@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "birthdays",
+  "name": "1-day-ahead reminder",
+  "description": "Pings staff/community 1 day before each birthday.",
+  "settings": {
+    "birthdays.reminderLeadDays": 1
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

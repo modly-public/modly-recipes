@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "highlights",
+  "name": "Allow 25 keywords",
+  "description": "Bumps per-user keyword cap to 25.",
+  "settings": {
+    "highlights.maxKeywordsPerUser": 25
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

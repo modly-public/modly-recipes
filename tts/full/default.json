@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "tts",
+  "name": "TTS \u2014 default",
+  "description": "On-demand text-to-speech in voice channels, member-triggerable, throttled.",
+  "settings": {
+    "tts.enabled": true,
+    "tts.allowedRoleId": "{role:member}",
+    "tts.maxLength": 200,
+    "tts.cooldownSec": 30,
+    "tts.voice": "default",
+    "tts.maxQueuePerUser": 2,
+    "tts.allowProfanity": false,
+    "tts.allowedChannels": [],
+    "tts.exemptRoles": [
+      "{role:mods}"
+    ],
+    "tts.bannedWords": [],
+    "tts.embedColor": 5814783,
+    "tts.engine": "internal",
+    "tts.localeFallback": "en"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}",
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

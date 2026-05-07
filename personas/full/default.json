@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "personas",
+  "name": "Personas \u2014 default",
+  "description": "Bot personas: switchable per-channel tone (formal/casual/hype).",
+  "settings": {
+    "personas.enabled": true,
+    "personas.defaultPersona": "default",
+    "personas.editorRoleId": "{role:mods}",
+    "personas.allowMemberSwitch": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

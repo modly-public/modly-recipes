@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "mod-coach",
+  "name": "Weekly mod review digest",
+  "description": "Ships a weekly recap of mod actions + suggestions for retro.",
+  "settings": {
+    "mod_coach.coachReviewWeekly": true,
+    "mod_coach.digestChannelId": "{channel:staff-coach}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

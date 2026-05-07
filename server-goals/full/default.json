@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "server-goals",
+  "name": "Server goals \u2014 default",
+  "description": "Member-count milestones with announcements.",
+  "settings": {
+    "server_goals.enabled": true,
+    "server_goals.announceChannelId": "{channel:announcements}",
+    "server_goals.milestones": [
+      100,
+      500,
+      1000,
+      2500,
+      5000,
+      10000
+    ],
+    "server_goals.anniversaryEnabled": true,
+    "server_goals.embedColor": 16753920,
+    "server_goals.cardEnabled": true,
+    "server_goals.celebrateBoosters": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:announcements}"
+    ]
+  }
+}

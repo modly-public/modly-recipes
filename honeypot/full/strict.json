@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "honeypot",
+  "name": "Honeypot \u2014 strict",
+  "description": "Honeypot + 7-day deletion window + DM owner.",
+  "settings": {
+    "honeypot.enabled": true,
+    "honeypot.channelId": "{channel:honeypot}",
+    "honeypot.action": "ban",
+    "honeypot.alertChannelId": "{channel:mod-log}",
+    "honeypot.notifyOwner": true,
+    "honeypot.deleteMessage": true,
+    "honeypot.banDeleteDays": 7,
+    "honeypot.exemptRoles": [
+      "{role:mods}"
+    ],
+    "honeypot.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:honeypot}",
+      "{channel:mod-log}"
+    ]
+  }
+}

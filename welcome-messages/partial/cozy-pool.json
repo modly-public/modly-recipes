@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome-messages",
+  "name": "Welcome pool \u2014 cozy",
+  "description": "Cozy-vibes welcome lines.",
+  "settings": {},
+  "content": [
+    {
+      "type": "welcome_messages.pool",
+      "theme": "cozy",
+      "lines": [
+        "i18n:welcome_messages.cozy.line1",
+        "i18n:welcome_messages.cozy.line2",
+        "i18n:welcome_messages.cozy.line3",
+        "i18n:welcome_messages.cozy.line4",
+        "i18n:welcome_messages.cozy.line5"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

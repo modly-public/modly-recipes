@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "tts",
+  "name": "Profanity filter on",
+  "description": "Blocks slurs/hate words from being read aloud.",
+  "settings": {
+    "tts.allowProfanity": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

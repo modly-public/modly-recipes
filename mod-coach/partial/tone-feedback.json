@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "mod-coach",
+  "name": "Tone feedback for staff",
+  "description": "Highlights overly harsh or sarcastic mod replies in DM.",
+  "settings": {
+    "mod_coach.toneFeedback": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

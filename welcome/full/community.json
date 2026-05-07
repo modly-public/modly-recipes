@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "welcome",
+  "name": "Welcome \u2014 community",
+  "description": "Warm community welcome with image card, member count, mention.",
+  "settings": {
+    "welcome.enabled": true,
+    "welcome.channelId": "{channel:welcome}",
+    "welcome.message": "i18n:welcome.communityMessage",
+    "welcome.useEmbed": true,
+    "welcome.useImageCard": true,
+    "welcome.includeMemberCount": true,
+    "welcome.dmEnabled": true,
+    "welcome.dmMessage": "i18n:welcome.communityDmMessage",
+    "welcome.autoRoleIds": [
+      "{role:member}"
+    ],
+    "welcome.boostEnabled": true,
+    "welcome.boostChannelId": "{channel:announcements}",
+    "welcome.brandColor": 16753920,
+    "welcome.cardBackground": "warm",
+    "welcome.localeAware": true,
+    "welcome.mentionInChannel": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}"
+    ],
+    "channels": [
+      "{channel:welcome}",
+      "{channel:announcements}"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "leveling",
+  "name": "Weekend XP boost x2",
+  "description": "Doubles XP on Saturday/Sunday.",
+  "settings": {
+    "leveling.weekendBoost": 2
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

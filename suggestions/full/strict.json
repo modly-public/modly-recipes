@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "suggestions",
+  "name": "Suggestions \u2014 strict",
+  "description": "Mod review required before posting; cooldown 24h; cap 1 open.",
+  "settings": {
+    "suggestions.enabled": true,
+    "suggestions.channelId": "{channel:suggestions}",
+    "suggestions.requireApproval": true,
+    "suggestions.reviewChannelId": "{channel:mod-suggestions}",
+    "suggestions.cooldownMin": 1440,
+    "suggestions.maxOpenPerUser": 1
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:suggestions}",
+      "{channel:mod-suggestions}"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "antinuke",
+  "name": "Aggressive rollback window",
+  "description": "Wider rollback window covering channel/role/webhook destructive actions.",
+  "settings": {
+    "antinuke.rollback.enabled": true,
+    "antinuke.rollback.windowMinutes": 30,
+    "antinuke.rollback.actions": [
+      "channel.delete",
+      "channel.create",
+      "role.delete",
+      "role.create",
+      "webhook.create",
+      "kick",
+      "ban"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

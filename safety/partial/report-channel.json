@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "safety",
+  "name": "Member report channel",
+  "description": "Adds a /report command targeting a private safety channel.",
+  "settings": {
+    "safety.allowReport": true,
+    "safety.reportChannelId": "{channel:safety-reports}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

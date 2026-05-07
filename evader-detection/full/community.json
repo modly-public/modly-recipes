@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "evader-detection",
+  "name": "Evader detection \u2014 community",
+  "description": "Quiet alerts only, no auto-bans, longer lookback for chronic raiders.",
+  "settings": {
+    "evader_detection.enabled": true,
+    "evader_detection.action": "alert",
+    "evader_detection.alertChannelId": "{channel:mod-log}",
+    "evader_detection.alertRoleId": "{role:mods}",
+    "evader_detection.minScore": 0.85,
+    "evader_detection.scope": "global",
+    "evader_detection.lookbackDays": 180,
+    "evader_detection.exemptRoles": [
+      "{role:mods}"
+    ],
+    "evader_detection.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

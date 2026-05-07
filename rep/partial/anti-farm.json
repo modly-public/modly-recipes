@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "rep",
+  "name": "Anti-rep-farm",
+  "description": "Adds reciprocal-rep + farm freeze detection.",
+  "settings": {
+    "rep.farmDetection": true,
+    "rep.farmFreezeMin": 240,
+    "rep.requireMutualMessages": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

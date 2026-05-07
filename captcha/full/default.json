@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "captcha",
+  "name": "Captcha \u2014 default",
+  "description": "Standard image+button captcha on join, 5-minute deadline.",
+  "settings": {
+    "captcha.enabled": true,
+    "captcha.kind": "image",
+    "captcha.timeoutMinutes": 5,
+    "captcha.unverifiedRoleId": "{role:unverified}",
+    "captcha.verifiedRoleId": "{role:verified}",
+    "captcha.channelId": "{channel:verify}",
+    "captcha.kickOnTimeout": false,
+    "captcha.banOnFail": false,
+    "captcha.maxAttempts": 3,
+    "captcha.requireOnRejoin": true,
+    "captcha.minAccountDays": 0,
+    "captcha.dmFallback": true,
+    "captcha.welcomeAfterVerify": true,
+    "captcha.notifyChannelId": "{channel:mod-log}",
+    "captcha.allowedLocales": [],
+    "captcha.exemptRoles": [
+      "{role:mods}"
+    ],
+    "captcha.dryRun": false,
+    "captcha.bannerEmbed": "i18n:captcha.bannerEmbed",
+    "captcha.successMessage": "i18n:captcha.success",
+    "captcha.failureMessage": "i18n:captcha.failure",
+    "captcha.attempt": 1
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:unverified}",
+      "{role:verified}",
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:verify}",
+      "{channel:mod-log}"
+    ]
+  }
+}

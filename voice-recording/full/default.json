@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "voice-recording",
+  "name": "Voice recording \u2014 default",
+  "description": "Long-form VC recording, mod-trigger, consent-gated.",
+  "settings": {
+    "voice_recording.enabled": true,
+    "voice_recording.maxRecordMin": 60,
+    "voice_recording.allowedRoleId": "{role:mods}",
+    "voice_recording.archiveChannelId": "{channel:vc-recordings}",
+    "voice_recording.requireConsent": true,
+    "voice_recording.consentRoleId": "{role:vc-consent}",
+    "voice_recording.format": "mp3",
+    "voice_recording.bitrate": 128000,
+    "voice_recording.includeSpeakerLabels": true,
+    "voice_recording.linkExpiryHours": 720
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}",
+      "{role:vc-consent}"
+    ],
+    "channels": [
+      "{channel:vc-recordings}"
+    ]
+  }
+}

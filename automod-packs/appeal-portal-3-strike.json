@@ -1,0 +1,52 @@
+{
+  "name": "Appeal portal with 3-strike escalation",
+  "description": "Three-strike escalation rules wired to the standard moderation point system. Each strike level escalates: 5pts = warn, 15pts = 6h timeout, 30pts = ban with appeal link. Pair with a forms-based appeal portal (see forms/appeal-portal.json).",
+  "rules": [
+    {
+      "name": "Strike 1 — soft warn on common offences",
+      "kind": "CAPS",
+      "config": { "thresholdPercent": 70, "minLength": 12 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 5 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Strike 2 — duplicate flooding",
+      "kind": "DUPLICATE_MESSAGE",
+      "config": { "windowSec": 60, "maxRepeats": 4 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 15 }, { "type": "timeout", "durationSec": 21600 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "Strike 3 — invite spam → ban (appeal allowed)",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 30 }, { "type": "ban", "reason": "strike-3-invite" }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Strike escalation — scam → instant ban (appeal allowed)",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "strike-scam" }] },
+      "scope": {},
+      "priority": 40
+    },
+    {
+      "name": "Strike escalation — mass mention 5+",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 5, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 15 }, { "type": "timeout", "durationSec": 21600 }] },
+      "scope": {},
+      "priority": 50
+    }
+  ],
+  "appealPortal": {
+    "formRecipe": "forms/appeal-portal.json",
+    "publicMessageKey": "i18n:moderation.ban_with_appeal",
+    "appealUrlPlaceholder": "{server.appealUrl}",
+    "notes": "The bot's ban DM template (locale key moderation.ban_with_appeal) renders the appeal URL automatically. Do not hardcode a URL here."
+  }
+}

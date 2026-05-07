@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "confessions",
+  "name": "Confessions \u2014 default",
+  "description": "Anonymous confessions with mod review queue.",
+  "settings": {
+    "confessions.enabled": true,
+    "confessions.channelId": "{channel:confessions}",
+    "confessions.requireReview": true,
+    "confessions.reviewChannelId": "{channel:confession-queue}",
+    "confessions.minAccountDays": 30,
+    "confessions.cooldownMin": 60,
+    "confessions.maxLength": 1500,
+    "confessions.allowAttachments": false,
+    "confessions.bannedWords": []
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:confessions}",
+      "{channel:confession-queue}"
+    ]
+  }
+}

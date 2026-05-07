@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "birthdays",
+  "name": "Birthdays \u2014 community",
+  "description": "Warm style with reminder + embed + multi-day window.",
+  "settings": {
+    "birthdays.enabled": true,
+    "birthdays.channelId": "{channel:general}",
+    "birthdays.roleId": "{role:birthday}",
+    "birthdays.roleDurationHours": 48,
+    "birthdays.reminderLeadDays": 1,
+    "birthdays.allowDayOnly": true,
+    "birthdays.useEmbed": true,
+    "birthdays.message": "i18n:birthdays.communityMessage"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:birthday}"
+    ],
+    "channels": [
+      "{channel:general}"
+    ]
+  }
+}

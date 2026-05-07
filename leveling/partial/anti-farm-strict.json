@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "leveling",
+  "name": "Anti-farm strict",
+  "description": "Tightens duplicate detection + burst freeze.",
+  "settings": {
+    "leveling.burstThreshold": 6,
+    "leveling.burstWindowSec": 60,
+    "leveling.farmFreezeMin": 60,
+    "leveling.duplicateWindowSec": 600,
+    "leveling.duplicateMax": 2,
+    "leveling.uniqueWordsMin": 4
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

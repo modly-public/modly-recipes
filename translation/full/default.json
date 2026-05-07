@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "translation",
+  "name": "Translation \u2014 default",
+  "description": "Per-channel auto-translate plus on-demand /translate.",
+  "settings": {
+    "translation.enabled": true,
+    "translation.autoTranslateChannels": [],
+    "translation.languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "pt"
+    ],
+    "translation.fallbackLanguage": "en",
+    "translation.allowedRoleId": "{role:member}",
+    "translation.maxLengthChars": 2000,
+    "translation.cooldownSec": 5,
+    "translation.contextWindow": 5
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}"
+    ],
+    "channels": []
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "welcome",
+  "name": "Welcome \u2014 default",
+  "description": "Embed welcome message in #welcome with auto-role and 1-day reminder DM.",
+  "settings": {
+    "welcome.enabled": true,
+    "welcome.channelId": "{channel:welcome}",
+    "welcome.message": "i18n:welcome.defaultMessage",
+    "welcome.embedColor": 5814783,
+    "welcome.useEmbed": true,
+    "welcome.useImageCard": false,
+    "welcome.includeMemberCount": true,
+    "welcome.dmEnabled": false,
+    "welcome.dmMessage": "i18n:welcome.dmMessage",
+    "welcome.autoRoleIds": [
+      "{role:member}"
+    ],
+    "welcome.removeOnLeave": false,
+    "welcome.leaveEnabled": true,
+    "welcome.leaveChannelId": "{channel:welcome}",
+    "welcome.leaveMessage": "i18n:welcome.leaveMessage",
+    "welcome.boostEnabled": true,
+    "welcome.boostChannelId": "{channel:announcements}",
+    "welcome.boostMessage": "i18n:welcome.boostMessage",
+    "welcome.reminderEnabled": true,
+    "welcome.reminderHours": 24,
+    "welcome.reminderMessage": "i18n:welcome.reminderMessage",
+    "welcome.reminderChannelId": "{channel:welcome}",
+    "welcome.deleteAfterSec": 0,
+    "welcome.mentionInChannel": true,
+    "welcome.brandColor": 5814783,
+    "welcome.cardBackground": "default",
+    "welcome.threadOnJoin": false,
+    "welcome.threadName": "i18n:welcome.threadName",
+    "welcome.localeAware": true,
+    "welcome.testCommandEnabled": true,
+    "welcome.embedFooter": "i18n:welcome.footer",
+    "welcome.imageURL": "",
+    "welcome.thumbnailURL": "",
+    "welcome.showJoinedDate": true,
+    "welcome.showAccountAge": false,
+    "welcome.replaceMessageOnEdit": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}"
+    ],
+    "channels": [
+      "{channel:welcome}",
+      "{channel:announcements}"
+    ]
+  }
+}

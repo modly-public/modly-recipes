@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai",
+  "name": "AI-creative system prompt",
+  "description": "Switches the bot to a brainstorm/creative tone.",
+  "settings": {
+    "ai.systemPromptKey": "i18n:ai.system_prompt.creative"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

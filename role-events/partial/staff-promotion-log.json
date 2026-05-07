@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "role-events",
+  "name": "Staff promotion log",
+  "description": "Logs role-grant events for any staff role.",
+  "settings": {},
+  "content": [
+    {
+      "type": "role_event",
+      "name": "staff-promotion",
+      "trigger": "role.added",
+      "roleId": "{role:mods}",
+      "actions": [
+        {
+          "kind": "post",
+          "channelId": "{channel:mod-log}",
+          "messageKey": "i18n:role_events.staff_promo"
+        }
+      ]
+    },
+    {
+      "type": "role_event",
+      "name": "staff-demotion",
+      "trigger": "role.removed",
+      "roleId": "{role:mods}",
+      "actions": [
+        {
+          "kind": "post",
+          "channelId": "{channel:mod-log}",
+          "messageKey": "i18n:role_events.staff_demo"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

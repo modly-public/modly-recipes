@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai-tools",
+  "name": "Translate-only mode",
+  "description": "Only the translate-message tool is enabled.",
+  "settings": {
+    "ai_tools.tools": [
+      "translate_message"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

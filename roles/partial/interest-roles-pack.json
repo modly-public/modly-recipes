@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "roles",
+  "name": "Interest roles pack",
+  "description": "Adds a 'pick your interests' menu.",
+  "settings": {},
+  "content": [
+    {
+      "type": "roles.menu",
+      "name": "interests",
+      "title": "i18n:roles.interestsTitle",
+      "channelId": "{channel:role-picker}",
+      "options": [
+        {
+          "label": "art",
+          "roleId": "{role:interest-art}"
+        },
+        {
+          "label": "music",
+          "roleId": "{role:interest-music}"
+        },
+        {
+          "label": "tech",
+          "roleId": "{role:interest-tech}"
+        },
+        {
+          "label": "gaming",
+          "roleId": "{role:interest-gaming}"
+        },
+        {
+          "label": "books",
+          "roleId": "{role:interest-books}"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

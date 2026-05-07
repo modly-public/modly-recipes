@@ -1,0 +1,35 @@
+{
+  "name": "Welcome with 24h DM nudge if inactive",
+  "kind": "welcome-flow",
+  "description": "Standard public welcome plus a 24-hour follow-up DM if the new member hasn't posted in any channel by then. Big lift on activation rate without being naggy.",
+  "module": "welcome",
+  "config": {
+    "channelId": "WELCOME_CHANNEL_ID",
+    "messagePool": "i18n:welcome.warm_pool",
+    "card": {
+      "embedRecipe": "embeds/welcome-card.json"
+    },
+    "followups": [
+      {
+        "id": "nudge-24h",
+        "delayHours": 24,
+        "channel": "dm",
+        "skipIf": "user.hasPostedSinceJoin",
+        "messageKey": "i18n:welcome.nudge_24h.dm",
+        "components": [
+          {
+            "type": "linkButton",
+            "labelKey": "i18n:welcome.nudge_24h.button_intro",
+            "urlPlaceholder": "{channel:introductions.url}"
+          },
+          {
+            "type": "linkButton",
+            "labelKey": "i18n:welcome.nudge_24h.button_roles",
+            "urlPlaceholder": "{channel:roles.url}"
+          }
+        ]
+      }
+    ]
+  },
+  "i18nNotes": "Nudge DM never spams: skipIf checks whether user has any message history in the guild before scheduling. Copy lives at welcome.nudge_24h.*."
+}

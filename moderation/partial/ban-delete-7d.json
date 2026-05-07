@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "moderation",
+  "name": "Ban delete 7 days",
+  "description": "Default `/ban` deletes 7 days of past messages.",
+  "settings": {
+    "moderation.banDeleteDays": 7
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

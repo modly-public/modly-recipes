@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "roles",
+  "name": "Roles \u2014 default",
+  "description": "Role-picker module: button menus, max 1 colour role, mod can edit.",
+  "settings": {
+    "roles.enabled": true,
+    "roles.menuChannelId": "{channel:role-picker}",
+    "roles.maxColorRoles": 1,
+    "roles.maxPickRolesPerUser": 5,
+    "roles.allowSelfAssign": true,
+    "roles.requireMemberRoleId": "{role:member}",
+    "roles.adminRoleId": "{role:mods}",
+    "roles.embedColor": 5814783,
+    "roles.useButtons": true,
+    "roles.useDropdowns": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}",
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:role-picker}"
+    ]
+  }
+}

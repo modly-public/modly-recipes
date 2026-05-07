@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "captcha",
+  "name": "Force reverify on rejoin",
+  "description": "Returning members re-run captcha (good after a raid).",
+  "settings": {
+    "captcha.requireOnRejoin": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

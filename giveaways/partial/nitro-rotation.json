@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "giveaways",
+  "name": "Nitro giveaway rotation",
+  "description": "Weekly Nitro giveaway template \u2014 168h duration, single winner.",
+  "settings": {},
+  "content": [
+    {
+      "type": "giveaways.template",
+      "name": "weekly-nitro",
+      "title": "i18n:giveaways.nitroTitle",
+      "prize": "i18n:giveaways.nitroPrize",
+      "durationHours": 168,
+      "winners": 1,
+      "channelId": "{channel:giveaways}"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "voice-recording",
+  "name": "Podcast format",
+  "description": "MP3 + speaker labels for podcast/recap recordings.",
+  "settings": {
+    "voice_recording.format": "mp3",
+    "voice_recording.bitrate": 192000,
+    "voice_recording.includeSpeakerLabels": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "leveling",
+  "name": "Disable reaction XP",
+  "description": "Reactions don't grant XP \u2014 useful in raidy servers.",
+  "settings": {
+    "leveling.reactionXpEnabled": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

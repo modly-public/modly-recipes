@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "antinuke",
+  "name": "Quarantine \u2014 soft",
+  "description": "Quarantined members keep read access but can't send/react/voice.",
+  "settings": {
+    "antinuke.quarantine.autoCreate": true,
+    "antinuke.quarantine.allowChannelEnabled": true,
+    "antinuke.quarantine.deniedPerms": [
+      "SendMessages",
+      "AddReactions",
+      "Speak"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

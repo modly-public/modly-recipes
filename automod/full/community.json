@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "automod",
+  "name": "Automod \u2014 community",
+  "description": "Light-touch automod for friendly chat servers \u2014 only the worst offenders trigger removal.",
+  "settings": {
+    "automod.escalation.enabled": false,
+    "automod.lockdown.sweep": false,
+    "automod.notify.channelId": "{channel:mod-log}",
+    "automod.exempt.roles": [
+      "{role:mods}"
+    ]
+  },
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Scam links",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "warn",
+            "points": 3
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "type": "automod.rule",
+      "name": "Mass mentions",
+      "kind": "MASS_MENTION",
+      "config": {
+        "threshold": 8,
+        "includeEveryone": true
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 30
+    }
+  ],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

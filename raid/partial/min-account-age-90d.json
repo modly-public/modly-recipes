@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "raid",
+  "name": "Block accounts <90 days old",
+  "description": "Hard block on very new accounts during active raid.",
+  "settings": {
+    "raid.minAccountDays": 90
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

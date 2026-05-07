@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "webhook-broadcaster",
+  "name": "Webhook broadcaster \u2014 default",
+  "description": "Outbound webhook broadcaster wired to mod-log.",
+  "settings": {
+    "webhook_broadcaster.enabled": true,
+    "webhook_broadcaster.maxPerGuild": 10,
+    "webhook_broadcaster.editorRoleId": "{role:mods}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

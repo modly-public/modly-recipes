@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "raid",
+  "name": "Username pattern bans",
+  "description": "Auto-bans joiners whose username matches a known raid signature.",
+  "settings": {
+    "raid.usernameRegex": [
+      "^[a-z]+\\d{4,}$",
+      "discord\\.gg",
+      "^user\\d+$",
+      "free\\s?nitro"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

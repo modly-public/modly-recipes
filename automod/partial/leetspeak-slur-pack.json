@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Leetspeak slur pack",
+  "description": "Wildcard slur detection that survives common leetspeak substitutions. Operator must fill in the blacklist.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Slurs (leetspeak)",
+      "kind": "WORD_BLACKLIST",
+      "config": {
+        "wildcard": [
+          "slur1placeholder",
+          "slur2placeholder"
+        ],
+        "caseSensitive": false,
+        "leetspeak": true
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "warn",
+            "points": 10
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 8
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

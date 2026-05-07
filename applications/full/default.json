@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "applications",
+  "name": "Applications \u2014 default",
+  "description": "Generic application module: review channel + mod role + 3-question template.",
+  "settings": {
+    "applications.enabled": true,
+    "applications.reviewChannelId": "{channel:applications}",
+    "applications.reviewerRoleId": "{role:mods}",
+    "applications.notifyChannelId": "{channel:mod-log}",
+    "applications.maxOpenPerUser": 1,
+    "applications.cooldownDays": 14,
+    "applications.dmOnDecision": true,
+    "applications.allowEdits": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:applications}",
+      "{channel:mod-log}"
+    ]
+  }
+}

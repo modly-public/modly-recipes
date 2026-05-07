@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ama",
+  "name": "Anonymous AMA questions",
+  "description": "Allow questions submitted without revealing the asker.",
+  "settings": {
+    "ama.allowAnonymous": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "translation",
+  "name": "Translation \u2014 multilingual server",
+  "description": "Auto-translate active in main public channels; languages broadened.",
+  "settings": {
+    "translation.enabled": true,
+    "translation.autoTranslateChannels": [
+      "{channel:general}",
+      "{channel:announcements}"
+    ],
+    "translation.languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "pt",
+      "ru",
+      "zh",
+      "ko",
+      "ar"
+    ],
+    "translation.fallbackLanguage": "en"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:general}",
+      "{channel:announcements}"
+    ]
+  }
+}

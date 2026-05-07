@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "moderation",
+  "name": "Moderation \u2014 default",
+  "description": "Standard mod-action defaults: warn-points expire, auto-escalate, mod-log on.",
+  "settings": {
+    "moderation.modLogChannelId": "{channel:mod-log}",
+    "moderation.warnPointDecayDays": 30,
+    "moderation.autoEscalateAtPoints": 10,
+    "moderation.escalationAction": "timeout",
+    "moderation.escalationDurationSec": 3600,
+    "moderation.dmOnAction": true,
+    "moderation.requireReason": true,
+    "moderation.silentMode": false,
+    "moderation.appealLink": "i18n:moderation.appealLink",
+    "moderation.banDeleteDays": 1,
+    "moderation.timeoutMaxHours": 24,
+    "moderation.purgeMaxMessages": 100,
+    "moderation.transcriptChannelId": "{channel:mod-transcripts}",
+    "moderation.modCallRoleId": "{role:mods}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}",
+      "{channel:mod-transcripts}"
+    ]
+  }
+}

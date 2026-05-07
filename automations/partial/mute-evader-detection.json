@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automations",
+  "name": "Mute on evader-detect",
+  "description": "Auto-quarantines members flagged by evader-detection.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automation",
+      "name": "auto-quarantine-evader",
+      "trigger": "evader.detected",
+      "actions": [
+        {
+          "kind": "grant_role",
+          "roleId": "{role:quarantine}"
+        },
+        {
+          "kind": "post",
+          "channelId": "{channel:mod-log}",
+          "messageKey": "i18n:automations.evader_quarantined"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

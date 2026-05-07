@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "onboarding",
+  "name": "Kick after 72h incomplete",
+  "description": "Kicks members who don't finish onboarding within 72h.",
+  "settings": {
+    "onboarding.timeoutHours": 72,
+    "onboarding.kickOnTimeout": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

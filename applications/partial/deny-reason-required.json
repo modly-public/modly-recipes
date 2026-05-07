@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "applications",
+  "name": "Deny requires written reason",
+  "description": "Mods must enter a reason on deny \u2014 sent to applicant by DM.",
+  "settings": {
+    "applications.requireReasonOnDeny": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

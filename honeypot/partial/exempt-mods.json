@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "honeypot",
+  "name": "Honeypot exempt mods",
+  "description": "Whitelists the mod role so test messages don't trigger.",
+  "settings": {
+    "honeypot.exemptRoles": [
+      "{role:mods}"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

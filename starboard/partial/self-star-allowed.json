@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "starboard",
+  "name": "Allow self-stars",
+  "description": "Authors can star their own posts.",
+  "settings": {
+    "starboard.allowSelfStar": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "evader-detection",
+  "name": "Auto-ban high-score evaders",
+  "description": "When fingerprint score >= 0.8, ban immediately.",
+  "settings": {
+    "evader_detection.action": "ban",
+    "evader_detection.minScore": 0.8
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

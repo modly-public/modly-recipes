@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "confessions",
+  "name": "Confessions \u2014 strict",
+  "description": "All confessions queue, banned-words list active, image attachments off.",
+  "settings": {
+    "confessions.enabled": true,
+    "confessions.channelId": "{channel:confessions}",
+    "confessions.requireReview": true,
+    "confessions.reviewChannelId": "{channel:confession-queue}",
+    "confessions.minAccountDays": 60,
+    "confessions.cooldownMin": 240,
+    "confessions.maxLength": 800,
+    "confessions.allowAttachments": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:confessions}",
+      "{channel:confession-queue}"
+    ]
+  }
+}

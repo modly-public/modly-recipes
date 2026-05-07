@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "applications",
+  "name": "Applications \u2014 strict",
+  "description": "One open application at a time, long cooldown, deny requires reason.",
+  "settings": {
+    "applications.enabled": true,
+    "applications.reviewChannelId": "{channel:applications}",
+    "applications.reviewerRoleId": "{role:senior-mods}",
+    "applications.maxOpenPerUser": 1,
+    "applications.cooldownDays": 60,
+    "applications.dmOnDecision": true,
+    "applications.allowEdits": false,
+    "applications.requireReasonOnDeny": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:senior-mods}"
+    ],
+    "channels": [
+      "{channel:applications}"
+    ]
+  }
+}

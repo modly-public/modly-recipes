@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "voice-clipper",
+  "name": "Voice clipper \u2014 default",
+  "description": "On-demand voice clip recorder.",
+  "settings": {
+    "voice_clipper.enabled": true,
+    "voice_clipper.maxClipSec": 30,
+    "voice_clipper.maxClipsPerHour": 10,
+    "voice_clipper.allowedRoleId": "{role:member}",
+    "voice_clipper.archiveChannelId": "{channel:voice-clips}",
+    "voice_clipper.bitrate": 64000,
+    "voice_clipper.requireConsent": true,
+    "voice_clipper.consentRoleId": "{role:vc-consent}",
+    "voice_clipper.shareableLinks": true,
+    "voice_clipper.linkExpiryHours": 168,
+    "voice_clipper.embedColor": 5814783,
+    "voice_clipper.includeTranscript": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}",
+      "{role:vc-consent}"
+    ],
+    "channels": [
+      "{channel:voice-clips}"
+    ]
+  }
+}

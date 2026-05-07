@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "ai",
+  "name": "AI \u2014 community",
+  "description": "Generous limits, image gen on, friendly tone.",
+  "settings": {
+    "ai.enabled": true,
+    "ai.allowedRoleId": "{role:member}",
+    "ai.maxTokensPerCall": 2500,
+    "ai.maxCallsPerHourPerUser": 60,
+    "ai.allowImage": true,
+    "ai.systemPromptKey": "i18n:ai.system_prompt.community"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}"
+    ],
+    "channels": []
+  }
+}

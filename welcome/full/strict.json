@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "welcome",
+  "name": "Welcome \u2014 strict",
+  "description": "No auto-role until verified; channel mention + reminder + DM included.",
+  "settings": {
+    "welcome.enabled": true,
+    "welcome.channelId": "{channel:welcome}",
+    "welcome.message": "i18n:welcome.strictMessage",
+    "welcome.useEmbed": true,
+    "welcome.dmEnabled": true,
+    "welcome.dmMessage": "i18n:welcome.strictDmMessage",
+    "welcome.autoRoleIds": [],
+    "welcome.leaveEnabled": true,
+    "welcome.leaveChannelId": "{channel:mod-log}",
+    "welcome.boostEnabled": true,
+    "welcome.boostChannelId": "{channel:announcements}",
+    "welcome.reminderEnabled": true,
+    "welcome.reminderHours": 6,
+    "welcome.localeAware": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:welcome}",
+      "{channel:mod-log}",
+      "{channel:announcements}"
+    ]
+  }
+}

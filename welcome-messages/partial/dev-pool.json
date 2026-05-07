@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome-messages",
+  "name": "Welcome pool \u2014 dev",
+  "description": "Developer-team-style welcome lines (i18n keys).",
+  "settings": {},
+  "content": [
+    {
+      "type": "welcome_messages.pool",
+      "theme": "dev",
+      "lines": [
+        "i18n:welcome_messages.dev.line1",
+        "i18n:welcome_messages.dev.line2",
+        "i18n:welcome_messages.dev.line3",
+        "i18n:welcome_messages.dev.line4",
+        "i18n:welcome_messages.dev.line5"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

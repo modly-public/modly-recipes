@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "birthdays",
+  "name": "Birthday role 48h",
+  "description": "Birthday role lingers for 48h instead of 24h.",
+  "settings": {
+    "birthdays.roleDurationHours": 48
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

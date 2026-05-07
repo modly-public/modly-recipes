@@ -1,0 +1,35 @@
+{
+  "name": "Form ↔ Notion via webhook",
+  "kind": "integration-feed",
+  "description": "Pipes new form submissions (any Modly form) into a Notion database via outbound webhook. Maps each question to a Notion property and includes the submitter's Discord ID and a deep link back into the dashboard.",
+  "module": "forms",
+  "config": {
+    "trigger": "form.submission.created",
+    "formIds": ["FORM_ID"],
+    "outboundWebhook": {
+      "url": "https://api.notion.com/v1/pages",
+      "headers": {
+        "Authorization": "Bearer {env:MODLY_NOTION_TOKEN}",
+        "Notion-Version": "2022-06-28",
+        "Content-Type": "application/json"
+      },
+      "bodyTemplate": {
+        "parent": { "database_id": "{env:MODLY_NOTION_DATABASE_ID}" },
+        "properties": {
+          "Name":        { "title":     [{ "text": { "content": "{submission.summary}" } }] },
+          "Submitter":   { "rich_text": [{ "text": { "content": "{submission.user.tag} ({submission.user.id})" } }] },
+          "Status":      { "select":    { "name": "{submission.status}" } },
+          "SubmittedAt": { "date":      { "start": "{submission.createdAt}" } },
+          "Link":        { "url":       "{submission.dashboardUrl}" }
+        }
+      }
+    },
+    "retry": {
+      "maxAttempts": 5,
+      "backoffMs": 5000
+    },
+    "onErrorChannelId": "STAFF_DIGEST_CHANNEL_ID",
+    "onErrorMessageKey": "i18n:integrations.notion.error"
+  },
+  "i18nNotes": "Submission fields are user-authored. Only the bot's failure notification is keyed."
+}

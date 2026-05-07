@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "role-events",
+  "name": "Booster perks cascade",
+  "description": "When booster role is granted/removed, cascade booster-only perks roles.",
+  "settings": {},
+  "content": [
+    {
+      "type": "role_event",
+      "name": "booster-grant",
+      "trigger": "role.added",
+      "roleId": "{role:booster}",
+      "actions": [
+        {
+          "kind": "grant_role",
+          "roleId": "{role:perks-booster}"
+        },
+        {
+          "kind": "grant_role",
+          "roleId": "{role:perks-vanity}"
+        }
+      ]
+    },
+    {
+      "type": "role_event",
+      "name": "booster-revoke",
+      "trigger": "role.removed",
+      "roleId": "{role:booster}",
+      "actions": [
+        {
+          "kind": "remove_role",
+          "roleId": "{role:perks-booster}"
+        },
+        {
+          "kind": "remove_role",
+          "roleId": "{role:perks-vanity}"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

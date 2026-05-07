@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "onboarding",
+  "name": "Onboarding \u2014 default",
+  "description": "Multi-step onboarding flow: rules ack, role-picker, intro post.",
+  "settings": {
+    "onboarding.enabled": true,
+    "onboarding.flowId": "default",
+    "onboarding.startChannelId": "{channel:welcome}",
+    "onboarding.completedRoleId": "{role:member}",
+    "onboarding.requireRulesAck": true,
+    "onboarding.rulesChannelId": "{channel:rules}",
+    "onboarding.rolePickerChannelId": "{channel:role-picker}",
+    "onboarding.introChannelId": "{channel:introductions}",
+    "onboarding.gateUntilComplete": true,
+    "onboarding.timeoutHours": 72,
+    "onboarding.kickOnTimeout": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}"
+    ],
+    "channels": [
+      "{channel:welcome}",
+      "{channel:rules}",
+      "{channel:role-picker}",
+      "{channel:introductions}"
+    ]
+  }
+}

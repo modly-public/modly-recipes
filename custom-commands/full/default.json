@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "custom-commands",
+  "name": "Custom commands \u2014 default",
+  "description": "Module enabled, mods can author, slash + chat triggers on, cooldown 5s.",
+  "settings": {
+    "custom_commands.enabled": true,
+    "custom_commands.allowSlash": true,
+    "custom_commands.allowChat": true,
+    "custom_commands.cooldownSec": 5,
+    "custom_commands.maxPerGuild": 200,
+    "custom_commands.editorRoleId": "{role:mods}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

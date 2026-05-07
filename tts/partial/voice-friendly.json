@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "tts",
+  "name": "Friendly voice preset",
+  "description": "Switches to the warm voice preset.",
+  "settings": {
+    "tts.voice": "warm"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

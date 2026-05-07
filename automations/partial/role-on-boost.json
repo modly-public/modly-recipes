@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automations",
+  "name": "Role on boost",
+  "description": "Grants a thank-you role when a member starts boosting.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automation",
+      "name": "boost-role",
+      "trigger": "member.boost_start",
+      "actions": [
+        {
+          "kind": "grant_role",
+          "roleId": "{role:booster}"
+        },
+        {
+          "kind": "post",
+          "channelId": "{channel:announcements}",
+          "messageKey": "i18n:automations.boost_thanks"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

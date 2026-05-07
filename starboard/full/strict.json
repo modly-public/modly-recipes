@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "starboard",
+  "name": "Starboard \u2014 strict",
+  "description": "Higher threshold, NSFW blocked, only specific channels feed in.",
+  "settings": {
+    "starboard.enabled": true,
+    "starboard.channelId": "{channel:starboard}",
+    "starboard.threshold": 10,
+    "starboard.emoji": "\u2b50",
+    "starboard.allowNsfw": false,
+    "starboard.allowSelfStar": false,
+    "starboard.maxMessageAgeDays": 7,
+    "starboard.requireUniqueVoters": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:starboard}"
+    ]
+  }
+}

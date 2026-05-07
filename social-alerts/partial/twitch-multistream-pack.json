@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "social-alerts",
+  "name": "Twitch multistream pack",
+  "description": "Watch multiple Twitch handles at once (gaming server style).",
+  "settings": {},
+  "content": [
+    {
+      "type": "social_alert",
+      "platform": "twitch",
+      "channelHandle": "STREAMER1_PLACEHOLDER",
+      "postChannelId": "{channel:announcements}"
+    },
+    {
+      "type": "social_alert",
+      "platform": "twitch",
+      "channelHandle": "STREAMER2_PLACEHOLDER",
+      "postChannelId": "{channel:announcements}"
+    },
+    {
+      "type": "social_alert",
+      "platform": "twitch",
+      "channelHandle": "STREAMER3_PLACEHOLDER",
+      "postChannelId": "{channel:announcements}"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

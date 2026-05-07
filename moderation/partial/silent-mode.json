@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "moderation",
+  "name": "Silent moderation mode",
+  "description": "Don't DM offenders \u2014 quietly action them.",
+  "settings": {
+    "moderation.silentMode": true,
+    "moderation.dmOnAction": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "games",
+  "name": "Games \u2014 default",
+  "description": "Standard games loadout: trivia, hangman, blackjack, slots, tic-tac-toe.",
+  "settings": {
+    "games.enabled": true,
+    "games.allowedGames": [
+      "trivia",
+      "hangman",
+      "blackjack",
+      "slots",
+      "tictactoe",
+      "rps",
+      "wordchain",
+      "fishing",
+      "wouldyourather",
+      "anagram"
+    ],
+    "games.cooldownSec": 10,
+    "games.cooldownPerUserSec": 30,
+    "games.minBet": 0,
+    "games.maxBet": 0,
+    "games.allowChannelGames": true,
+    "games.leaderboardEnabled": true,
+    "games.leaderboardChannelId": "{channel:leaderboard}",
+    "games.allowedChannels": [],
+    "games.exemptRoles": [],
+    "games.dailyDailyGameEnabled": true,
+    "games.dailyChannelId": "{channel:games}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:leaderboard}",
+      "{channel:games}"
+    ]
+  }
+}

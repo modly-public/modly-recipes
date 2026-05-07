@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "forms",
+  "name": "Partner application",
+  "description": "Brief form for partner-server outreach.",
+  "settings": {},
+  "content": [
+    {
+      "type": "form",
+      "name": "partner-application",
+      "title": "i18n:forms.partner.title",
+      "buttonLabel": "i18n:forms.partner.button",
+      "reviewChannelId": "{channel:partners}",
+      "approverRoleIds": [
+        "{role:senior-mods}"
+      ],
+      "perUserLimit": 1,
+      "questions": [
+        {
+          "id": "server",
+          "label": "i18n:forms.partner.q.server_name",
+          "kind": "short",
+          "required": true,
+          "maxLength": 100
+        },
+        {
+          "id": "members",
+          "label": "i18n:forms.partner.q.member_count",
+          "kind": "short",
+          "required": true,
+          "maxLength": 20
+        },
+        {
+          "id": "invite",
+          "label": "i18n:forms.partner.q.invite",
+          "kind": "short",
+          "required": true,
+          "maxLength": 100
+        },
+        {
+          "id": "why",
+          "label": "i18n:forms.partner.q.why",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 1000
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

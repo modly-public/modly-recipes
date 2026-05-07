@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "moderation",
+  "name": "Save mod transcripts",
+  "description": "Saves a transcript of each mod-action thread for future appeal.",
+  "settings": {
+    "moderation.transcriptChannelId": "{channel:mod-transcripts}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

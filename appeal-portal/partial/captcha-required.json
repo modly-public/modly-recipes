@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "appeal-portal",
+  "name": "Appeal captcha required",
+  "description": "Adds captcha to the public appeal form.",
+  "settings": {
+    "appeal_portal.captchaRequired": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

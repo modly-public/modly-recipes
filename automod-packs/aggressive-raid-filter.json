@@ -1,0 +1,71 @@
+{
+  "name": "Aggressive raid filter",
+  "description": "Hair-trigger pack for servers under active raid pressure. Designed to be enabled during a raid window (paired with the raid module's auto-enable hook), not as an everyday baseline. Expect some false positives.",
+  "rules": [
+    {
+      "name": "Mass mention (2+)",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 2, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "raid-mass-mention" }] },
+      "scope": {},
+      "priority": 5
+    },
+    {
+      "name": "Duplicate (2 in 30s)",
+      "kind": "DUPLICATE_MESSAGE",
+      "config": { "windowSec": 30, "maxRepeats": 2 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "raid-duplicate" }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Repeated chars (5+ run)",
+      "kind": "REPEATED_CHARS",
+      "config": { "runLength": 5 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 86400 }] },
+      "scope": {},
+      "priority": 15
+    },
+    {
+      "name": "Mass emoji (4+)",
+      "kind": "MASS_EMOJI",
+      "config": { "threshold": 4 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 86400 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "All invites → ban",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "raid-invite" }] },
+      "scope": {},
+      "priority": 25
+    },
+    {
+      "name": "External links → ban",
+      "kind": "EXTERNAL_LINK",
+      "config": { "allowDomains": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "ban", "reason": "raid-link" }] },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "name": "Caps (50%, 6+ chars)",
+      "kind": "CAPS",
+      "config": { "thresholdPercent": 50, "minLength": 6 },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 3600 }] },
+      "scope": {},
+      "priority": 35
+    },
+    {
+      "name": "Zalgo",
+      "kind": "ZALGO_ABUSE",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 86400 }] },
+      "scope": {},
+      "priority": 40
+    }
+  ],
+  "i18nNotes": "Action reasons are non-user-facing slugs (logged for staff/audit only)."
+}

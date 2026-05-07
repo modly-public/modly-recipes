@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "confessions",
+  "name": "Mod review queue",
+  "description": "Sends each confession to staff for approve/deny first.",
+  "settings": {
+    "confessions.requireReview": true,
+    "confessions.reviewChannelId": "{channel:confession-queue}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

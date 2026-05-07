@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "channel-games",
+  "name": "Count-channel only",
+  "description": "Only the count-to-X channel game is active.",
+  "settings": {
+    "channel_games.activeGames": [
+      "count"
+    ],
+    "channel_games.dedicatedChannels": {
+      "count": "{channel:count}"
+    }
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

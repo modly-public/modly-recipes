@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "birthdays",
+  "name": "Birthdays \u2014 default",
+  "description": "Daily birthday announce in #general, role for the day.",
+  "settings": {
+    "birthdays.enabled": true,
+    "birthdays.channelId": "{channel:general}",
+    "birthdays.roleId": "{role:birthday}",
+    "birthdays.roleDurationHours": 24,
+    "birthdays.reminderLeadDays": 0,
+    "birthdays.allowDayOnly": true,
+    "birthdays.timezone": "UTC",
+    "birthdays.embedColor": 16753920,
+    "birthdays.useEmbed": true,
+    "birthdays.message": "i18n:birthdays.message"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:birthday}"
+    ],
+    "channels": [
+      "{channel:general}"
+    ]
+  }
+}

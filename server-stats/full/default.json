@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "server-stats",
+  "name": "Server stats \u2014 default",
+  "description": "Daily/weekly server stats digest in a private channel.",
+  "settings": {
+    "server_stats.enabled": true,
+    "server_stats.digestChannelId": "{channel:server-stats}",
+    "server_stats.dailyDigest": true,
+    "server_stats.weeklyDigest": true,
+    "server_stats.digestTime": "09:00",
+    "server_stats.digestTimezone": "UTC",
+    "server_stats.includeChannels": true,
+    "server_stats.includeRoles": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:server-stats}"
+    ]
+  }
+}

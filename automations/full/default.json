@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "automations",
+  "name": "Automations \u2014 default",
+  "description": "Module on, per-automation rate limit, audit log integration.",
+  "settings": {
+    "automations.enabled": true,
+    "automations.maxAutomations": 50,
+    "automations.rateLimitPerMin": 30,
+    "automations.editorRoleId": "{role:mods}",
+    "automations.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

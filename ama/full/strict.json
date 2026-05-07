@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "ama",
+  "name": "AMA \u2014 strict",
+  "description": "All questions reviewed, anonymous off, panelist-only answers.",
+  "settings": {
+    "ama.enabled": true,
+    "ama.queueChannelId": "{channel:ama-queue}",
+    "ama.panelistRoleId": "{role:panelists}",
+    "ama.requireApproval": true,
+    "ama.maxQuestionsPerUser": 1,
+    "ama.allowAnonymous": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:panelists}"
+    ],
+    "channels": [
+      "{channel:ama-queue}"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "tts",
+  "name": "TTS \u2014 strict",
+  "description": "Mods only, profanity filter on, short messages.",
+  "settings": {
+    "tts.enabled": true,
+    "tts.allowedRoleId": "{role:mods}",
+    "tts.maxLength": 80,
+    "tts.cooldownSec": 60,
+    "tts.allowProfanity": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

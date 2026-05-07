@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "raid",
+  "name": "Lock channels on raid trip",
+  "description": "When a raid trips, lock @everyone send permission across all configured channels.",
+  "settings": {
+    "raid.lockChannelsOnTrip": true,
+    "raid.lockoutMinutes": 120
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

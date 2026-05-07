@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome",
+  "name": "Welcome image card",
+  "description": "Switch from plain embed to a generated welcome image card.",
+  "settings": {
+    "welcome.useImageCard": true,
+    "welcome.cardBackground": "default"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

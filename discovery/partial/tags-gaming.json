@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "discovery",
+  "name": "Discovery tags \u2014 gaming",
+  "description": "Tags the server as gaming/casual.",
+  "settings": {
+    "discovery.tags": [
+      "gaming",
+      "casual",
+      "community"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

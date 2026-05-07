@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "translation",
+  "name": "Auto-translate #general",
+  "description": "Live auto-translation in #general for multilingual servers.",
+  "settings": {
+    "translation.autoTranslateChannels": [
+      "{channel:general}"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

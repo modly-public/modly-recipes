@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "server-goals",
+  "name": "Milestone image card",
+  "description": "Generate an image card on every milestone hit.",
+  "settings": {
+    "server_goals.cardEnabled": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "leveling",
+  "name": "Inactive XP decay",
+  "description": "Decays XP 5%/week after 14 inactive days.",
+  "settings": {
+    "leveling.decayPercentPerWeek": 5,
+    "leveling.decayInactiveDays": 14
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

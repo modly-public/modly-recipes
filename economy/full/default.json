@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "economy",
+  "name": "Economy \u2014 default",
+  "description": "Standard economy: daily, work, gambling off, leaderboard on.",
+  "settings": {
+    "economy.enabled": true,
+    "economy.currency": "i18n:economy.currency",
+    "economy.dailyEnabled": true,
+    "economy.dailyAmount": 100,
+    "economy.workEnabled": true,
+    "economy.workAmountMin": 50,
+    "economy.workAmountMax": 200,
+    "economy.workCooldownSec": 3600,
+    "economy.allowGambling": false,
+    "economy.allowSteal": false,
+    "economy.startingBalance": 100,
+    "economy.maxBalance": 1000000,
+    "economy.leaderboardEnabled": true,
+    "economy.leaderboardChannelId": "{channel:economy-board}",
+    "economy.transferTax": 0,
+    "economy.shopEnabled": true,
+    "economy.taxOnIdle": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:economy-board}"
+    ]
+  }
+}

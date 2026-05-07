@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "games",
+  "name": "Restrict to #games",
+  "description": "Only allow game commands in the dedicated games channel.",
+  "settings": {
+    "games.allowedChannels": [
+      "{channel:games}"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

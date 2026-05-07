@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "discovery",
+  "name": "Discovery \u2014 default",
+  "description": "Public discovery card with default tags.",
+  "settings": {
+    "discovery.enabled": true,
+    "discovery.publicCard": true,
+    "discovery.tags": [
+      "community",
+      "general"
+    ],
+    "discovery.descriptionKey": "i18n:discovery.description",
+    "discovery.bannerUrl": ""
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

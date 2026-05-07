@@ -1,0 +1,35 @@
+{
+  "name": "Auto-clean spam links via AI flag",
+  "kind": "ai-automation",
+  "description": "Pre-classifies any link-bearing message with the AI module's safety classifier; on a high-confidence spam/scam verdict, deletes the message and DMs the user the reason. Mirrors what SCAM_LINK does for the known-scam list, but extends it to never-seen URLs.",
+  "module": "ai",
+  "config": {
+    "channelScope": "all_text",
+    "skipForRoleIds": ["TRUSTED_ROLE_ID", "MOD_ROLE_ID"],
+    "trigger": {
+      "type": "message_with_link"
+    },
+    "ai": {
+      "persona": "safety-classifier",
+      "promptKey": "i18n:ai.spam_link.prompt",
+      "outputSchema": "verdict_v1",
+      "maxTokens": 80,
+      "cacheUrlVerdictsSec": 604800
+    },
+    "thresholds": {
+      "deleteAtConfidence": 0.92,
+      "warnAtConfidence": 0.75
+    },
+    "actions": {
+      "onDelete": [
+        { "type": "delete_message" },
+        { "type": "dm_user", "messageKey": "i18n:ai.spam_link.dm_deleted" },
+        { "type": "log", "channelId": "MODLOG_CHANNEL_ID", "messageKey": "i18n:ai.spam_link.log_deleted" }
+      ],
+      "onWarn": [
+        { "type": "log", "channelId": "MODLOG_CHANNEL_ID", "messageKey": "i18n:ai.spam_link.log_warn" }
+      ]
+    }
+  },
+  "i18nNotes": "Every user-facing string is keyed. URL verdict cache is keyed by canonical URL hash, not by user."
+}

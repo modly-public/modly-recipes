@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "polls",
+  "name": "Thread discussion per poll",
+  "description": "Each poll spawns a discussion thread.",
+  "settings": {
+    "polls.threadDiscussion": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

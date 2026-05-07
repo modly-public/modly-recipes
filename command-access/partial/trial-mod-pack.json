@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "command-access",
+  "name": "Trial mod pack",
+  "description": "Restricts heavy commands to senior mods only.",
+  "settings": {
+    "command_access.defaults": {
+      "ban": "senior-mods",
+      "kick": "mods",
+      "mute": "mods",
+      "warn": "mods",
+      "slowmode": "mods"
+    }
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

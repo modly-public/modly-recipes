@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "member-notes",
+  "name": "Private \u2014 no export",
+  "description": "Locks notes to in-app viewing only.",
+  "settings": {
+    "member_notes.exportable": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

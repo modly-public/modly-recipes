@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome",
+  "name": "Boost celebration message",
+  "description": "Posts a special embed in #announcements when someone boosts.",
+  "settings": {
+    "welcome.boostEnabled": true,
+    "welcome.boostChannelId": "{channel:announcements}",
+    "welcome.boostMessage": "i18n:welcome.boostMessage"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

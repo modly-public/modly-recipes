@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "moderation",
+  "name": "Auto-escalate at 10 points",
+  "description": "Auto-timeout members who hit 10 warn-points within decay window.",
+  "settings": {
+    "moderation.autoEscalateAtPoints": 10,
+    "moderation.escalationAction": "timeout",
+    "moderation.escalationDurationSec": 3600
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

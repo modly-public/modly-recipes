@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "games",
+  "name": "Trivia-only loadout",
+  "description": "Restrict games module to trivia only.",
+  "settings": {
+    "games.allowedGames": [
+      "trivia"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

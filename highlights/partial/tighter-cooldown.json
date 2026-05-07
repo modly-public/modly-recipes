@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "highlights",
+  "name": "30-min cooldown",
+  "description": "Tighter cooldown to reduce notification spam.",
+  "settings": {
+    "highlights.cooldownMin": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

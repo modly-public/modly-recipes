@@ -1,0 +1,33 @@
+{
+  "name": "Suggestion-to-thread pipeline",
+  "kind": "engagement-flow",
+  "description": "Turns every message in #suggestions into a discussion thread with up/down vote buttons, and re-posts top-voted suggestions of the week into a staff review channel.",
+  "module": "engagement",
+  "config": {
+    "sourceChannelId": "SUGGESTIONS_CHANNEL_ID",
+    "createThread": {
+      "enabled": true,
+      "nameTemplateKey": "i18n:engagement.suggestion.thread_name",
+      "autoArchiveMin": 1440
+    },
+    "voteButtons": [
+      { "id": "up", "labelKey": "i18n:engagement.suggestion.vote_up", "emoji": "⬆️", "weight": 1 },
+      { "id": "down", "labelKey": "i18n:engagement.suggestion.vote_down", "emoji": "⬇️", "weight": -1 }
+    ],
+    "weeklyDigest": {
+      "schedule": { "cron": "0 16 * * FRI", "timezone": "server" },
+      "channelId": "STAFF_DIGEST_CHANNEL_ID",
+      "topN": 5,
+      "embed": {
+        "titleKey": "i18n:engagement.suggestion.weekly_title",
+        "color": 5793266,
+        "footerKey": "i18n:engagement.suggestion.weekly_footer"
+      }
+    },
+    "automod": {
+      "blockSelfVote": true,
+      "minScoreForReview": 10
+    }
+  },
+  "i18nNotes": "Thread name template uses placeholders like {message.shortContent}; copy keyed."
+}

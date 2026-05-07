@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "forms",
+  "name": "Forms \u2014 default",
+  "description": "Forms module enabled with sensible defaults.",
+  "settings": {
+    "forms.enabled": true,
+    "forms.editorRoleId": "{role:mods}",
+    "forms.defaultReviewChannelId": "{channel:applications}",
+    "forms.threadPerSubmission": true,
+    "forms.allowAttachments": true,
+    "forms.dmDecision": true,
+    "forms.maxFormsPerGuild": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:applications}"
+    ]
+  }
+}

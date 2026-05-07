@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "forms",
+  "name": "Server feedback form",
+  "description": "Anonymous-friendly community feedback for owners.",
+  "settings": {},
+  "content": [
+    {
+      "type": "form",
+      "name": "server-feedback-form",
+      "title": "i18n:forms.feedback.title",
+      "buttonLabel": "i18n:forms.feedback.button",
+      "reviewChannelId": "{channel:feedback}",
+      "approverRoleIds": [
+        "{role:owners}"
+      ],
+      "perUserLimit": 0,
+      "anonymousReview": true,
+      "questions": [
+        {
+          "id": "category",
+          "label": "i18n:forms.feedback.q.category",
+          "kind": "short",
+          "required": true,
+          "maxLength": 80
+        },
+        {
+          "id": "message",
+          "label": "i18n:forms.feedback.q.message",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 2000
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

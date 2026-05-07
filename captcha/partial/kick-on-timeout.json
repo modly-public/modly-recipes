@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "captcha",
+  "name": "Kick on captcha timeout",
+  "description": "Members who don't solve within the deadline are kicked.",
+  "settings": {
+    "captcha.kickOnTimeout": true,
+    "captcha.timeoutMinutes": 5
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

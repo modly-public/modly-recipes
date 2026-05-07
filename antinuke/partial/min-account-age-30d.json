@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "antinuke",
+  "name": "Minimum account age 30 days",
+  "description": "Bumps the join filter so new accounts can't trip antinuke from privileged actions.",
+  "settings": {
+    "antinuke.minAccountDays": 30,
+    "antinuke.minServerDays": 1
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

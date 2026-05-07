@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "leveling",
+  "name": "Leveling \u2014 strict",
+  "description": "Slow XP, anti-farm aggressive, no reaction XP, decay on.",
+  "settings": {
+    "leveling.enabled": true,
+    "leveling.announceMode": "dm",
+    "leveling.messageXpEnabled": true,
+    "leveling.voiceXpEnabled": true,
+    "leveling.reactionXpEnabled": false,
+    "leveling.publicLeaderboard": true,
+    "leveling.textCooldownSec": 120,
+    "leveling.textXpMin": 5,
+    "leveling.textXpMax": 10,
+    "leveling.voiceXpPerMin": 3,
+    "leveling.voiceRequireUnmuted": true,
+    "leveling.voiceMinUsersInChannel": 3,
+    "leveling.minMessageLength": 8,
+    "leveling.burstThreshold": 6,
+    "leveling.burstWindowSec": 60,
+    "leveling.farmFreezeMin": 60,
+    "leveling.uniqueWordsMin": 4,
+    "leveling.duplicateWindowSec": 600,
+    "leveling.duplicateMax": 2,
+    "leveling.decayPercentPerWeek": 5,
+    "leveling.decayInactiveDays": 7,
+    "leveling.weekendBoost": 1
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

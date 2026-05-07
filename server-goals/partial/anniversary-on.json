@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "server-goals",
+  "name": "Server anniversary",
+  "description": "Auto-celebrate the server's creation date each year.",
+  "settings": {
+    "server_goals.anniversaryEnabled": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Starboard with reaction-threshold ramp",
+  "kind": "engagement-flow",
+  "description": "Starboard with a self-tuning threshold: starts at 5 stars to be featured, raises by 1 each time the server crosses 1000 active members. Prevents the same handful of regulars from dominating once the community grows.",
+  "module": "engagement",
+  "config": {
+    "starboardChannelId": "STARBOARD_CHANNEL_ID",
+    "emoji": "⭐",
+    "baseThreshold": 5,
+    "ramp": {
+      "perActiveMembers": 1000,
+      "increment": 1,
+      "max": 25
+    },
+    "embed": {
+      "color": 16766720,
+      "titleKey": "i18n:engagement.starboard.title",
+      "footerKey": "i18n:engagement.starboard.footer",
+      "showJumpLink": true
+    },
+    "exclusions": {
+      "channelIds": ["NSFW_CHANNEL_ID", "STAFF_CHANNEL_ID"],
+      "ignoreSelfStars": true,
+      "minMessageAgeMin": 0,
+      "maxMessageAgeMin": 4320
+    }
+  },
+  "i18nNotes": "Starboard embed title and footer keyed; user message content is featured as-is (already user-authored)."
+}

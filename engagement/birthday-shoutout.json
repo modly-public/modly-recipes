@@ -1,0 +1,29 @@
+{
+  "name": "Birthday auto-shoutout",
+  "kind": "engagement-flow",
+  "description": "Daily check (09:00 server time) for any opted-in members whose birthday matches today; posts a shoutout in #general and assigns a 24h Birthday role with a custom color.",
+  "module": "engagement",
+  "schedule": { "cron": "0 9 * * *", "timezone": "server" },
+  "config": {
+    "optInCommand": "/birthday set",
+    "optOutCommand": "/birthday clear",
+    "channelId": "GENERAL_CHANNEL_ID",
+    "messageKey": "i18n:engagement.birthday.shoutout",
+    "embed": {
+      "titleKey": "i18n:engagement.birthday.title",
+      "color": 16745728,
+      "thumbnailUrlPlaceholder": "{user.avatarUrl}",
+      "footerKey": "i18n:engagement.birthday.footer"
+    },
+    "tempRole": {
+      "roleId": "BIRTHDAY_ROLE_ID",
+      "durationHours": 24
+    },
+    "privacy": {
+      "showAge": false,
+      "requireOptIn": true,
+      "allowDmOnly": false
+    }
+  },
+  "i18nNotes": "Shoutout copy keyed. Recipe never asks for or stores birth year unless privacy.showAge is enabled by the operator."
+}

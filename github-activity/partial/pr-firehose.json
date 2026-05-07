@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "github-activity",
+  "name": "PR firehose",
+  "description": "All PR events including comments + review.",
+  "settings": {
+    "github_activity.events": [
+      "pull_request",
+      "pull_request_review",
+      "pull_request_review_comment"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

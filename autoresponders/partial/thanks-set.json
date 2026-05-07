@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "autoresponders",
+  "name": "Thanks autoresponders",
+  "description": "Friendly auto-replies on 'thanks/ty/thx' patterns.",
+  "settings": {},
+  "content": [
+    {
+      "type": "autoresponder",
+      "name": "thanks",
+      "match": [
+        "thanks",
+        "thx",
+        "ty",
+        "tysm",
+        "thank you"
+      ],
+      "kind": "react",
+      "emoji": "\ud83d\udc9c"
+    },
+    {
+      "type": "autoresponder",
+      "name": "youre-welcome-bot",
+      "match": [
+        "youre welcome",
+        "you're welcome",
+        "yw"
+      ],
+      "kind": "react",
+      "emoji": "\ud83d\ude4c"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

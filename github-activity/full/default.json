@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "github-activity",
+  "name": "GitHub activity \u2014 default",
+  "description": "Posts repo events (push, PR, issue, release) into a dev channel.",
+  "settings": {
+    "github_activity.enabled": true,
+    "github_activity.postChannelId": "{channel:dev}",
+    "github_activity.events": [
+      "push",
+      "pull_request",
+      "issue",
+      "release",
+      "fork",
+      "watch"
+    ],
+    "github_activity.mentionRoleId": "{role:devs}",
+    "github_activity.compactMode": false,
+    "github_activity.embedColor": 1844892
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:devs}"
+    ],
+    "channels": [
+      "{channel:dev}"
+    ]
+  }
+}

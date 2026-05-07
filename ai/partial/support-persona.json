@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai",
+  "name": "AI-support system prompt",
+  "description": "Adds an AI-support system prompt for help channels.",
+  "settings": {
+    "ai.systemPromptKey": "i18n:ai.system_prompt.support"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

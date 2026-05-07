@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "relay",
+  "name": "Incident relay",
+  "description": "Relay between #incidents and a private staff thread.",
+  "settings": {},
+  "content": [
+    {
+      "type": "relay",
+      "name": "incident",
+      "from": "{channel:incidents}",
+      "to": "{channel:mod-private}",
+      "mode": "mirror"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

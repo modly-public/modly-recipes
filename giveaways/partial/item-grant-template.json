@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "giveaways",
+  "name": "Item-grant template",
+  "description": "Generic 'enter to win' card \u2014 operator fills prize text.",
+  "settings": {},
+  "content": [
+    {
+      "type": "giveaways.template",
+      "name": "item-grant",
+      "title": "i18n:giveaways.itemTitle",
+      "prize": "PRIZE_PLACEHOLDER",
+      "durationHours": 48,
+      "winners": 1
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

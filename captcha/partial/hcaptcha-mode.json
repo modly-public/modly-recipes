@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "captcha",
+  "name": "Switch to hCaptcha",
+  "description": "Upgrades from image to hCaptcha challenge.",
+  "settings": {
+    "captcha.kind": "hcaptcha",
+    "captcha.maxAttempts": 2
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

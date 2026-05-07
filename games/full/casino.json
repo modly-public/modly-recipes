@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "games",
+  "name": "Games \u2014 casino",
+  "description": "Betting + economy hooks active. Large pots.",
+  "settings": {
+    "games.enabled": true,
+    "games.allowedGames": [
+      "blackjack",
+      "slots",
+      "roulette",
+      "highlow",
+      "poker",
+      "baccarat",
+      "craps"
+    ],
+    "games.cooldownSec": 5,
+    "games.minBet": 100,
+    "games.maxBet": 100000,
+    "games.allowChannelGames": true,
+    "games.leaderboardEnabled": true,
+    "games.allowedChannels": [
+      "{channel:casino}"
+    ],
+    "games.allowSelfBalance": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:casino}"
+    ]
+  }
+}

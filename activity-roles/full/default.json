@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "activity-roles",
+  "name": "Activity roles \u2014 default",
+  "description": "Auto-grant role for active members; remove after 14 days inactive.",
+  "settings": {
+    "activity_roles.enabled": true,
+    "activity_roles.defaultGraceDays": 14,
+    "activity_roles.dmOnStrip": true,
+    "activity_roles.dryRun": false,
+    "activity_roles.exemptRoles": [
+      "{role:mods}"
+    ],
+    "activity_roles.rules": [
+      {
+        "name": "active",
+        "roleId": "{role:active}",
+        "minMessages30d": 30,
+        "minVoiceMin30d": 60,
+        "graceDays": 14
+      }
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:active}",
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

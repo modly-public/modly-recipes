@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "personas",
+  "name": "Study-coach persona",
+  "description": "Adds a calm, structured study-coach persona for #study channels.",
+  "settings": {},
+  "content": [
+    {
+      "type": "persona",
+      "name": "study-coach",
+      "promptKey": "i18n:personas.study_coach",
+      "channels": [
+        "{channel:study}"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

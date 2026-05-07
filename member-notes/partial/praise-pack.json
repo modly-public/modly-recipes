@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "member-notes",
+  "name": "Praise notes pack",
+  "description": "Adds 'praise' / 'great-help' / 'helpful' tags + DM on praise.",
+  "settings": {
+    "member_notes.tagAllowList": [
+      "praise",
+      "great-help",
+      "helpful",
+      "warn",
+      "watch"
+    ],
+    "member_notes.dmMemberOnPraise": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "AI translate non-English to English in support",
+  "kind": "ai-automation",
+  "description": "Detects the language of every message in #support; if it isn't English, posts a threaded English translation as a bot reply so volunteer responders can help. Translation is cached per (hash, lang) for 24h to keep AI cost down.",
+  "module": "ai",
+  "config": {
+    "channelIds": ["SUPPORT_CHANNEL_ID"],
+    "languageDetection": {
+      "minConfidence": 0.85,
+      "skipIfLang": ["en", "en-US", "en-GB"],
+      "minMessageLength": 12
+    },
+    "translation": {
+      "targetLang": "en",
+      "persona": "translator",
+      "promptKey": "i18n:ai.translate.prompt",
+      "postAs": "thread_reply",
+      "headerKey": "i18n:ai.translate.header",
+      "footerKey": "i18n:ai.translate.footer"
+    },
+    "cache": {
+      "ttlSec": 86400
+    },
+    "ratelimit": {
+      "perUserPerHour": 30
+    },
+    "controls": {
+      "disableForRoleIds": ["NO_AI_ROLE_ID"]
+    }
+  },
+  "i18nNotes": "Header / footer / prompt are i18n keys. Translation output itself is generated."
+}

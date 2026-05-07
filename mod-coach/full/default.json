@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "mod-coach",
+  "name": "Mod-Coach \u2014 default",
+  "description": "AI mod-coach gives staff suggested actions on edge-case incidents.",
+  "settings": {
+    "mod_coach.enabled": true,
+    "mod_coach.suggestActions": true,
+    "mod_coach.dailyDigest": true,
+    "mod_coach.digestChannelId": "{channel:staff-coach}",
+    "mod_coach.digestTime": "09:00",
+    "mod_coach.digestTimezone": "UTC",
+    "mod_coach.coachLevel": "balanced",
+    "mod_coach.suggestionConfidenceMin": 0.7,
+    "mod_coach.allowAutoApply": false,
+    "mod_coach.autoApplyMinConfidence": 0.95,
+    "mod_coach.toneFeedback": true,
+    "mod_coach.consistencyCheck": true,
+    "mod_coach.coachReviewWeekly": true,
+    "mod_coach.escalateUnresolved": true,
+    "mod_coach.escalateAfterHours": 12,
+    "mod_coach.staffRoleId": "{role:mods}",
+    "mod_coach.maxSuggestionsPerHour": 10,
+    "mod_coach.includeUserHistory": true,
+    "mod_coach.includeServerContext": true,
+    "mod_coach.languageFallback": "en",
+    "mod_coach.dryRun": false,
+    "mod_coach.embedColor": 5814783,
+    "mod_coach.welcomeNew": true,
+    "mod_coach.scoringRubric": "standard",
+    "mod_coach.scoringWeights": {
+      "severity": 0.4,
+      "context": 0.3,
+      "history": 0.3
+    },
+    "mod_coach.privateNotes": true,
+    "mod_coach.useReasoningModel": false,
+    "mod_coach.modelKey": "default",
+    "mod_coach.maxTokens": 1500,
+    "mod_coach.temperature": 0.3
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:staff-coach}"
+    ]
+  }
+}

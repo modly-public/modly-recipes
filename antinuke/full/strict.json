@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "antinuke",
+  "name": "Antinuke \u2014 strict",
+  "description": "Lockdown-grade antinuke for raid-prone or doxx-target servers. Aggressive thresholds, panic mode pre-armed, dual response required for dangerous actions.",
+  "settings": {
+    "antinuke.armed": true,
+    "antinuke.action": "ban",
+    "antinuke.alertChannelId": "{channel:antinuke-alerts}",
+    "antinuke.alertRoleId": "{role:owners}",
+    "antinuke.dmOffender": false,
+    "antinuke.dmOwner": true,
+    "antinuke.dualResponse": true,
+    "antinuke.cooldownMin": 5,
+    "antinuke.minAccountDays": 30,
+    "antinuke.minServerDays": 1,
+    "antinuke.protectSelf": true,
+    "antinuke.dehoist.enabled": true,
+    "antinuke.escalate.enabled": true,
+    "antinuke.escalate.windowHours": 72,
+    "antinuke.lockdown.autoEndMinutes": 120,
+    "antinuke.lockdown.tripDetections": 1,
+    "antinuke.lockdown.channels": [],
+    "antinuke.panicMode.enabled": true,
+    "antinuke.panicMode.level": "hard",
+    "antinuke.panicMode.minutes": 60,
+    "antinuke.panicMode.disableDms": true,
+    "antinuke.panicMode.lockChannels": true,
+    "antinuke.panicMode.lockInvites": true,
+    "antinuke.panicMode.triggers": [
+      "raid.score>=50",
+      "channel.delete>=2"
+    ],
+    "antinuke.pingFlood.threshold": 3,
+    "antinuke.pingFlood.windowMs": 10000,
+    "antinuke.quarantine.autoCreate": true,
+    "antinuke.quarantine.allowChannelEnabled": false,
+    "antinuke.quarantine.allowChannelIds": [],
+    "antinuke.quarantine.deniedPerms": [
+      "SendMessages",
+      "AddReactions",
+      "Speak",
+      "Connect",
+      "ReadMessageHistory"
+    ],
+    "antinuke.raid.scoreThreshold": 40,
+    "antinuke.recovery.autoRotate": true,
+    "antinuke.recovery.requireGeoMatch": true,
+    "antinuke.recovery.trustees": [],
+    "antinuke.recovery.ttlMinutes": 30,
+    "antinuke.rollback.enabled": true,
+    "antinuke.rollback.actions": [
+      "channel.delete",
+      "channel.create",
+      "role.delete",
+      "role.create",
+      "webhook.create",
+      "kick",
+      "ban"
+    ],
+    "antinuke.rollback.windowMinutes": 30,
+    "antinuke.snapshot.autoRevert": true,
+    "antinuke.snapshot.preRotateVanity": true,
+    "antinuke.staffRoleIds": [
+      "{role:mods}"
+    ],
+    "antinuke.whitelist": [],
+    "antinuke.whitelistBots": false,
+    "antinuke.whitelistRoles": [],
+    "antinuke.federation.enforce": true,
+    "antinuke.federation.action": "ban",
+    "antinuke.federation.publish": true,
+    "antinuke.exemptCategoryIds": [],
+    "antinuke.alertChannelsExtra": []
+  },
+  "dependencies": {
+    "roles": [
+      "{role:owners}",
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:antinuke-alerts}"
+    ]
+  },
+  "content": []
+}

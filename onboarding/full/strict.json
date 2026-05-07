@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "onboarding",
+  "name": "Onboarding \u2014 strict",
+  "description": "Hard-gate everything until onboarding completed, kick on timeout.",
+  "settings": {
+    "onboarding.enabled": true,
+    "onboarding.startChannelId": "{channel:welcome}",
+    "onboarding.completedRoleId": "{role:member}",
+    "onboarding.requireRulesAck": true,
+    "onboarding.gateUntilComplete": true,
+    "onboarding.timeoutHours": 24,
+    "onboarding.kickOnTimeout": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}"
+    ],
+    "channels": [
+      "{channel:welcome}"
+    ]
+  }
+}

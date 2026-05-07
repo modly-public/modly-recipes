@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "time-capsule",
+  "name": "Time capsule \u2014 default",
+  "description": "Sealed-message time capsules, mod-only seal, default 1y.",
+  "settings": {
+    "time_capsule.enabled": true,
+    "time_capsule.maxDurationDays": 365,
+    "time_capsule.minDurationDays": 1,
+    "time_capsule.notifyChannelId": "{channel:time-capsule}",
+    "time_capsule.requireSealerRole": "{role:mods}",
+    "time_capsule.allowImages": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:time-capsule}"
+    ]
+  }
+}

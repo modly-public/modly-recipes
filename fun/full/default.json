@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "fun",
+  "name": "Fun \u2014 default",
+  "description": "Standard fun module: 8ball, dice, coin, ascii art.",
+  "settings": {
+    "fun.enabled": true,
+    "fun.commands": [
+      "8ball",
+      "dice",
+      "coin",
+      "ascii",
+      "iq",
+      "pp",
+      "ship",
+      "joke",
+      "pun"
+    ],
+    "fun.cooldownSec": 5
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

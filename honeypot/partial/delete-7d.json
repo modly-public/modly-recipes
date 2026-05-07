@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "honeypot",
+  "name": "Delete 7 days of messages on hit",
+  "description": "Cleans up past spam from the offender.",
+  "settings": {
+    "honeypot.banDeleteDays": 7
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

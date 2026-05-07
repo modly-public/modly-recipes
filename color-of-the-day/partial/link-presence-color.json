@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "color-of-the-day",
+  "name": "Link presence to color",
+  "description": "Links member's Discord presence (online/idle/dnd) to a colour role tier.",
+  "settings": {},
+  "content": [
+    {
+      "type": "color_of_the_day.presence_map",
+      "online": "{role:color-online}",
+      "idle": "{role:color-idle}",
+      "dnd": "{role:color-dnd}"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

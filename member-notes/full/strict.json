@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "member-notes",
+  "name": "Member notes \u2014 audit",
+  "description": "Tighter retention, federation share on, audit log on every read.",
+  "settings": {
+    "member_notes.enabled": true,
+    "member_notes.viewableBy": "mods",
+    "member_notes.maxNotesPerMember": 500,
+    "member_notes.includeOnProfile": true,
+    "member_notes.requireTag": true,
+    "member_notes.exportable": true,
+    "member_notes.archiveAfterDays": 1825,
+    "member_notes.shareWithFederation": true,
+    "member_notes.viewerRoleId": "{role:mods}",
+    "member_notes.auditOnRead": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "ai",
+  "name": "AI \u2014 strict",
+  "description": "Mods only, very low rate-limit, no images, hard PII redaction.",
+  "settings": {
+    "ai.enabled": true,
+    "ai.allowedRoleId": "{role:mods}",
+    "ai.maxTokensPerCall": 800,
+    "ai.maxCallsPerHourPerUser": 5,
+    "ai.allowImage": false,
+    "ai.toxicityFilter": true,
+    "ai.dataPiiRedaction": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

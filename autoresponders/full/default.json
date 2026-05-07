@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "autoresponders",
+  "name": "Autoresponders \u2014 default",
+  "description": "Module on; per-trigger cooldown; reply-mode default.",
+  "settings": {
+    "autoresponders.enabled": true,
+    "autoresponders.cooldownSec": 30,
+    "autoresponders.maxPerGuild": 100,
+    "autoresponders.editorRoleId": "{role:mods}",
+    "autoresponders.matchMode": "wholeword"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

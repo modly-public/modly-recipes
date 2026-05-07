@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Repeat-spam pack",
+  "description": "Catches users sending the same message in a tight window.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Repeat spam",
+      "kind": "REPEAT_SPAM",
+      "config": {
+        "window": 8,
+        "max": 3
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "timeout",
+            "durationSec": 600
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 50
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

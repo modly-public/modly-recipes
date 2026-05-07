@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "voice-clipper",
+  "name": "Auto-transcript clips",
+  "description": "Generates a text transcript alongside each clip.",
+  "settings": {
+    "voice_clipper.includeTranscript": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

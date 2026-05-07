@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "social-alerts",
+  "name": "Twitch livestream pack",
+  "description": "Auto-announces Twitch streams from the configured channels.",
+  "settings": {},
+  "content": [
+    {
+      "type": "social_alert",
+      "platform": "twitch",
+      "channelHandle": "TWITCH_HANDLE_PLACEHOLDER",
+      "postChannelId": "{channel:announcements}",
+      "mentionRoleId": "{role:ping-streams}"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

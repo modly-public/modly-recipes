@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "captcha",
+  "name": "Captcha \u2014 community",
+  "description": "Friendly button-press captcha, generous timeout, no kicks.",
+  "settings": {
+    "captcha.enabled": true,
+    "captcha.kind": "button",
+    "captcha.timeoutMinutes": 30,
+    "captcha.unverifiedRoleId": "{role:unverified}",
+    "captcha.verifiedRoleId": "{role:verified}",
+    "captcha.channelId": "{channel:verify}",
+    "captcha.kickOnTimeout": false,
+    "captcha.banOnFail": false,
+    "captcha.maxAttempts": 5,
+    "captcha.requireOnRejoin": false,
+    "captcha.minAccountDays": 0,
+    "captcha.dmFallback": true,
+    "captcha.exemptRoles": [
+      "{role:mods}"
+    ],
+    "captcha.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:unverified}",
+      "{role:verified}",
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:verify}"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "discovery",
+  "name": "Discovery tags \u2014 tech",
+  "description": "Tags the server as tech/dev/programming.",
+  "settings": {
+    "discovery.tags": [
+      "tech",
+      "dev",
+      "programming",
+      "community"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

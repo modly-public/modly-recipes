@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "github-activity",
+  "name": "GitHub activity \u2014 compact",
+  "description": "Single-line summaries instead of full embeds. Less noise.",
+  "settings": {
+    "github_activity.enabled": true,
+    "github_activity.postChannelId": "{channel:dev}",
+    "github_activity.events": [
+      "push",
+      "pull_request",
+      "release"
+    ],
+    "github_activity.compactMode": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:dev}"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "channel-utils",
+  "name": "Channel utils \u2014 default",
+  "description": "Slowmode helpers + auto-purge windows.",
+  "settings": {
+    "channel_utils.enabled": true,
+    "channel_utils.slowmodeAuto": true,
+    "channel_utils.autoPurgeChannels": [],
+    "channel_utils.autoPurgeMaxAgeHours": 168
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

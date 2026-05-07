@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "highlights",
+  "name": "Highlights \u2014 default",
+  "description": "Personal-keyword DM highlights with cooldown.",
+  "settings": {
+    "highlights.enabled": true,
+    "highlights.maxKeywordsPerUser": 10,
+    "highlights.cooldownMin": 5,
+    "highlights.requireMentionContext": false,
+    "highlights.exemptChannels": [],
+    "highlights.minMessageLength": 0
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

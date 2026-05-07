@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "time-capsule",
+  "name": "5-year capsule window",
+  "description": "Allows capsules up to 5 years out.",
+  "settings": {
+    "time_capsule.maxDurationDays": 1825
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

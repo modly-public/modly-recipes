@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "activity-roles",
+  "name": "Tiered active/regular/legend",
+  "description": "Adds 3-tier activity ladder.",
+  "settings": {
+    "activity_roles.rules": [
+      {
+        "name": "active",
+        "roleId": "{role:active}",
+        "minMessages30d": 30,
+        "graceDays": 14
+      },
+      {
+        "name": "regular",
+        "roleId": "{role:regular}",
+        "minMessages30d": 100,
+        "graceDays": 14
+      },
+      {
+        "name": "legend",
+        "roleId": "{role:legend}",
+        "minMessages30d": 500,
+        "graceDays": 30
+      }
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

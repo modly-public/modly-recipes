@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "voice-clipper",
+  "name": "Consent-required clipping",
+  "description": "Members must opt in via the consent role before they can be clipped.",
+  "settings": {
+    "voice_clipper.requireConsent": true,
+    "voice_clipper.consentRoleId": "{role:vc-consent}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

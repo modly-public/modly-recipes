@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "captcha",
+  "name": "DM fallback on locked channels",
+  "description": "If verify channel is unavailable, captcha is delivered via DM.",
+  "settings": {
+    "captcha.dmFallback": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "evader-detection",
+  "name": "Evader detection \u2014 default",
+  "description": "Watches for ban-evasion signals (alts, fingerprints, IP-like patterns).",
+  "settings": {
+    "evader_detection.enabled": true,
+    "evader_detection.action": "alert",
+    "evader_detection.alertChannelId": "{channel:mod-log}",
+    "evader_detection.alertRoleId": "{role:mods}",
+    "evader_detection.fingerprintMatch": true,
+    "evader_detection.usernameSimilarity": 0.85,
+    "evader_detection.avatarSimilarity": 0.9,
+    "evader_detection.minScore": 0.7,
+    "evader_detection.scope": "global",
+    "evader_detection.cooldownDays": 30,
+    "evader_detection.exemptRoles": [
+      "{role:mods}"
+    ],
+    "evader_detection.lookbackDays": 90,
+    "evader_detection.federationSync": true,
+    "evader_detection.dmOffender": false,
+    "evader_detection.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

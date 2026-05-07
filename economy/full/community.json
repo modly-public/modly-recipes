@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "economy",
+  "name": "Economy \u2014 community",
+  "description": "No gambling, light economy, big leaderboard.",
+  "settings": {
+    "economy.enabled": true,
+    "economy.dailyEnabled": true,
+    "economy.dailyAmount": 100,
+    "economy.workEnabled": true,
+    "economy.allowGambling": false,
+    "economy.allowSteal": false,
+    "economy.shopEnabled": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

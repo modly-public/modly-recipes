@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "personas",
+  "name": "Tech-mentor persona",
+  "description": "Adds a senior-engineer-mentor persona for #help / #dev.",
+  "settings": {},
+  "content": [
+    {
+      "type": "persona",
+      "name": "tech-mentor",
+      "promptKey": "i18n:personas.tech_mentor",
+      "channels": [
+        "{channel:help}",
+        "{channel:dev}"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

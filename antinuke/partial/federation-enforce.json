@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "antinuke",
+  "name": "Federation enforcement on",
+  "description": "Trust antinuke federation lookups for cross-server bans.",
+  "settings": {
+    "antinuke.federation.enforce": true,
+    "antinuke.federation.action": "ban",
+    "antinuke.federation.publish": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

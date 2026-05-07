@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "giveaways",
+  "name": "Booster bonus entries x3",
+  "description": "Boosters automatically get 3 entries.",
+  "settings": {
+    "giveaways.bonusEntriesByRole": {
+      "{role:booster}": 3
+    }
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

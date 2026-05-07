@@ -1,0 +1,40 @@
+{
+  "name": "Tiered welcome with role picker",
+  "kind": "welcome-flow",
+  "description": "Two-step welcome: greet on join in #welcome with a button that posts a role-picker in a private thread. Once the user picks a role, they're moved to the MEMBER tier and the picker thread auto-archives.",
+  "module": "welcome",
+  "config": {
+    "channelId": "WELCOME_CHANNEL_ID",
+    "messagePool": "i18n:welcome.warm_pool",
+    "joinAction": {
+      "addRoleId": "UNVERIFIED_ROLE_ID"
+    },
+    "card": {
+      "embedRecipe": "embeds/welcome-card.json",
+      "components": [
+        {
+          "type": "button",
+          "labelKey": "i18n:welcome.button.pick_roles",
+          "style": "primary",
+          "action": "open_role_picker_thread"
+        }
+      ]
+    },
+    "rolePicker": {
+      "thread": { "private": true, "autoArchiveMin": 60 },
+      "promptKey": "i18n:welcome.role_picker.prompt",
+      "options": [
+        { "roleId": "GAMER_ROLE_ID", "labelKey": "i18n:roles.gamer", "emoji": "🎮" },
+        { "roleId": "ART_ROLE_ID", "labelKey": "i18n:roles.art", "emoji": "🎨" },
+        { "roleId": "MUSIC_ROLE_ID", "labelKey": "i18n:roles.music", "emoji": "🎵" },
+        { "roleId": "STUDY_ROLE_ID", "labelKey": "i18n:roles.study", "emoji": "📚" }
+      ],
+      "onComplete": {
+        "removeRoleId": "UNVERIFIED_ROLE_ID",
+        "addRoleId": "MEMBER_ROLE_ID",
+        "archiveThread": true
+      }
+    }
+  },
+  "i18nNotes": "Every label routes through the bot's locale system. Replace placeholder role IDs after import."
+}

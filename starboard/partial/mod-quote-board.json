@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "starboard",
+  "name": "Mod-quote board",
+  "description": "Dedicated board for star-pinned moderator messages.",
+  "settings": {},
+  "content": [
+    {
+      "type": "starboard.board",
+      "name": "mod-quotes",
+      "channelId": "{channel:mod-quotes}",
+      "emoji": "\ud83d\udccc",
+      "threshold": 1,
+      "scopeRoles": [
+        "{role:mods}"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

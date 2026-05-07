@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "suggestions",
+  "name": "Suggestions \u2014 default",
+  "description": "Voting buttons, thread-per-suggestion, mod review.",
+  "settings": {
+    "suggestions.enabled": true,
+    "suggestions.channelId": "{channel:suggestions}",
+    "suggestions.threadPerSuggestion": true,
+    "suggestions.upvoteEmoji": "\ud83d\udc4d",
+    "suggestions.downvoteEmoji": "\ud83d\udc4e",
+    "suggestions.voteThreshold": 5,
+    "suggestions.requireApproval": false,
+    "suggestions.reviewChannelId": "{channel:mod-suggestions}",
+    "suggestions.notifyAuthor": true,
+    "suggestions.allowSelfVote": false,
+    "suggestions.cooldownMin": 60,
+    "suggestions.maxOpenPerUser": 3,
+    "suggestions.statusTags": [
+      "pending",
+      "approved",
+      "denied",
+      "implemented"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:suggestions}",
+      "{channel:mod-suggestions}"
+    ]
+  }
+}

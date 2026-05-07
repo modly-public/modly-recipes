@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "suggestions",
+  "name": "Mod review required",
+  "description": "Suggestions queue in a mod channel before going public.",
+  "settings": {
+    "suggestions.requireApproval": true,
+    "suggestions.reviewChannelId": "{channel:mod-suggestions}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

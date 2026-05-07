@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "social-alerts",
+  "name": "RSS \u2014 tech niche pack",
+  "description": "RSS feeds for tech blogs (HN, Verge, ArsTechnica).",
+  "settings": {},
+  "content": [
+    {
+      "type": "social_alert",
+      "platform": "rss",
+      "feedUrl": "https://news.ycombinator.com/rss",
+      "postChannelId": "{channel:tech-news}"
+    },
+    {
+      "type": "social_alert",
+      "platform": "rss",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "postChannelId": "{channel:tech-news}"
+    },
+    {
+      "type": "social_alert",
+      "platform": "rss",
+      "feedUrl": "https://arstechnica.com/feed/",
+      "postChannelId": "{channel:tech-news}"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

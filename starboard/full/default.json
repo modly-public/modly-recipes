@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "starboard",
+  "name": "Starboard \u2014 default",
+  "description": "Standard 5-star threshold board in #starboard.",
+  "settings": {
+    "starboard.enabled": true,
+    "starboard.channelId": "{channel:starboard}",
+    "starboard.threshold": 5,
+    "starboard.emoji": "\u2b50",
+    "starboard.allowNsfw": false,
+    "starboard.allowSelfStar": false,
+    "starboard.minMessageAgeSec": 0,
+    "starboard.maxMessageAgeDays": 30,
+    "starboard.allowedChannels": [],
+    "starboard.blockedChannels": [],
+    "starboard.blockedAuthors": [],
+    "starboard.embedColor": 16766720,
+    "starboard.includeAttachments": true,
+    "starboard.requireUniqueVoters": true,
+    "starboard.cooldownSec": 0
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:starboard}"
+    ]
+  }
+}

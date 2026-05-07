@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "polls",
+  "name": "Polls \u2014 default",
+  "description": "Slash-command polls, default 24h, anonymous off.",
+  "settings": {
+    "polls.enabled": true,
+    "polls.defaultDurationHours": 24,
+    "polls.allowAnonymous": false,
+    "polls.maxOptions": 10,
+    "polls.allowMultipleChoice": false,
+    "polls.requireRoleId": "",
+    "polls.announceChannelId": "{channel:polls}",
+    "polls.closeMessage": "i18n:polls.closeMessage",
+    "polls.allowEdit": false,
+    "polls.threadDiscussion": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": [
+      "{channel:polls}"
+    ]
+  }
+}

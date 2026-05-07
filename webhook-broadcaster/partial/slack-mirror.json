@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "webhook-broadcaster",
+  "name": "Slack mirror",
+  "description": "Mirrors mod actions to a Slack incoming webhook.",
+  "settings": {},
+  "content": [
+    {
+      "type": "webhook_broadcaster",
+      "name": "slack-mirror",
+      "destination": "slack",
+      "events": [
+        "mod.action",
+        "antinuke.alert"
+      ],
+      "url": "SLACK_WEBHOOK_URL_PLACEHOLDER"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

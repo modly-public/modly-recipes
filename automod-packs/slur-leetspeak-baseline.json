@@ -1,0 +1,42 @@
+{
+  "name": "Slur + slur-leetspeak automod baseline",
+  "description": "Drop-in slur baseline that combines the third-tier WORD_BLACKLIST wildcard layer with a regex pattern catching common leetspeak / look-alike obfuscations. Add your own server-specific terms in the placeholders before importing — the defaults are intentionally tame, generic stand-ins.",
+  "rules": [
+    {
+      "name": "Slurs — literal + simple star-out",
+      "kind": "WORD_BLACKLIST",
+      "config": {
+        "wildcard": ["slur1placeholder", "slur2placeholder", "slur3placeholder"],
+        "starWildcard": ["s*lur1", "s*lur2"],
+        "caseSensitive": false
+      },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 12 }] },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "name": "Slurs — leetspeak / lookalike (regex)",
+      "kind": "REGEX_BLACKLIST",
+      "config": {
+        "patterns": [
+          "s[1l!|][uü][rR]1?",
+          "[fph]4[gq]"
+        ],
+        "flags": "i",
+        "patternsAreLookalikes": true
+      },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 15 }] },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "name": "Excessive Unicode lookalikes (zalgo stack)",
+      "kind": "ZALGO_ABUSE",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 4 }] },
+      "scope": {},
+      "priority": 30
+    }
+  ],
+  "i18nNotes": "Placeholders (slur1placeholder etc.) are intentional sentinels. Replace with actual blacklist terms appropriate for your community before enabling."
+}

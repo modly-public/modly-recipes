@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "mod-coach",
+  "name": "Mod-Coach \u2014 community",
+  "description": "Friendly coaching tone, weekly digest only, no auto-apply.",
+  "settings": {
+    "mod_coach.enabled": true,
+    "mod_coach.suggestActions": true,
+    "mod_coach.coachLevel": "lenient",
+    "mod_coach.dailyDigest": false,
+    "mod_coach.coachReviewWeekly": true,
+    "mod_coach.digestChannelId": "{channel:staff-coach}",
+    "mod_coach.toneFeedback": true,
+    "mod_coach.staffRoleId": "{role:mods}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:staff-coach}"
+    ]
+  }
+}

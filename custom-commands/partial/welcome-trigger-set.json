@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "custom-commands",
+  "name": "Welcome trigger set",
+  "description": "Custom commands wired to welcome events: /howdy /greet /intro etc.",
+  "settings": {},
+  "content": [
+    {
+      "type": "custom-command",
+      "name": "howdy",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.howdy"
+    },
+    {
+      "type": "custom-command",
+      "name": "greet",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.greet",
+      "args": [
+        {
+          "name": "user",
+          "type": "user"
+        }
+      ]
+    },
+    {
+      "type": "custom-command",
+      "name": "intro",
+      "kind": "embed",
+      "embedKey": "i18n:custom_commands.intro.body"
+    },
+    {
+      "type": "custom-command",
+      "name": "say-hi",
+      "kind": "text",
+      "responseKey": "i18n:custom_commands.say_hi"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

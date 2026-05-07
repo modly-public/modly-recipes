@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "welcome-messages",
+  "name": "Welcome pool \u2014 study",
+  "description": "Study-server welcome lines (i18n keys).",
+  "settings": {},
+  "content": [
+    {
+      "type": "welcome_messages.pool",
+      "theme": "study",
+      "lines": [
+        "i18n:welcome_messages.study.line1",
+        "i18n:welcome_messages.study.line2",
+        "i18n:welcome_messages.study.line3",
+        "i18n:welcome_messages.study.line4",
+        "i18n:welcome_messages.study.line5"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

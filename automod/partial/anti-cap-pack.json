@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Anti-caps pack",
+  "description": "Removes messages that are mostly uppercase past a length threshold.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "All caps",
+      "kind": "CAP_RATIO",
+      "config": {
+        "ratio": 0.6,
+        "minLen": 10
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 40
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

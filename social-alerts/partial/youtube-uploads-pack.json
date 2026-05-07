@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "social-alerts",
+  "name": "YouTube uploads pack",
+  "description": "Posts new YouTube uploads.",
+  "settings": {},
+  "content": [
+    {
+      "type": "social_alert",
+      "platform": "youtube",
+      "channelHandle": "YOUTUBE_HANDLE_PLACEHOLDER",
+      "postChannelId": "{channel:announcements}"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

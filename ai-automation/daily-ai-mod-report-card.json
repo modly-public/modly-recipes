@@ -1,0 +1,35 @@
+{
+  "name": "Daily AI mod report card",
+  "kind": "ai-automation",
+  "description": "Once a day, asks the AI module to grade the previous 24h of moderator activity (response times, action distribution, appeal outcomes, escalations) and posts a private report card per moderator with constructive feedback.",
+  "module": "ai",
+  "schedule": { "cron": "30 8 * * *", "timezone": "server" },
+  "config": {
+    "deliveryChannel": "dm",
+    "fallbackChannelId": "STAFF_DIGEST_CHANNEL_ID",
+    "audience": {
+      "roleIds": ["MOD_ROLE_ID"],
+      "excludeUserIds": []
+    },
+    "data": {
+      "windowHours": 24,
+      "include": ["actions_taken", "avg_response_time_min", "appeal_overturn_rate", "automod_overrides", "case_notes"]
+    },
+    "ai": {
+      "persona": "coach",
+      "promptKey": "i18n:ai.mod_report_card.prompt",
+      "maxTokens": 600,
+      "tone": "constructive"
+    },
+    "embed": {
+      "titleKey": "i18n:ai.mod_report_card.title",
+      "color": 4886754,
+      "footerKey": "i18n:ai.mod_report_card.footer"
+    },
+    "privacy": {
+      "neverSharePeerComparisons": true,
+      "anonymizeBeforeSend": false
+    }
+  },
+  "i18nNotes": "Title/footer/prompt keyed. Report body is AI-generated."
+}

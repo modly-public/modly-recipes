@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "antinuke",
+  "name": "Panic mode \u2014 armed and ready",
+  "description": "Toggles panic mode triggers and aggressive lockdown without touching the rest of antinuke config.",
+  "settings": {
+    "antinuke.panicMode.enabled": true,
+    "antinuke.panicMode.level": "hard",
+    "antinuke.panicMode.lockChannels": true,
+    "antinuke.panicMode.lockInvites": true,
+    "antinuke.panicMode.disableDms": true,
+    "antinuke.panicMode.minutes": 60,
+    "antinuke.panicMode.triggers": [
+      "raid.score>=50",
+      "channel.delete>=2",
+      "role.delete>=2"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

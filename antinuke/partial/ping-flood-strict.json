@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "antinuke",
+  "name": "Ping flood \u2014 strict",
+  "description": "Tight thresholds for ping-flood detection.",
+  "settings": {
+    "antinuke.pingFlood.threshold": 3,
+    "antinuke.pingFlood.windowMs": 10000
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

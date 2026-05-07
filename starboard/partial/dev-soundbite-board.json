@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "starboard",
+  "name": "Dev soundbite board",
+  "description": "Dev-channel only, 3-star threshold for funny dev quotes.",
+  "settings": {},
+  "content": [
+    {
+      "type": "starboard.board",
+      "name": "dev-soundbites",
+      "channelId": "{channel:dev-soundbites}",
+      "emoji": "\ud83c\udf99\ufe0f",
+      "threshold": 3,
+      "scopeChannels": [
+        "{channel:dev}"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

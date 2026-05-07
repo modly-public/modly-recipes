@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "webhook-broadcaster",
+  "name": "Discord mirror",
+  "description": "Mirrors selected events to another Discord server's webhook.",
+  "settings": {},
+  "content": [
+    {
+      "type": "webhook_broadcaster",
+      "name": "discord-mirror",
+      "destination": "discord",
+      "events": [
+        "welcome",
+        "leave",
+        "boost"
+      ],
+      "url": "DISCORD_WEBHOOK_URL_PLACEHOLDER"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

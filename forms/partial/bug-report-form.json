@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "forms",
+  "name": "Bug report form",
+  "description": "Players-vs-product style bug report; routes to dev channel.",
+  "settings": {},
+  "content": [
+    {
+      "type": "form",
+      "name": "bug-report-form",
+      "title": "i18n:forms.bug.title",
+      "buttonLabel": "i18n:forms.bug.button",
+      "reviewChannelId": "{channel:bug-reports}",
+      "approverRoleIds": [
+        "{role:devs}"
+      ],
+      "perUserLimit": 5,
+      "questions": [
+        {
+          "id": "summary",
+          "label": "i18n:forms.bug.q.summary",
+          "kind": "short",
+          "required": true,
+          "maxLength": 200
+        },
+        {
+          "id": "steps",
+          "label": "i18n:forms.bug.q.steps",
+          "kind": "paragraph",
+          "required": true,
+          "maxLength": 2000
+        },
+        {
+          "id": "expected",
+          "label": "i18n:forms.bug.q.expected",
+          "kind": "paragraph",
+          "required": false,
+          "maxLength": 800
+        },
+        {
+          "id": "screenshot",
+          "label": "i18n:forms.bug.q.screenshot",
+          "kind": "short",
+          "required": false,
+          "maxLength": 200
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

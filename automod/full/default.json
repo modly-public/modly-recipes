@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "automod",
+  "name": "Automod \u2014 default",
+  "description": "Balanced ruleset for general communities \u2014 invite/scam/cap/mention guards.",
+  "settings": {
+    "automod.escalation.enabled": true,
+    "automod.lockdown.sweep": false,
+    "automod.notify.channelId": "{channel:mod-log}",
+    "automod.exempt.roles": [
+      "{role:mods}"
+    ]
+  },
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Invite links",
+      "kind": "INVITE_LINK",
+      "config": {
+        "allowGuildIds": []
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "warn",
+            "points": 4
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 20
+    },
+    {
+      "type": "automod.rule",
+      "name": "Scam links",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "ban",
+            "reason": "scam-link"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 10
+    },
+    {
+      "type": "automod.rule",
+      "name": "Mass mentions",
+      "kind": "MASS_MENTION",
+      "config": {
+        "threshold": 5,
+        "includeRoles": true,
+        "includeEveryone": true
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "timeout",
+            "durationSec": 600
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 30
+    },
+    {
+      "type": "automod.rule",
+      "name": "All caps",
+      "kind": "CAP_RATIO",
+      "config": {
+        "ratio": 0.7,
+        "minLen": 12
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 40
+    },
+    {
+      "type": "automod.rule",
+      "name": "Repeat spam",
+      "kind": "REPEAT_SPAM",
+      "config": {
+        "window": 8,
+        "max": 4
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "timeout",
+            "durationSec": 300
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 50
+    }
+  ],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

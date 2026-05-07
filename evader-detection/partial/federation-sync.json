@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "evader-detection",
+  "name": "Federation sync on",
+  "description": "Share evader signals with federated antinuke peers.",
+  "settings": {
+    "evader_detection.federationSync": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

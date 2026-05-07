@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "scheduled-actions",
+  "name": "Scheduled actions \u2014 default",
+  "description": "Cron + one-shot scheduled actions, mod-editable, audit on.",
+  "settings": {
+    "scheduled_actions.enabled": true,
+    "scheduled_actions.maxJobs": 50,
+    "scheduled_actions.editorRoleId": "{role:mods}",
+    "scheduled_actions.timezone": "UTC"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "relay",
+  "name": "Relay \u2014 default",
+  "description": "Cross-channel relay setup with thread-per-source.",
+  "settings": {
+    "relay.enabled": true,
+    "relay.maxRelays": 10,
+    "relay.editorRoleId": "{role:mods}",
+    "relay.threadPerSource": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

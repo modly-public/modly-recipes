@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai",
+  "name": "AI-mod system prompt",
+  "description": "Adds an AI-moderator system prompt focused on consistency + warmth.",
+  "settings": {
+    "ai.systemPromptKey": "i18n:ai.system_prompt.moderator"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

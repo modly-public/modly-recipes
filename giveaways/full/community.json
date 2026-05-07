@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "giveaways",
+  "name": "Giveaways \u2014 community",
+  "description": "Generous: bonus entries for boosters/regulars, multi-winner.",
+  "settings": {
+    "giveaways.enabled": true,
+    "giveaways.defaultDurationHours": 24,
+    "giveaways.allowReroll": true,
+    "giveaways.bonusEntriesByRole": {
+      "{role:booster}": 3,
+      "{role:active}": 2,
+      "{role:legend}": 5
+    },
+    "giveaways.allowMultipleWinners": true,
+    "giveaways.maxConcurrent": 10
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:booster}",
+      "{role:active}",
+      "{role:legend}"
+    ],
+    "channels": []
+  }
+}

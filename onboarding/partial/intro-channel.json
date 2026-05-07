@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "onboarding",
+  "name": "Intro post requirement",
+  "description": "Add an introduction post to onboarding flow.",
+  "settings": {
+    "onboarding.introChannelId": "{channel:introductions}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

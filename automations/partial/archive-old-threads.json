@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automations",
+  "name": "Archive old threads",
+  "description": "Daily sweep that archives threads with no activity in 30d.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automation",
+      "name": "archive-stale",
+      "trigger": "schedule.daily",
+      "cron": "0 4 * * *",
+      "actions": [
+        {
+          "kind": "archive_threads",
+          "olderThanDays": 30
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

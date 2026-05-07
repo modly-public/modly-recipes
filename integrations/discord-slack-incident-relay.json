@@ -1,0 +1,36 @@
+{
+  "name": "Discord ↔ Slack incident relay",
+  "kind": "integration-feed",
+  "description": "Bidirectional bridge between #incidents on Discord and #incidents on Slack. Threads on either side stay synced; @here / @channel mentions are translated. Designed for shared on-call between an open community (Discord) and a paid Slack workspace.",
+  "module": "integrations.relay",
+  "config": {
+    "discord": {
+      "channelId": "INCIDENTS_CHANNEL_ID",
+      "syncThreads": true
+    },
+    "slack": {
+      "workspaceEnv": "MODLY_SLACK_WORKSPACE",
+      "tokenEnv": "MODLY_SLACK_BOT_TOKEN",
+      "channelId": "C0123456"
+    },
+    "mentionMapping": {
+      "discord_to_slack": {
+        "@everyone": "@channel",
+        "ON_CALL_ROLE_ID": "S01ONCALL"
+      },
+      "slack_to_discord": {
+        "@channel": "ON_CALL_ROLE_ID"
+      }
+    },
+    "messages": {
+      "linkedHeaderKey": "i18n:integrations.relay.linked_header",
+      "errorKey": "i18n:integrations.relay.error",
+      "rateLimitedKey": "i18n:integrations.relay.rate_limited"
+    },
+    "rateLimit": {
+      "perMinute": 30,
+      "burst": 10
+    }
+  },
+  "i18nNotes": "Bot-generated banner copy is keyed; relayed user messages are passed through untouched."
+}

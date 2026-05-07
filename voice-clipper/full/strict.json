@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "voice-clipper",
+  "name": "Voice clipper \u2014 strict",
+  "description": "Consent-required, mods only, transcript on.",
+  "settings": {
+    "voice_clipper.enabled": true,
+    "voice_clipper.maxClipSec": 60,
+    "voice_clipper.maxClipsPerHour": 3,
+    "voice_clipper.allowedRoleId": "{role:mods}",
+    "voice_clipper.requireConsent": true,
+    "voice_clipper.consentRoleId": "{role:vc-consent}",
+    "voice_clipper.includeTranscript": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}",
+      "{role:vc-consent}"
+    ],
+    "channels": []
+  }
+}

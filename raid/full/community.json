@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "raid",
+  "name": "Raid shield \u2014 community",
+  "description": "Light raid filter that won't false-positive on event drops.",
+  "settings": {
+    "raid.enabled": true,
+    "raid.joinWindowSec": 30,
+    "raid.joinThreshold": 20,
+    "raid.action": "alert",
+    "raid.alertChannelId": "{channel:mod-log}",
+    "raid.alertRoleId": "{role:mods}",
+    "raid.minAccountDays": 0,
+    "raid.scoreThreshold": 70,
+    "raid.captchaOnTrip": false,
+    "raid.lockChannelsOnTrip": false,
+    "raid.dmJoiners": false,
+    "raid.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

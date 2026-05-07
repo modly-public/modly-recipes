@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "suggestions",
+  "name": "Thread per suggestion",
+  "description": "Each suggestion gets a discussion thread.",
+  "settings": {
+    "suggestions.threadPerSuggestion": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

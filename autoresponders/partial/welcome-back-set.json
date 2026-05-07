@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "autoresponders",
+  "name": "Welcome-back set",
+  "description": "Greets returning members.",
+  "settings": {},
+  "content": [
+    {
+      "type": "autoresponder",
+      "name": "welcome-back",
+      "match": [
+        "im back",
+        "i'm back",
+        "back online"
+      ],
+      "kind": "react",
+      "emoji": "\ud83d\udc4b"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

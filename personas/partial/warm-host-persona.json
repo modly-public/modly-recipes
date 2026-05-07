@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "personas",
+  "name": "Warm host persona",
+  "description": "Adds a warm community-host persona prompt.",
+  "settings": {},
+  "content": [
+    {
+      "type": "persona",
+      "name": "warm-host",
+      "promptKey": "i18n:personas.warm_host",
+      "channels": [
+        "{channel:welcome}",
+        "{channel:general}"
+      ]
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

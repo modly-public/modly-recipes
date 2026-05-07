@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "appeal-portal",
+  "name": "Thread per appeal",
+  "description": "Each appeal opens a private thread for staff discussion.",
+  "settings": {
+    "appeal_portal.threadPerAppeal": true,
+    "appeal_portal.autoArchiveDays": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

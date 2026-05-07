@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "scheduled-actions",
+  "name": "Midnight purge of #spam",
+  "description": "Auto-purges the #spam channel every midnight.",
+  "settings": {},
+  "content": [
+    {
+      "type": "scheduled_action",
+      "name": "midnight-purge",
+      "cron": "0 0 * * *",
+      "action": {
+        "kind": "purge_channel",
+        "channelId": "{channel:spam}",
+        "max": 200
+      }
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

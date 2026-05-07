@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "ai-tools",
+  "name": "AI-mod summarize pack",
+  "description": "Wires summarize-thread + suggest-action together for fast triage.",
+  "settings": {
+    "ai_tools.tools": [
+      "summarize_thread",
+      "suggest_action",
+      "categorize_message"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "games",
+  "name": "Daily mini-game",
+  "description": "Posts a daily auto-trivia in #daily-game.",
+  "settings": {
+    "games.dailyDailyGameEnabled": true,
+    "games.dailyChannelId": "{channel:daily-game}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

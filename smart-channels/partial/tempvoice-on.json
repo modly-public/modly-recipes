@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "smart-channels",
+  "name": "Temp voice channels",
+  "description": "Click join-to-create voice channel.",
+  "settings": {
+    "smart_channels.tempVoice": true,
+    "smart_channels.tempVoiceTriggerId": "{channel:tempvoice-trigger}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

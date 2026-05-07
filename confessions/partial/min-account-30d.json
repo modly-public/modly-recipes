@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "confessions",
+  "name": "Min account 30 days",
+  "description": "Block confessions from accounts <30 days old.",
+  "settings": {
+    "confessions.minAccountDays": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

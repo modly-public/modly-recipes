@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "autoresponders",
+  "name": "Rules acknowledgement",
+  "description": "Reacts when members say they read the rules.",
+  "settings": {},
+  "content": [
+    {
+      "type": "autoresponder",
+      "name": "rules-read",
+      "match": [
+        "read the rules",
+        "rules read",
+        "\u2705 rules"
+      ],
+      "kind": "react",
+      "emoji": "\ud83d\udcd6"
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "economy",
+  "name": "Shop on",
+  "description": "Enables the /shop command.",
+  "settings": {
+    "economy.shopEnabled": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

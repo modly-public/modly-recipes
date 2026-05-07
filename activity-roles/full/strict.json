@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "activity-roles",
+  "name": "Activity roles \u2014 strict",
+  "description": "Tighter activity bar, shorter grace.",
+  "settings": {
+    "activity_roles.enabled": true,
+    "activity_roles.defaultGraceDays": 7,
+    "activity_roles.dmOnStrip": true,
+    "activity_roles.exemptRoles": [
+      "{role:mods}"
+    ],
+    "activity_roles.rules": [
+      {
+        "name": "active",
+        "roleId": "{role:active}",
+        "minMessages30d": 100,
+        "minVoiceMin30d": 240,
+        "graceDays": 7
+      },
+      {
+        "name": "regular",
+        "roleId": "{role:regular}",
+        "minMessages30d": 300,
+        "minVoiceMin30d": 600,
+        "graceDays": 14
+      }
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:active}",
+      "{role:regular}",
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

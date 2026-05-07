@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "polls",
+  "name": "Polls \u2014 community",
+  "description": "Anonymous + multi-choice + thread discussion enabled.",
+  "settings": {
+    "polls.enabled": true,
+    "polls.defaultDurationHours": 48,
+    "polls.allowAnonymous": true,
+    "polls.maxOptions": 15,
+    "polls.allowMultipleChoice": true,
+    "polls.threadDiscussion": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

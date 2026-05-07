@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "giveaways",
+  "name": "Giveaways \u2014 strict",
+  "description": "Booster-only entry, account-age floor, single winner only.",
+  "settings": {
+    "giveaways.enabled": true,
+    "giveaways.defaultDurationHours": 48,
+    "giveaways.allowReroll": true,
+    "giveaways.requireBoosterRoleId": "{role:booster}",
+    "giveaways.minAccountDays": 30,
+    "giveaways.minServerDays": 7,
+    "giveaways.allowMultipleWinners": false,
+    "giveaways.maxConcurrent": 1
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:booster}"
+    ],
+    "channels": []
+  }
+}

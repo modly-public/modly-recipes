@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "automod",
+  "name": "Anti-invite pack",
+  "description": "Blocks Discord invite URLs in any channel.",
+  "settings": {},
+  "content": [
+    {
+      "type": "automod.rule",
+      "name": "Discord invites",
+      "kind": "INVITE_LINK",
+      "config": {
+        "allowGuildIds": []
+      },
+      "action": {
+        "actions": [
+          {
+            "type": "delete"
+          },
+          {
+            "type": "warn",
+            "points": 5
+          }
+        ]
+      },
+      "scope": {},
+      "priority": 20
+    }
+  ],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Slow-build trust verification",
+  "description": "Three-tier trust ramp: brand-new accounts get heavy filters, established members (24h+) get baseline, trusted role gets a relaxed pack. Each rule is scoped by role so you can layer them. Apply the role gates in your role-picker / verification flow.",
+  "rules": [
+    {
+      "name": "[unverified] No links at all",
+      "kind": "EXTERNAL_LINK",
+      "config": { "allowDomains": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 3 }] },
+      "scope": { "requireRoleIds": ["UNVERIFIED_ROLE_ID"] },
+      "priority": 10
+    },
+    {
+      "name": "[unverified] No invites",
+      "kind": "INVITE_LINK",
+      "config": { "allowGuildIds": [] },
+      "action": { "actions": [{ "type": "delete" }, { "type": "warn", "points": 5 }] },
+      "scope": { "requireRoleIds": ["UNVERIFIED_ROLE_ID"] },
+      "priority": 15
+    },
+    {
+      "name": "[unverified] Strict mass-mention (2+)",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 2, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 3600 }] },
+      "scope": { "requireRoleIds": ["UNVERIFIED_ROLE_ID"] },
+      "priority": 20
+    },
+    {
+      "name": "[member] Standard mass-mention (5+)",
+      "kind": "MASS_MENTION",
+      "config": { "threshold": 5, "includeRoles": true, "includeEveryone": true },
+      "action": { "actions": [{ "type": "delete" }, { "type": "timeout", "durationSec": 600 }] },
+      "scope": { "requireRoleIds": ["MEMBER_ROLE_ID"] },
+      "priority": 30
+    },
+    {
+      "name": "[trusted] Only scam links blocked",
+      "kind": "SCAM_LINK",
+      "config": {},
+      "action": { "actions": [{ "type": "delete" }] },
+      "scope": { "requireRoleIds": ["TRUSTED_ROLE_ID"] },
+      "priority": 40
+    }
+  ],
+  "i18nNotes": "Role-gated by replacing UNVERIFIED_ROLE_ID, MEMBER_ROLE_ID, TRUSTED_ROLE_ID after import. No user-facing copy in this recipe."
+}

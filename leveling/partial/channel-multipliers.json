@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "leveling",
+  "name": "Channel multipliers preset",
+  "description": "Doubles XP in event channel, halves it in spam channel.",
+  "settings": {
+    "leveling.channelMultipliers": {
+      "{channel:events}": 2.0,
+      "{channel:spam}": 0.5
+    }
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

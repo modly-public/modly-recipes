@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "smart-channels",
+  "name": "Temp text channels",
+  "description": "Per-feature temp text channels.",
+  "settings": {
+    "smart_channels.tempTextChannels": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

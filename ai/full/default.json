@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "ai",
+  "name": "AI \u2014 default",
+  "description": "AI assistant with safe defaults, rate limits, premium gating.",
+  "settings": {
+    "ai.enabled": true,
+    "ai.allowedRoleId": "{role:member}",
+    "ai.maxTokensPerCall": 1500,
+    "ai.maxCallsPerHourPerUser": 20,
+    "ai.maxCallsPerDayPerUser": 100,
+    "ai.allowChat": true,
+    "ai.allowSummary": true,
+    "ai.allowImage": false,
+    "ai.modelKey": "default",
+    "ai.temperature": 0.6,
+    "ai.systemPromptKey": "i18n:ai.system_prompt.default",
+    "ai.languageFallback": "en",
+    "ai.exemptRoles": [
+      "{role:mods}"
+    ],
+    "ai.toxicityFilter": true,
+    "ai.dataPiiRedaction": true,
+    "ai.responseFooter": "i18n:ai.responseFooter",
+    "ai.contextChannels": []
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:member}",
+      "{role:mods}"
+    ],
+    "channels": []
+  }
+}

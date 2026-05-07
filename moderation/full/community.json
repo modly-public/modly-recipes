@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "moderation",
+  "name": "Moderation \u2014 community",
+  "description": "Friendly mod stance: short timeouts, fast warn decay, no auto-escalation.",
+  "settings": {
+    "moderation.modLogChannelId": "{channel:mod-log}",
+    "moderation.warnPointDecayDays": 7,
+    "moderation.autoEscalateAtPoints": 20,
+    "moderation.escalationAction": "warn",
+    "moderation.dmOnAction": true,
+    "moderation.requireReason": false,
+    "moderation.banDeleteDays": 0,
+    "moderation.timeoutMaxHours": 6,
+    "moderation.modCallRoleId": "{role:mods}"
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

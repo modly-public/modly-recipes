@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "evader-detection",
+  "name": "Evader detection \u2014 strict",
+  "description": "Auto-bans suspected ban-evaders above score threshold.",
+  "settings": {
+    "evader_detection.enabled": true,
+    "evader_detection.action": "ban",
+    "evader_detection.alertChannelId": "{channel:mod-log}",
+    "evader_detection.alertRoleId": "{role:mods}",
+    "evader_detection.fingerprintMatch": true,
+    "evader_detection.usernameSimilarity": 0.75,
+    "evader_detection.avatarSimilarity": 0.8,
+    "evader_detection.minScore": 0.55,
+    "evader_detection.scope": "global",
+    "evader_detection.cooldownDays": 90,
+    "evader_detection.exemptRoles": [
+      "{role:mods}"
+    ],
+    "evader_detection.lookbackDays": 365,
+    "evader_detection.federationSync": true,
+    "evader_detection.dmOffender": false,
+    "evader_detection.dryRun": false
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [
+      "{role:mods}"
+    ],
+    "channels": [
+      "{channel:mod-log}"
+    ]
+  }
+}

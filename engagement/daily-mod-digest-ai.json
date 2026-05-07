@@ -1,0 +1,27 @@
+{
+  "name": "Daily mod digest with AI summary",
+  "kind": "engagement-flow",
+  "description": "Posts a once-a-day staff-only digest summarizing yesterday's moderation activity (warns, mutes, bans, top offenders, automod hits) with an AI-written executive summary at the top.",
+  "module": "ai",
+  "schedule": { "cron": "0 9 * * *", "timezone": "server" },
+  "config": {
+    "channelId": "STAFF_DIGEST_CHANNEL_ID",
+    "messageKey": "i18n:engagement.mod_digest.header",
+    "ai": {
+      "persona": "default",
+      "summaryPromptKey": "i18n:engagement.mod_digest.ai_prompt",
+      "maxTokens": 400
+    },
+    "data": {
+      "windowHours": 24,
+      "include": ["warns", "timeouts", "bans", "automod_hits", "top_offenders", "appeal_submissions"]
+    },
+    "embed": {
+      "titleKey": "i18n:engagement.mod_digest.title",
+      "color": 8128495,
+      "footerKey": "i18n:engagement.mod_digest.footer"
+    },
+    "mentionRoleId": "MOD_ROLE_ID"
+  },
+  "i18nNotes": "Header, title, footer, and AI system prompt all reference locale keys. AI output itself is generated content and the recipe explicitly does not pin its language — set persona.locale on the AI module if you need a non-English summary."
+}

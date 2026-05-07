@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "server-stats",
+  "name": "Weekly digest only",
+  "description": "Disables daily, keeps weekly.",
+  "settings": {
+    "server_stats.dailyDigest": false,
+    "server_stats.weeklyDigest": true
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

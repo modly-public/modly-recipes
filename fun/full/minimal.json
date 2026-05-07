@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-export",
+  "module": "fun",
+  "name": "Fun \u2014 minimal",
+  "description": "Only 8ball + coin + dice. Quiet servers.",
+  "settings": {
+    "fun.enabled": true,
+    "fun.commands": [
+      "8ball",
+      "dice",
+      "coin"
+    ],
+    "fun.cooldownSec": 30
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

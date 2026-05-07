@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "evader-detection",
+  "name": "Tight username similarity",
+  "description": "Catch alts using slight username variants (e.g. 'mike' vs 'mike1').",
+  "settings": {
+    "evader_detection.usernameSimilarity": 0.75
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}

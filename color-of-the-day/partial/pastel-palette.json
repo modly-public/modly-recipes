@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "module-recipe",
+  "module": "color-of-the-day",
+  "name": "Pastel palette",
+  "description": "Switches to a soft pastel palette.",
+  "settings": {
+    "color_of_the_day.palette": [
+      "#ffd1dc",
+      "#bee3db",
+      "#c9b1ff",
+      "#ffe5b4",
+      "#cdeac0",
+      "#a0e7e5",
+      "#fbe7c6"
+    ]
+  },
+  "content": [],
+  "dependencies": {
+    "roles": [],
+    "channels": []
+  }
+}
